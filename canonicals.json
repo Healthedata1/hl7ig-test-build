@@ -1,0 +1,212 @@
+[
+  {
+    "id" : "us-core-client",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-client",
+    "version" : "0.1.0",
+    "name" : "UsCoreClientCapabilityStatement"
+  },
+  {
+    "id" : "us-core-client2",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-client2",
+    "version" : "0.1.0",
+    "name" : "UsCoreClientCapabilityStatement2"
+  },
+  {
+    "id" : "us-core-server",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",
+    "version" : "0.1.0",
+    "name" : "UsCoreServerCapabilityStatement"
+  },
+  {
+    "id" : "us-core-server2",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server2",
+    "version" : "0.1.0",
+    "name" : "UsCoreServerCapabilityStatement2"
+  },
+  {
+    "id" : "us-core-allergyintolerance-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status",
+    "version" : "0.1.0",
+    "name" : "USCoreAllergyintoleranceClinicalStatus"
+  },
+  {
+    "id" : "us-core-allergyintolerance-patient",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-patient",
+    "version" : "0.1.0",
+    "name" : "USCoreAllergyintolerancePatient"
+  },
+  {
+    "id" : "us-core-careplan-category",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-category",
+    "version" : "0.1.0",
+    "name" : "USCoreCareplanCategory"
+  },
+  {
+    "id" : "us-core-careplan-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date",
+    "version" : "0.1.0",
+    "name" : "USCoreCareplanDate"
+  },
+  {
+    "id" : "us-core-careplan-patient",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-patient",
+    "version" : "0.1.0",
+    "name" : "USCoreCareplanPatient"
+  },
+  {
+    "id" : "us-core-careplan-status",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-status",
+    "version" : "0.1.0",
+    "name" : "USCoreCareplanStatus"
+  },
+  {
+    "id" : "us-core-careteam-patient",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-patient",
+    "version" : "0.1.0",
+    "name" : "USCoreCareteamPatient"
+  },
+  {
+    "id" : "us-core-careteam-role",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role",
+    "version" : "0.1.0",
+    "name" : "USCoreCareTeamRole"
+  },
+  {
+    "id" : "us-core-careteam-status",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-status",
+    "version" : "0.1.0",
+    "name" : "USCoreCareteamStatus"
+  },
+  {
+    "id" : "us-core-condition-abatement-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionAbatementDate"
+  },
+  {
+    "id" : "us-core-condition-asserted-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionAssertedDate"
+  },
+  {
+    "id" : "us-core-condition-category",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-category",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionCategory"
+  },
+  {
+    "id" : "us-core-condition-clinical-status",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-clinical-status",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionClinicalStatus"
+  },
+  {
+    "id" : "us-core-condition-code",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionCode"
+  },
+  {
+    "id" : "us-core-condition-encounter",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionEncounter"
+  },
+  {
+    "id" : "us-core-condition-lastupdated",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-lastupdated",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionLastUpdated"
+  },
+  {
+    "id" : "us-core-condition-onset-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-onset-date",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionOnsetDate"
+  },
+  {
+    "id" : "us-core-condition-patient",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionPatient"
+  },
+  {
+    "id" : "us-core-condition-recorded-date",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-recorded-date",
+    "version" : "0.1.0",
+    "name" : "USCoreConditionRecordedDate"
+  },
+  {
+    "id" : "us-core-race",
+    "type" : "SearchParameter",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-race",
+    "version" : "0.1.0",
+    "name" : "USCoreRace"
+  },
+  {
+    "id" : "pediatric-weight-for-height",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height",
+    "version" : "0.1.0",
+    "name" : "USCorePediatricWeightForHeightObservationProfile"
+  },
+  {
+    "id" : "us-core-adi-documentreference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
+    "version" : "0.1.0",
+    "name" : "USCoreADIDocumentReferenceProfile"
+  },
+  {
+    "id" : "us-core-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
+    "version" : "0.1.0",
+    "name" : "USCoreAllergyIntolerance"
+  },
+  {
+    "id" : "us-core-careplan",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
+    "version" : "0.1.0",
+    "name" : "USCoreCarePlanProfile"
+  },
+  {
+    "id" : "us-core-careteam",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
+    "version" : "0.1.0",
+    "name" : "USCoreCareTeam"
+  },
+  {
+    "id" : "hl7.fhir.us.healthedata1-sandbox",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
+    "version" : "0.1.0",
+    "name" : "HealthEData_1Sandbox"
+  }
+]

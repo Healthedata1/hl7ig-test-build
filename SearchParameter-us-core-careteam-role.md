@@ -1,0 +1,123 @@
+# USCoreCareTeamRole - Health eData 1 Sandbox v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **USCoreCareTeamRole**
+
+## SearchParameter: USCoreCareTeamRole 
+
+| | | |
+| :--- | :--- | :--- |
+| *Official URL*:http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role | *Version*:0.1.0 | |
+| *Standards status:*[Trial-use](http://hl7.org/fhir/R4/versions.html#std-process) | [Maturity Level](http://hl7.org/fhir/versions.html#maturity): 5 | *Computable Name*:USCoreCareTeamRole |
+| **Copyright/Legal**: Used by permission of HL7 International, all rights reserved Creative Commons License | | |
+
+ 
+Returns CareTeam resources with a participant role matching the specified code. 
+
+**id** us-core-careteam-role
+
+**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role** 
+
+**version** : 4.1.0
+
+**name** : USCoreCareTeamRole
+
+**status** : active
+
+**date** : 04/14/2022
+
+**publisher** : HL7 International - Cross-Group Projects
+
+**contact** : http://www.hl7.org/Special/committees/cgp
+
+**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
+
+**code** : `role` 
+
+**base** :CareTeam
+
+**type** : token
+
+**expression** : `CareTeam.participant.role` 
+
+**xpath** : `f:CareTeam/f:participant/f:role/@value` 
+
+**xpathUsage** : normal
+
+**multipleOr** : True (Conformance Expectation = MAY)
+
+**multipleAnd** : True ( Conformance Expectation = MAY)
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "SearchParameter",
+  "id" : "us-core-careteam-role",
+  "extension" : [
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 5
+    }
+  ],
+  "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role",
+  "version" : "0.1.0",
+  "name" : "USCoreCareTeamRole",
+  "status" : "active",
+  "date" : "2022-04-14",
+  "publisher" : "HL7 International / Cross-Group Projects",
+  "contact" : [
+    {
+      "name" : "HL7 International / Cross-Group Projects",
+      "telecom" : [
+        {
+          "system" : "url",
+          "value" : "http://www.hl7.org/Special/committees/cgp"
+        },
+        {
+          "system" : "email",
+          "value" : "cgp@lists.HL7.org"
+        }
+      ]
+    }
+  ],
+  "description" : "Returns CareTeam resources with a participant role matching the specified code.",
+  "jurisdiction" : [
+    {
+      "coding" : [
+        {
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "US"
+        }
+      ]
+    }
+  ],
+  "code" : "role",
+  "base" : ["CareTeam"],
+  "type" : "token",
+  "expression" : "CareTeam.participant.role",
+  "xpathUsage" : "normal",
+  "multipleOr" : true,
+  "_multipleOr" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }
+    ]
+  },
+  "multipleAnd" : true,
+  "_multipleAnd" : {
+    "extension" : [
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+        "valueCode" : "MAY"
+      }
+    ]
+  }
+}
+
+```

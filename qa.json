@@ -1,0 +1,19 @@
+{
+  "url" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox",
+  "name" : "HealthEData_1Sandbox",
+  "title" : "Health eData 1 Sandbox",
+  "description" : "This is a **Healthedata1** sandbox for creation of resources and examples",
+  "status" : "active",
+  "package-id" : "hl7.fhir.us.healthedata1-sandbox",
+  "ig-ver" : "0.1.0",
+  "date" : "Wed, 17 Dec, 2025 23:20:14 +0000",
+  "dateISO8601" : "2025-12-17T23:20:14+00:00",
+  "errs" : 1079,
+  "warnings" : 97,
+  "hints" : 338,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1677177480
+}
