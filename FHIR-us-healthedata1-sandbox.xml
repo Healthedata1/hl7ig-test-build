@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ciUrl="" defaultVersion="current" defaultWorkgroup="cgp" url="http://hl7.org/fhir/us/healthedata1-sandbox">
+<version code="current" url=""/>
+<artifactPageExtension value="-definitions"/>
+<artifactPageExtension value="-examples"/>
+<artifactPageExtension value="-mappings"/>
+<artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
+<artifact id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" name="US Core AllergyIntolerance Profile"/>
+<artifact id="StructureDefinition/us-core-careplan" key="StructureDefinition-us-core-careplan" name="US Core CarePlan Profile"/>
+<artifact id="StructureDefinition/us-core-careteam" key="StructureDefinition-us-core-careteam" name="US Core CareTeam Profile"/>
+<artifact id="CapabilityStatement/us-core-client" key="CapabilityStatement-us-core-client" name="US Core Client CapabilityStatement"/>
+<artifact id="CapabilityStatement/us-core-client2" key="CapabilityStatement-us-core-client2" name="US Core Client CapabilityStatement2"/>
+<artifact id="StructureDefinition/pediatric-weight-for-height" key="StructureDefinition-pediatric-weight-for-height" name="US Core Pediatric Weight for Height Observation Profile"/>
+<artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
+<artifact id="CapabilityStatement/us-core-server2" key="CapabilityStatement-us-core-server2" name="US Core Server UsCoreServerCapabilityStatement2"/>
+<artifact id="SearchParameter/us-core-allergyintolerance-clinical-status" key="SearchParameter-us-core-allergyintolerance-clinical-status" name="USCoreAllergyintoleranceClinicalStatus"/>
+<artifact id="SearchParameter/us-core-allergyintolerance-patient" key="SearchParameter-us-core-allergyintolerance-patient" name="USCoreAllergyintolerancePatient"/>
+<artifact id="SearchParameter/us-core-careteam-role" key="SearchParameter-us-core-careteam-role" name="USCoreCareTeamRole"/>
+<artifact id="SearchParameter/us-core-careplan-category" key="SearchParameter-us-core-careplan-category" name="USCoreCareplanCategory"/>
+<artifact id="SearchParameter/us-core-careplan-date" key="SearchParameter-us-core-careplan-date" name="USCoreCareplanDate"/>
+<artifact id="SearchParameter/us-core-careplan-patient" key="SearchParameter-us-core-careplan-patient" name="USCoreCareplanPatient"/>
+<artifact id="SearchParameter/us-core-careplan-status" key="SearchParameter-us-core-careplan-status" name="USCoreCareplanStatus"/>
+<artifact id="SearchParameter/us-core-careteam-patient" key="SearchParameter-us-core-careteam-patient" name="USCoreCareteamPatient"/>
+<artifact id="SearchParameter/us-core-careteam-status" key="SearchParameter-us-core-careteam-status" name="USCoreCareteamStatus"/>
+<artifact id="SearchParameter/us-core-condition-abatement-date" key="SearchParameter-us-core-condition-abatement-date" name="USCoreConditionAbatementDate"/>
+<artifact id="SearchParameter/us-core-condition-asserted-date" key="SearchParameter-us-core-condition-asserted-date" name="USCoreConditionAssertedDate"/>
+<artifact id="SearchParameter/us-core-condition-category" key="SearchParameter-us-core-condition-category" name="USCoreConditionCategory"/>
+<artifact id="SearchParameter/us-core-condition-clinical-status" key="SearchParameter-us-core-condition-clinical-status" name="USCoreConditionClinicalStatus"/>
+<artifact id="SearchParameter/us-core-condition-code" key="SearchParameter-us-core-condition-code" name="USCoreConditionCode"/>
+<artifact id="SearchParameter/us-core-condition-encounter" key="SearchParameter-us-core-condition-encounter" name="USCoreConditionEncounter"/>
+<artifact id="SearchParameter/us-core-condition-lastupdated" key="SearchParameter-us-core-condition-lastupdated" name="USCoreConditionLastUpdated"/>
+<artifact id="SearchParameter/us-core-condition-onset-date" key="SearchParameter-us-core-condition-onset-date" name="USCoreConditionOnsetDate"/>
+<artifact id="SearchParameter/us-core-condition-patient" key="SearchParameter-us-core-condition-patient" name="USCoreConditionPatient"/>
+<artifact id="SearchParameter/us-core-condition-recorded-date" key="SearchParameter-us-core-condition-recorded-date" name="USCoreConditionRecordedDate"/>
+<artifact id="SearchParameter/us-core-race" key="SearchParameter-us-core-race" name="USCoreRace"/>
+<page key="NA" name="(NA)"/>
+<page key="many" name="(many)"/>
+<page key="artifacts" name="Artifacts Summary"/>
+<page key="changes" name="Change Log"/>
+<page key="downloads" name="Downloads"/>
+<page key="guidance" name="Guidance"/>
+<page key="index" name="Home"/>
+<page key="ImplementationGuide" name="ImplementationGuide Resource"/>
+<page key="search-parameters" name="Search Parameters"/>
+<page key="toc" name="Table of Contents"/>
+</specification>
