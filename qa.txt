@@ -3,7 +3,7 @@ HealthEData_1Sandbox : Validation Results
 
 err = 1079, warn = 97, info = 338
 IG Publisher Version: 2.0.29
-Generated Wed Dec 17 23:24:23 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
+Generated Thu Dec 18 17:32:35 UTC 2025. FHIR version 4.0.1 for hl7.fhir.us.healthedata1-sandbox#0.1.0 (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
  Build Errors : 1015 / 1 / 27
  /home/runner/work/hl7ig-test-build/hl7ig-test-build/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 6 / 2
  /home/runner/work/hl7ig-test-build/hl7ig-test-build/input/resources/StructureDefinition-pediatric-weight-for-height : 3 / 1 / 3
