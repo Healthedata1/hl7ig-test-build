@@ -951,8 +951,6 @@ Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/St
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-clinical-result.html' for "🔗" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-pmo-servicerequest.html' for "🔗" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-specimen.html' for "🔗" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'ImplementationGuide-.xml' for "XML" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'ImplementationGuide-.json' for "JSON" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Info - The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause (BUSINESSRULE)
 Generic: line 0, col 0, Info - The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause (BUSINESSRULE)
 Generic: line 0, col 0, Info - The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause (BUSINESSRULE)

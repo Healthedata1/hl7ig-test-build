@@ -60,15 +60,20 @@ Using the default list maker with source from resources.json issues: 1. sort by 
 
 #### AllergyIntolerance
 
-      ⸺
+* [US Core Allergyintolerance Clinical Status]
+* [US Core Allergyintolerance Patient]
 
 #### CarePlan
 
-      ⸺
+* [US Core Careplan Category]
+* [US Core Careplan Date]
+* [US Core Careplan Patient]
+* [US Core Careplan Status]
 
 #### CareTeam
 
-      ⸺
+* [US Core Careteam Patient]
+* [US Core Careteam Status]
 
 #### DocumentReference
 

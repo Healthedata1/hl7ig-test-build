@@ -11,12 +11,14 @@
 
 | | |
 | :--- | :--- |
-| **Official URL**: | **Version**: |
-| **NPM package name**: | **ComputableName**: |
+| **Official URL**: http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox | **Version**: 0.1.0 |
+| **NPM package name**: hl7.fhir.us.healthedata1-sandbox | **ComputableName**: HealthEData_1Sandbox |
 | **Copyright/Legal**: Used by permission of HL7 International, all rights reserved Creative Commons License |   |
 
-* [XML](ImplementationGuide-.xml)
-* [JSON](ImplementationGuide-.json)
+This is a **Healthedata1** sandbox for creation of resources and examples
+
+* [XML](ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.xml)
+* [JSON](ImplementationGuide-hl7.fhir.us.healthedata1-sandbox.json)
 
 ### Cross Version Analysis
 
@@ -65,4 +67,37 @@ This publication includes IP covered under the following statements.
 ### Parameter Settings
 
 The following [IG Parameters](https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters) are set for this Implementation Guide:
+
+* code: copyrightyear
+value: 2020+
+* code: releaselabel
+value: CI Build
+* code: path-expansion-params
+value: ../../input/_resources/exp-params.json
+* code: show-inherited-invariants
+value: true
+* code: usage-stats-opt-out
+value: false
+* code: path-output
+value: output
+* code: path-resource
+value: input/resources
+* code: path-resource
+value: fsh-generated/resources
+* code: path-resource
+value: input/intro-notes
+* code: path-liquid
+value: input/images/liquid
+* code: excludexml
+value: true
+* code: excludejson
+value: false
+* code: excludettl
+value: true
+* code: excludemap
+value: true
+* code: propagate-status
+value: true
+* code: path-history
+value: http://hl7.org/fhir/us/healthedata1-sandbox/history.html
 
