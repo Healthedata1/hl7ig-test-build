@@ -99,6 +99,7 @@
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
+      "SearchParameter",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [

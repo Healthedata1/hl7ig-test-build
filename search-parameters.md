@@ -56,8 +56,6 @@ These SearchParameter are used solely to document Server and Client expectations
 
 They **SHALL NOT** be interpreted as search parameters for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameters.
 
-Using the default list maker with source from resources.json issues: 1. sort by type - Parse from name 2. title parsed from name 3. derived vs US Core Specific - needs white list.
-
 #### AllergyIntolerance
 
 * [US Core Allergyintolerance Clinical Status]

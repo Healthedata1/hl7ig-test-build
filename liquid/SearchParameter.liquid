@@ -1,0 +1,52 @@
+<div xmlns="http://www.w3.org/1999/xhtml">
+    <h4>Custom liquid Version</h4>
+    <hr/>
+    <p><b>id</b> {{ SearchParameter.id }}</p>
+    <p><b>url</b> : <b> {{ SearchParameter.url }}</b></p>
+    <p><b>name</b> : {{ SearchParameter.name }}</p>
+    {% if SearchParameter.derivedFrom %}
+        <p><b>derivedFrom</b> : {{ SearchParameter.derivedFrom }}</p>
+    {% endif %}
+    <p><b>status</b> : {{ SearchParameter.status }}</p>
+    {% if SearchParameter.experimental %}
+        <p><b>experimental</b>  {{ SearchParameter.experimental }}</p>
+    {% endif %}
+    <p><b>date</b> : {{ SearchParameter.date }}</p>
+    <p><b>publisher</b> : {{ SearchParameter.publisher }}</p>
+    <p><b>contact</b> : {{ SearchParameter.contact[0].telecom[0].value }}</p>
+    <p><b>jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
+           States of America (the)'})</span>
+    </p>
+    <p><b>code</b> : <code>{{ SearchParameter.code }}</code></p>
+    <p><b>base</b> : {{SearchParameter.base}} </p>
+    <p><b>type</b> : {{ SearchParameter.type }}</p>
+    <p><b>expression</b> : <code>{{ SearchParameter.expression }}</code></p>
+
+    {% if SearchParameter.target %}
+        <p><b>target</b> : {{SearchParameter.target}} </p>
+    {% endif %}
+    <p><b>multipleOr</b> : {{ SearchParameter.multipleOr }}   (Conformance Expectation = {{ SearchParameter.multipleOr.extension.first().value }})</p>
+
+    <p><b>multipleAnd</b> : {{ SearchParameter.multipleAnd }}  ( Conformance Expectation = {{ SearchParameter.multipleAnd.extension.first().value }})</p>
+
+    {% if SearchParameter.comparator %}
+        {% for i in SearchParameter.comparator %}
+            <p> forloop.index0= {{forloop.index0}}</p>
+            <p><b>comparator</b> : <code>{{ i }}</code> ( Conformance Expectation = {{ SearchParameter.comparator.extension[forloop.index0].value }})</p>
+        {% endfor %}
+
+
+    {% endif %}
+
+    {% if SearchParameter.modifier %}
+        {% for i in SearchParameter.modifier %}
+            <p><b>modifier</b> : <code>{{ i }}</code>  (Conformance Expectation =  {{ SearchParameter.modifier.extension[forloop.index0].value }})</p>
+        {% endfor %}
+    {% endif %}
+
+    {% if SearchParameter.chain %}
+        {% for i in SearchParameter.chain %}
+            <p><b>chain</b> : <code>{{ i }}</code>  (Conformance Expectation = {{ SearchParameter.chain.extension[forloop.index0].value }})</p>
+        {% endfor %}
+    {% endif %}
+</div>

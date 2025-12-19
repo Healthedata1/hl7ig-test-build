@@ -23,58 +23,6 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
  
 It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SHOULD**use the standard FHIR SearchParameter. 
 
-**id** us-core-condition-abatement-date
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date** 
-
-**name** : USCoreConditionAbatementDate
-
-**derivedFrom** : http://hl7.org/fhir/SearchParameter/Condition-abatement-date
-
-**status** : active
-
-**date** : 11/17/2024
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `abatement-date` 
-
-**base** :Condition
-
-**type** : date
-
-**expression** : `Condition.abatement.as(dateTime)|Condition.abatement.as(Period)` 
-
-**xpath** : `f:Condition/f:abatementDateTime|f:Condition/f:abatementPeriod` 
-
-**xpathUsage** : normal
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = SHOULD)
-
-**comparator** : `eq` ( Conformance Expectation = MAY)
-
-**comparator** : `ne` ( Conformance Expectation = MAY)
-
-**comparator** : `gt` ( Conformance Expectation = SHALL)
-
-**comparator** : `ge` ( Conformance Expectation = SHALL)
-
-**comparator** : `lt` ( Conformance Expectation = SHALL)
-
-**comparator** : `le` ( Conformance Expectation = SHALL)
-
-**comparator** : `sa` ( Conformance Expectation = MAY)
-
-**comparator** : `eb` ( Conformance Expectation = MAY)
-
-**comparator** : `ap` ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -87,6 +35,18 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date",

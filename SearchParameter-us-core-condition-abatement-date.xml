@@ -3,31 +3,80 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="us-core-condition-abatement-date"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">    <!-- <h2>SearchParameter: USCoreConditionAbatementDate</h2>
-				<b> description</b> : <p><strong>Date-related abatements (dateTime and period)</strong><br />
-NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
-<ul>
-<li><code>multipleAnd</code></li>
-<li><code>multipleOr</code></li>
-<li><code>comparator</code></li>
-<li><code>modifier</code></li>
-<li><code>chain</code></li>
-</ul>
-<p>For search operations, Servers and Clients <strong>SHOULD</strong> use standard FHIR SearchParameter.</p>
-
-			<br/> --><p><b> id</b> us-core-condition-abatement-date</p><p><b> url</b> : <b> http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date</b>
-			</p><p><b> name</b> : USCoreConditionAbatementDate</p><p><b> derivedFrom</b> : http://hl7.org/fhir/SearchParameter/Condition-abatement-date</p><p><b> status</b> : active</p><p><b> date</b> : 11/17/2024</p><p><b> publisher</b> : HL7 International - Cross-Group Projects</p><p><b> contact</b> : http://www.hl7.org/Special/committees/cgp</p>    <!-- <p>
-				<b> useContext</b> : </p> --><p><b> jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+    <h4>Custom liquid Version</h4>
+    <hr/>
+    <p><b>id</b> us-core-condition-abatement-date</p>
+    <p><b>url</b> : <b> <a href="SearchParameter-us-core-condition-abatement-date.html">USCoreConditionAbatementDate</a></b></p>
+    <p><b>name</b> : USCoreConditionAbatementDate</p>
+    
+        <p><b>derivedFrom</b> : <a href="http://hl7.org/fhir/SearchParameter/Condition-abatement-date">abatement-date</a></p>
+    
+    <p><b>status</b> : Active</p>
+    
+    <p><b>date</b> : 2024-11-17</p>
+    <p><b>publisher</b> : HL7 International / Cross-Group Projects</p>
+    <p><b>contact</b> : http://www.hl7.org/Special/committees/cgp</p>
+    <p><b>jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
            States of America (the)'})</span>
-			</p>    <!-- <p>
-		<b> purpose</b> : Need to search by identifier for various infrastructural cases - mainly retrieving packages,
-         and matching as part of a chain</p> --><p><b> code</b> : <code>abatement-date</code>
-			</p><p><b> base</b> :Condition</p><p><b> type</b> : date</p><p><b> expression</b> : <code>Condition.abatement.as(dateTime)|Condition.abatement.as(Period)</code>
-			</p><p><b> xpath</b> : <code>f:Condition/f:abatementDateTime|f:Condition/f:abatementPeriod</code>
-			</p><p><b> xpathUsage</b> : normal</p><p><b> multipleOr</b> : True   (Conformance Expectation = MAY)</p><p><b> multipleAnd</b> : True  ( Conformance Expectation = SHOULD)</p><p><b> comparator</b> : <code>eq</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>ne</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>gt</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>ge</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>lt</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>le</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>sa</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>eb</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>ap</code> ( Conformance Expectation = MAY)</p></div>
+    </p>
+    <p><b>code</b> : <code>abatement-date</code></p>
+    <p><b>base</b> : Condition </p>
+    <p><b>type</b> : Date/DateTime</p>
+    <p><b>expression</b> : <code>Condition.abatement.as(dateTime)|Condition.abatement.as(Period)</code></p>
+
+    
+    <p><b>multipleOr</b> : true   (Conformance Expectation = MAY)</p>
+
+    <p><b>multipleAnd</b> : true  ( Conformance Expectation = SHOULD)</p>
+
+    
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Equals</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Not Equals</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Greater Than</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Greater or Equals</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Less Than</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Less of Equal</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Starts After</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Ends Before</code> ( Conformance Expectation = )</p>
+        
+            <p> forloop.index0= </p>
+            <p><b>comparator</b> : <code>Approximately</code> ( Conformance Expectation = )</p>
+        
+
+
+    
+
+    
+
+    
+</div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="5"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-abatement-date"/>
   <version value="0.1.0"/>
