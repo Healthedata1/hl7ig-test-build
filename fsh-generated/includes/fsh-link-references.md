@@ -2,11 +2,7 @@
 [USCoreAllergyIntolerance]: StructureDefinition-us-core-allergyintolerance.html
 [USCoreCarePlanProfile]: StructureDefinition-us-core-careplan.html
 [USCoreCareTeam]: StructureDefinition-us-core-careteam.html
-[UsCoreClientCapabilityStatement]: CapabilityStatement-us-core-client.html
-[UsCoreClientCapabilityStatement2]: CapabilityStatement-us-core-client2.html
 [USCorePediatricWeightForHeightObservationProfile]: StructureDefinition-pediatric-weight-for-height.html
-[UsCoreServerCapabilityStatement]: CapabilityStatement-us-core-server.html
-[UsCoreServerCapabilityStatement2]: CapabilityStatement-us-core-server2.html
 [USCoreAllergyintoleranceClinicalStatus]: SearchParameter-us-core-allergyintolerance-clinical-status.html
 [USCoreAllergyintolerancePatient]: SearchParameter-us-core-allergyintolerance-patient.html
 [USCoreCareplanCategory]: SearchParameter-us-core-careplan-category.html
@@ -26,4 +22,5 @@
 [USCoreConditionOnsetDate]: SearchParameter-us-core-condition-onset-date.html
 [USCoreConditionPatient]: SearchParameter-us-core-condition-patient.html
 [USCoreConditionRecordedDate]: SearchParameter-us-core-condition-recorded-date.html
+[USCorePractitionerrolePractitioner]: SearchParameter-us-core-practitionerrole-practitioner.html
 [USCoreRace]: SearchParameter-us-core-race.html
