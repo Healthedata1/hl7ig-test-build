@@ -18,7 +18,6 @@ The US Core Advance Directive Information (ADI) DocumentReference Profile inheri
 **Usages:**
 
 * Refer to this Profile: [US Core Observation ADI Documentation Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-adi-documentation.html) and [US Core PMO ServiceRequest Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-pmo-servicerequest.html)
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement](CapabilityStatement-us-core-client.md), [US Core Client CapabilityStatement2](CapabilityStatement-us-core-client2.md), [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md) and [US Core Server UsCoreServerCapabilityStatement2](CapabilityStatement-us-core-server2.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-adi-documentreference)
 

@@ -17,7 +17,7 @@ US Core Pediatric Weight for Height Observation Profile inherits from the US Cor
 
 **Usages:**
 
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement](CapabilityStatement-us-core-client.md), [US Core Client CapabilityStatement2](CapabilityStatement-us-core-client2.md), [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md), [US Core Server UsCoreServerCapabilityStatement2](CapabilityStatement-us-core-server2.md)...Show 2 more,[US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html)and[US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
+* CapabilityStatements using this Profile: [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
 * This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/pediatric-weight-for-height)

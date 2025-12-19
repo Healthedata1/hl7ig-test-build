@@ -23,58 +23,6 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
  
 It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SHOULD**use the standard FHIR SearchParameter. 
 
-**id** us-core-careplan-date
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date** 
-
-**name** : USCoreCareplanDate
-
-**derivedFrom** : http://hl7.org/fhir/SearchParameter/clinical-date
-
-**status** : active
-
-**date** : 11/17/2024
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `date` 
-
-**base** :CarePlan
-
-**type** : date
-
-**expression** : `CarePlan.period` 
-
-**xpath** : `f:AllergyIntolerance/f:recordedDate|f:CarePlan/f:period|f:CareTeam/f:period|f:ClinicalImpression/f:date|f:Composition/f:date|f:Consent/f:dateTime|f:DiagnosticReport/f:effectiveDateTime|f:DiagnosticReport/f:effectivePeriod|f:Encounter/f:period|f:EpisodeOfCare/f:period|f:FamilyMemberHistory/f:date|f:Flag/f:period|f:Immunization/f:occurrenceDateTime|f:Immunization/f:occurrenceString|f:List/f:date|f:Observation/f:effectiveDateTime|f:Observation/f:effectivePeriod|f:Observation/f:effectiveTiming|f:Observation/f:effectiveInstant|f:Procedure/f:performedDateTime|f:Procedure/f:performedPeriod|f:Procedure/f:performedString|f:Procedure/f:performedAge|f:Procedure/f:performedRange|f:RiskAssessment/f:occurrenceDateTime|f:SupplyRequest/f:authoredOn` 
-
-**xpathUsage** : normal
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = SHOULD)
-
-**comparator** : `eq` ( Conformance Expectation = MAY)
-
-**comparator** : `ne` ( Conformance Expectation = MAY)
-
-**comparator** : `gt` ( Conformance Expectation = SHALL)
-
-**comparator** : `ge` ( Conformance Expectation = SHALL)
-
-**comparator** : `lt` ( Conformance Expectation = SHALL)
-
-**comparator** : `le` ( Conformance Expectation = SHALL)
-
-**comparator** : `sa` ( Conformance Expectation = MAY)
-
-**comparator** : `eb` ( Conformance Expectation = MAY)
-
-**comparator** : `ap` ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -87,6 +35,18 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careplan-date",

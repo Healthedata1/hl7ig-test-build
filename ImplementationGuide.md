@@ -87,7 +87,7 @@ value: fsh-generated/resources
 * code: path-resource
 value: input/intro-notes
 * code: path-liquid
-value: input/images/liquid
+value: input/liquid
 * code: excludexml
 value: true
 * code: excludejson

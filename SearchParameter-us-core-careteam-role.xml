@@ -3,27 +3,50 @@
 <SearchParameter xmlns="http://hl7.org/fhir">
   <id value="us-core-careteam-role"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">    <!-- <h2>SearchParameter: USCoreCareTeamRole</h2>
-				<b> description</b> : <p>Returns CareTeam resources with a participant role matching the specified code.</p>
-
-			<br/> --><p><b> id</b> us-core-careteam-role</p><p><b> url</b> : <b> http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role</b>
-			</p><p><b> version</b> : 4.1.0</p><p><b> name</b> : USCoreCareTeamRole</p><p><b> status</b> : active</p><p><b> date</b> : 04/14/2022</p><p><b> publisher</b> : HL7 International - Cross-Group Projects</p><p><b> contact</b> : http://www.hl7.org/Special/committees/cgp</p>    <!-- <p>
-				<b> useContext</b> : </p> --><p><b> jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">
+     <!-- <h4>Custom liquid Version</h4> -->
+    <hr/>
+    <p><b>id</b> us-core-careteam-role</p>
+    <!-- <p><b>url</b> : <code><a href="SearchParameter-us-core-careteam-role.html">USCoreCareTeamRole</a>}</code></p>>
+    <p><b>name</b> : USCoreCareTeamRole</p> -->
+    
+    <p><b>status</b> : Active</p>
+    
+    <p><b>date</b> : 2022-04-14</p>
+     <!-- <p><b>publisher</b> : HL7 International / Cross-Group Projects</p>
+    <p><b>contact</b> : http://www.hl7.org/Special/committees/cgp</p>
+    <p><b>jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
            States of America (the)'})</span>
-			</p>    <!-- <p>
-		<b> purpose</b> : Need to search by identifier for various infrastructural cases - mainly retrieving packages,
-         and matching as part of a chain</p> --><p><b> code</b> : <code>role</code>
-			</p><p><b> base</b> :CareTeam</p><p><b> type</b> : token</p><p><b> expression</b> : <code>CareTeam.participant.role</code>
-			</p><p><b> xpath</b> : <code>f:CareTeam/f:participant/f:role/@value</code>
-			</p><p><b> xpathUsage</b> : normal</p><p><b> multipleOr</b> : True   (Conformance Expectation = MAY)</p><p><b> multipleAnd</b> : True  ( Conformance Expectation = MAY)</p></div>
+    </p> -->
+    <p><b>code</b> : &quot;role&quot;</p>
+    <p><b>base</b> : CareTeam </p>
+    <p><b>type</b> : Token</p>
+    <p><b>expression</b> : <code>CareTeam.participant.role</code></p>
+    
+    <p><b>multipleOr</b> : true  (Conformance Expectation = MAY)</p>
+    <p><b>multipleAnd</b> : true (Conformance Expectation = MAY)</p>
+    
+
+    
+
+    
+</div>
   </text>
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="5"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+    <valueCode value="trial-use">
+      <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom">
+        <valueCanonical value="http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"/>
+      </extension>
+    </valueCode>
   </extension>
   <url value="http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role"/>
   <version value="0.1.0"/>
   <name value="USCoreCareTeamRole"/>
   <status value="active"/>
+  <experimental value="false"/>
   <date value="2022-04-14"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>

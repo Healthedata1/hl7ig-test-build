@@ -45,8 +45,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"7.15"}
-    h3,h4,h5,h6{--heading-prefix:"7.15"}</style>
+    <style type="text/css">h2{--heading-prefix:"7.11"}
+    h3,h4,h5,h6{--heading-prefix:"7.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -211,30 +211,69 @@
 &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter">SearchParameter</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
   &lt;<a href="http://hl7.org/fhir/R4/resource.html#SearchParameter.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;us-core-condition-asserted-date&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">text</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
-    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;    &lt;!-- &lt;h2&gt;SearchParameter: USCoreConditionAssertedDate&lt;/h2&gt;
-				&lt;b&gt; description&lt;/b&gt; : &lt;p&gt;Returns conditions with an &lt;a href=&quot;http://hl7.org/fhir/StructureDefinition/condition-assertedDate&quot;&gt;assertedDate extension&lt;/a&gt; matching the specified date (dateTime).&lt;/p&gt;
-
-			&lt;br/&gt; --&gt;&lt;p&gt;&lt;b&gt; id&lt;/b&gt; us-core-condition-asserted-date&lt;/p&gt;&lt;p&gt;&lt;b&gt; url&lt;/b&gt; : &lt;b&gt; http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date&lt;/b&gt;
-			&lt;/p&gt;&lt;p&gt;&lt;b&gt; name&lt;/b&gt; : USCoreConditionAssertedDate&lt;/p&gt;&lt;p&gt;&lt;b&gt; status&lt;/b&gt; : active&lt;/p&gt;&lt;p&gt;&lt;b&gt; date&lt;/b&gt; : 04/13/2023&lt;/p&gt;&lt;p&gt;&lt;b&gt; publisher&lt;/b&gt; : HL7 International - Cross-Group Projects&lt;/p&gt;&lt;p&gt;&lt;b&gt; contact&lt;/b&gt; : http://www.hl7.org/Special/committees/cgp&lt;/p&gt;    &lt;!-- &lt;p&gt;
-				&lt;b&gt; useContext&lt;/b&gt; : &lt;/p&gt; --&gt;&lt;p&gt;&lt;b&gt; jurisdiction&lt;/b&gt; : United States of America (the) &lt;span&gt; (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;extensions&quot;/&gt;
+    &lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+     &lt;!-- &lt;h4&gt;Custom liquid Version&lt;/h4&gt; --&gt;
+    &lt;hr/&gt;
+    &lt;p&gt;&lt;b&gt;id&lt;/b&gt; us-core-condition-asserted-date&lt;/p&gt;
+    &lt;!-- &lt;p&gt;&lt;b&gt;url&lt;/b&gt; : &lt;code&gt;&lt;a href=&quot;SearchParameter-us-core-condition-asserted-date.html&quot;&gt;USCoreConditionAssertedDate&lt;/a&gt;}&lt;/code&gt;&lt;/p&gt;&gt;
+    &lt;p&gt;&lt;b&gt;name&lt;/b&gt; : USCoreConditionAssertedDate&lt;/p&gt; --&gt;
+    
+    &lt;p&gt;&lt;b&gt;status&lt;/b&gt; : Active&lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;date&lt;/b&gt; : 2023-04-13&lt;/p&gt;
+     &lt;!-- &lt;p&gt;&lt;b&gt;publisher&lt;/b&gt; : HL7 International / Cross-Group Projects&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;contact&lt;/b&gt; : http://www.hl7.org/Special/committees/cgp&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;jurisdiction&lt;/b&gt; : United States of America (the) &lt;span&gt; (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United
            States of America (the)'})&lt;/span&gt;
-			&lt;/p&gt;    &lt;!-- &lt;p&gt;
-		&lt;b&gt; purpose&lt;/b&gt; : Need to search by identifier for various infrastructural cases - mainly retrieving packages,
-         and matching as part of a chain&lt;/p&gt; --&gt;&lt;p&gt;&lt;b&gt; code&lt;/b&gt; : &lt;code&gt;asserted-date&lt;/code&gt;
-			&lt;/p&gt;&lt;p&gt;&lt;b&gt; base&lt;/b&gt; :Condition&lt;/p&gt;&lt;p&gt;&lt;b&gt; type&lt;/b&gt; : date&lt;/p&gt;&lt;p&gt;&lt;b&gt; expression&lt;/b&gt; : &lt;code&gt;Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value&lt;/code&gt;
-			&lt;/p&gt;&lt;p&gt;&lt;b&gt; xpath&lt;/b&gt; : &lt;code&gt;f:Condition/f:extension[@url='http://hl7.org/fhir/StructureDefinition/condition-assertedDate']/f:valueDateTime/@value&lt;/code&gt;
-			&lt;/p&gt;&lt;p&gt;&lt;b&gt; xpathUsage&lt;/b&gt; : normal&lt;/p&gt;&lt;p&gt;&lt;b&gt; multipleOr&lt;/b&gt; : True   (Conformance Expectation = MAY)&lt;/p&gt;&lt;p&gt;&lt;b&gt; multipleAnd&lt;/b&gt; : True  ( Conformance Expectation = SHOULD)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;eq&lt;/code&gt; ( Conformance Expectation = MAY)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;ne&lt;/code&gt; ( Conformance Expectation = MAY)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;gt&lt;/code&gt; ( Conformance Expectation = SHALL)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;ge&lt;/code&gt; ( Conformance Expectation = SHALL)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;lt&lt;/code&gt; ( Conformance Expectation = SHALL)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;le&lt;/code&gt; ( Conformance Expectation = SHALL)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;sa&lt;/code&gt; ( Conformance Expectation = MAY)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;eb&lt;/code&gt; ( Conformance Expectation = MAY)&lt;/p&gt;&lt;p&gt;&lt;b&gt; comparator&lt;/b&gt; : &lt;code&gt;ap&lt;/code&gt; ( Conformance Expectation = MAY)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+    &lt;/p&gt; --&gt;
+    &lt;p&gt;&lt;b&gt;code&lt;/b&gt; : &amp;quot;asserted-date&amp;quot;&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;base&lt;/b&gt; : Condition &lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;type&lt;/b&gt; : Date/DateTime&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;expression&lt;/b&gt; : &lt;code&gt;Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value&lt;/code&gt;&lt;/p&gt;
+    
+    &lt;p&gt;&lt;b&gt;multipleOr&lt;/b&gt; : true  (Conformance Expectation = MAY)&lt;/p&gt;
+    &lt;p&gt;&lt;b&gt;multipleAnd&lt;/b&gt; : true (Conformance Expectation = SHOULD)&lt;/p&gt;
+    
+        &lt;p&gt;&lt;b&gt;comparator codes&lt;/b&gt; :&lt;/p&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&amp;quot;eq&amp;quot; &lt;i&gt;Equals&lt;/i&gt; (Conformance Expectation = MAY)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;ne&amp;quot; &lt;i&gt;Not Equals&lt;/i&gt; (Conformance Expectation = MAY)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;gt&amp;quot; &lt;i&gt;Greater Than&lt;/i&gt; (Conformance Expectation = SHALL)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;ge&amp;quot; &lt;i&gt;Greater or Equals&lt;/i&gt; (Conformance Expectation = SHALL)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;lt&amp;quot; &lt;i&gt;Less Than&lt;/i&gt; (Conformance Expectation = SHALL)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;le&amp;quot; &lt;i&gt;Less of Equal&lt;/i&gt; (Conformance Expectation = SHALL)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;sa&amp;quot; &lt;i&gt;Starts After&lt;/i&gt; (Conformance Expectation = MAY)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;eb&amp;quot; &lt;i&gt;Ends Before&lt;/i&gt; (Conformance Expectation = MAY)&lt;/li&gt;
+                &lt;li&gt;&amp;quot;ap&amp;quot; &lt;i&gt;Approximately&lt;/i&gt; (Conformance Expectation = MAY)&lt;/li&gt;
+            &lt;/ul&gt;
+    
+
+    
+
+    
+&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueInteger</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;5&quot;/&gt;
+  &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status&quot;&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;trial-use&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">extension</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom&quot;&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCanonical</a>
+                        <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox&quot;/&gt;
+      &lt;/<a href="http://hl7.org/fhir/R4/datatypes.html#Element#code.extension">extension</a>&gt;
+    &lt;/<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueCode</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#SearchParameter.extension">extension</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;USCoreConditionAssertedDate&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2023-04-13&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HL7 International / Cross-Group Projects&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/searchparameter.html#SearchParameter.contact">contact</a>&gt;
@@ -352,7 +391,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 03:11+0000">2025-12-19</span>
+          IG &#169; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Dec 19, 2025 20:10+0000">2025-12-19</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

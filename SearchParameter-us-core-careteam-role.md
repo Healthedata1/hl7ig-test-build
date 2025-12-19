@@ -15,40 +15,6 @@
  
 Returns CareTeam resources with a participant role matching the specified code. 
 
-**id** us-core-careteam-role
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role** 
-
-**version** : 4.1.0
-
-**name** : USCoreCareTeamRole
-
-**status** : active
-
-**date** : 04/14/2022
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `role` 
-
-**base** :CareTeam
-
-**type** : token
-
-**expression** : `CareTeam.participant.role` 
-
-**xpath** : `f:CareTeam/f:participant/f:role/@value` 
-
-**xpathUsage** : normal
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -61,12 +27,25 @@ Returns CareTeam resources with a participant role matching the specified code.
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-careteam-role",
   "version" : "0.1.0",
   "name" : "USCoreCareTeamRole",
   "status" : "active",
+  "experimental" : false,
   "date" : "2022-04-14",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [

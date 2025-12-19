@@ -23,40 +23,6 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
  
 It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SHOULD**use the standard FHIR SearchParameter. 
 
-**id** us-core-condition-code
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code** 
-
-**name** : USCoreConditionCode
-
-**derivedFrom** : http://hl7.org/fhir/SearchParameter/clinical-code
-
-**status** : active
-
-**date** : 11/17/2024
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `code` 
-
-**base** :Condition
-
-**type** : token
-
-**expression** : `Condition.code` 
-
-**xpath** : `f:AllergyIntolerance/f:code|f:AllergyIntolerance/f:reaction/f:substance|f:Condition/f:code|f:DeviceRequest/f:codeCodeableConcept|f:DiagnosticReport/f:code|f:FamilyMemberHistory/f:condition/f:code|f:List/f:code|f:Medication/f:code|f:MedicationAdministration/f:medicationCodeableConcept|f:MedicationDispense/f:medicationCodeableConcept|f:MedicationRequest/f:medicationCodeableConcept|f:MedicationStatement/f:medicationCodeableConcept|f:Observation/f:code|f:Procedure/f:code|f:ServiceRequest/f:code` 
-
-**xpathUsage** : normal
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -69,6 +35,18 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-code",

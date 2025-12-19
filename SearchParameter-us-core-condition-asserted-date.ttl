@@ -10,8 +10,8 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "us-core-condition-asserted-date"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">    <!-- <h2>SearchParameter: USCoreConditionAssertedDate</h2>\n				<b> description</b> : <p>Returns conditions with an <a href=\"http://hl7.org/fhir/StructureDefinition/condition-assertedDate\">assertedDate extension</a> matching the specified date (dateTime).</p>\n\n			<br/> --><p><b> id</b> us-core-condition-asserted-date</p><p><b> url</b> : <b> http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date</b>\n			</p><p><b> name</b> : USCoreConditionAssertedDate</p><p><b> status</b> : active</p><p><b> date</b> : 04/13/2023</p><p><b> publisher</b> : HL7 International - Cross-Group Projects</p><p><b> contact</b> : http://www.hl7.org/Special/committees/cgp</p>    <!-- <p>\n				<b> useContext</b> : </p> --><p><b> jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United\n           States of America (the)'})</span>\n			</p>    <!-- <p>\n		<b> purpose</b> : Need to search by identifier for various infrastructural cases - mainly retrieving packages,\n         and matching as part of a chain</p> --><p><b> code</b> : <code>asserted-date</code>\n			</p><p><b> base</b> :Condition</p><p><b> type</b> : date</p><p><b> expression</b> : <code>Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value</code>\n			</p><p><b> xpath</b> : <code>f:Condition/f:extension[@url='http://hl7.org/fhir/StructureDefinition/condition-assertedDate']/f:valueDateTime/@value</code>\n			</p><p><b> xpathUsage</b> : normal</p><p><b> multipleOr</b> : True   (Conformance Expectation = MAY)</p><p><b> multipleAnd</b> : True  ( Conformance Expectation = SHOULD)</p><p><b> comparator</b> : <code>eq</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>ne</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>gt</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>ge</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>lt</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>le</code> ( Conformance Expectation = SHALL)</p><p><b> comparator</b> : <code>sa</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>eb</code> ( Conformance Expectation = MAY)</p><p><b> comparator</b> : <code>ap</code> ( Conformance Expectation = MAY)</p></div>"^^rdf:XMLLiteral ]
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n     <!-- <h4>Custom liquid Version</h4> -->\n    <hr/>\n    <p><b>id</b> us-core-condition-asserted-date</p>\n    <!-- <p><b>url</b> : <code><a href=\"SearchParameter-us-core-condition-asserted-date.html\">USCoreConditionAssertedDate</a>}</code></p>>\n    <p><b>name</b> : USCoreConditionAssertedDate</p> -->\n    \n    <p><b>status</b> : Active</p>\n    \n    <p><b>date</b> : 2023-04-13</p>\n     <!-- <p><b>publisher</b> : HL7 International / Cross-Group Projects</p>\n    <p><b>contact</b> : http://www.hl7.org/Special/committees/cgp</p>\n    <p><b>jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United\n           States of America (the)'})</span>\n    </p> -->\n    <p><b>code</b> : \"asserted-date\"</p>\n    <p><b>base</b> : Condition </p>\n    <p><b>type</b> : Date/DateTime</p>\n    <p><b>expression</b> : <code>Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value</code></p>\n    \n    <p><b>multipleOr</b> : true  (Conformance Expectation = MAY)</p>\n    <p><b>multipleAnd</b> : true (Conformance Expectation = SHOULD)</p>\n    \n        <p><b>comparator codes</b> :</p>\n            <ul>\n                <li>\"eq\" <i>Equals</i> (Conformance Expectation = MAY)</li>\n                <li>\"ne\" <i>Not Equals</i> (Conformance Expectation = MAY)</li>\n                <li>\"gt\" <i>Greater Than</i> (Conformance Expectation = SHALL)</li>\n                <li>\"ge\" <i>Greater or Equals</i> (Conformance Expectation = SHALL)</li>\n                <li>\"lt\" <i>Less Than</i> (Conformance Expectation = SHALL)</li>\n                <li>\"le\" <i>Less of Equal</i> (Conformance Expectation = SHALL)</li>\n                <li>\"sa\" <i>Starts After</i> (Conformance Expectation = MAY)</li>\n                <li>\"eb\" <i>Ends Before</i> (Conformance Expectation = MAY)</li>\n                <li>\"ap\" <i>Approximately</i> (Conformance Expectation = MAY)</li>\n            </ul>\n    \n\n    \n\n    \n</div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:extension ( [
      fhir:url [
@@ -22,6 +22,26 @@
        a fhir:Integer ;
        fhir:v 5
      ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox>
+         ]
+       ] )
+     ]
   ] ) ; # 
   fhir:url [
      fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date"^^xsd:anyURI ;
@@ -30,6 +50,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "USCoreConditionAssertedDate"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
   fhir:date [ fhir:v "2023-04-13"^^xsd:date] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [

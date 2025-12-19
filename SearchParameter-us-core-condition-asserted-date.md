@@ -15,56 +15,6 @@
  
 Returns conditions with an[assertedDate extension](http://hl7.org/fhir/StructureDefinition/condition-assertedDate)matching the specified date (dateTime). 
 
-**id** us-core-condition-asserted-date
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date** 
-
-**name** : USCoreConditionAssertedDate
-
-**status** : active
-
-**date** : 04/13/2023
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `asserted-date` 
-
-**base** :Condition
-
-**type** : date
-
-**expression** : `Condition.extension.where(url = 'http://hl7.org/fhir/StructureDefinition/condition-assertedDate').value` 
-
-**xpath** : `f:Condition/f:extension[@url='http://hl7.org/fhir/StructureDefinition/condition-assertedDate']/f:valueDateTime/@value` 
-
-**xpathUsage** : normal
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = SHOULD)
-
-**comparator** : `eq` ( Conformance Expectation = MAY)
-
-**comparator** : `ne` ( Conformance Expectation = MAY)
-
-**comparator** : `gt` ( Conformance Expectation = SHALL)
-
-**comparator** : `ge` ( Conformance Expectation = SHALL)
-
-**comparator** : `lt` ( Conformance Expectation = SHALL)
-
-**comparator** : `le` ( Conformance Expectation = SHALL)
-
-**comparator** : `sa` ( Conformance Expectation = MAY)
-
-**comparator** : `eb` ( Conformance Expectation = MAY)
-
-**comparator** : `ap` ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -77,12 +27,25 @@ Returns conditions with an[assertedDate extension](http://hl7.org/fhir/Structure
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-asserted-date",
   "version" : "0.1.0",
   "name" : "USCoreConditionAssertedDate",
   "status" : "active",
+  "experimental" : false,
   "date" : "2023-04-13",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [

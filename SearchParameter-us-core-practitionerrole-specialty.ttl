@@ -1,0 +1,113 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-practitionerrole-specialty> a fhir:SearchParameter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "us-core-practitionerrole-specialty"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n     <!-- <h4>Custom liquid Version</h4> -->\n    <hr/>\n    <p><b>id</b> us-core-practitionerrole-specialty</p>\n    <!-- <p><b>url</b> : <code><a href=\"SearchParameter-us-core-practitionerrole-specialty.html\">USCorePractitionerroleSpecialty</a>}</code></p>>\n    <p><b>name</b> : USCorePractitionerroleSpecialty</p> -->\n    \n        <p><b>derivedFrom</b> : <code> http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty</code></p>     <!-- added leading space to prevent build from trying to create link -->\n    \n    <p><b>status</b> : Active</p>\n    \n    <p><b>date</b> : 2024-11-17</p>\n     <!-- <p><b>publisher</b> : HL7 International / Cross-Group Projects</p>\n    <p><b>contact</b> : http://www.hl7.org/Special/committees/cgp</p>\n    <p><b>jurisdiction</b> : United States of America (the) <span> (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United\n           States of America (the)'})</span>\n    </p> -->\n    <p><b>code</b> : \"specialty\"</p>\n    <p><b>base</b> : PractitionerRole </p>\n    <p><b>type</b> : Token</p>\n    <p><b>expression</b> : <code>PractitionerRole.specialty</code></p>\n    \n    <p><b>multipleOr</b> : true  (Conformance Expectation = MAY)</p>\n    <p><b>multipleAnd</b> : true (Conformance Expectation = MAY)</p>\n    \n\n    \n\n    \n</div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm>
+     ] ;
+     fhir:value [
+       a fhir:Integer ;
+       fhir:v 5
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "trial-use" ;
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom>
+         ] ;
+         fhir:value [
+           a fhir:Canonical ;
+           fhir:v "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox>
+         ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/us/core/SearchParameter/us-core-practitionerrole-specialty>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "USCorePractitionerroleSpecialty"] ; # 
+  fhir:derivedFrom [
+     fhir:v "http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/SearchParameter/PractitionerRole-specialty>
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2024-11-17"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://www.hl7.org/Special/committees/cgp" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "cgp@lists.HL7.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**The practitioner has this specialty at an organization**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.\n"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ]
+     ] )
+  ] ) ; # 
+  fhir:code [ fhir:v "specialty"] ; # 
+  fhir:base ( [ fhir:v "PractitionerRole"] ) ; # 
+  fhir:type [ fhir:v "token"] ; # 
+  fhir:expression [ fhir:v "PractitionerRole.specialty"] ; # 
+  fhir:xpathUsage [ fhir:v "normal"] ; # 
+  fhir:multipleOr [
+     fhir:v true ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] )
+  ] ; # 
+  fhir:multipleAnd [
+     fhir:v true ;
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation>
+       ] ;
+       fhir:value [
+         a fhir:Code ;
+         fhir:v "MAY"
+       ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

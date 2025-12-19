@@ -23,42 +23,6 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
  
 It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SHOULD**use the standard FHIR SearchParameter. 
 
-**id** us-core-condition-patient
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient** 
-
-**name** : USCoreConditionPatient
-
-**derivedFrom** : http://hl7.org/fhir/SearchParameter/clinical-patient
-
-**status** : active
-
-**date** : 11/17/2024
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `patient` 
-
-**base** :Condition
-
-**type** : reference
-
-**expression** : `Condition.subject.where(resolve() is Patient)` 
-
-**xpath** : `f:AllergyIntolerance/f:patient|f:CarePlan/f:subject|f:CareTeam/f:subject|f:ClinicalImpression/f:subject|f:Composition/f:subject|f:Condition/f:subject|f:Consent/f:patient|f:DetectedIssue/f:patient|f:DeviceRequest/f:subject|f:DeviceUseStatement/f:subject|f:DiagnosticReport/f:subject|f:DocumentManifest/f:subject|f:DocumentReference/f:subject|f:Encounter/f:subject|f:EpisodeOfCare/f:patient|f:FamilyMemberHistory/f:patient|f:Flag/f:subject|f:Goal/f:subject|f:ImagingStudy/f:subject|f:Immunization/f:patient|f:List/f:subject|f:MedicationAdministration/f:subject|f:MedicationDispense/f:subject|f:MedicationRequest/f:subject|f:MedicationStatement/f:subject|f:NutritionOrder/f:patient|f:Observation/f:subject|f:Procedure/f:subject|f:RiskAssessment/f:subject|f:ServiceRequest/f:subject|f:SupplyDelivery/f:patient|f:VisionPrescription/f:patient` 
-
-**xpathUsage** : normal
-
-**target** Patient
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -71,6 +35,18 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-patient",

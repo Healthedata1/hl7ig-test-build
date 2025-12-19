@@ -23,42 +23,6 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
  
 It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SHOULD**use the standard FHIR SearchParameter. 
 
-**id** us-core-condition-encounter
-
-**url** : **http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter** 
-
-**name** : USCoreConditionEncounter
-
-**derivedFrom** : http://hl7.org/fhir/SearchParameter/Condition-encounter
-
-**status** : active
-
-**date** : 11/17/2024
-
-**publisher** : HL7 International - Cross-Group Projects
-
-**contact** : http://www.hl7.org/Special/committees/cgp
-
-**jurisdiction** : United States of America (the) (Details : {urn:iso:std:iso:3166 code 'US' = 'United States of America', given as 'United States of America (the)'}) 
-
-**code** : `encounter` 
-
-**base** :Condition
-
-**type** : reference
-
-**expression** : `Condition.encounter` 
-
-**xpath** : `f:Condition/f:encounter` 
-
-**xpathUsage** : normal
-
-**target** Encounter
-
-**multipleOr** : True (Conformance Expectation = MAY)
-
-**multipleAnd** : True ( Conformance Expectation = MAY)
-
 
 
 ## Resource Content
@@ -71,6 +35,18 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "trial-use",
+      "_valueCode" : {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-conformance-derivedFrom",
+            "valueCanonical" : "http://hl7.org/fhir/us/healthedata1-sandbox/ImplementationGuide/hl7.fhir.us.healthedata1-sandbox"
+          }
+        ]
+      }
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-condition-encounter",
