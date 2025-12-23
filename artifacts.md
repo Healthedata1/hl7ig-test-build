@@ -7,6 +7,15 @@
 
 This page provides a list of the FHIR artifacts defined as part of this implementation guide.
 
+### Behavior: Capability Statements 
+
+The following artifacts define the specific capabilities that different types of systems are expected to have in order to comply with this implementation guide. Systems conforming to this implementation guide are expected to declare conformance to one or more of the following capability statements.
+
+| | |
+| :--- | :--- |
+| [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md) | This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the[Conformance Requirements for Server](CapabilityStatement-us-core-server.md). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements. |
+| [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md) | This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP[U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf). |
+
 ### Behavior: Search Parameters 
 
 These define the properties by which a RESTful server can be searched. They can also be used for sorting and including related resources.

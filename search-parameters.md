@@ -75,9 +75,20 @@ They **SHALL NOT** be interpreted as search parameters for search. Servers and C
 
 #### DocumentReference
 
-      ⸺
+* [US Core Documentreference Category]
+* [US Core Documentreference Date]
+* [US Core Documentreference Id]
+* [US Core Documentreference Patient]
+* [US Core Documentreference Period]
+* [US Core Documentreference Status]
+* [US Core Documentreference Type]
 
 #### Observation
 
-      ⸺
+* [US Core Observation Category]
+* [US Core Observation Code]
+* [US Core Observation Date]
+* [US Core Observation Lastupdated]
+* [US Core Observation Patient]
+* [US Core Observation Status]
 

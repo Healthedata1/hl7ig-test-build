@@ -20,6 +20,11 @@
 * [US Core CarePlan Profile](StructureDefinition-us-core-careplan.md)
 * [US Core CareTeam Profile](StructureDefinition-us-core-careteam.md)
 
+### CapabilityStatements
+
+* [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md)
+* [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md)
+
 ### ImplementationGuides
 
 * [Health eData 1 Sandbox](index.md)

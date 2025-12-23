@@ -1,5 +1,19 @@
 [
   {
+    "id" : "us-core-client-liquid",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-client-liquid",
+    "version" : "0.1.0",
+    "name" : "UsCoreClientCapabilityStatementLiquid"
+  },
+  {
+    "id" : "us-core-server-liquid",
+    "type" : "CapabilityStatement",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server-liquid",
+    "version" : "0.1.0",
+    "name" : "UsCoreServerCapabilityStatementLiquid"
+  },
+  {
     "id" : "us-core-allergyintolerance-clinical-status",
     "type" : "SearchParameter",
     "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-allergyintolerance-clinical-status",
