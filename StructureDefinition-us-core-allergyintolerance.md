@@ -51,7 +51,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 1. **SHALL**support searching for all allergies for a patient:`GET [base]/AllergyIntolerance?patient=[Type]/[id]`Example:
 1. GET [base]/AllergyIntolerance?patient=1137192
 **Implementation Notes**: Fetches a bundle of all AllergyIntolerance resources for the specified patient ([how to search by reference](foo.md))
-1. **SHALL**foo:`GET [base]/AllergyIntolerance?category=[system]|[search_code]`Example:
+1. **SHALL**foo:`GET [base]/AllergyIntolerance?category={system}|[search_code]`Example:
 1. GET [base]/FOO
 **Implementation Notes**: Fetches a bundle of FOO ([how to search by token])
 
@@ -59,10 +59,10 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 The following search parameters and search parameter combinations **SHOULD** be supported
 
-1. **SHOULD**bar:`GET [base]/AllergyIntolerance?clinical-status=[system]|[search_code]`Example:
+1. **SHOULD**bar:`GET [base]/AllergyIntolerance?clinical-status={system}|[search_code]`Example:
 1. GET [base]/BAR
 **Implementation Notes**: Fetches a bundle of BAR ([how to search by token])
-1. **SHOULD**support searching using the combination of "patient" and "clinical-status" search parameters:`GET [base]/AllergyIntolerance?patient=[Type]/[id]&clinical-status=[system]|[search_code]`Example:
+1. **SHOULD**support searching using the combination of`[patient]`and`[clinical-status]`search parameters:`GET [base]/AllergyIntolerance?patient=[Type]/[id]&clinical-status={system}|[search_code]`Example:
 1. 
 
 | | |

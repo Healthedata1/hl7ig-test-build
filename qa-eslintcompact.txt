@@ -917,6 +917,8 @@ Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/St
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-screening-assessment.html' for "US Core Observation Screening Assessment Profile" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-simple-observation.html' for "US Core Simple Observation Profile" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-treatment-intervention-preference.html' for "US Core Treatment Intervention Preference Profile" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'foo.html' for "how to search by reference" cannot be resolved (NOTFOUND)
+Generic: line 0, col 0, Error - The link 'foo.html' for "how to search by reference" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Info - The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause (BUSINESSRULE)
 Generic: line 0, col 0, Error - The link 'CapabilityStatement-us-core-server.html' for "Conformance Requirements for Server" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved (NOTFOUND)

@@ -4,7 +4,7 @@ HealthEData_1Sandbox : Validation Results
 err = 1084, warn = 32, info = 164
 $--
 Generated $--. FHIR version $-- for hl7.fhir.us.healthedata1-sandbox#$-- (canonical = http://hl7.org/fhir/us/healthedata1-sandbox)
- Build Errors : 912 / 1 / 11
+ Build Errors : 914 / 1 / 11
  /home/runner/work/hl7ig-test-build/hl7ig-test-build/fsh-generated/resources/ImplementationGuide-hl7.fhir.us.healthedata1-sandbox : 3 / 7 / 2
  /home/runner/work/hl7ig-test-build/hl7ig-test-build/input/examples/allergyintolerance-example : 0 / 1 / 1
  /home/runner/work/hl7ig-test-build/hl7ig-test-build/input/resources/CapabilityStatement-us-core-client-liquid : 514 / 6 / 72
@@ -936,6 +936,8 @@ ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/
 ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/ul/li/span/a at Line 269, column 1599: The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-screening-assessment.html' for "US Core Observation Screening Assessment Profile" cannot be resolved
 ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/ul/li/span/a at Line 269, column 1765: The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-simple-observation.html' for "US Core Simple Observation Profile" cannot be resolved
 ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/ul/li/span/a at Line 269, column 1903: The link 'http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-treatment-intervention-preference.html' for "US Core Treatment Intervention Preference Profile" cannot be resolved
+ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/div/ol/li/p/a at Line 1923, column 156: The link 'foo.html' for "how to search by reference" cannot be resolved
+ERROR: StructureDefinition-us-core-careteam.html#/html/body/div/div/div/div/div/div/ol/li/p/a at Line 1963, column 131: The link 'foo.html' for "how to search by reference" cannot be resolved
 INFORMATION: artifacts.html: The html source contains the word 'SHALL' but it is not in a text phrase marked as a conformance clause
 ERROR: artifacts.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/p/a at Line 194, column 308: The link 'CapabilityStatement-us-core-server.html' for "Conformance Requirements for Server" cannot be resolved
 ERROR: changes.html#/html/body/div/div/div/div/div/ul/li/a at Line 202, column 13: The link 'http://hl7.org/fhir/us/core/2022Jan' for "http://hl7.org/fhir/us/core/2022Jan" cannot be resolved

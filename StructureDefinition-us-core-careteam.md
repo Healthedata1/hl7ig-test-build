@@ -30,6 +30,51 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-us-core-careteam.csv), [Excel](StructureDefinition-us-core-careteam.xlsx), [Schematron](StructureDefinition-us-core-careteam.sch) 
 
+### Notes:
+
+-------
+
+**LIQUID SCRIPT**
+
+establish the page context and get type
+
+page.path = StructureDefinition-us-core-careteam.html
+
+type = CareTeam
+
+then run through the csv file for all the data
+
+#### Mandatory Search Parameters:
+
+The following search parameters and search parameter combinations **SHALL** be supported:
+
+1. **SHALL**support searching using the combination of`[patient]`and`[status]`search parameters:
+* **SHOULD** support these `_include` parameters: `CareTeam:participant:PractitionerRole`, `CareTeam:participant:Practitioner`, `CareTeam:participant:Patient`, `CareTeam:participant:RelatedPerson`
+* **SHOULD** support **OR** search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
+`GET [base]/CareTeam?patient=[Type]/[id]&status={system}|[search_code]{,{system|}[code],...}`Example:
+1. GET [base]/CareTeam?patient=1137192&status=active
+1. GET [base]/CareTeam?patient=1137192&status=active&_include=CareTeam:participant:RelatedPerson&_include=CareTeam:participant:Patient&_include=CareTeam:participant:Practitioner&_include=CareTeam:participant:PractitionerRole
+**Implementation Notes**: Fetches a bundle of all CareTeam resources for the specified patient and status =`active`and may include CareTeam Patient, RelatedPerson and Practitioner and PractitionerRole participants.
+To get Practitioner name and identifier using PractitionerRole:
+1) Search for the careteam PractitionerRole: GET [base]/CareTeam?patient=[id]&status=active&_include=CareTeam:participant:PractitionerRole
+2) using the FHIR _id from the PractitionerRole.practitioner element resource, fetch the Practitioner resources using GET [base]/Practitioner?_id=[id] ([how to search by reference](foo.md)and ([how to search by token])
+
+#### Optional Search Parameters:
+
+The following search parameters and search parameter combinations **SHOULD** be supported
+
+1. **SHOULD**support searching a careteam by participant role:
+* **SHOULD** support **OR** search on `role` (e.g.`role={system|}[code],{system|}[code],...`)
+`GET [base]/CareTeam?role={system}|[search_code]{,{system|}[code],...}`Example:
+1. GET [base]/CareTeam?role=http://snomed.info/sct|17561000
+**Implementation Notes**: ([how to search by token])
+1. **SHOULD**support searching using the combination of`[patient]`and`[role]`search parameters:
+* **SHOULD** support these `_include` parameters: `CareTeam:participant:PractitionerRole`, `CareTeam:participant:Practitioner`, `CareTeam:participant:Patient`, `CareTeam:participant:RelatedPerson`
+* **SHOULD** support **OR** search on `role` (e.g.`role={system|}[code],{system|}[code],...`)
+`GET [base]/CareTeam?patient=[Type]/[id]&role={system}|[search_code]{,{system|}[code],...}`Example:
+1. GET [base]/CareTeam?patient=1137192&role=http://snomed.info/sct|17561000
+**Implementation Notes**: Fetches a bundle of all CareTeam resources for the specified patient and participant role ([how to search by reference](foo.md)and ([how to search by token])
+
 
 
 ## Resource Content
