@@ -105,6 +105,7 @@ parameters:
 #- code: path-liquid #yes
   #  value: #path #A relative path that contains liquid templates for generating narrative
   path-liquid: input/liquid
+  path-data: input/examples # A relative path in which data files can be found (will go in _data for Jekyll).
   excludexml: true
   excludejson: false
   excludettl: true

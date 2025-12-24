@@ -4,123 +4,18 @@
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
-<artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
+<artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
 <artifact id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" name="US Core AllergyIntolerance Profile"/>
 <artifact id="StructureDefinition/us-core-careplan" key="StructureDefinition-us-core-careplan" name="US Core CarePlan Profile"/>
 <artifact id="StructureDefinition/us-core-careteam" key="StructureDefinition-us-core-careteam" name="US Core CareTeam Profile"/>
 <artifact id="CapabilityStatement/us-core-client-liquid" key="CapabilityStatement-us-core-client-liquid" name="US Core Client CapabilityStatement Liquid Rendered"/>
-<artifact id="StructureDefinition/pediatric-weight-for-height" key="StructureDefinition-pediatric-weight-for-height" name="US Core Pediatric Weight for Height Observation Profile"/>
 <artifact id="CapabilityStatement/us-core-server-liquid" key="CapabilityStatement-us-core-server-liquid" name="US Core Server CapabilityStatement Liquid Rendered"/>
 <artifact id="SearchParameter/us-core-allergyintolerance-clinical-status" key="SearchParameter-us-core-allergyintolerance-clinical-status" name="USCoreAllergyintoleranceClinicalStatus"/>
 <artifact id="SearchParameter/us-core-allergyintolerance-patient" key="SearchParameter-us-core-allergyintolerance-patient" name="USCoreAllergyintolerancePatient"/>
-<artifact id="SearchParameter/us-core-careteam-role" key="SearchParameter-us-core-careteam-role" name="USCoreCareTeamRole"/>
 <artifact id="SearchParameter/us-core-careplan-category" key="SearchParameter-us-core-careplan-category" name="USCoreCareplanCategory"/>
 <artifact id="SearchParameter/us-core-careplan-date" key="SearchParameter-us-core-careplan-date" name="USCoreCareplanDate"/>
 <artifact id="SearchParameter/us-core-careplan-patient" key="SearchParameter-us-core-careplan-patient" name="USCoreCareplanPatient"/>
 <artifact id="SearchParameter/us-core-careplan-status" key="SearchParameter-us-core-careplan-status" name="USCoreCareplanStatus"/>
-<artifact id="SearchParameter/us-core-careteam-patient" key="SearchParameter-us-core-careteam-patient" name="USCoreCareteamPatient"/>
-<artifact id="SearchParameter/us-core-careteam-status" key="SearchParameter-us-core-careteam-status" name="USCoreCareteamStatus"/>
-<artifact id="SearchParameter/us-core-condition-abatement-date" key="SearchParameter-us-core-condition-abatement-date" name="USCoreConditionAbatementDate"/>
-<artifact id="SearchParameter/us-core-condition-asserted-date" key="SearchParameter-us-core-condition-asserted-date" name="USCoreConditionAssertedDate"/>
-<artifact id="SearchParameter/us-core-condition-category" key="SearchParameter-us-core-condition-category" name="USCoreConditionCategory"/>
-<artifact id="SearchParameter/us-core-condition-clinical-status" key="SearchParameter-us-core-condition-clinical-status" name="USCoreConditionClinicalStatus"/>
-<artifact id="SearchParameter/us-core-condition-code" key="SearchParameter-us-core-condition-code" name="USCoreConditionCode"/>
-<artifact id="SearchParameter/us-core-condition-encounter" key="SearchParameter-us-core-condition-encounter" name="USCoreConditionEncounter"/>
-<artifact id="SearchParameter/us-core-condition-lastupdated" key="SearchParameter-us-core-condition-lastupdated" name="USCoreConditionLastUpdated"/>
-<artifact id="SearchParameter/us-core-condition-onset-date" key="SearchParameter-us-core-condition-onset-date" name="USCoreConditionOnsetDate"/>
-<artifact id="SearchParameter/us-core-condition-patient" key="SearchParameter-us-core-condition-patient" name="USCoreConditionPatient"/>
-<artifact id="SearchParameter/us-core-condition-recorded-date" key="SearchParameter-us-core-condition-recorded-date" name="USCoreConditionRecordedDate"/>
-<artifact id="SearchParameter/us-core-coverage-patient" key="SearchParameter-us-core-coverage-patient" name="USCoreCoveragePatient"/>
-<artifact id="SearchParameter/us-core-device-patient" key="SearchParameter-us-core-device-patient" name="USCoreDevicePatient"/>
-<artifact id="SearchParameter/us-core-device-status" key="SearchParameter-us-core-device-status" name="USCoreDeviceStatus"/>
-<artifact id="SearchParameter/us-core-device-type" key="SearchParameter-us-core-device-type" name="USCoreDeviceType"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-category" key="SearchParameter-us-core-diagnosticreport-category" name="USCoreDiagnosticreportCategory"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-code" key="SearchParameter-us-core-diagnosticreport-code" name="USCoreDiagnosticreportCode"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-date" key="SearchParameter-us-core-diagnosticreport-date" name="USCoreDiagnosticreportDate"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-lastupdated" key="SearchParameter-us-core-diagnosticreport-lastupdated" name="USCoreDiagnosticreportLastUpdated"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-patient" key="SearchParameter-us-core-diagnosticreport-patient" name="USCoreDiagnosticreportPatient"/>
-<artifact id="SearchParameter/us-core-diagnosticreport-status" key="SearchParameter-us-core-diagnosticreport-status" name="USCoreDiagnosticreportStatus"/>
-<artifact id="SearchParameter/us-core-documentreference-category" key="SearchParameter-us-core-documentreference-category" name="USCoreDocumentreferenceCategory"/>
-<artifact id="SearchParameter/us-core-documentreference-date" key="SearchParameter-us-core-documentreference-date" name="USCoreDocumentreferenceDate"/>
-<artifact id="SearchParameter/us-core-documentreference-id" key="SearchParameter-us-core-documentreference-id" name="USCoreDocumentreferenceId"/>
-<artifact id="SearchParameter/us-core-documentreference-patient" key="SearchParameter-us-core-documentreference-patient" name="USCoreDocumentreferencePatient"/>
-<artifact id="SearchParameter/us-core-documentreference-period" key="SearchParameter-us-core-documentreference-period" name="USCoreDocumentreferencePeriod"/>
-<artifact id="SearchParameter/us-core-documentreference-status" key="SearchParameter-us-core-documentreference-status" name="USCoreDocumentreferenceStatus"/>
-<artifact id="SearchParameter/us-core-documentreference-type" key="SearchParameter-us-core-documentreference-type" name="USCoreDocumentreferenceType"/>
-<artifact id="SearchParameter/us-core-encounter-class" key="SearchParameter-us-core-encounter-class" name="USCoreEncounterClass"/>
-<artifact id="SearchParameter/us-core-encounter-date" key="SearchParameter-us-core-encounter-date" name="USCoreEncounterDate"/>
-<artifact id="SearchParameter/us-core-encounter-discharge-disposition" key="SearchParameter-us-core-encounter-discharge-disposition" name="USCoreEncounterDischargeDisposition"/>
-<artifact id="SearchParameter/us-core-encounter-id" key="SearchParameter-us-core-encounter-id" name="USCoreEncounterId"/>
-<artifact id="SearchParameter/us-core-encounter-identifier" key="SearchParameter-us-core-encounter-identifier" name="USCoreEncounterIdentifier"/>
-<artifact id="SearchParameter/us-core-encounter-lastupdated" key="SearchParameter-us-core-encounter-lastupdated" name="USCoreEncounterLastUpdated"/>
-<artifact id="SearchParameter/us-core-encounter-location" key="SearchParameter-us-core-encounter-location" name="USCoreEncounterLocation"/>
-<artifact id="SearchParameter/us-core-encounter-patient" key="SearchParameter-us-core-encounter-patient" name="USCoreEncounterPatient"/>
-<artifact id="SearchParameter/us-core-encounter-status" key="SearchParameter-us-core-encounter-status" name="USCoreEncounterStatus"/>
-<artifact id="SearchParameter/us-core-encounter-type" key="SearchParameter-us-core-encounter-type" name="USCoreEncounterType"/>
-<artifact id="SearchParameter/us-core-ethnicity" key="SearchParameter-us-core-ethnicity" name="USCoreEthnicity"/>
-<artifact id="SearchParameter/us-core-familymemberhistory-code" key="SearchParameter-us-core-familymemberhistory-code" name="USCoreFamilymemberhistoryCode"/>
-<artifact id="SearchParameter/us-core-familymemberhistory-patient" key="SearchParameter-us-core-familymemberhistory-patient" name="USCoreFamilymemberhistoryPatient"/>
-<artifact id="SearchParameter/us-core-goal-description" key="SearchParameter-us-core-goal-description" name="USCoreGoalDescription"/>
-<artifact id="SearchParameter/us-core-goal-lifecycle-status" key="SearchParameter-us-core-goal-lifecycle-status" name="USCoreGoalLifecycleStatus"/>
-<artifact id="SearchParameter/us-core-goal-patient" key="SearchParameter-us-core-goal-patient" name="USCoreGoalPatient"/>
-<artifact id="SearchParameter/us-core-goal-target-date" key="SearchParameter-us-core-goal-target-date" name="USCoreGoalTargetDate"/>
-<artifact id="SearchParameter/us-core-immunization-date" key="SearchParameter-us-core-immunization-date" name="USCoreImmunizationDate"/>
-<artifact id="SearchParameter/us-core-immunization-patient" key="SearchParameter-us-core-immunization-patient" name="USCoreImmunizationPatient"/>
-<artifact id="SearchParameter/us-core-immunization-status" key="SearchParameter-us-core-immunization-status" name="USCoreImmunizationStatus"/>
-<artifact id="SearchParameter/us-core-location-address" key="SearchParameter-us-core-location-address" name="USCoreLocationAddress"/>
-<artifact id="SearchParameter/us-core-location-address-city" key="SearchParameter-us-core-location-address-city" name="USCoreLocationAddressCity"/>
-<artifact id="SearchParameter/us-core-location-address-postalcode" key="SearchParameter-us-core-location-address-postalcode" name="USCoreLocationAddressPostalcode"/>
-<artifact id="SearchParameter/us-core-location-address-state" key="SearchParameter-us-core-location-address-state" name="USCoreLocationAddressState"/>
-<artifact id="SearchParameter/us-core-location-name" key="SearchParameter-us-core-location-name" name="USCoreLocationName"/>
-<artifact id="SearchParameter/us-core-medicationdispense-patient" key="SearchParameter-us-core-medicationdispense-patient" name="USCoreMedicationdispensePatient"/>
-<artifact id="SearchParameter/us-core-medicationdispense-status" key="SearchParameter-us-core-medicationdispense-status" name="USCoreMedicationdispenseStatus"/>
-<artifact id="SearchParameter/us-core-medicationdispense-type" key="SearchParameter-us-core-medicationdispense-type" name="USCoreMedicationdispenseType"/>
-<artifact id="SearchParameter/us-core-medicationrequest-authoredon" key="SearchParameter-us-core-medicationrequest-authoredon" name="USCoreMedicationrequestAuthoredon"/>
-<artifact id="SearchParameter/us-core-medicationrequest-encounter" key="SearchParameter-us-core-medicationrequest-encounter" name="USCoreMedicationrequestEncounter"/>
-<artifact id="SearchParameter/us-core-medicationrequest-intent" key="SearchParameter-us-core-medicationrequest-intent" name="USCoreMedicationrequestIntent"/>
-<artifact id="SearchParameter/us-core-medicationrequest-patient" key="SearchParameter-us-core-medicationrequest-patient" name="USCoreMedicationrequestPatient"/>
-<artifact id="SearchParameter/us-core-medicationrequest-status" key="SearchParameter-us-core-medicationrequest-status" name="USCoreMedicationrequestStatus"/>
-<artifact id="SearchParameter/us-core-observation-category" key="SearchParameter-us-core-observation-category" name="USCoreObservationCategory"/>
-<artifact id="SearchParameter/us-core-observation-code" key="SearchParameter-us-core-observation-code" name="USCoreObservationCode"/>
-<artifact id="SearchParameter/us-core-observation-date" key="SearchParameter-us-core-observation-date" name="USCoreObservationDate"/>
-<artifact id="SearchParameter/us-core-observation-lastupdated" key="SearchParameter-us-core-observation-lastupdated" name="USCoreObservationLastUpdated"/>
-<artifact id="SearchParameter/us-core-observation-patient" key="SearchParameter-us-core-observation-patient" name="USCoreObservationPatient"/>
-<artifact id="SearchParameter/us-core-observation-status" key="SearchParameter-us-core-observation-status" name="USCoreObservationStatus"/>
-<artifact id="SearchParameter/us-core-organization-address" key="SearchParameter-us-core-organization-address" name="USCoreOrganizationAddress"/>
-<artifact id="SearchParameter/us-core-organization-name" key="SearchParameter-us-core-organization-name" name="USCoreOrganizationName"/>
-<artifact id="SearchParameter/us-core-patient-birthdate" key="SearchParameter-us-core-patient-birthdate" name="USCorePatientBirthdate"/>
-<artifact id="SearchParameter/us-core-patient-death-date" key="SearchParameter-us-core-patient-death-date" name="USCorePatientDeathDate"/>
-<artifact id="SearchParameter/us-core-patient-family" key="SearchParameter-us-core-patient-family" name="USCorePatientFamily"/>
-<artifact id="SearchParameter/us-core-patient-given" key="SearchParameter-us-core-patient-given" name="USCorePatientGiven"/>
-<artifact id="SearchParameter/us-core-patient-id" key="SearchParameter-us-core-patient-id" name="USCorePatientId"/>
-<artifact id="SearchParameter/us-core-patient-identifier" key="SearchParameter-us-core-patient-identifier" name="USCorePatientIdentifier"/>
-<artifact id="SearchParameter/us-core-patient-name" key="SearchParameter-us-core-patient-name" name="USCorePatientName"/>
-<artifact id="SearchParameter/us-core-practitioner-id" key="SearchParameter-us-core-practitioner-id" name="USCorePractitionerId"/>
-<artifact id="SearchParameter/us-core-practitioner-identifier" key="SearchParameter-us-core-practitioner-identifier" name="USCorePractitionerIdentifier"/>
-<artifact id="SearchParameter/us-core-practitioner-name" key="SearchParameter-us-core-practitioner-name" name="USCorePractitionerName"/>
-<artifact id="SearchParameter/us-core-practitionerrole-practitioner" key="SearchParameter-us-core-practitionerrole-practitioner" name="USCorePractitionerrolePractitioner"/>
-<artifact id="SearchParameter/us-core-practitionerrole-specialty" key="SearchParameter-us-core-practitionerrole-specialty" name="USCorePractitionerroleSpecialty"/>
-<artifact id="SearchParameter/us-core-procedure-code" key="SearchParameter-us-core-procedure-code" name="USCoreProcedureCode"/>
-<artifact id="SearchParameter/us-core-procedure-date" key="SearchParameter-us-core-procedure-date" name="USCoreProcedureDate"/>
-<artifact id="SearchParameter/us-core-procedure-patient" key="SearchParameter-us-core-procedure-patient" name="USCoreProcedurePatient"/>
-<artifact id="SearchParameter/us-core-procedure-status" key="SearchParameter-us-core-procedure-status" name="USCoreProcedureStatus"/>
-<artifact id="SearchParameter/us-core-questionnaireresponse-authored" key="SearchParameter-us-core-questionnaireresponse-authored" name="USCoreQuestionnaireresponseAuthored"/>
-<artifact id="SearchParameter/us-core-questionnaireresponse-id" key="SearchParameter-us-core-questionnaireresponse-id" name="USCoreQuestionnaireresponseId"/>
-<artifact id="SearchParameter/us-core-questionnaireresponse-patient" key="SearchParameter-us-core-questionnaireresponse-patient" name="USCoreQuestionnaireresponsePatient"/>
-<artifact id="SearchParameter/us-core-questionnaireresponse-questionnaire" key="SearchParameter-us-core-questionnaireresponse-questionnaire" name="USCoreQuestionnaireresponseQuestionnaire"/>
-<artifact id="SearchParameter/us-core-questionnaireresponse-status" key="SearchParameter-us-core-questionnaireresponse-status" name="USCoreQuestionnaireresponseStatus"/>
-<artifact id="SearchParameter/us-core-race" key="SearchParameter-us-core-race" name="USCoreRace"/>
-<artifact id="SearchParameter/us-core-relatedperson-id" key="SearchParameter-us-core-relatedperson-id" name="USCoreRelatedpersonId"/>
-<artifact id="SearchParameter/us-core-relatedperson-name" key="SearchParameter-us-core-relatedperson-name" name="USCoreRelatedpersonName"/>
-<artifact id="SearchParameter/us-core-relatedperson-patient" key="SearchParameter-us-core-relatedperson-patient" name="USCoreRelatedpersonPatient"/>
-<artifact id="SearchParameter/us-core-servicerequest-authored" key="SearchParameter-us-core-servicerequest-authored" name="USCoreServicerequestAuthored"/>
-<artifact id="SearchParameter/us-core-servicerequest-category" key="SearchParameter-us-core-servicerequest-category" name="USCoreServicerequestCategory"/>
-<artifact id="SearchParameter/us-core-servicerequest-code" key="SearchParameter-us-core-servicerequest-code" name="USCoreServicerequestCode"/>
-<artifact id="SearchParameter/us-core-servicerequest-id" key="SearchParameter-us-core-servicerequest-id" name="USCoreServicerequestId"/>
-<artifact id="SearchParameter/us-core-servicerequest-patient" key="SearchParameter-us-core-servicerequest-patient" name="USCoreServicerequestPatient"/>
-<artifact id="SearchParameter/us-core-servicerequest-status" key="SearchParameter-us-core-servicerequest-status" name="USCoreServicerequestStatus"/>
-<artifact id="SearchParameter/us-core-specimen-id" key="SearchParameter-us-core-specimen-id" name="USCoreSpecimenId"/>
-<artifact id="SearchParameter/us-core-specimen-patient" key="SearchParameter-us-core-specimen-patient" name="USCoreSpecimenPatient"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>
