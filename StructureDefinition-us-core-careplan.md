@@ -30,6 +30,53 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 Other representations of profile: [CSV](StructureDefinition-us-core-careplan.csv), [Excel](StructureDefinition-us-core-careplan.xlsx), [Schematron](StructureDefinition-us-core-careplan.sch) 
 
+### Notes:
+
+-------
+
+**LIQUID SCRIPT**
+
+establish the page context and get type
+
+page.path = StructureDefinition-us-core-careplan.html
+
+type = CarePlan
+
+then run through the csv file for all the data
+
+#### Mandatory Search Parameters:
+
+The following search parameters and search parameter combinations **SHALL** be supported:
+
+1. **SHALL**support searching using the combination of "patient" and "category" search parameters:`GET [base]/CarePlan?patient=[Type]/[id]&category=[system]|[search_code]`Example:
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan
+**Implementation Notes**: Fetches a bundle of all resources for the specified =`assess-plan`([how to search by reference](foo.md)and ([how to search by token])
+
+#### Optional Search Parameters:
+
+The following search parameters and search parameter combinations **SHOULD** be supported
+
+1. **SHOULD**support searching using the combination of "patient" and "category" and "date" search parameters:
+* **SHOULD** support **AND** search on "date" (e.g.`date=[date]&date=[date]&...`)
+* **SHALL** support these "date" comparators: "gt", "lt", "ge", "le"
+`GET [base]/CarePlan?patient=[Type]/[id]&category=[system]|[search_code]&date=[dateTime]`Example:
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan&date=ge2019-01-01T00:00:00Z
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z
+**Implementation Notes**: Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan`and date ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date])
+1. **SHOULD**support searching using the combination of "patient" and "category" and "status" search parameters:
+* **SHALL** support **OR** search on "status" (e.g.`status={system|}[code],{system|}[code],...`)
+`GET [base]/CarePlan?patient=[Type]/[id]&category=[system]|[search_code]&status=[system]|[search_code]`Example:
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan&status=active
+**Implementation Notes**: Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan`and status=`active`([how to search by reference](foo.md)and ([how to search by token])
+1. **SHOULD**support searching using the combination of "patient" and "category" and "status" and "date" search parameters:
+* **SHALL** support **OR** search on "status" (e.g.`status={system|}[code],{system|}[code],...`)
+* **SHOULD** support **AND** search on "date" (e.g.`date=[date]&date=[date]&...`)
+* **SHALL** support these "date" comparators: "gt", "lt", "ge", "le"
+`GET [base]/CarePlan?patient=[Type]/[id]&category=[system]|[search_code]&status=[system]|[search_code]&date=[dateTime]`Example:
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan&status=active&date=ge2019-01-01T00:00:00Z
+1. GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category|assess-plan&status=active&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z
+**Implementation Notes**: Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan`and status=`active`and date ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date])
+
 
 
 ## Resource Content

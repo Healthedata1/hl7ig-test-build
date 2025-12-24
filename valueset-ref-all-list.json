@@ -16,20 +16,6 @@
       "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile"
     },
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.41",
-      "version" : "20250407",
-      "status" : "active",
-      "name" : "AdvanceHealthcareDirectiveDocumentTypesGrouper",
-      "title" : "Advance Healthcare Directive Document Types Grouper",
-      "description" : "",
-      "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113762.1.4.1115.41"],
-      "sources" : ["2.16.840.1.113762.1.4.1115.41"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8",
       "version" : "20210622",
       "status" : "active",
@@ -43,18 +29,6 @@
       "uses" : {
       },
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
-    },
-    {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.69.4",
-      "version" : "20200604",
-      "status" : "active",
-      "name" : "Advance Directives Categories",
-      "title" : null,
-      "description" : "",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/allergy-intolerance-category",
@@ -129,48 +103,6 @@
       "uses" : {
       },
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/body-site",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTBodyStructures",
-      "title" : "SNOMED CT Body Structures",
-      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.141"],
-      "sources" : ["2.16.840.1.113883.4.642.3.141"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "FacilityTypeCodeValueSet",
-      "title" : "Facility Type Code Value Set",
-      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
-      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "PracticeSettingCodeValueSet",
-      "title" : "Practice Setting Code Value Set",
-      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
-      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
@@ -282,79 +214,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.232"],
       "uses" : {
       },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile",
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile",
-      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "CompositionStatus",
-      "title" : "CompositionStatus",
-      "description" : "The workflow/clinical status of the composition.",
-      "systems" : ["http://hl7.org/fhir/composition-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.241"],
-      "sources" : ["2.16.840.1.113883.4.642.3.241"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "DataAbsentReason",
-      "title" : "DataAbsentReason",
-      "description" : "Used to specify why the normally expected content of the data element is missing.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
-      "oids" : ["2.16.840.1.113883.4.642.3.5"],
-      "sources" : ["2.16.840.1.113883.4.642.3.5"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "DocumentClassValueSet",
-      "title" : "Document Class Value Set",
-      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
-      "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
-      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DocumentReferenceStatus",
-      "title" : "DocumentReferenceStatus",
-      "description" : "The status of the document reference.",
-      "systems" : ["http://hl7.org/fhir/document-reference-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.7"],
-      "sources" : ["2.16.840.1.113883.4.642.3.7"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DocumentRelationshipType",
-      "title" : "DocumentRelationshipType",
-      "description" : "The type of relationship between documents.",
-      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
-      "oids" : ["2.16.840.1.113883.4.642.3.244"],
-      "sources" : ["2.16.840.1.113883.4.642.3.244"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile",
+      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -368,11 +230,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile",
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile",
-      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile"
+      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile",
+      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
@@ -389,78 +249,6 @@
       "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "Mime Types",
-      "title" : "MimeType",
-      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
-      "systems" : ["urn:ietf:bcp:13"],
-      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/observation-category",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ObservationCategoryCodes",
-      "title" : "Observation Category Codes",
-      "description" : "Observation Category codes.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
-      "oids" : ["2.16.840.1.113883.4.642.3.403"],
-      "sources" : ["2.16.840.1.113883.4.642.3.403"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ObservationInterpretationCodes",
-      "title" : "Observation Interpretation Codes",
-      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.399"],
-      "sources" : ["2.16.840.1.113883.4.642.3.399"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ObservationMethods",
-      "title" : "Observation Methods",
-      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.395"],
-      "sources" : ["2.16.840.1.113883.4.642.3.395"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ObservationStatus",
-      "title" : "ObservationStatus",
-      "description" : "Codes providing the status of an observation.",
-      "systems" : ["http://hl7.org/fhir/observation-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.400"],
-      "sources" : ["2.16.840.1.113883.4.642.3.400"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
       "version" : "4.0.1",
       "status" : "draft",
@@ -475,20 +263,6 @@
       "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "QuantityComparator",
-      "title" : "QuantityComparator",
-      "description" : "How the Quantity should be understood and represented.",
-      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
-      "oids" : ["2.16.840.1.113883.4.642.3.59"],
-      "sources" : ["2.16.840.1.113883.4.642.3.59"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/reaction-event-severity",
       "version" : "4.0.1",
       "status" : "draft",
@@ -501,39 +275,6 @@
       "uses" : {
       },
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ObservationReferenceRangeAppliesToCodes",
-      "title" : "Observation Reference Range Applies To Codes",
-      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-Race",
-        "http://snomed.info/sct"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.407"],
-      "sources" : ["2.16.840.1.113883.4.642.3.407"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "ObservationReferenceRangeMeaningCodes",
-      "title" : "Observation Reference Range Meaning Codes",
-      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.397"],
-      "sources" : ["2.16.840.1.113883.4.642.3.397"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-status",
@@ -564,26 +305,6 @@
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "All Security Labels",
-      "title" : "SecurityLabels",
-      "description" : "A single value set for all security labels defined by FHIR.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
-        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
-        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.47"],
-      "sources" : ["2.16.840.1.113883.4.642.3.47"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
       "url" : "http://hl7.org/fhir/ValueSet/substance-code",
       "version" : "4.0.1",
       "status" : "draft",
@@ -598,20 +319,6 @@
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "VitalSignsUnits",
-      "title" : "Vital Signs Units",
-      "description" : "Common UCUM units for recording Vital Signs",
-      "systems" : ["http://unitsofmeasure.org"],
-      "oids" : ["2.16.840.1.113883.4.642.3.955"],
-      "sources" : ["2.16.840.1.113883.4.642.3.955"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status",
       "version" : "5.0.1",
       "status" : "active",
@@ -622,47 +329,6 @@
       "uses" : {
       },
       "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-vital-signs",
-      "version" : "5.0.1",
-      "status" : "active",
-      "name" : "UsCoreVitalSigns",
-      "title" : "US Core Vital Signs ValueSet",
-      "description" : "The vital sign codes from the base FHIR and US Core Vital Signs.",
-      "systems" : ["http://loinc.org"],
-      "uses" : {
-      },
-      "StructureDefinition-pediatric-weight-for-height.html" : "US Core Pediatric Weight for Height Observation Profile"
-    },
-    {
-      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "ActCode",
-      "title" : "v3 Code System ActCode",
-      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
-    },
-    {
-      "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "HL7FormatCodes",
-      "title" : "HL7 ValueSet of Format Codes for use with Document Sharing",
-      "description" : "The HL7-FormatCodes value set is defined to be the set of FormatCode(s) defined by implementation guides published by HL7 and other SDOs. The use of a formatCode from the FormatCodes value set specifies the technical format that a document conforms to. The formatCode is a further specialization more detailed than the mime-type. The formatCode provides sufficient information to allow any potential document content consumer to know if it can process and/or display the content of the document based on the document encoding, structure and template conformance indicated by the formatCode. The set of formatCodes is intended to be extensible. The Content Logical Description is defined intentionally to permit formatCodes defined by other Standards Development Organizations to be added by inclusion of additional formatCode Code Systems.",
-      "systems" : [
-        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
-        "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes"
-      ],
-      "oids" : ["2.16.840.1.113883.11.19752"],
-      "sources" : ["2.16.840.1.113883.11.19752"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     }
   ]
 }

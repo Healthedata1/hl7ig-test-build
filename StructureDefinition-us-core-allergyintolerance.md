@@ -17,8 +17,8 @@ The US Core AllergyIntolerance Profile inherits from the FHIR[AllergyIntolerance
 
 **Usages:**
 
+* Examples for this Profile: [AllergyIntolerance/example](AllergyIntolerance-example.md)
 * CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
-* This Profile is not used by any profiles in this Implementation Guide
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-allergyintolerance)
 
@@ -29,6 +29,48 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
  
 
 Other representations of profile: [CSV](StructureDefinition-us-core-allergyintolerance.csv), [Excel](StructureDefinition-us-core-allergyintolerance.xlsx), [Schematron](StructureDefinition-us-core-allergyintolerance.sch) 
+
+### Notes:
+
+-------
+
+**LIQUID SCRIPT**
+
+establish the page context and get type
+
+page.path = StructureDefinition-us-core-allergyintolerance.html
+
+type = AllergyIntolerance
+
+then run through the csv file for all the data
+
+#### Mandatory Search Parameters:
+
+The following search parameters and search parameter combinations **SHALL** be supported:
+
+1. **SHALL**support searching for all allergies for a patient:`GET [base]/AllergyIntolerance?patient=[Type]/[id]`Example:
+1. GET [base]/AllergyIntolerance?patient=1137192
+**Implementation Notes**: Fetches a bundle of all AllergyIntolerance resources for the specified patient ([how to search by reference](foo.md))
+1. **SHALL**foo:`GET [base]/AllergyIntolerance?category=[system]|[search_code]`Example:
+1. GET [base]/FOO
+**Implementation Notes**: Fetches a bundle of FOO ([how to search by token])
+
+#### Optional Search Parameters:
+
+The following search parameters and search parameter combinations **SHOULD** be supported
+
+1. **SHOULD**bar:`GET [base]/AllergyIntolerance?clinical-status=[system]|[search_code]`Example:
+1. GET [base]/BAR
+**Implementation Notes**: Fetches a bundle of BAR ([how to search by token])
+1. **SHOULD**support searching using the combination of "patient" and "clinical-status" search parameters:`GET [base]/AllergyIntolerance?patient=[Type]/[id]&clinical-status=[system]|[search_code]`Example:
+1. 
+
+| | |
+| :--- | :--- |
+| GET [base]/AllergyIntolerance?patient=[id]&clinical-status=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical | active |
+
+
+**Implementation Notes**: Fetches a bundle of all AllergyIntolerance resources for the specified patient and status code. This will not return any "entered in error" resources because of the conditional presence of the clinicalStatus element. ([how to search by reference](foo.md)and ([how to search by token])
 
 
 

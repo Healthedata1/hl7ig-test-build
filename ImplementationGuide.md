@@ -41,21 +41,15 @@ This IG Contains the following dependencies on other IGs.
 
 This publication includes IP covered under the following statements.
 
-* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
-
-* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCorePediatricWeightForHeightObservationProfile](StructureDefinition-pediatric-weight-for-height.md)
-
-
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md), [USCoreCarePlanProfile](StructureDefinition-us-core-careplan.md) and [USCoreCareTeam](StructureDefinition-us-core-careteam.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md), [USCoreCarePlanProfile](StructureDefinition-us-core-careplan.md) and [USCoreCareTeam](StructureDefinition-us-core-careteam.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
-* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
-* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md)
+* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
+* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
 * [ParticipationFunction](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html): [USCoreCareTeam](StructureDefinition-us-core-careteam.md)
 
 
@@ -88,6 +82,8 @@ value: fsh-generated/resources
 value: input/intro-notes
 * code: path-liquid
 value: input/liquid
+* code: path-data
+value: input/examples
 * code: excludexml
 value: true
 * code: excludejson

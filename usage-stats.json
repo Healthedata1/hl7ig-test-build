@@ -5,18 +5,6 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "Observation": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/pediatric-weight-for-height",
-        "title": "US Core Pediatric Weight for Height Observation Profile"
-      }
-    ],
-    "DocumentReference": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
-        "title": "US Core ADI DocumentReference Profile"
-      }
-    ],
     "AllergyIntolerance": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
@@ -37,9 +25,6 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester": [
-      "DocumentReference"
-    ],
     "http://hl7.org/fhir/StructureDefinition/artifact-reference": [
       "CapabilityStatement.implementationGuide",
       "CapabilityStatement.rest.resource.operation",
@@ -57,7 +42,6 @@
       "CapabilityStatement.rest.resource.searchParam",
       "CapabilityStatement.rest.resource.searchRevInclude",
       "CapabilityStatement.rest.resource.supportedProfile",
-      "SearchParameter.chain",
       "SearchParameter.comparator",
       "SearchParameter.multipleAnd",
       "SearchParameter.multipleOr"
@@ -77,16 +61,15 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
-      "StructureDefinition.snapshot.element"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type.targetProfile",
-      "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
+    "http://hl7.org/fhir/StructureDefinition/instance-description": [
+      "AllergyIntolerance.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/instance-name": [
+      "AllergyIntolerance.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
