@@ -5,17 +5,23 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
-<artifact id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" name="US Core AllergyIntolerance Profile"/>
-<artifact id="StructureDefinition/us-core-careplan" key="StructureDefinition-us-core-careplan" name="US Core CarePlan Profile"/>
-<artifact id="StructureDefinition/us-core-careteam" key="StructureDefinition-us-core-careteam" name="US Core CareTeam Profile"/>
 <artifact id="CapabilityStatement/us-core-client-liquid" key="CapabilityStatement-us-core-client-liquid" name="US Core Client CapabilityStatement Liquid Rendered"/>
+<artifact id="StructureDefinition/us-core-diagnosticreport-lab" key="StructureDefinition-us-core-diagnosticreport-lab" name="US Core DiagnosticReport Profile for Laboratory Results Reporting"/>
+<artifact id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" name="US Core Patient Profile"/>
 <artifact id="CapabilityStatement/us-core-server-liquid" key="CapabilityStatement-us-core-server-liquid" name="US Core Server CapabilityStatement Liquid Rendered"/>
-<artifact id="SearchParameter/us-core-allergyintolerance-clinical-status" key="SearchParameter-us-core-allergyintolerance-clinical-status" name="USCoreAllergyintoleranceClinicalStatus"/>
-<artifact id="SearchParameter/us-core-allergyintolerance-patient" key="SearchParameter-us-core-allergyintolerance-patient" name="USCoreAllergyintolerancePatient"/>
-<artifact id="SearchParameter/us-core-careplan-category" key="SearchParameter-us-core-careplan-category" name="USCoreCareplanCategory"/>
-<artifact id="SearchParameter/us-core-careplan-date" key="SearchParameter-us-core-careplan-date" name="USCoreCareplanDate"/>
-<artifact id="SearchParameter/us-core-careplan-patient" key="SearchParameter-us-core-careplan-patient" name="USCoreCareplanPatient"/>
-<artifact id="SearchParameter/us-core-careplan-status" key="SearchParameter-us-core-careplan-status" name="USCoreCareplanStatus"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-category" key="SearchParameter-us-core-diagnosticreport-category" name="USCoreDiagnosticreportCategory"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-code" key="SearchParameter-us-core-diagnosticreport-code" name="USCoreDiagnosticreportCode"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-date" key="SearchParameter-us-core-diagnosticreport-date" name="USCoreDiagnosticreportDate"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-lastupdated" key="SearchParameter-us-core-diagnosticreport-lastupdated" name="USCoreDiagnosticreportLastUpdated"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-patient" key="SearchParameter-us-core-diagnosticreport-patient" name="USCoreDiagnosticreportPatient"/>
+<artifact id="SearchParameter/us-core-diagnosticreport-status" key="SearchParameter-us-core-diagnosticreport-status" name="USCoreDiagnosticreportStatus"/>
+<artifact id="SearchParameter/us-core-patient-birthdate" key="SearchParameter-us-core-patient-birthdate" name="USCorePatientBirthdate"/>
+<artifact id="SearchParameter/us-core-patient-death-date" key="SearchParameter-us-core-patient-death-date" name="USCorePatientDeathDate"/>
+<artifact id="SearchParameter/us-core-patient-family" key="SearchParameter-us-core-patient-family" name="USCorePatientFamily"/>
+<artifact id="SearchParameter/us-core-patient-given" key="SearchParameter-us-core-patient-given" name="USCorePatientGiven"/>
+<artifact id="SearchParameter/us-core-patient-id" key="SearchParameter-us-core-patient-id" name="USCorePatientId"/>
+<artifact id="SearchParameter/us-core-patient-identifier" key="SearchParameter-us-core-patient-identifier" name="USCorePatientIdentifier"/>
+<artifact id="SearchParameter/us-core-patient-name" key="SearchParameter-us-core-patient-name" name="USCorePatientName"/>
 <page key="NA" name="(NA)"/>
 <page key="many" name="(many)"/>
 <page key="artifacts" name="Artifacts Summary"/>

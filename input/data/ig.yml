@@ -67,40 +67,6 @@ definition:
     name: AllergyIntolerance Example
     exampleCanonical: http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance
   - reference:
-      reference: StructureDefinition/us-core-allergyintolerance
-    description: The US Core AllergyIntolerance Profile inherits from the FHIR [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html)
-      resource; refer to it for scope and usage definitions. This profile sets minimum
-      expectations for the AllergyIntolerance resource to record, search, and fetch
-      allergies/adverse reactions associated with a patient. It specifies which core
-      elements, extensions, vocabularies, and value sets **SHALL** be present and
-      constrains how the elements are used. Providing the floor for standards development
-      for specific use cases promotes interoperability and adoption.
-    exampleBoolean: false
-    name: US Core AllergyIntolerance Profile
-  - reference:
-      reference: StructureDefinition/us-core-careplan
-    description: The US Core CarePlan Profile inherits from the FHIR [CarePlan](https://hl7.org/fhir/R4/careplan.html)
-      resource; refer to it for scope and usage definitions. This profile sets minimum
-      expectations for the CarePlan resource to record,  search, and fetch assessment
-      and plan of treatment data associated with a patient. It specifies which core
-      elements, extensions, vocabularies, and value sets **SHALL** be present and
-      constrains how the elements are used. Providing the floor for standards development
-      for specific use cases promotes interoperability and adoption.
-    exampleBoolean: false
-    name: US Core CarePlan Profile
-  - reference:
-      reference: StructureDefinition/us-core-careteam
-    description: The US Core CareTeam Profile inherits from the FHIR [CareTeam](https://hl7.org/fhir/R4/careteam.html)
-      resource; refer to it for scope and usage definitions. This profile sets minimum
-      expectations for the CareTeam resource for identifying the Care Team members
-      associated with a patient to promote interoperability and adoption through common
-      implementation. It specifies which core elements, extensions, vocabularies,
-      and value sets **SHALL** be present in the resource and how the elements are
-      used. Providing the floor for standards development for specific use cases promotes
-      interoperability and adoption.
-    exampleBoolean: false
-    name: US Core CareTeam Profile
-  - reference:
       reference: CapabilityStatement/us-core-client-liquid
     description: This Section describes the expected capabilities of the US Core Client
       which is responsible for creating and initiating the queries for information
@@ -111,6 +77,36 @@ definition:
       their local use cases and other contextual requirements.
     exampleBoolean: false
     name: US Core Client CapabilityStatement Liquid Rendered
+  - reference:
+      reference: StructureDefinition/us-core-diagnosticreport-lab
+    description: The US Core DiagnosticReport Profile for Laboratory Results Reporting
+      inherits from the FHIR [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html)
+      resource; refer to it for scope and usage definitions. Laboratory results are
+      grouped and summarized using the DiagnosticReport resource, which typically
+      references Observation resource(s). Each Observation resource represents an
+      individual laboratory test and result value or component result values or a
+      nested panel (such as a microbial susceptibility panel) that references other
+      observations. Laboratory results can also be presented in report form or as
+      free text. This profile sets minimum expectations for the DiagnosticReport resource
+      to record, search,  and fetch laboratory results associated with a patient.
+      It specifies which core elements, extensions, vocabularies, and value sets **SHALL**
+      be present and constrains how the elements are used. Providing the floor for
+      standards development for specific use cases promotes interoperability and adoption.
+    exampleBoolean: false
+    name: US Core DiagnosticReport Profile for Laboratory Results Reporting
+  - reference:
+      reference: StructureDefinition/us-core-patient
+    description: The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html)
+      resource; refer to it for scope and usage definitions. This profile meets the
+      requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)
+      *Patient Demographics/Information* Data Class. It sets minimum expectations
+      for the Patient resource to record, search, and fetch basic demographics and
+      other administrative information about an individual patient. It specifies which
+      core elements, extensions, vocabularies, and value sets **SHALL** be present
+      and constrains how the elements are used. Providing the floor for standards
+      development for specific use cases promotes interoperability and adoption.
+    exampleBoolean: false
+    name: US Core Patient Profile
   - reference:
       reference: CapabilityStatement/us-core-server-liquid
     description: This Section describes the expected capabilities of the US Core Server
@@ -124,43 +120,69 @@ definition:
     exampleBoolean: false
     name: US Core Server CapabilityStatement Liquid Rendered
   - reference:
-      reference: SearchParameter/us-core-allergyintolerance-clinical-status
-    description: "**active | inactive | resolved**  \nNOTE: This SearchParameter is\
-      \ defined only to document Server and Client expectations. Its definition is\
-      \ derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      reference: SearchParameter/us-core-diagnosticreport-category
+    description: "**Which diagnostic discipline/department created the report**  \n\
+      NOTE: This SearchParameter is defined only to document Server and Client expectations.\
+      \ Its definition is derived from the standard FHIR SearchParameter and it uses\
+      \ the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCoreDiagnosticreportCategory
+  - reference:
+      reference: SearchParameter/us-core-diagnosticreport-code
+    description: "**The code for the report, as opposed to codes for the atomic results,\
+      \ which are the names on the observation resource referred to from the result**\
+      \  \nNOTE: This SearchParameter is defined only to document Server and Client\
+      \ expectations. Its definition is derived from the standard FHIR SearchParameter\
+      \ and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCoreDiagnosticreportCode
+  - reference:
+      reference: SearchParameter/us-core-diagnosticreport-date
+    description: "**The clinically relevant time of the report**  \nNOTE: This SearchParameter\
+      \ is defined only to document Server and Client expectations. Its definition\
+      \ is derived from the standard FHIR SearchParameter and it uses the [Conformance\
       \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
       \ to define additional expectations for the following SearchParameter elements:\n\
       - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreAllergyintoleranceClinicalStatus
+    name: USCoreDiagnosticreportDate
   - reference:
-      reference: SearchParameter/us-core-allergyintolerance-patient
-    description: "**Who the sensitivity is for**  \nNOTE: This SearchParameter is\
-      \ defined only to document Server and Client expectations. Its definition is\
-      \ derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      reference: SearchParameter/us-core-diagnosticreport-lastupdated
+    description: "**When the resource version last changed**  \nNOTE: This SearchParameter\
+      \ is defined only to document Server and Client expectations. Its definition\
+      \ is derived from the standard FHIR SearchParameter and it uses the [Conformance\
       \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
       \ to define additional expectations for the following SearchParameter elements:\n\
       - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreAllergyintolerancePatient
+    name: USCoreDiagnosticreportLastUpdated
   - reference:
-      reference: SearchParameter/us-core-careplan-category
-    description: "**Type of plan**  \nNOTE: This SearchParameter is defined only to\
-      \ document Server and Client expectations. Its definition is derived from the\
-      \ standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      reference: SearchParameter/us-core-diagnosticreport-patient
+    description: "**The subject of the report if a patient**  \nNOTE: This SearchParameter\
+      \ is defined only to document Server and Client expectations. Its definition\
+      \ is derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
       \ to define additional expectations for the following SearchParameter elements:\n\
       - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreCareplanCategory
+    name: USCoreDiagnosticreportPatient
   - reference:
-      reference: SearchParameter/us-core-careplan-date
-    description: "**Time period plan covers**  \nNOTE: This SearchParameter is defined\
+      reference: SearchParameter/us-core-diagnosticreport-status
+    description: "**The status of the report**  \nNOTE: This SearchParameter is defined\
       \ only to document Server and Client expectations. Its definition is derived\
       \ from the standard FHIR SearchParameter and it uses the [Conformance expectation\
       \ extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
@@ -169,10 +191,70 @@ definition:
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreCareplanDate
+    name: USCoreDiagnosticreportStatus
   - reference:
-      reference: SearchParameter/us-core-careplan-patient
-    description: "**Who the care plan is for**  \nNOTE: This SearchParameter is defined\
+      reference: SearchParameter/us-core-patient-birthdate
+    description: "**The patient's date of birth**  \nNOTE: This SearchParameter is\
+      \ defined only to document Server and Client expectations. Its definition is\
+      \ derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCorePatientBirthdate
+  - reference:
+      reference: SearchParameter/us-core-patient-death-date
+    description: "**The date of death has been provided and satisfies this search\
+      \ value**  \nNOTE: This SearchParameter is defined only to document Server and\
+      \ Client expectations. Its definition is derived from the standard FHIR SearchParameter\
+      \ and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCorePatientDeathDate
+  - reference:
+      reference: SearchParameter/us-core-patient-family
+    description: "**A portion of the family name of the patient**  \nNOTE: This SearchParameter\
+      \ is defined only to document Server and Client expectations. Its definition\
+      \ is derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCorePatientFamily
+  - reference:
+      reference: SearchParameter/us-core-patient-given
+    description: "**A portion of the given name of the patient**  \nNOTE: This SearchParameter\
+      \ is defined only to document Server and Client expectations. Its definition\
+      \ is derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCorePatientGiven
+  - reference:
+      reference: SearchParameter/us-core-patient-id
+    description: "**Logical id of this artifact**  \nNOTE: This SearchParameter is\
+      \ defined only to document Server and Client expectations. Its definition is\
+      \ derived from the standard FHIR SearchParameter and it uses the [Conformance\
+      \ expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      \ to define additional expectations for the following SearchParameter elements:\n\
+      - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
+      It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
+      \ **SHOULD** use the standard FHIR SearchParameter.\n"
+    exampleBoolean: false
+    name: USCorePatientId
+  - reference:
+      reference: SearchParameter/us-core-patient-identifier
+    description: "**A patient identifier**  \nNOTE: This SearchParameter is defined\
       \ only to document Server and Client expectations. Its definition is derived\
       \ from the standard FHIR SearchParameter and it uses the [Conformance expectation\
       \ extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
@@ -181,19 +263,20 @@ definition:
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreCareplanPatient
+    name: USCorePatientIdentifier
   - reference:
-      reference: SearchParameter/us-core-careplan-status
-    description: "**draft | active | on-hold | revoked | completed | entered-in-error\
-      \ | unknown**  \nNOTE: This SearchParameter is defined only to document Server\
-      \ and Client expectations. Its definition is derived from the standard FHIR\
-      \ SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
+      reference: SearchParameter/us-core-patient-name
+    description: "**A server defined search that may match any of the string fields\
+      \ in the HumanName, including family, give, prefix, suffix, suffix, and/or text**\
+      \  \nNOTE: This SearchParameter is defined only to document Server and Client\
+      \ expectations. Its definition is derived from the standard FHIR SearchParameter\
+      \ and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation)\
       \ to define additional expectations for the following SearchParameter elements:\n\
       - `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\n\
       It **SHALL NOT** be used as a search parameter for search. Servers and Clients\
       \ **SHOULD** use the standard FHIR SearchParameter.\n"
     exampleBoolean: false
-    name: USCoreCareplanStatus
+    name: USCorePatientName
   page:
     nameUrl: toc.html
     title: Table of Contents

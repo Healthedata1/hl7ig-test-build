@@ -1,38 +1,122 @@
-Index,base,code,base_conf,display,documentation,profile,exists,is_new,update,type,expression,multipleOr,multipleOr_conf,multipleAnd,multipleAnd_conf,shall_modifier,should_modifier,shall_comparator,should_comparator,shall_chain,should_chain,shall_include,should_include,description,example,imp_note,rel_url
-25,AllergyIntolerance,clinical-status,SHOULD,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance,Y,,Y,token,clinical-status,Y,,Y,,,,,,,,,,bar,GET [base]/BAR,Fetches a bundle of BAR,SearchParameter-us-core-allergyintolerance-clinical-status.html
-26,AllergyIntolerance,patient,SHALL,TRUE,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance,Y,,Y,reference,patient,Y,,Y,,,,,,,,,,support searching for all allergies for a patient,GET [base]/AllergyIntolerance?patient=1137192,Fetches a bundle of all AllergyIntolerance resources for the specified patient,SearchParameter-us-core-allergyintolerance-patient.html
-27,AllergyIntolerance,category,SHALL,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan,Y,,Y,token,category,Y,,Y,,,,,,,,,,foo,GET [base]/FOO,Fetches a bundle of FOO,SearchParameter-us-core-careplan-category.html
-27,CarePlan,category,MAY,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+Index,base,code,base_conf,type_documentation,exists,is_new,type,expression,multipleOr,multipleOr_conf,multipleAnd,multipleAnd_conf,shall_modifier,should_modifier,shall_comparator,should_comparator,shall_chain,should_chain,shall_include,should_include,description,example,imp_note,rel_url
+25,AllergyIntolerance,clinical-status,SHOULD,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+The server **SHALL** support both.",Y,,token,clinical-status,Y,,Y,,,,,,,,,,bar,GET [base]/BAR,Fetches a bundle of BAR,SearchParameter-us-core-allergyintolerance-clinical-status.html
+26,AllergyIntolerance,patient,SHALL,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+The server **SHALL** support both.",Y,,reference,patient,Y,,Y,,,,,,,,,,support searching for all allergies for a patient,GET [base]/AllergyIntolerance?patient=1137192,Fetches a bundle of all AllergyIntolerance resources for the specified patient,SearchParameter-us-core-allergyintolerance-patient.html
+27,AllergyIntolerance,category,SHALL,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+The server **SHALL** support both.",Y,,token,category,Y,,Y,,,,,,,,,,foo,GET [base]/FOO,Fetches a bundle of FOO,SearchParameter-us-core-careplan-category.html
+27,CarePlan,category,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan,Y,,Y,token,CarePlan.category,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-careplan-category.html
-28,CarePlan,date,MAY,FALSE,"A client **SHALL** provide a value precise to the *second + time offset*.
+The server **SHALL** support both.",Y,,token,CarePlan.category,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-careplan-category.html
+28,CarePlan,date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
 
-A server **SHALL** support a value precise to the *second + time offset*.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan,Y,,Y,date,CarePlan.date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-careplan-date.html
-29,CarePlan,patient,MAY,FALSE,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,CarePlan.date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-careplan-date.html
+29,CarePlan,patient,MAY,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan,Y,,Y,reference,CarePlan.patient,Y,,Y,,,,,,,,,,support searching for all careplans for a patient,GET [base]/CarePlan?patient=1137192,Fetches a bundle of all CarePlan resources for the specified patient,SearchParameter-us-core-careplan-patient.html
-30,CarePlan,status,MAY,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+The server **SHALL** support both.",Y,,reference,CarePlan.patient,Y,,Y,,,,,,,,,,support searching for all careplans for a patient,GET [base]/CarePlan?patient=1137192,Fetches a bundle of all CarePlan resources for the specified patient,SearchParameter-us-core-careplan-patient.html
+30,CarePlan,status,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan,Y,,Y,token,CarePlan.status,Y,SHALL,Y,,,,,,,,,,,,,SearchParameter-us-core-careplan-status.html
-,AllergyIntolerance,"patient,clinical-status",SHOULD,TRUE,,,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/AllergyIntolerance?patient=[id]&clinical-status=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|active,"Fetches a bundle of all AllergyIntolerance resources for the specified patient and status code.  This will not return any ""entered in error"" resources because of the conditional presence of the clinicalStatus element.",
-,CarePlan,"patient,category",SHALL,,,,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan,Fetches a bundle of all  resources for the specified =`assess-plan`,
-,CarePlan,"patient,category,date",SHOULD,,,,,,,"reference,token,date",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&date=ge2019-01-01T00:00:00Z~GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and date,
-,CarePlan,"patient,category,status",SHOULD,,,,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and status=`active`,
-,CarePlan,"patient,category,status,date",SHOULD,,,,,,,"reference,token,date",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active&date=ge2019-01-01T00:00:00Z~GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and status=`active` and date,
-31,CareTeam,patient,MAY,FALSE,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+The server **SHALL** support both.",Y,,token,CarePlan.status,Y,SHALL,Y,,,,,,,,,,,,,SearchParameter-us-core-careplan-status.html
+,AllergyIntolerance,"patient,clinical-status",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/AllergyIntolerance?patient=[id]&clinical-status=http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical|active,"Fetches a bundle of all AllergyIntolerance resources for the specified patient and status code.  This will not return any ""entered in error"" resources because of the conditional presence of the clinicalStatus element.",
+,CarePlan,"patient,category",SHALL,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan,Fetches a bundle of all  resources for the specified =`assess-plan`,
+,CarePlan,"patient,category,date",SHOULD,,,,"reference,token,date",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&date=ge2019-01-01T00:00:00Z~GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and date,
+,CarePlan,"patient,category,status",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and status=`active`,
+,CarePlan,"patient,category,status,date",SHOULD,,,,"reference,token,date",,,,,,,,,,,,,,,GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active&date=ge2019-01-01T00:00:00Z~GET [base]/CarePlan?patient=1137192&category=http://hl7.org/fhir/us/core/CodeSystem/careplan-category\|assess-plan&status=active&date=ge2018-01-01T00:00:00Z&date=le2019-01-01T00:00:00Z,Fetches a bundle of all CarePlan resources for the specified patient and category=`assess-plan` and status=`active` and date,
+31,CareTeam,patient,MAY,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam,Y,,Y,reference,CareTeam.patient,Y,,Y,,,,,,,,,"CareTeam:participant:PractitionerRole,CareTeam:participant:Practitioner,CareTeam:participant:Patient,CareTeam:participant:RelatedPerson",support searching for all careteams for a patient,GET [base]/CareTeam?name=Shaw,Fetches a bundle of all CareTeam resources for the specified patient,SearchParameter-us-core-careteam-patient.html
-32,CareTeam,role,SHOULD,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+The server **SHALL** support both.",Y,,reference,CareTeam.patient,Y,,Y,,,,,,,,,"CareTeam:participant:PractitionerRole,CareTeam:participant:Practitioner,CareTeam:participant:Patient,CareTeam:participant:RelatedPerson",support searching for all careteams for a patient,GET [base]/CareTeam?name=Shaw,Fetches a bundle of all CareTeam resources for the specified patient,SearchParameter-us-core-careteam-patient.html
+32,CareTeam,role,SHOULD,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam,N,,Y,token,CareTeam.role,Y,SHOULD,Y,,,,,,,,,,support searching a careteam by participant role,GET [base]/CareTeam?role=http://snomed.info/sct\|17561000,,SearchParameter-us-core-careteam-role.html
-33,CareTeam,status,MAY,FALSE,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+The server **SHALL** support both.",N,,token,CareTeam.role,Y,SHOULD,Y,,,,,,,,,,support searching a careteam by participant role,GET [base]/CareTeam?role=http://snomed.info/sct\|17561000,Fetches a bundle of all CareTeam resources for the specified role,SearchParameter-us-core-careteam-role.html
+33,CareTeam,status,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
 
-The server **SHALL** support both.",http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam,Y,,Y,token,CareTeam.status,Y,SHOULD,Y,,,,,,,,,,,,,SearchParameter-us-core-careteam-status.html
-76,CareTeam,"patient,status",SHALL,,,,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CareTeam?patient=1137192&status=active~GET [base]/CareTeam?patient=1137192&status=active&_include=CareTeam:participant:RelatedPerson&_include=CareTeam:participant:Patient&_include=CareTeam:participant:Practitioner&_include=CareTeam:participant:PractitionerRole,"Fetches a bundle of all CareTeam resources for the specified patient and status =`active` and may include CareTeam Patient, RelatedPerson and Practitioner and PractitionerRole participants.  
+The server **SHALL** support both.",Y,,token,CareTeam.status,Y,SHOULD,Y,,,,,,,,,,,,,SearchParameter-us-core-careteam-status.html
+76,CareTeam,"patient,status",SHALL,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CareTeam?patient=1137192&status=active~GET [base]/CareTeam?patient=1137192&status=active&_include=CareTeam:participant:RelatedPerson&_include=CareTeam:participant:Patient&_include=CareTeam:participant:Practitioner&_include=CareTeam:participant:PractitionerRole,"Fetches a bundle of all CareTeam resources for the specified patient and status =`active` and may include CareTeam Patient, RelatedPerson and Practitioner and PractitionerRole participants.  
 To get Practitioner name and identifier using PractitionerRole:  
 1) Search for the careteam PractitionerRole: GET [base]/CareTeam?patient=[id]&status=active&_include=CareTeam:participant:PractitionerRole  
 2) using the FHIR _id from the PractitionerRole.practitioner element resource,  fetch the Practitioner resources using  GET [base]/Practitioner?_id=[id]",
-85,CareTeam,"patient,role",SHOULD,,,,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CareTeam?patient=1137192&role=http://snomed.info/sct\|17561000,Fetches a bundle of all CareTeam resources for the specified patient and participant role,
+85,CareTeam,"patient,role",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/CareTeam?patient=1137192&role=http://snomed.info/sct\|17561000,Fetches a bundle of all CareTeam resources for the specified patient and participant role,
+34,Condition,abatement-date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,Condition.abatement-date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-condition-abatement-date.html
+35,Condition,asserted-date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",N,,date,Condition.asserted-date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-condition-asserted-date.html
+36,Condition,category,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,Condition.category,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-condition-category.html
+37,Condition,clinical-status,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,Condition.clinical-status,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-condition-clinical-status.html
+38,Condition,code,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,Condition.code,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-condition-code.html
+39,Condition,encounter,MAY,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+
+The server **SHALL** support both.",Y,,reference,Condition.encounter,Y,,Y,,,,,,,,,,support searching for all encounter diagnosis for a patient for an encounter,GET [base]/Condition?patient=Patient/1032702,Fetches a bundle of all Condition resources for the specified patient,SearchParameter-us-core-condition-encounter.html
+40,Condition,onset-date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,Condition.onset-date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-condition-onset-date.html
+41,Condition,patient,SHALL,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+
+The server **SHALL** support both.",Y,,reference,Condition.patient,Y,,Y,,,,,,,,,,"support searching for all conditions including problems, health concerns, and encounter diagnosis for a patient",GET [base]/Condition?patient=1137192,Fetches a bundle of all Condition resources for the specified patient,SearchParameter-us-core-condition-patient.html
+42,Condition,recorded-date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,Condition.recorded-date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-condition-recorded-date.html
+43,Condition,_lastUpdated,MAY,"A server **SHALL** document the types of changes that can be detected using this parameter.
+
+A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,Condition._lastUpdated,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-condition-lastupdated.html
+36,Condition,"patient,clinical-status",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,"GET [base/Condition?patient=Patient/1032702&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical\|active,http://terminology.hl7.org/CodeSystem/condition-clinical\|recurrance,http://terminology.hl7.org/CodeSystem/condition-clinical\|remission","Fetches a bundle of all Condition resources for the specified patient and all ""active"" statuses (active,relapse,remission). This will *exclude* Conditions with no `clinicalStatus` specified.",
+37,Condition,"patient,category",SHALL,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/Condition?patient=Patient/1032702&category=!CATEGORY1,"Fetches a bundle of all Condition resources for the specified patient and category = ""!CATEGORY1""",
+38,Condition,"patient,category,clinical-status",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,"GET [base]/Condition?patient=Patient/1032702&category=!CATEGORY1&clinical-status=http://terminology.hl7.org/CodeSystem/condition-clinical\|active,http://terminology.hl7.org/CodeSystem/condition-clinical\|recurrance,http://terminology.hl7.org/CodeSystem/condition-clinical\|remission","Fetches a bundle of all Condition resources for the specified patient and category = ""!CATEGORY1"" for all ""active"" statuses (active,relapse,remission). This will *exclude* Conditions with no `clinicalStatus` specified.",
+39,Condition,"patient,category,encounter",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/Condition?patient=Patient/1032702&category=!CATEGORY1&encounter=Encounter/1036,"Fetches a bundle of all Condition resources for the specified patient, encounter, and category = ""!CATEGORY1"". When category = ""encounter-diagnosis"", it will return the encounter diagnosis for the encounter.",
+41,Condition,"patient,code",SHOULD,,,,"reference,token",,,,,,,,,,,,,,,GET [base]/Condition?patient=Patient/1032702&code=!CODE1,Fetches a bundle of all Condition resources for the specified patient and code.,
+42,Condition,"patient,onset-date",SHOULD,,,,"reference,date",,,,,,,,,,,,,,,GET [base]Condition?patient=555580&onset-date=ge2018-01-14,Fetches a bundle of all Condition resources for the specified patient and date.,
+43,Condition,"patient,asserted-date",SHOULD,,,,"reference,date",,,,,,,,,,,,,,,GET [base]Condition?patient=555580&asserted-date=ge2018-01-14,Fetches a bundle of all Condition resources for the specified patient and date,
+44,Condition,"patient,recorded-date",SHOULD,,,,"reference,date",,,,,,,,,,,,,,,GET [base]Condition?patient=555580&recorded-date=ge2018-01-14,Fetches a bundle of all Condition resources for the specified patient and date.,
+45,Condition,"patient,abatement-date",SHOULD,,,,"reference,date",,,,,,,,,,,,,,,GET [base]Condition?patient=555580&abatement-date=ge2018-01-14,Fetches a bundle of all Condition resources for the specified patient and date.,
+40,Condition,"patient,_lastUpdated",SHOULD,,,,"reference,date",,,,,,,,,,,,,,,GET [base]/Condition?patient=Patient/1032702&_lastUpdated=ge2024-01-01T00:00:00Z,Fetches a bundle of all resources for the specified for the specified patient and last updated date.. See the US Core General Guidance page for [Searching Using lastUpdated].,
+102,Patient,_id,SHALL,,Y,,,Patient._id,Y,,Y,,,,,,,,,,support both read Patient by `id` **AND** Patient search,GET [base]/Patient/1032702~GET [base]/Patient?_id=1032702,Fetches a resource or a search Bundle containing a Patient resources matching the id,SearchParameter-us-core-patient-id.html
+103,Patient,birthdate,MAY,"A client **SHALL** provide a value precise to the *day*.
+
+A server **SHALL** support a value a value precise to the *day*.",Y,,date,Patient.birthdate,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-patient-birthdate.html
+104,Patient,death-date,MAY,"A client **SHALL** provide a value precise to the *day*.
+
+A server **SHALL** support a value a value precise to the *day*.",Y,,date,Patient.death-date,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-patient-death-date.html
+105,Patient,family,MAY,,Y,,string,Patient.name.family,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-patient-family.html
+107,Patient,given,MAY,,Y,,string,Patient.name.given,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-patient-given.html
+108,Patient,identifier,SHALL,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,Patient.identifier,Y,,Y,,,,,,,,,,support searching a patient by an identifier such as an MPI,GET [base]/Patient?identifier=http://hospital.smarthealthit.org\|1032702,"Fetches a bundle containing any Patient resources matching the identifier, in other words, the [logical reference] of the resource",SearchParameter-us-core-patient-identifier.html
+109,Patient,name,SHALL,,Y,,string,Patient.name,Y,,Y,,,,,,,,,,"support searching for a patient by a server defined search that matches any of the string fields in the HumanName, including family, given, prefix, suffix, and/or text",GET [base]/Patient?name=Shaw,Fetches a bundle of all Patient resources matching the name,SearchParameter-us-core-patient-name.html
+31,Patient,"birthdate,family",SHOULD,,,,"date,string",,,,,,,,,,,,,,,GET [base]/Patient?family=Shaw&birthdate=2007-03-20,Fetches a bundle of all  resources matching the specified ,
+32,Patient,"death-date,family",SHOULD,,,,"date,string",,,,,,,,,,,,,,,GET [base]/Patient?family=Shaw&death-date=2022-07-22,Fetches a bundle of all  resources matching the specified ,
+33,Patient,"birthdate,name",SHALL,,,,"date,string",,,,,,,,,,,,,,,GET [base]/Patient?name=Shaw&birthdate=2007-03-20,Fetches a bundle of all  resources matching the specified ,
+48,DiagnosticReport,category,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,DiagnosticReport.category,Y,,Y,,,,,,,,,,,,,SearchParameter-us-core-diagnosticreport-category.html
+49,DiagnosticReport,code,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,DiagnosticReport.code,Y,SHOULD,Y,,,,,,,,,,,,,SearchParameter-us-core-diagnosticreport-code.html
+50,DiagnosticReport,date,MAY,"A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,DiagnosticReport.date,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-diagnosticreport-date.html
+51,DiagnosticReport,_lastUpdated,MAY,"A server **SHALL** document the types of changes that can be detected using this parameter.
+
+A client **SHALL** provide a value precise to the *second + time offset*.
+
+A server **SHALL** support a value precise to the *second + time offset*.",Y,,date,DiagnosticReport._lastUpdated,Y,,Y,SHOULD,,,"gt,lt,ge,le",,,,,,,,,SearchParameter-us-core-diagnosticreport-lastupdated.html
+52,DiagnosticReport,patient,SHALL,"The client **SHALL** provide at least a id value and **MAY** provide both the Type and id values.
+
+The server **SHALL** support both.",Y,,reference,DiagnosticReport.patient,Y,,Y,,,,,,,,,,support searching for all diagnosticreports for a patient,GET [base]/DiagnosticReport?patient=1137192,Fetches a bundle of all DiagnosticReport resources for the specified patient,SearchParameter-us-core-diagnosticreport-patient.html
+53,DiagnosticReport,status,MAY,"The client **SHALL** provide at least a code value and **MAY** provide both the system and code values.
+
+The server **SHALL** support both.",Y,,token,DiagnosticReport.status,Y,SHALL,Y,,,,,,,,,,,,,SearchParameter-us-core-diagnosticreport-status.html
+49,DiagnosticReport,"patient,status",SHOULD,,,,"reference,token",,,,,,,,,,,,,,support searching for all laboratory reports for a patient for a given status (for example completed reports ),GET [base]/DiagnosticReport?patient=1137192&status=completed,Fetches a bundle of all DiagnosticReport resources for the specified patient and status,
+50,DiagnosticReport,"patient,category",SHALL,,,,"reference,token",,,,,,,,,,,,,,support searching for all laboratory reports,GET [base]/DiagnosticReport?patient=f201&category=!CATEGORY1,"Fetches a bundle of all DiagnosticReport resources for the specified patient and a category code = ""!CATEGORY1""",
+51,DiagnosticReport,"patient,code",SHALL,,,,"reference,token",,,,,,,,,,,,,,"support searching for all laboratory reports by code  (for example, search for all metabolic panel reports for a patient, or search for all cbcs, metabolic panels, and urinalysis panels for a patient)",GET [base]/DiagnosticReport?patient=1032702&code=!CODE1,Fetches a bundle of all DiagnosticReport resources for the specified patient and report code(s). SHOULD support search by multiple report codes.,
+52,DiagnosticReport,"patient,category,date",SHALL,,,,"reference,token,date",,,,,,,,,,,,,,support searching for all laboratory reports by date,GET [base]/DiagnosticReport?patient=f201&category=!CATEGORY1&date=ge2010-01-14T00:00:00Z,"Fetches a bundle of all DiagnosticReport resources for the specified patient and date and a category code = ""!CATEGORY1""",
+53,DiagnosticReport,"patient,category,_lastUpdated",SHOULD,,,,"reference,token,date",,,,,,,,,,,,,,,GET [base]/DiagnosticReport?patient=f201&category=!CATEGORY1&_lastUpdated=ge2010-01-14T00:00:00Z,Fetches a bundle of all DiagnosticReport resources for the specified patient and category and _lastUpdated. See the US Core General Guidance page for [Searching Using lastUpdated].,
+54,DiagnosticReport,"patient,code,date",SHOULD,,,,"reference,token,date",,,,,,,,,,,,,,"support searching for laboratory reports by code and date (for example, search for all metabolic panel reports since 2019 for a patient)",GET [base]/DiagnosticReport?patient=f201&code=!CODE1&date=ge2019-01-14T00:00:00Z,Fetches a bundle of all DiagnosticReport resources for the specified patient and date and report code(s). SHOULD support search by multiple report codes.,

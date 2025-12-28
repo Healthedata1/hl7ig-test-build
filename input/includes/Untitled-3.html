@@ -1,0 +1,27 @@
+GET [base]/Condition?patient=1032702&category='!CATEGORY1!'
+
+{% if include.system %}{{include.system }}\|{% endif %}{{include.category | default: '[category]'}}
+
+{% comment %} Search examples from the csv file replace '!CATEGORY' and '!CODE' where needed{% endcomment %}
+      Example:
+      {%- assign examples = search_row.example | split: "~" -%}
+      {% for ex in examples %}
+      1.  {% if encounter_codes -%}
+          {% for code in encounter_codes -%}
+          {%- assign category_placeholder = '!CATEGORY' | append: forloop.index -%}
+          {% assign display_example = ex | replace: category_placeholder, code -%}
+          {% endfor -%}
+          {% else -%}
+          {% assign display_example = ex -%}
+          {{ ex -}}
+          {% endif -%}
+          {% if code_codes -%}
+          {% for code in code_codes -%}
+          {%- assign code_placeholder = '!CODE' | append: forloop.index -%}
+          {% assign display_example = display_example | replace: category_placeholder, code -%}
+          {% endfor -%}
+          {% else -%}
+          {% assign display_example = display_example -%}
+          {% endif -%}
+        {{ display_example }}
+      {% endfor %}
