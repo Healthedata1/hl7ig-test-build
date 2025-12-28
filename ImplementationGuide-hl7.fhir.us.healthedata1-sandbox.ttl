@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-24T08:46:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-28T23:28:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -1791,69 +1791,6 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-allergyintolerance> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-allergyintolerance" ]
-       ] ;
-       fhir:name [ fhir:v "US Core AllergyIntolerance Profile" ] ;
-       fhir:description [ fhir:v "The US Core AllergyIntolerance Profile inherits from the FHIR [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the AllergyIntolerance resource to record, search, and fetch allergies/adverse reactions associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-careplan> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-careplan" ]
-       ] ;
-       fhir:name [ fhir:v "US Core CarePlan Profile" ] ;
-       fhir:description [ fhir:v "The US Core CarePlan Profile inherits from the FHIR [CarePlan](https://hl7.org/fhir/R4/careplan.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CarePlan resource to record,  search, and fetch assessment and plan of treatment data associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "StructureDefinition:resource"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-careteam> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-careteam" ]
-       ] ;
-       fhir:name [ fhir:v "US Core CareTeam Profile" ] ;
-       fhir:description [ fhir:v "The US Core CareTeam Profile inherits from the FHIR [CareTeam](https://hl7.org/fhir/R4/careteam.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CareTeam resource for identifying the Care Team members associated with a patient to promote interoperability and adoption through common implementation. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1863,6 +1800,48 @@
        ] ;
        fhir:name [ fhir:v "US Core Client CapabilityStatement Liquid Rendered" ] ;
        fhir:description [ fhir:v "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-diagnosticreport-lab> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-diagnosticreport-lab" ]
+       ] ;
+       fhir:name [ fhir:v "US Core DiagnosticReport Profile for Laboratory Results Reporting" ] ;
+       fhir:description [ fhir:v "The US Core DiagnosticReport Profile for Laboratory Results Reporting inherits from the FHIR [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) resource; refer to it for scope and usage definitions. Laboratory results are grouped and summarized using the DiagnosticReport resource, which typically references Observation resource(s). Each Observation resource represents an individual laboratory test and result value or component result values or a nested panel (such as a microbial susceptibility panel) that references other observations. Laboratory results can also be presented in report form or as free text. This profile sets minimum expectations for the DiagnosticReport resource to record, search,  and fetch laboratory results associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-patient" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Patient Profile" ] ;
+       fhir:description [ fhir:v "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1900,11 +1879,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-allergyintolerance-clinical-status> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-allergyintolerance-clinical-status" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-category> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-category" ]
        ] ;
-       fhir:name [ fhir:v "USCoreAllergyintoleranceClinicalStatus" ] ;
-       fhir:description [ fhir:v "**active | inactive | resolved**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportCategory" ] ;
+       fhir:description [ fhir:v "**Which diagnostic discipline/department created the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1921,11 +1900,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-allergyintolerance-patient> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-allergyintolerance-patient" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-code> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-code" ]
        ] ;
-       fhir:name [ fhir:v "USCoreAllergyintolerancePatient" ] ;
-       fhir:description [ fhir:v "**Who the sensitivity is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportCode" ] ;
+       fhir:description [ fhir:v "**The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1942,11 +1921,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-category> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-careplan-category" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-date> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-date" ]
        ] ;
-       fhir:name [ fhir:v "USCoreCareplanCategory" ] ;
-       fhir:description [ fhir:v "**Type of plan**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportDate" ] ;
+       fhir:description [ fhir:v "**The clinically relevant time of the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1963,11 +1942,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-date> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-careplan-date" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-lastupdated> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-lastupdated" ]
        ] ;
-       fhir:name [ fhir:v "USCoreCareplanDate" ] ;
-       fhir:description [ fhir:v "**Time period plan covers**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportLastUpdated" ] ;
+       fhir:description [ fhir:v "**When the resource version last changed**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1984,11 +1963,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-patient> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-careplan-patient" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-patient> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-patient" ]
        ] ;
-       fhir:name [ fhir:v "USCoreCareplanPatient" ] ;
-       fhir:description [ fhir:v "**Who the care plan is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportPatient" ] ;
+       fhir:description [ fhir:v "**The subject of the report if a patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2005,11 +1984,158 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-status> ;
-         fhir:reference [ fhir:v "SearchParameter/us-core-careplan-status" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-status> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-diagnosticreport-status" ]
        ] ;
-       fhir:name [ fhir:v "USCoreCareplanStatus" ] ;
-       fhir:description [ fhir:v "**draft | active | on-hold | revoked | completed | entered-in-error | unknown**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:name [ fhir:v "USCoreDiagnosticreportStatus" ] ;
+       fhir:description [ fhir:v "**The status of the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-birthdate> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-birthdate" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientBirthdate" ] ;
+       fhir:description [ fhir:v "**The patient's date of birth**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-death-date> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-death-date" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientDeathDate" ] ;
+       fhir:description [ fhir:v "**The date of death has been provided and satisfies this search value**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-family> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-family" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientFamily" ] ;
+       fhir:description [ fhir:v "**A portion of the family name of the patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-given> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-given" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientGiven" ] ;
+       fhir:description [ fhir:v "**A portion of the given name of the patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-id> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-id" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientId" ] ;
+       fhir:description [ fhir:v "**Logical id of this artifact**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-identifier> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-identifier" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientIdentifier" ] ;
+       fhir:description [ fhir:v "**A patient identifier**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "SearchParameter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-name> ;
+         fhir:reference [ fhir:v "SearchParameter/us-core-patient-name" ]
+       ] ;
+       fhir:name [ fhir:v "USCorePatientName" ] ;
+       fhir:description [ fhir:v "**A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2265,27 +2391,39 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/AllergyIntolerance/example> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-allergyintolerance> a fhir:Us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-careplan> a fhir:Us .
-
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-careteam> a fhir:Us .
-
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-client-liquid> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-diagnosticreport-lab> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-patient> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-server-liquid> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-allergyintolerance-clinical-status> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-category> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-allergyintolerance-patient> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-code> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-category> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-date> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-date> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-lastupdated> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-patient> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-patient> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-careplan-status> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-diagnosticreport-status> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-birthdate> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-death-date> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-family> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-given> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-id> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-identifier> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-patient-name> a fhir:Us .
 
 # -------------------------------------------------------------------------------------
 

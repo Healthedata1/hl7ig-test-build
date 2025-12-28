@@ -5,22 +5,16 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "AllergyIntolerance": [
+    "DiagnosticReport": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
-        "title": "US Core AllergyIntolerance Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
+        "title": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
       }
     ],
-    "CarePlan": [
+    "Patient": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careplan",
-        "title": "US Core CarePlan Profile"
-      }
-    ],
-    "CareTeam": [
-      {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-careteam",
-        "title": "US Core CareTeam Profile"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+        "title": "US Core Patient Profile"
       }
     ]
   },
@@ -62,7 +56,9 @@
       "StructureDefinition.snapshot.element.binding"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.differential.element.type",
       "StructureDefinition.differential.element.type.targetProfile",
+      "StructureDefinition.snapshot.element.type",
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
@@ -88,7 +84,6 @@
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
-      "SearchParameter",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
@@ -112,6 +107,21 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-individual-sex": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-interpreter-needed": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation": [
+      "Patient"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",

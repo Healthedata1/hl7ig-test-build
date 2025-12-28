@@ -14,9 +14,8 @@
 
 ### Resource Profiles
 
-* [US Core AllergyIntolerance Profile](StructureDefinition-us-core-allergyintolerance.md)
-* [US Core CarePlan Profile](StructureDefinition-us-core-careplan.md)
-* [US Core CareTeam Profile](StructureDefinition-us-core-careteam.md)
+* [US Core DiagnosticReport Profile for Laboratory Results Reporting](StructureDefinition-us-core-diagnosticreport-lab.md)
+* [US Core Patient Profile](StructureDefinition-us-core-patient.md)
 
 ### CapabilityStatements
 
@@ -29,12 +28,19 @@
 
 ### SearchParameters
 
-* [USCoreAllergyintoleranceClinicalStatus](SearchParameter-us-core-allergyintolerance-clinical-status.md)
-* [USCoreAllergyintolerancePatient](SearchParameter-us-core-allergyintolerance-patient.md)
-* [USCoreCareplanCategory](SearchParameter-us-core-careplan-category.md)
-* [USCoreCareplanDate](SearchParameter-us-core-careplan-date.md)
-* [USCoreCareplanPatient](SearchParameter-us-core-careplan-patient.md)
-* [USCoreCareplanStatus](SearchParameter-us-core-careplan-status.md)
+* [USCoreDiagnosticreportCategory](SearchParameter-us-core-diagnosticreport-category.md)
+* [USCoreDiagnosticreportCode](SearchParameter-us-core-diagnosticreport-code.md)
+* [USCoreDiagnosticreportDate](SearchParameter-us-core-diagnosticreport-date.md)
+* [USCoreDiagnosticreportLastUpdated](SearchParameter-us-core-diagnosticreport-lastupdated.md)
+* [USCoreDiagnosticreportPatient](SearchParameter-us-core-diagnosticreport-patient.md)
+* [USCoreDiagnosticreportStatus](SearchParameter-us-core-diagnosticreport-status.md)
+* [USCorePatientBirthdate](SearchParameter-us-core-patient-birthdate.md)
+* [USCorePatientDeathDate](SearchParameter-us-core-patient-death-date.md)
+* [USCorePatientFamily](SearchParameter-us-core-patient-family.md)
+* [USCorePatientGiven](SearchParameter-us-core-patient-given.md)
+* [USCorePatientId](SearchParameter-us-core-patient-id.md)
+* [USCorePatientIdentifier](SearchParameter-us-core-patient-identifier.md)
+* [USCorePatientName](SearchParameter-us-core-patient-name.md)
 
 ### Examples
 

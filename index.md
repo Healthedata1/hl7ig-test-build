@@ -85,21 +85,21 @@ This IG Contains the following dependencies on other IGs.
 ```
 This publication includes IP covered under the following statements.
 <ul>
-<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
 <ul>
-<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a>, <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a>, <a href="StructureDefinition-us-core-careplan.html">USCoreCarePlanProfile</a> and <a href="StructureDefinition-us-core-careteam.html">USCoreCareTeam</a></li>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-us-core-diagnosticreport-lab.html">USCoreDiagnosticReportProfileLaboratoryReporting</a></li>
 </ul>
 </div></li>
-<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a> and <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a> and <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html">ParticipationFunction</a>: <a href="StructureDefinition-us-core-careteam.html">USCoreCareTeam</a></li>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a></li>
 </ul>
 </div></li>
-<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>: <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>: <a href="StructureDefinition-us-core-diagnosticreport-lab.html">USCoreDiagnosticReportProfileLaboratoryReporting</a></li>
 </ul>
 </div></li>
 </ul>
@@ -109,21 +109,21 @@ This publication includes IP covered under the following statements.
 
 This publication includes IP covered under the following statements.
 
+* This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
+
+* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreDiagnosticReportProfileLaboratoryReporting](StructureDefinition-us-core-diagnosticreport-lab.md)
+
+
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md), [USCoreCarePlanProfile](StructureDefinition-us-core-careplan.md) and [USCoreCareTeam](StructureDefinition-us-core-careteam.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
-* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
-* [ParticipationFunction](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html): [USCoreCareTeam](StructureDefinition-us-core-careteam.md)
-
-
-* Using RxNorm codes of type SAB=RXNORM as this specification describes does not require a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.
-
-* [RxNorm](http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html): [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)
+* [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
+* [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
+* [diagnosticServiceSectionId](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0074.html): [USCoreDiagnosticReportProfileLaboratoryReporting](StructureDefinition-us-core-diagnosticreport-lab.md)
 
 
 ### using {{site.data.resources[resource_].description}}
@@ -167,7 +167,7 @@ without markdown filter
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-12-24T08:46:51+00:00",
+  "date" : "2025-12-28T23:28:41+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [
     {
@@ -1158,48 +1158,6 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/us-core-allergyintolerance"
-        },
-        "name" : "US Core AllergyIntolerance Profile",
-        "description" : "The US Core AllergyIntolerance Profile inherits from the FHIR [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the AllergyIntolerance resource to record, search, and fetch allergies/adverse reactions associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/us-core-careplan"
-        },
-        "name" : "US Core CarePlan Profile",
-        "description" : "The US Core CarePlan Profile inherits from the FHIR [CarePlan](https://hl7.org/fhir/R4/careplan.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CarePlan resource to record,  search, and fetch assessment and plan of treatment data associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString" : "StructureDefinition:resource"
-          }
-        ],
-        "reference" : {
-          "reference" : "StructureDefinition/us-core-careteam"
-        },
-        "name" : "US Core CareTeam Profile",
-        "description" : "The US Core CareTeam Profile inherits from the FHIR [CareTeam](https://hl7.org/fhir/R4/careteam.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CareTeam resource for identifying the Care Team members associated with a patient to promote interoperability and adoption through common implementation. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
-        "exampleBoolean" : false
-      },
-      {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CapabilityStatement"
           }
         ],
@@ -1208,6 +1166,34 @@ without markdown filter
         },
         "name" : "US Core Client CapabilityStatement Liquid Rendered",
         "description" : "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-diagnosticreport-lab"
+        },
+        "name" : "US Core DiagnosticReport Profile for Laboratory Results Reporting",
+        "description" : "The US Core DiagnosticReport Profile for Laboratory Results Reporting inherits from the FHIR [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) resource; refer to it for scope and usage definitions. Laboratory results are grouped and summarized using the DiagnosticReport resource, which typically references Observation resource(s). Each Observation resource represents an individual laboratory test and result value or component result values or a nested panel (such as a microbial susceptibility panel) that references other observations. Laboratory results can also be presented in report form or as free text. This profile sets minimum expectations for the DiagnosticReport resource to record, search,  and fetch laboratory results associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-patient"
+        },
+        "name" : "US Core Patient Profile",
+        "description" : "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean" : false
       },
       {
@@ -1232,10 +1218,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-allergyintolerance-clinical-status"
+          "reference" : "SearchParameter/us-core-diagnosticreport-category"
         },
-        "name" : "USCoreAllergyintoleranceClinicalStatus",
-        "description" : "**active | inactive | resolved**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportCategory",
+        "description" : "**Which diagnostic discipline/department created the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       },
       {
@@ -1246,10 +1232,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-allergyintolerance-patient"
+          "reference" : "SearchParameter/us-core-diagnosticreport-code"
         },
-        "name" : "USCoreAllergyintolerancePatient",
-        "description" : "**Who the sensitivity is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportCode",
+        "description" : "**The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       },
       {
@@ -1260,10 +1246,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-category"
+          "reference" : "SearchParameter/us-core-diagnosticreport-date"
         },
-        "name" : "USCoreCareplanCategory",
-        "description" : "**Type of plan**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportDate",
+        "description" : "**The clinically relevant time of the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       },
       {
@@ -1274,10 +1260,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-date"
+          "reference" : "SearchParameter/us-core-diagnosticreport-lastupdated"
         },
-        "name" : "USCoreCareplanDate",
-        "description" : "**Time period plan covers**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportLastUpdated",
+        "description" : "**When the resource version last changed**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       },
       {
@@ -1288,10 +1274,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-patient"
+          "reference" : "SearchParameter/us-core-diagnosticreport-patient"
         },
-        "name" : "USCoreCareplanPatient",
-        "description" : "**Who the care plan is for**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportPatient",
+        "description" : "**The subject of the report if a patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       },
       {
@@ -1302,10 +1288,108 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "SearchParameter/us-core-careplan-status"
+          "reference" : "SearchParameter/us-core-diagnosticreport-status"
         },
-        "name" : "USCoreCareplanStatus",
-        "description" : "**draft | active | on-hold | revoked | completed | entered-in-error | unknown**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "name" : "USCoreDiagnosticreportStatus",
+        "description" : "**The status of the report**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-birthdate"
+        },
+        "name" : "USCorePatientBirthdate",
+        "description" : "**The patient's date of birth**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-death-date"
+        },
+        "name" : "USCorePatientDeathDate",
+        "description" : "**The date of death has been provided and satisfies this search value**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-family"
+        },
+        "name" : "USCorePatientFamily",
+        "description" : "**A portion of the family name of the patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-given"
+        },
+        "name" : "USCorePatientGiven",
+        "description" : "**A portion of the given name of the patient**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-id"
+        },
+        "name" : "USCorePatientId",
+        "description" : "**Logical id of this artifact**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-identifier"
+        },
+        "name" : "USCorePatientIdentifier",
+        "description" : "**A patient identifier**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "SearchParameter"
+          }
+        ],
+        "reference" : {
+          "reference" : "SearchParameter/us-core-patient-name"
+        },
+        "name" : "USCorePatientName",
+        "description" : "**A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text**  \nNOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:\n- `multipleAnd`\n- `multipleOr`\n- `comparator`\n- `modifier`\n- `chain`\n\nIt **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter.",
         "exampleBoolean" : false
       }
     ],

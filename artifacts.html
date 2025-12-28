@@ -206,10 +206,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-allergyintolerance-clinical-status.html" title="SearchParameter/us-core-allergyintolerance-clinical-status">USCoreAllergyintoleranceClinicalStatus</a>
+               <a href="SearchParameter-us-core-diagnosticreport-category.html" title="SearchParameter/us-core-diagnosticreport-category">USCoreDiagnosticreportCategory</a>
             </td>
             <td>
-<p><strong>active | inactive | resolved</strong><br/>
+<p><strong>Which diagnostic discipline/department created the report</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -224,10 +224,10 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-allergyintolerance-patient.html" title="SearchParameter/us-core-allergyintolerance-patient">USCoreAllergyintolerancePatient</a>
+               <a href="SearchParameter-us-core-diagnosticreport-code.html" title="SearchParameter/us-core-diagnosticreport-code">USCoreDiagnosticreportCode</a>
             </td>
             <td>
-<p><strong>Who the sensitivity is for</strong><br/>
+<p><strong>The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -242,10 +242,10 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-careplan-category.html" title="SearchParameter/us-core-careplan-category">USCoreCareplanCategory</a>
+               <a href="SearchParameter-us-core-diagnosticreport-date.html" title="SearchParameter/us-core-diagnosticreport-date">USCoreDiagnosticreportDate</a>
             </td>
             <td>
-<p><strong>Type of plan</strong><br/>
+<p><strong>The clinically relevant time of the report</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -260,10 +260,10 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-careplan-date.html" title="SearchParameter/us-core-careplan-date">USCoreCareplanDate</a>
+               <a href="SearchParameter-us-core-diagnosticreport-lastupdated.html" title="SearchParameter/us-core-diagnosticreport-lastupdated">USCoreDiagnosticreportLastUpdated</a>
             </td>
             <td>
-<p><strong>Time period plan covers</strong><br/>
+<p><strong>When the resource version last changed</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -278,10 +278,10 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-careplan-patient.html" title="SearchParameter/us-core-careplan-patient">USCoreCareplanPatient</a>
+               <a href="SearchParameter-us-core-diagnosticreport-patient.html" title="SearchParameter/us-core-diagnosticreport-patient">USCoreDiagnosticreportPatient</a>
             </td>
             <td>
-<p><strong>Who the care plan is for</strong><br/>
+<p><strong>The subject of the report if a patient</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -296,10 +296,136 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="SearchParameter-us-core-careplan-status.html" title="SearchParameter/us-core-careplan-status">USCoreCareplanStatus</a>
+               <a href="SearchParameter-us-core-diagnosticreport-status.html" title="SearchParameter/us-core-diagnosticreport-status">USCoreDiagnosticreportStatus</a>
             </td>
             <td>
-<p><strong>draft | active | on-hold | revoked | completed | entered-in-error | unknown</strong><br/>
+<p><strong>The status of the report</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-birthdate.html" title="SearchParameter/us-core-patient-birthdate">USCorePatientBirthdate</a>
+            </td>
+            <td>
+<p><strong>The patient's date of birth</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-death-date.html" title="SearchParameter/us-core-patient-death-date">USCorePatientDeathDate</a>
+            </td>
+            <td>
+<p><strong>The date of death has been provided and satisfies this search value</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-family.html" title="SearchParameter/us-core-patient-family">USCorePatientFamily</a>
+            </td>
+            <td>
+<p><strong>A portion of the family name of the patient</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-given.html" title="SearchParameter/us-core-patient-given">USCorePatientGiven</a>
+            </td>
+            <td>
+<p><strong>A portion of the given name of the patient</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-id.html" title="SearchParameter/us-core-patient-id">USCorePatientId</a>
+            </td>
+            <td>
+<p><strong>Logical id of this artifact</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-identifier.html" title="SearchParameter/us-core-patient-identifier">USCorePatientIdentifier</a>
+            </td>
+            <td>
+<p><strong>A patient identifier</strong><br/>
+NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
+  <li><code class="language-plaintext highlighter-rouge">multipleOr</code></li>
+  <li><code class="language-plaintext highlighter-rouge">comparator</code></li>
+  <li><code class="language-plaintext highlighter-rouge">modifier</code></li>
+  <li><code class="language-plaintext highlighter-rouge">chain</code></li>
+</ul>
+
+<p>It <strong>SHALL NOT</strong> be used as a search parameter for search. Servers and Clients <strong>SHOULD</strong> use the standard FHIR SearchParameter.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="SearchParameter-us-core-patient-name.html" title="SearchParameter/us-core-patient-name">USCorePatientName</a>
+            </td>
+            <td>
+<p><strong>A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text</strong><br/>
 NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the <a href="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">Conformance expectation extension</a> to define additional expectations for the following SearchParameter elements:</p>
 <ul>
   <li><code class="language-plaintext highlighter-rouge">multipleAnd</code></li>
@@ -322,26 +448,18 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-us-core-allergyintolerance.html" title="StructureDefinition/us-core-allergyintolerance">US Core AllergyIntolerance Profile</a>
+               <a href="StructureDefinition-us-core-diagnosticreport-lab.html" title="StructureDefinition/us-core-diagnosticreport-lab">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
             </td>
             <td>
-<p>The US Core AllergyIntolerance Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/allergyintolerance.html">AllergyIntolerance</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the AllergyIntolerance resource to record, search, and fetch allergies/adverse reactions associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+<p>The US Core DiagnosticReport Profile for Laboratory Results Reporting inherits from the FHIR <a href="https://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a> resource; refer to it for scope and usage definitions. Laboratory results are grouped and summarized using the DiagnosticReport resource, which typically references Observation resource(s). Each Observation resource represents an individual laboratory test and result value or component result values or a nested panel (such as a microbial susceptibility panel) that references other observations. Laboratory results can also be presented in report form or as free text. This profile sets minimum expectations for the DiagnosticReport resource to record, search,  and fetch laboratory results associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-us-core-careplan.html" title="StructureDefinition/us-core-careplan">US Core CarePlan Profile</a>
+               <a href="StructureDefinition-us-core-patient.html" title="StructureDefinition/us-core-patient">US Core Patient Profile</a>
             </td>
             <td>
-<p>The US Core CarePlan Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/careplan.html">CarePlan</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CarePlan resource to record,  search, and fetch assessment and plan of treatment data associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-us-core-careteam.html" title="StructureDefinition/us-core-careteam">US Core CareTeam Profile</a>
-            </td>
-            <td>
-<p>The US Core CareTeam Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/careteam.html">CareTeam</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the CareTeam resource for identifying the Care Team members associated with a patient to promote interoperability and adoption through common implementation. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present in the resource and how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+<p>The US Core Patient Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/patient.html">Patient</a> resource; refer to it for scope and usage definitions. This profile meets the requirements of the <a href="https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi">U.S. Core Data for Interoperability (USCDI)</a> <em>Patient Demographics/Information</em> Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
 </td>
          </tr>
       </tbody>
@@ -380,7 +498,7 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 24, 2025 08:46+0000">2025-12-24</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Dec 28, 2025 23:28+0000">2025-12-28</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

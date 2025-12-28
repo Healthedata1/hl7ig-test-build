@@ -1,148 +1,84 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30",
-      "version" : "20190418",
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "Care Team Member Function",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
-        "http://snomed.info/sct"
-      ],
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile"
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8",
-      "version" : "20210622",
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "Common substances for allergy and intolerance documentation including refutations",
-      "title" : null,
-      "description" : "",
-      "systems" : [
-        "http://www.nlm.nih.gov/research/umls/rxnorm",
-        "http://snomed.info/sct"
-      ],
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
       "version" : "4.0.1",
       "status" : "draft",
-      "name" : "AllergyIntoleranceClinicalStatusCodes",
-      "title" : "AllergyIntolerance Clinical Status Codes",
-      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.235"],
+      "sources" : ["2.16.840.1.113883.4.642.3.235"],
       "uses" : {
       },
-      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
+      "StructureDefinition-us-core-diagnosticreport-lab.html" : "US Core DiagnosticReport Profile for Laboratory Results Reporting"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "AllergyIntoleranceVerificationStatusCodes",
-      "title" : "AllergyIntolerance Verification Status Codes",
-      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
-      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "CarePlanCategory",
-      "title" : "Care Plan Category",
-      "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.148"],
-      "sources" : ["2.16.840.1.113883.4.642.3.148"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "CarePlanIntent",
-      "title" : "Care Plan Intent",
-      "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
-      "systems" : ["http://hl7.org/fhir/request-intent"],
-      "oids" : ["2.16.840.1.113883.4.642.3.150"],
-      "sources" : ["2.16.840.1.113883.4.642.3.150"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/care-team-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "CareTeamStatus",
-      "title" : "CareTeamStatus",
-      "description" : "Indicates the status of the care team.",
-      "systems" : ["http://hl7.org/fhir/care-team-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.153"],
-      "sources" : ["2.16.840.1.113883.4.642.3.153"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-careteam.html" : "US Core CareTeam Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "SNOMEDCTClinicalFindings",
-      "title" : "SNOMED CT Clinical Findings",
-      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
-      "systems" : ["http://snomed.info/sct"],
-      "oids" : ["2.16.840.1.113883.4.642.3.232"],
-      "sources" : ["2.16.840.1.113883.4.642.3.232"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/request-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "RequestStatus",
-      "title" : "RequestStatus",
-      "description" : "Codes identifying the lifecycle stage of a request.",
-      "systems" : ["http://hl7.org/fhir/request-status"],
-      "oids" : ["2.16.840.1.113883.4.642.3.111"],
-      "sources" : ["2.16.840.1.113883.4.642.3.111"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-narrative-status",
-      "version" : "5.0.1",
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes",
+      "version" : "9.0.0-ballot",
       "status" : "active",
-      "name" : "NarrativeStatus",
-      "title" : "US Core Narrative Status",
-      "description" : "The US Core Narrative Status Value Set limits the text status for the resource narrative.",
-      "systems" : ["http://hl7.org/fhir/narrative-status"],
+      "name" : "USCoreLaboratoryTestCodes",
+      "title" : "US Core Laboratory Test Codes",
+      "description" : "Laboratory LOINC codes: From the introduction to August 2022 LOINC Users' guide; \"The current scope of the existing laboratory portion of the LOINC  database includes all observations reported by clinical laboratories, including the specialty areas: chemistry, including therapeutic drug monitoring and toxicology; hematology; serology; blood bank; microbiology; cytology; surgical pathology; and fertility.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.17"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.17"],
       "uses" : {
       },
-      "StructureDefinition-us-core-careplan.html" : "US Core CarePlan Profile"
+      "StructureDefinition-us-core-diagnosticreport-lab.html" : "US Core DiagnosticReport Profile for Laboratory Results Reporting"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/Languages",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "Languages",
+      "title" : "Languages",
+      "description" : "This value set defines a set of codes for the representation of the names of languages. It uses the list of ISO 639-2 concepts using the ISO 639-1 2-digit code for a concept where possible and the 3-digit terminological code where there is no  2-digit code.",
+      "systems" : ["urn:ietf:bcp:47"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/USPS-State",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UspsTwoLetterAlphabeticCodes",
+      "title" : "USPS Two Letter Alphabetic Codes",
+      "description" : "This value set defines two letter USPS alphabetic codes.",
+      "systems" : ["https://www.usps.com/"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
     }
   ]
 }
