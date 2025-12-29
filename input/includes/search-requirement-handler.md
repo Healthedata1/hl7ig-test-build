@@ -1,4 +1,4 @@
-{%- comment %} invoke with {% include search-requirement-handler.md conf_verb="SHOULD|SHALL" search=search %}  note that the parent variables are inherited  e.g resource_type, encounter_codes, and code_codes {% endcomment -%}
+{%- comment %} invoke with {% include search-requirement-handler.md conf_verb="SHOULD|SHALL" search=search %}  note that the parent variables are inherited  e.g resource_type,fixed_category , and code1, code2 , code3 {% endcomment -%}
 
 {% assign conf_verb = include.conf_verb -%}
 {% assign search_row = include.search -%}
@@ -61,41 +61,22 @@
       {%- unless forloop.last %}&{% else %}`{% endunless -%}
    {%- endfor %}
 {% comment %} Search examples from the csv file replace '!CATEGORYNNN' and '!CODENNN' where NNN is 1, 2, 3 etc when code variables are needed{% endcomment %}
-      Example:
-      {%- assign examples = search_row.example | split: "~" -%}
-      {% for ex in examples %}
-      1.  {% assign display_example = ex -%}
-          {% if fixed_categories -%}
-          {% for code in fixed_categories -%}
-          {%- assign category_placeholder = '!CATEGORY' | append: forloop.index -%}
-          {% assign display_example = ex | replace: category_placeholder, code -%}
-          {% endfor -%}
-          {% endif -%}
-          {% if code_codes -%}
-          {% for code in code_codes -%}
-          {%- assign code_placeholder = '!CODE' | append: forloop.index -%}
-          {% assign display_example = display_example | replace: code_placeholder, code -%}
-          {% endfor -%}
-          {% endif -%}
-        {{ display_example }}
-      {% endfor %}
+      {%- assign examples = search_row.example | split: "~" %}
+      Example{% if examples.size > 1 %}{%  unless single_example -%}s{% endunless -%}{% endif %}:
+      {%  unless single_example -%}
+      >{% for ex in examples %}
+      {% assign display_example = ex -%}
+      {% assign display_example = ex | replace: '!CATEGORY', fixed_category | replace: '!CODE1', code1 | replace: '!CODE2', code2 | replace: '!CODE3', code3 -%}
+      {{ forloop.index }}. {{ display_example }}
+      >{% endfor -%}
+      {% else -%}
+      {% assign display_example = examples | first | replace: '!CATEGORY', fixed_category | replace: '!CODE1', code1 | replace: '!CODE2', code2 | replace: '!CODE3', code3 -%}
+      >1. {{ display_example }}
+      {% endunless %}
 {% comment %} add in implementation notes from the csv file, replace '!CATEGORYNNN' and '!CODENNN' where NNN is 1, 2, 3 etc when code variables are needed - for easier reading, just the code - no system  {% endcomment %}
       *Implementation Notes*: {% assign imp_notes = search_row.imp_note -%}
-          {% if fixed_categories -%}
-          {% for code in fixed_categories -%}
-          {%- assign replacement_code = code | split: '|' | last -%}
-          {%- assign category_placeholder = '!CATEGORY' | append: forloop.index -%}
-          {% assign imp_notes = search_row.imp_note | replace: category_placeholder, replacement_code -%}
-          {% endfor -%}
-          {% endif -%}
-          {% if code_codes -%}
-          {% for code in code_codes -%}
-          {%- assign replacement_code = code | split: '|' | last -%}
-          {%- assign code_placeholder = '!CODE' | append: forloop.index -%}
-          {% assign imp_notes = imp_notes | replace: code_placeholder, replacement_code -%}
-          {% endfor -%}
-          {% endif %}
-        {{ imp_notes | replace: resource_type, profile_name }}{%- if search_codes[0] == '_id' %} (see [Parameters for all resources]{% endif %}{% for search_type in search_types %} ([how to search by {{search_type}}]{% unless forloop.last %} and {% endunless %}{% endfor %}).
+        {% assign imp_notes = imp_notes | replace: resource_type, profile_name | replace: '!CATEGORY', fixed_category | replace: '!CODE1', code1 | replace: '!CODE2', code2 | replace: '!CODE3', code3 -%}
+        {{ imp_notes }}{%- if search_codes[0] == '_id' %} (see [Parameters for all resources]{% endif %}{% for search_type in search_types %} ([how to search by {{search_type}}]{% unless forloop.last %} and {% endunless %}{% endfor %}).
 {% comment %} create a reference links list of relative url for search parameters {% endcomment %}
 {% for search_code in search_codes %}
 [{{search_code}}]: {% assign search_code_row = site.data.search_requirements | where:"code", search_code |  where: "base", resource_type | first %}{{search_code_row.rel_url}}

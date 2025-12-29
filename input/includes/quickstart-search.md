@@ -5,8 +5,9 @@ invoke with:
 the include parameters:
  - type (required)  = profile resource type
  - title (required) = profile name
- - fixed_categories (optional) = comma-separated list of fixed encounter codes for supplied examples - these are profile dependent for resources with multiple profiles like Condition or Observation.
- - code_codes (optional) = comma-separated list of codes for supplied examples - these are profile dependent for resources with multiple profiles like Condition or Observation.
+ - fixed_category (optional) = a fixed category code for supplied examples  and implementation notes - these are profile dependent for resources with multiple profiles like Condition or Observation.
+ - code1, code2, code3 (optional) = codes for supplied examples - these are profile dependent for resources with multiple profiles like Condition or Observation.
+- single_example(optional) = flag for using only a single example. default is false, used for resources with multiple profiles like Condition or Observation, where not all examples provided are appropriate.
 
   {% endraw %} -->
 
@@ -26,8 +27,11 @@ then run through the csv file for all the data
 
 {% assign resource_type = include.type -%}
 {% assign profile_name = include.title -%}
-{% assign fixed_categories = include.fixed_categories | split: "," -%}
-{% assign code_codes = include.code_codes | split: "," -%}
+{% assign fixed_category = include.category -%}
+{% assign code1 = include.code1 -%}
+{% assign code2 = include.code2 -%}
+{% assign code3 = include.code3 -%}
+{% assign single_example = include.single_example %}  {% comment %} defaults to false {% endcomment -%}
 {% assign shall_searches = site.data.search_requirements | where: "base", resource_type | where: "base_conf", "SHALL" -%}
 {% if shall_searches.size > 0 %}
 #### Mandatory Search Parameters:
