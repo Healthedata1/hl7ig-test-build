@@ -43,19 +43,26 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreDiagnosticReportProfileLaboratoryReporting](StructureDefinition-us-core-diagnosticreport-lab.md)
+* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md) and [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
 * [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
-* [diagnosticServiceSectionId](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0074.html): [USCoreDiagnosticReportProfileLaboratoryReporting](StructureDefinition-us-core-diagnosticreport-lab.md)
+* [DataAbsentReason](http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html): [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md), [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md) and [USCoreObservationClinicalResultProfile](StructureDefinition-us-core-observation-clinical-result.md)
+* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md)
+
+
+* Used by permission of HL7 International, all rights reserved Creative Commons License
+
+* [US Core Category](http://tx.fhir.org/r4/ValueSet/us-core-category): [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
 
 
 ### Parameter Settings

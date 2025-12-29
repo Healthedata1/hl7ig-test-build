@@ -8,7 +8,7 @@
     <h2>Unattributed Code Systems</h2>
     <ul>
       <li>
-        <a href="SearchParameter-us-core-patient-name.html">
+        <a href="SearchParameter-us-core-observation-status.html">
 <code>urn:iso:std:iso:3166</code>        </a>
       </li>
     </ul>
@@ -33,7 +33,8 @@ This material contains content from           <a href="http://loinc.org">LOINC</
 
               <li>
                 <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>
-:                 <a href="StructureDefinition-us-core-diagnosticreport-lab.html">USCoreDiagnosticReportProfileLaboratoryReporting</a>
+:                 <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a>
+ and                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a>
               </li>
 
 
@@ -56,6 +57,7 @@ This material contains content that is copyright of SNOMED International. Implem
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a>
+ and                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a>
               </li>
 
 
@@ -85,8 +87,40 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               </li>
 
               <li>
-                <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v2-0074.html">diagnosticServiceSectionId</a>
-:                 <a href="StructureDefinition-us-core-diagnosticreport-lab.html">USCoreDiagnosticReportProfileLaboratoryReporting</a>
+                <a href="http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html">DataAbsentReason</a>
+:                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html">Observation Category Codes</a>
+:                 <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a>
+,                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a>
+ and                 <a href="StructureDefinition-us-core-observation-clinical-result.html">USCoreObservationClinicalResultProfile</a>
+              </li>
+
+              <li>
+                <a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>
+:                 <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a>
+              </li>
+
+
+            </ul>
+
+
+          </div>
+        </li>
+
+        <li>
+Used by permission of HL7 International, all rights reserved Creative Commons License          <div onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4" data-fhir="generated">
+             <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span>
+          </div>
+          <div style="display: none" id="ipp2_4">
+
+            <ul>
+
+              <li>
+                <a href="http://tx.fhir.org/r4/ValueSet/us-core-category">US Core Category</a>
+:                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a>
               </li>
 
 
@@ -105,7 +139,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2020+ HL7 International / Cross-Group Projects.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2025-12-28 
+          IG &copy; 2020+ HL7 International / Cross-Group Projects.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on FHIR 4.0.1. Generated 2025-12-29 
           
           
                       Links: Table of Contents |
@@ -135,7 +169,7 @@ Health eData 1 Sandbox - Local Development build (v0.1.0) built by the FHIR (HL7
 This material contains content from LOINC. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc. Show Usage 
 
 
-* LOINC: USCoreDiagnosticReportProfileLaboratoryReporting
+* LOINC: USCoreLaboratoryResultObservationProfile and USCoreObservationADIDocumentationProfile
 
 
 
@@ -151,7 +185,11 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
 * AllergyIntolerance Verification Status: AllergyIntolerance/example
 
-* diagnosticServiceSectionId: USCoreDiagnosticReportProfileLaboratoryReporting
+* DataAbsentReason: USCoreObservationADIDocumentationProfile
+
+* Observation Category Codes: USCoreLaboratoryResultObservationProfile, USCoreObservationADIDocumentationProfile and USCoreObservationClinicalResultProfile
+
+* ObservationInterpretation: USCoreLaboratoryResultObservationProfile
 
 
 
@@ -172,6 +210,36 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
         <th>
           <b>Content</b>
         </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-us-core-observation-clinical-result-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org">unitsofmeasure.org</a>
+        </td>
+        <td>
+The clinical test or procedure result value. If a numeric value, valueQuantity.code           <strong>SHALL</strong>
+ be selected from           <a href="http://unitsofmeasure.org">UCUM</a>
+.  A FHIR           <a href="http://hl7.org/fhir/STU3/valueset-ucum-units.html">UCUM Codes value set</a>
+ that defines all UCUM codes is in the FHIR specification.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="StructureDefinition-us-core-observation-lab-definitions.html">web</a>
+        </td>
+        <td>
+          <a href="http://unitsofmeasure.org">unitsofmeasure.org</a>
+        </td>
+        <td>
+The Laboratory result value.  If a coded value,  the valueCodeableConcept.code           <strong>SHOULD</strong>
+ be selected from           <a href="http://hl7.org/fhir/ValueSet/uslab-obs-codedresults">SNOMED CT</a>
+ if the concept exists. If a numeric value, valueQuantity.code           <strong>SHALL</strong>
+ be selected from           <a href="http://unitsofmeasure.org">UCUM</a>
+.  A FHIR           <a href="http://hl7.org/fhir/STU3/valueset-ucum-units.html">UCUM Codes value set</a>
+ that defines all UCUM codes is in the FHIR specification.
+        </td>
       </tr>
     </table>
     <h2>Internal Images</h2>

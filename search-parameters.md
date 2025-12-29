@@ -56,22 +56,16 @@ These SearchParameter are used solely to document Server and Client expectations
 
 They **SHALL NOT** be interpreted as search parameters for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameters.
 
-#### DiagnosticReport
+#### Observation
 
-* [US Core Diagnosticreport Category]
-* [US Core Diagnosticreport Code]
-* [US Core Diagnosticreport Date]
-* [US Core Diagnosticreport Lastupdated]
-* [US Core Diagnosticreport Patient]
-* [US Core Diagnosticreport Status]
+* [US Core Observation Category]
+* [US Core Observation Code]
+* [US Core Observation Date]
+* [US Core Observation Lastupdated]
+* [US Core Observation Patient]
+* [US Core Observation Status]
 
 #### Patient
 
-* [US Core Patient Birthdate]
-* [US Core Patient Death Date]
-* [US Core Patient Family]
-* [US Core Patient Given]
-* [US Core Patient Id]
-* [US Core Patient Identifier]
-* [US Core Patient Name]
+      ⸺
 

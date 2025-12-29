@@ -14,7 +14,9 @@
 
 ### Resource Profiles
 
-* [US Core DiagnosticReport Profile for Laboratory Results Reporting](StructureDefinition-us-core-diagnosticreport-lab.md)
+* [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.md)
+* [US Core Observation Clinical Result Profile](StructureDefinition-us-core-observation-clinical-result.md)
+* [US Core Laboratory Result Observation Profile](StructureDefinition-us-core-observation-lab.md)
 * [US Core Patient Profile](StructureDefinition-us-core-patient.md)
 
 ### CapabilityStatements
@@ -28,19 +30,12 @@
 
 ### SearchParameters
 
-* [USCoreDiagnosticreportCategory](SearchParameter-us-core-diagnosticreport-category.md)
-* [USCoreDiagnosticreportCode](SearchParameter-us-core-diagnosticreport-code.md)
-* [USCoreDiagnosticreportDate](SearchParameter-us-core-diagnosticreport-date.md)
-* [USCoreDiagnosticreportLastUpdated](SearchParameter-us-core-diagnosticreport-lastupdated.md)
-* [USCoreDiagnosticreportPatient](SearchParameter-us-core-diagnosticreport-patient.md)
-* [USCoreDiagnosticreportStatus](SearchParameter-us-core-diagnosticreport-status.md)
-* [USCorePatientBirthdate](SearchParameter-us-core-patient-birthdate.md)
-* [USCorePatientDeathDate](SearchParameter-us-core-patient-death-date.md)
-* [USCorePatientFamily](SearchParameter-us-core-patient-family.md)
-* [USCorePatientGiven](SearchParameter-us-core-patient-given.md)
-* [USCorePatientId](SearchParameter-us-core-patient-id.md)
-* [USCorePatientIdentifier](SearchParameter-us-core-patient-identifier.md)
-* [USCorePatientName](SearchParameter-us-core-patient-name.md)
+* [USCoreObservationCategory](SearchParameter-us-core-observation-category.md)
+* [USCoreObservationCode](SearchParameter-us-core-observation-code.md)
+* [USCoreObservationDate](SearchParameter-us-core-observation-date.md)
+* [USCoreObservationLastUpdated](SearchParameter-us-core-observation-lastupdated.md)
+* [USCoreObservationPatient](SearchParameter-us-core-observation-patient.md)
+* [USCoreObservationStatus](SearchParameter-us-core-observation-status.md)
 
 ### Examples
 

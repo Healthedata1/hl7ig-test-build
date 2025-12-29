@@ -25,16 +25,16 @@
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
     },
     {
-      "url" : "http://hl7.org/fhir/diagnostic-report-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "DiagnosticReportStatus",
-      "title" : "DiagnosticReportStatus",
-      "description" : "The status of the diagnostic report.",
-      "oids" : ["2.16.840.1.113883.4.642.4.236"],
+      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+      "version" : "9.0.0-ballot",
+      "status" : "active",
+      "name" : "USCoreCategory",
+      "title" : "US Core Category",
+      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
+      "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category"
     },
     {
       "url" : "http://loinc.org",
@@ -47,6 +47,31 @@
       "uses" : {
       },
       "http://tx.fhir.org/r4/ValueSet/us-core-laboratory-test-codes" : "US Core Laboratory Test Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://tx.fhir.org/r4/ValueSet/us-core-clinical-result-observation-category" : "US Core Clinical Result Observation Category",
+      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
       "url" : "urn:ietf:bcp:47",

@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-12-28T23:28:41+00:00"/>
+  <date value="2025-12-29T21:47:57+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -655,10 +655,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/us-core-diagnosticreport-lab"/>
+        <reference value="StructureDefinition/us-core-observation-lab"/>
       </reference>
-      <name value="US Core DiagnosticReport Profile for Laboratory Results Reporting"/>
-      <description value="The US Core DiagnosticReport Profile for Laboratory Results Reporting inherits from the FHIR [DiagnosticReport](https://hl7.org/fhir/R4/diagnosticreport.html) resource; refer to it for scope and usage definitions. Laboratory results are grouped and summarized using the DiagnosticReport resource, which typically references Observation resource(s). Each Observation resource represents an individual laboratory test and result value or component result values or a nested panel (such as a microbial susceptibility panel) that references other observations. Laboratory results can also be presented in report form or as free text. This profile sets minimum expectations for the DiagnosticReport resource to record, search,  and fetch laboratory results associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <name value="US Core Laboratory Result Observation Profile"/>
+      <description value="The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-observation-adi-documentation"/>
+      </reference>
+      <name value="US Core Observation ADI Documentation Profile"/>
+      <description value="The US Core Observation Advance Directive Information (ADI) Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI DocumentationReference Profile](StructureDefinition-us-core-adi-documentreference.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It is used to communicate whether a person has advance directive information (ADI) and, if one or more documents exist, their location. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the type of advance directive document, the author, the verifier, and other properties, see the US Core ADI DocumentReference Profile. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/us-core-observation-clinical-result"/>
+      </reference>
+      <name value="US Core Observation Clinical Result Profile"/>
+      <description value="The US Core Observation Clinical Result Profile is based upon the core FHIR Observation Resource and, along with the US Core DiagnosticReport Profile, meets the US Core Data for Interoperability (USCDI) requirements for *Diagnostic Imaging* and *Clinical Tests* Data Classes. This profile sets minimum expectations for the Observation resource to record and search non-laboratory clinical test results (e.g., radiology and other clinical observations generated from procedures). An example would be when a gastroenterologist reports the size of a polyp observed during a colonoscopy. This profile is the basis for the US Core Laboratory Result Observation Profile, which defines additional data elements to record and search laboratory test results.&#xA;&#xA;The US Core Observation Clinical Result Profile sets minimum expectations to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -688,10 +710,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-category"/>
+        <reference value="SearchParameter/us-core-observation-category"/>
       </reference>
-      <name value="USCoreDiagnosticreportCategory"/>
-      <description value="**Which diagnostic discipline/department created the report**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
+      <name value="USCoreObservationCategory"/>
+      <description value="**The classification of the type of observation**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -699,10 +721,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-code"/>
+        <reference value="SearchParameter/us-core-observation-code"/>
       </reference>
-      <name value="USCoreDiagnosticreportCode"/>
-      <description value="**The code for the report, as opposed to codes for the atomic results, which are the names on the observation resource referred to from the result**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
+      <name value="USCoreObservationCode"/>
+      <description value="**The code of the observation type**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -710,10 +732,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-date"/>
+        <reference value="SearchParameter/us-core-observation-date"/>
       </reference>
-      <name value="USCoreDiagnosticreportDate"/>
-      <description value="**The clinically relevant time of the report**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
+      <name value="USCoreObservationDate"/>
+      <description value="**Obtained date/time. If the obtained element is a period, a date that falls in the period**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -721,9 +743,9 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-lastupdated"/>
+        <reference value="SearchParameter/us-core-observation-lastupdated"/>
       </reference>
-      <name value="USCoreDiagnosticreportLastUpdated"/>
+      <name value="USCoreObservationLastUpdated"/>
       <description value="**When the resource version last changed**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -732,10 +754,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-patient"/>
+        <reference value="SearchParameter/us-core-observation-patient"/>
       </reference>
-      <name value="USCoreDiagnosticreportPatient"/>
-      <description value="**The subject of the report if a patient**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
+      <name value="USCoreObservationPatient"/>
+      <description value="**The subject that the observation is about (if patient)**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -743,87 +765,10 @@
         <valueString value="SearchParameter"/>
       </extension>
       <reference>
-        <reference value="SearchParameter/us-core-diagnosticreport-status"/>
+        <reference value="SearchParameter/us-core-observation-status"/>
       </reference>
-      <name value="USCoreDiagnosticreportStatus"/>
-      <description value="**The status of the report**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-birthdate"/>
-      </reference>
-      <name value="USCorePatientBirthdate"/>
-      <description value="**The patient's date of birth**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-death-date"/>
-      </reference>
-      <name value="USCorePatientDeathDate"/>
-      <description value="**The date of death has been provided and satisfies this search value**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-family"/>
-      </reference>
-      <name value="USCorePatientFamily"/>
-      <description value="**A portion of the family name of the patient**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-given"/>
-      </reference>
-      <name value="USCorePatientGiven"/>
-      <description value="**A portion of the given name of the patient**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-id"/>
-      </reference>
-      <name value="USCorePatientId"/>
-      <description value="**Logical id of this artifact**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-identifier"/>
-      </reference>
-      <name value="USCorePatientIdentifier"/>
-      <description value="**A patient identifier**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="SearchParameter"/>
-      </extension>
-      <reference>
-        <reference value="SearchParameter/us-core-patient-name"/>
-      </reference>
-      <name value="USCorePatientName"/>
-      <description value="**A server defined search that may match any of the string fields in the HumanName, including family, give, prefix, suffix, suffix, and/or text**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
+      <name value="USCoreObservationStatus"/>
+      <description value="**The status of the observation**  &#xA;NOTE: This SearchParameter is defined only to document Server and Client expectations. Its definition is derived from the standard FHIR SearchParameter and it uses the [Conformance expectation extension](http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation) to define additional expectations for the following SearchParameter elements:&#xA;- `multipleAnd`&#xA;- `multipleOr`&#xA;- `comparator`&#xA;- `modifier`&#xA;- `chain`&#xA;&#xA;It **SHALL NOT** be used as a search parameter for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameter."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

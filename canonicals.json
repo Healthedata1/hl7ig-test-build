@@ -14,102 +14,67 @@
     "name" : "UsCoreServerCapabilityStatementLiquid"
   },
   {
-    "id" : "us-core-diagnosticreport-category",
+    "id" : "us-core-observation-category",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-category",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportCategory"
+    "name" : "USCoreObservationCategory"
   },
   {
-    "id" : "us-core-diagnosticreport-code",
+    "id" : "us-core-observation-code",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-code",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-code",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportCode"
+    "name" : "USCoreObservationCode"
   },
   {
-    "id" : "us-core-diagnosticreport-date",
+    "id" : "us-core-observation-date",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-date",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-date",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportDate"
+    "name" : "USCoreObservationDate"
   },
   {
-    "id" : "us-core-diagnosticreport-lastupdated",
+    "id" : "us-core-observation-lastupdated",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-lastupdated",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-lastupdated",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportLastUpdated"
+    "name" : "USCoreObservationLastUpdated"
   },
   {
-    "id" : "us-core-diagnosticreport-patient",
+    "id" : "us-core-observation-patient",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-patient",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-patient",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportPatient"
+    "name" : "USCoreObservationPatient"
   },
   {
-    "id" : "us-core-diagnosticreport-status",
+    "id" : "us-core-observation-status",
     "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-diagnosticreport-status",
+    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-status",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticreportStatus"
+    "name" : "USCoreObservationStatus"
   },
   {
-    "id" : "us-core-patient-birthdate",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-birthdate",
-    "version" : "0.1.0",
-    "name" : "USCorePatientBirthdate"
-  },
-  {
-    "id" : "us-core-patient-death-date",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-death-date",
-    "version" : "0.1.0",
-    "name" : "USCorePatientDeathDate"
-  },
-  {
-    "id" : "us-core-patient-family",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-family",
-    "version" : "0.1.0",
-    "name" : "USCorePatientFamily"
-  },
-  {
-    "id" : "us-core-patient-given",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-given",
-    "version" : "0.1.0",
-    "name" : "USCorePatientGiven"
-  },
-  {
-    "id" : "us-core-patient-id",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-id",
-    "version" : "0.1.0",
-    "name" : "USCorePatientId"
-  },
-  {
-    "id" : "us-core-patient-identifier",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-identifier",
-    "version" : "0.1.0",
-    "name" : "USCorePatientIdentifier"
-  },
-  {
-    "id" : "us-core-patient-name",
-    "type" : "SearchParameter",
-    "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-patient-name",
-    "version" : "0.1.0",
-    "name" : "USCorePatientName"
-  },
-  {
-    "id" : "us-core-diagnosticreport-lab",
+    "id" : "us-core-observation-adi-documentation",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
     "version" : "0.1.0",
-    "name" : "USCoreDiagnosticReportProfileLaboratoryReporting"
+    "name" : "USCoreObservationADIDocumentationProfile"
+  },
+  {
+    "id" : "us-core-observation-clinical-result",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
+    "version" : "0.1.0",
+    "name" : "USCoreObservationClinicalResultProfile"
+  },
+  {
+    "id" : "us-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+    "version" : "0.1.0",
+    "name" : "USCoreLaboratoryResultObservationProfile"
   },
   {
     "id" : "us-core-patient",

@@ -5,10 +5,18 @@
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
-    "DiagnosticReport": [
+    "Observation": [
       {
-        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab",
-        "title": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
+        "title": "US Core Observation ADI Documentation Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
+        "title": "US Core Observation Clinical Result Profile"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+        "title": "US Core Laboratory Result Observation Profile"
       }
     ],
     "Patient": [
@@ -44,6 +52,7 @@
       "CapabilityStatement.rest.resource"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
@@ -54,6 +63,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
       "StructureDefinition.differential.element.type",
@@ -66,6 +78,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
       "AllergyIntolerance.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -85,6 +100,9 @@
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "Observation"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"
