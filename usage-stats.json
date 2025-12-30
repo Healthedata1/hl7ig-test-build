@@ -44,6 +44,9 @@
     "http://hl7.org/fhir/5.0/StructureDefinition/extension-DocumentReference.attester": [
       "DocumentReference"
     ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title": [
+      "SearchParameter"
+    ],
     "http://hl7.org/fhir/StructureDefinition/artifact-reference": [
       "CapabilityStatement.implementationGuide",
       "CapabilityStatement.rest.resource.operation",

@@ -50,7 +50,7 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the[practitioner](SearchParameter-us-core-practitionerrole-practitioner.md)search parameter:
+1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the[practitioner](http://hl7.org/fhir/R4/practitioner.html)search parameter:
 * Including support for these chained parameters: `practitioner.identifier,name`
 * Including optional support for these `_include` parameters: `PractitionerRole:endpoint`, `PractitionerRole:practitioner`
 `GET [base]/PractitionerRole?practitioner={Type/}[id]`Examples:

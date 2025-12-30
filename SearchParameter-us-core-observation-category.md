@@ -69,6 +69,10 @@ It**SHALL NOT**be used as a search parameter for search. Servers and Clients**SH
     {
       "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
       "valueInteger" : 5
+    },
+    {
+      "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title",
+      "valueString" : "US Core Observation Category"
     }
   ],
   "url" : "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category",

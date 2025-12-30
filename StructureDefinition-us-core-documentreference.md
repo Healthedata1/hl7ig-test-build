@@ -55,21 +55,21 @@ The following search parameters and search parameter combinations **SHALL** be s
 1. GET [base]/DocumentReference/2169591
 1. GET [base]/DocumentReference?_id=2169591
 
-**Implementation Notes**: Fetches a single US Core DocumentReference Profile or a search Bundle containing a US Core DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a [Binary] resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see [Parameters for all resources]).
+**Implementation Notes**: Fetches a single US Core DocumentReference Profile or a search Bundle containing a US Core DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a[Binary](http://hl7.org/fhir/R4/binary.html)resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see [Parameters for all resources]).
 
-1. **SHALL**support searching for all documentreferences for a patient using the[patient](SearchParameter-us-core-documentreference-patient.md)search parameter:`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
+1. **SHALL**support searching for all documentreferences for a patient using the[patient](http://hl7.org/fhir/R4/patient.html)search parameter:`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
 > 
 1. GET [base]/DocumentReference?patient=Patient/1137192
 
 **Implementation Notes**: Fetches a bundle of all US Core DocumentReference Profile resources for the specified patient. See the implementation notes above for how to access the actual document. ([how to search by reference](foo.md)).
 
-1. **SHALL**support searching for all clinical notes for a given patient using the combination of[patient](SearchParameter-us-core-documentreference-patient.md)and[category](SearchParameter-us-core-documentreference-category.md)search parameters:`GET [base]/DocumentReference?patient={Patient/}[id]&category={system|}[search_code]`Example:
+1. **SHALL**support searching for all clinical notes for a given patient using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-documentreference-category.md)search parameters:`GET [base]/DocumentReference?patient={Patient/}[id]&category={system|}[search_code]`Example:
 > 
 1. GET [base]/DocumentReference?patient=Patient/1137192&category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note
 
 **Implementation Notes**: Fetches a bundle of all US Core DocumentReference Profile resources for the specified patient and category = "clinical-note". See the implementation notes above for how to access the actual document. ([how to search by reference](foo.md)and ([how to search by token]).
 
-1. **SHALL**support searching for all clinical notes for a given patient by date (for example, since 2019) using the combination of[patient](SearchParameter-us-core-documentreference-patient.md)and[category](SearchParameter-us-core-documentreference-category.md)and[date](SearchParameter-us-core-documentreference-date.md)search parameters:
+1. **SHALL**support searching for all clinical notes for a given patient by date (for example, since 2019) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-documentreference-category.md)and[date](SearchParameter-us-core-documentreference-date.md)search parameters:
 * Including optional support for **AND** search on `date` (e.g.`date=[date]&date=[date]&...`)
 * Including support for these `date` comparators: "gt", "lt", "ge", "le"
 `GET [base]/DocumentReference?patient={Patient/}[id]&category={system|}[search_code]&date={gt|lt|ge|le}[dateTime]{&date={gt|lt|ge|le}[dateTime]&...}`Example:
@@ -78,7 +78,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 **Implementation Notes**: Fetches a bundle of all US Core DocumentReference Profile resources for the specified patient and category = "clinical-note" and date. See the implementation notes above for how to access the actual document. ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date]).
 
-1. **SHALL**support searching for a specific note type for a patient using the combination of[patient](SearchParameter-us-core-documentreference-patient.md)and[type](SearchParameter-us-core-documentreference-type.md)search parameters:`GET [base]/DocumentReference?patient={Patient/}[id]&type={system|}[search_code]`Example:
+1. **SHALL**support searching for a specific note type for a patient using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[type](SearchParameter-us-core-documentreference-type.md)search parameters:`GET [base]/DocumentReference?patient={Patient/}[id]&type={system|}[search_code]`Example:
 > 
 1. GET [base]/DocumentReference?patient=Patient/1137192&type=http://loinc.org|18842-5
 
@@ -88,7 +88,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 The following search parameters and search parameter combinations **SHOULD** be supported
 
-1. **SHOULD**support searching for all documents for a patient for a given status (for example completed reports ) using the combination of[patient](SearchParameter-us-core-documentreference-patient.md)and[status](SearchParameter-us-core-documentreference-status.md)search parameters:
+1. **SHOULD**support searching for all documents for a patient for a given status (for example completed reports ) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[status](SearchParameter-us-core-documentreference-status.md)search parameters:
 * Including support **OR** search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 `GET [base]/DocumentReference?patient={Patient/}[id]&status={system|}[search_code]{,{system|}[code],...}`Example:
 > 
@@ -96,7 +96,7 @@ The following search parameters and search parameter combinations **SHOULD** be 
 
 **Implementation Notes**: Fetches a bundle of all US Core DocumentReference Profile resources for the specified patient and status. See the implementation notes above for how to access the actual document. ([how to search by reference](foo.md)and ([how to search by token]).
 
-1. **SHOULD**support searching for a document for a patient by type and a clinically relevent date using the combination of[patient](SearchParameter-us-core-documentreference-patient.md)and[type](SearchParameter-us-core-documentreference-type.md)and[period](SearchParameter-us-core-documentreference-period.md)search parameters:
+1. **SHOULD**support searching for a document for a patient by type and a clinically relevent date using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[type](SearchParameter-us-core-documentreference-type.md)and[period](SearchParameter-us-core-documentreference-period.md)search parameters:
 * Including optional support for **AND** search on `period` (e.g.`period=[date]&period=[date]&...`)
 * Including support for these `period` comparators: "gt", "lt", "ge", "le"
 `GET [base]/DocumentReference?patient={Patient/}[id]&type={system|}[search_code]&period={gt|lt|ge|le}[dateTime]{&date={gt|lt|ge|le}[dateTime]&...}`Example:

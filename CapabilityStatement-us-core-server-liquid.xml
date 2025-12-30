@@ -223,7 +223,6 @@
 
       <h4>Summary of Resource/Profile Capabilities</h4>
       <table style="width: 100%;" class="grid">
-        <thead>
           <colgroup>
             <col style="width: 15%;"/>      <!-- First column: 20% -->
             <col style="width: 25%;"/>       <!-- Second: 20% -->
@@ -232,6 +231,7 @@
             <col style="width: 15%;"/>       <!-- fifth: 15% -->
             <col style="width: 10%;"/>       <!-- six: 10% -->
           </colgroup>
+          <thead>
           <tr>
             <th>Resource Type</th>
                <!-- <th>Supported Interactions</th> -->

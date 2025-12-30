@@ -29,6 +29,9 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
     <valueInteger value="5"/>
   </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title">
+    <valueString value="US Core Observation Category"/>
+  </extension>
   <url value="http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category"/>
   <version value="0.1.0"/>
   <name value="USCoreObservationCategory"/>

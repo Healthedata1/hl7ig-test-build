@@ -19,8 +19,8 @@ The following search parameters have been defined for the US Core Implementation
 
 The following search parameters have been defined as optional search parameters for search. US Core does not define any Server or Client expectations for their use.
 
-* [race]
-* [ethnicity]
+* [US Core Race](SearchParameter-us-core-race.md)
+* [US Core Ethnicity](SearchParameter-us-core-ethnicity.md)
 
 #### Search Parameters defined by this Implementation Guide
 
@@ -28,19 +28,19 @@ The following search parameters have been defined by US Core. They are defined t
 
 ##### CareTeam
 
-* [role]
+* [US Core CareTeam Role](SearchParameter-us-core-careteam-role.md)
 
 ##### Condition
 
-* [asserted-date]
+* [US Core Condition Asserted Date](SearchParameter-us-core-condition-asserted-date.md)
 
 ##### Encounter
 
-* [discharge-disposition]
+* [US Core Encounter Discharge Disposition](SearchParameter-us-core-encounter-discharge-disposition.md)
 
 ##### Goal
 
-* [description]
+* [US Core Goal Description](SearchParameter-us-core-goal-description.md)
 
 ##### Patient
 
@@ -66,12 +66,12 @@ They **SHALL NOT** be interpreted as search parameters for search. Servers and C
 
 #### Observation
 
-* [US Core Observation Category]
-* [US Core Observation Code]
-* [US Core Observation Date]
-* [US Core Observation Lastupdated]
-* [US Core Observation Patient]
-* [US Core Observation Status]
+* [US Core Observation Category](SearchParameter-us-core-observation-category.md)
+* [US Core Observation Code](SearchParameter-us-core-observation-code.md)
+* [US Core Observation Date](SearchParameter-us-core-observation-date.md)
+* [US Core Observation Lastupdated](SearchParameter-us-core-observation-lastupdated.md)
+* [US Core Observation Patient](SearchParameter-us-core-observation-patient.md)
+* [US Core Observation Status](SearchParameter-us-core-observation-status.md)
 
 #### Organization
 

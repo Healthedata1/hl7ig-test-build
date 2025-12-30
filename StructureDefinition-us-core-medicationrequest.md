@@ -50,7 +50,7 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching for all medications that have been prescribed to a patient. See the [Medication List Guidance] section for guidance on accessing a patient medications. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. using the combination of[patient](SearchParameter-us-core-medicationrequest-patient.md)and[intent](SearchParameter-us-core-medicationrequest-intent.md)search parameters:
+1. **SHALL**support searching for all medications that have been prescribed to a patient. See the [Medication List Guidance] section for guidance on accessing a patient medications. The server application represents the medication using either an inline code or a contained or external reference to the Medication resource. using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[intent](SearchParameter-us-core-medicationrequest-intent.md)search parameters:
 * Including optional support for these `_include` parameters: `MedicationRequest:medication`
 * Including support **OR** search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
 `GET [base]/MedicationRequest?patient={Patient/}[id]&intent={system|}[search_code]{,{system|}[code],...}`Examples:
@@ -60,7 +60,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 **Implementation Notes**: Fetches a bundle of all US Core MedicationRequest Profile resources for the specified patient and intent code = "order,plan" ([how to search by reference](foo.md)and ([how to search by token]).
 
-1. **SHALL**support searching for all prescriptions for a patient for a given status (for example all active prescriptions) using the combination of[patient](SearchParameter-us-core-medicationrequest-patient.md)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[status](SearchParameter-us-core-medicationrequest-status.md)search parameters:
+1. **SHALL**support searching for all prescriptions for a patient for a given status (for example all active prescriptions) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[status](SearchParameter-us-core-medicationrequest-status.md)search parameters:
 * Including optional support for these `_include` parameters: `MedicationRequest:medication`
 * Including support **OR** search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
 * Including support **OR** search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
@@ -75,7 +75,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 
 The following search parameters and search parameter combinations **SHOULD** be supported
 
-1. **SHOULD**support searching for all prescriptions for a patient for a given status (for example all active prescriptions) using the combination of[patient](SearchParameter-us-core-medicationrequest-patient.md)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[encounter](SearchParameter-us-core-medicationrequest-encounter.md)search parameters:
+1. **SHOULD**support searching for all prescriptions for a patient for a given status (for example all active prescriptions) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[encounter](http://hl7.org/fhir/R4/encounter.html)search parameters:
 * Including optional support for these `_include` parameters: `MedicationRequest:medication`
 * Including support **OR** search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
 `GET [base]/MedicationRequest?patient={Patient/}[id]&intent={system|}[search_code]{,{system|}[code],...}&encounter={Type/}[id]`Examples:
@@ -85,7 +85,7 @@ The following search parameters and search parameter combinations **SHOULD** be 
 
 **Implementation Notes**: Fetches a bundle of all US Core MedicationRequest Profile resources for the specified patient and intent code = "order,plan" and encounter ([how to search by reference](foo.md)and ([how to search by token]).
 
-1. **SHOULD**support searching for all prescriptions for a patient by date using the combination of[patient](SearchParameter-us-core-medicationrequest-patient.md)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[authoredon](SearchParameter-us-core-medicationrequest-authoredon.md)search parameters:
+1. **SHOULD**support searching for all prescriptions for a patient by date using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[intent](SearchParameter-us-core-medicationrequest-intent.md)and[authoredon](SearchParameter-us-core-medicationrequest-authoredon.md)search parameters:
 * Including optional support for these `_include` parameters: `MedicationRequest:medication`
 * Including support **OR** search on `intent` (e.g.`intent={system|}[code],{system|}[code],...`)
 * Including optional support for **AND** search on `authoredon` (e.g.`authoredon=[date]&authoredon=[date]&...`)

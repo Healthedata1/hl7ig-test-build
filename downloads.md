@@ -47,7 +47,7 @@ Schematrons are also available for download:
 
 ### Implementation Guide Details
 
-The following link to the [ImplementationGuide] resource defines the technical details of this publication, including dependencies and publishing parameters:
+The following link to the [ImplementationGuide](http://hl7.org/fhir/R4/implementationguide.html) resource defines the technical details of this publication, including dependencies and publishing parameters:
 
 * [US Core ImplementationGuide Resource]
 

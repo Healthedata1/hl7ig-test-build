@@ -22,6 +22,15 @@
        a fhir:Integer ;
        fhir:v 5
      ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/5.0/StructureDefinition/extension-SearchParameter.title>
+     ] ;
+     fhir:value [
+       a fhir:String ;
+       fhir:v "US Core Observation Category"
+     ]
   ] ) ; # 
   fhir:url [
      fhir:v "http://hl7.org/fhir/us/core/SearchParameter/us-core-observation-category"^^xsd:anyURI ;
