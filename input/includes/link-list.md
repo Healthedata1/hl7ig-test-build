@@ -9,3 +9,5 @@
 [extensible]: {{site.data.fhir.path}}terminologies.html#extensible
 [component]: foo.html
 [how to search by reference]: foo.html
+[how to search by token]: #.html
+[how to search by date]: #.html
