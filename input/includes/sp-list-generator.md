@@ -1,4 +1,4 @@
-<!-- Used to create a sorted list of US Core SearchParameters links displayed by title in markdown. It only list SearchParameters that are based on FHIR SearchParameters. It excludes US Core exclusively-defined SearchParameter.  It groups by type and sorts alphabetically and allows for highlighting new stuff using the include parameter.
+<!-- Used to create a sorted list of US Core SearchParameters links displayed by title in markdown. It only list SearchParameters that are based on FHIR SearchParameters. It excludes US Core exclusively-defined SearchParameter.  It groups by type and sorts alphabetically and allows for highlighting new stuff using the new_stuff data file
 -->
 
 {% assign exclude_list = "us-core-condition-asserted-date,us-core-careteam-role,us-core-encounter-discharge-disposition,us-core-goal-description" %}
@@ -14,20 +14,20 @@
 
 #### {{i}}
     {%- assign sp_exist = false -%}
-    {%- for ig_hash in site.data.ig.definition.resource -%}
+    {%- for resource_hash in site.data.resources -%}
 
-      {%- assign ig_type = ig_hash.reference.reference | split: '/' | first -%}
-      {%- if ig_type == "SearchParameter" -%}
-        {%- assign ig_id = ig_hash.reference.reference  | split: '/' | last -%}
-        {%- unless exclude_list contains ig_id -%}
-            {%- assign words = ig_id | split: '-' -%}
+      {%- assign resource_type = resource_hash[0] | split: '/' | first -%}
+      {%- if resource_type == "SearchParameter" -%}
+        {%- assign sp_id = resource_hash[0]  | split: '/' | last -%}
+        {%- unless exclude_list contains sp_id -%}
+            {%- assign words = sp_id | split: '-' -%}
             {%- assign sp_type = words[2] | strip -%}
             {%- assign i_lower = i | downcase | strip -%}
             {%- if sp_type == i_lower  %}
                 {%- assign sp_exist = true -%}
                 {%- assign new = false -%}
                 {%- for new_stuff in site.data.new_stuff -%}
-                    {%- if p.name == new_stuff -%}
+                    {%- if resource_hash[1].name == new_stuff -%}
                     {%- assign new = true -%}
                     {%- break -%}
                     {%- endif -%}
@@ -39,7 +39,7 @@
                 {%- endfor %}
                 {%- endcapture -%}
 {% comment %} {{titlecase | inspect }} {% endcomment %}
-- {% if new %}<span class="bg-success" markdown="1">{% endif %}[{{ titlecase | replace_first: 'Us', 'US' | replace: '-', ' '}}]{% if new %}</span><!-- new-content -->{% endif %}
+- {% if new %}<span class="bg-success" markdown="1">{% endif %}[{{ titlecase | replace_first: 'Us', 'US' | replace: '-', ' '}}]({{resource_hash[1].path}}){% if new %}</span><!-- new-content -->{% endif %}
             {%- endif -%}
         {%- endunless -%}
     {%- endif -%}

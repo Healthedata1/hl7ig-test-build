@@ -22,8 +22,8 @@ The following search parameters have been defined for the US Core Implementation
 The following search parameters have been defined as optional search parameters for search.  US Core does not define any Server or Client expectations for their use.
 
 
-- [race]
-- [ethnicity]
+- [US Core Race](SearchParameter-us-core-race.html)
+- [US Core Ethnicity](SearchParameter-us-core-ethnicity.html)
 
 #### Search Parameters defined by this Implementation Guide
 
@@ -32,16 +32,16 @@ The following search parameters have been defined by US Core. They are defined t
 
 
 ##### CareTeam
-- [role]
+- [US Core CareTeam Role](SearchParameter-us-core-careteam-role.html)
 
 ##### Condition
-- [asserted-date]
+- [US Core Condition Asserted Date](SearchParameter-us-core-condition-asserted-date.html)
 
 ##### Encounter
-- [discharge-disposition]
+- [US Core Encounter Discharge Disposition](SearchParameter-us-core-encounter-discharge-disposition.html)
 
 ##### Goal
-- [description]
+- [US Core Goal Description](SearchParameter-us-core-goal-description.html)
 
 ##### Patient
 
