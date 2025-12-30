@@ -7,6 +7,6 @@
 
 <!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
 
-{% include quickstart-search.md type=type title=title category="encounter-diagnosis" code1="http://snomed.info/sct\|39065001" %}
+{% include quickstart-search.md type=type title=title  category="treatment-intervention-preference" code1="http://loinc.org\|75773-2" single_example=true %}
 
-{% include link-list.md %}
+{% include link-list.md %

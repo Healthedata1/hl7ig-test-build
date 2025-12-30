@@ -7,6 +7,6 @@
 
 <!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
 
-{% include quickstart-search.md type=type title=title category="encounter-diagnosis" code1="http://snomed.info/sct\|39065001" %}
+{% include quickstart-search.md type=type title=title  category="http://terminology.hl7.org/CodeSystem/observation-category\|procedure" code1="http://loinc.org\|44974-4" code2="http://loinc.org\|44963-7" code3="http://loinc.org\|8601-7" single_example=false %}
 
 {% include link-list.md %}

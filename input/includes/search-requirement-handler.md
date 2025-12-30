@@ -13,8 +13,8 @@
       {% if search_code_row.multipleOr_conf %}- Including {% if search_code_row.multipleOr_conf == "SHOULD" %} optional {% endif %} support *OR* search on `{{search_code}}` (e.g.`{{search_code}}={system|}[code],{system|}[code],...`){% endif %}
       {% if search_code_row.shall_comparator %}- Including support for these `{{search_code}}` comparators: "{{ search_code_row.shall_comparator | split: "," | join: '", "' }}"{% endif %}
       {% if search_code_row.should_comparator %}- Including optional support for these `{{search_code}}` comparators: '{{ search_code_row.should_comparator | split: "," | join: '", "' }}"{% endif %}
-      {% if search_code_row.shall_chain %}- Including support for these chained  parameters: `{{ search_code_row.shall_chain | split: "," | join: '`, `' }}`{% endif %}
-      {% if search_code_row.should_chain %}- Including optional support for these chained parameters:  `{{ search_code_row.should_chain | split: "," | join: '`, `' }}`{% endif %}
+      {% if search_code_row.shall_chain %}- Including support for these chained  parameters: `{% for i in search_code_row.shall_chain | split: "," %}{{ i | prepend: "." | prepend: search_code }}{% unless forloop.last %}`, `{% endunless %}{% endfor %}`{% endif %}
+      {% if search_code_row.should_chain %}- Including optional support for these chained parameters: `{% for i in search_code_row.shall_chain | split: "," %}{{ i | prepend: "." | prepend: search_code }}{% unless forloop.last %}`, `{% endunless %}{% endfor %}`{% endif %}
       {% if search_code_row.shall_include %}- Including support for these `_include` parameters: `{{ search_code_row.shall_include | split: "," | join: '`, `' }}`{% endif %}
       {% if search_code_row.should_include %}- Including optional support for these `_include` parameters: `{{ search_code_row.should_include | split: "," | join: '`, `' }}`{% endif %}
    {%- endfor %}
@@ -75,7 +75,8 @@
       {% endunless %}
 {% comment %} add in implementation notes from the csv file, replace '!CATEGORYNNN' and '!CODENNN' where NNN is 1, 2, 3 etc when code variables are needed - for easier reading, just the code - no system  {% endcomment %}
       *Implementation Notes*: {% assign imp_notes = search_row.imp_note -%}
-        {% assign imp_notes = imp_notes | replace: resource_type, profile_name | replace: '!CATEGORY', fixed_category | replace: '!CODE1', code1 | replace: '!CODE2', code2 | replace: '!CODE3', code3 -%}
+        {% assign fixed_category_name = fixed_category | split: "|" | last -%}
+        {% assign imp_notes = imp_notes | replace: resource_type, profile_name | replace: '!CATEGORY', fixed_category_name | replace: '!CODE1', code1 | replace: '!CODE2', code2 | replace: '!CODE3', code3 -%}
         {{ imp_notes }}{%- if search_codes[0] == '_id' %} (see [Parameters for all resources]{% endif %}{% for search_type in search_types %} ([how to search by {{search_type}}]{% unless forloop.last %} and {% endunless %}{% endfor %}).
 {% comment %} create a reference links list of relative url for search parameters {% endcomment %}
 {% for search_code in search_codes %}

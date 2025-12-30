@@ -7,6 +7,6 @@
 
 <!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
 
-{% include quickstart-search.md type=type id=id url=url %}
+{% include quickstart-search.md type=type title=title  %}
 
 {% include link-list.md %}

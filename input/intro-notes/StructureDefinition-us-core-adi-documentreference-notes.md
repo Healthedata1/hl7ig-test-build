@@ -1,5 +1,5 @@
 <!--input/intro-notes/StructureDefinition-us-core-condition-encounter-diagnosis-notes.md -->
-<!-- establish the page context and get type,title,optionally fixed-categories and code lists (NOTE: escape "|" with "\|" and when only want a single example ) -->
+<!-- establish the page context and get type,title,optionally fixed-categories and code lists (remember to escape "|" with "\|" ) -->
 {% assign id = include.id %}
 {% assign sd = site.data.structuredefinitions[id] %}
 {% assign type = sd.type %}
@@ -7,6 +7,6 @@
 
 <!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
 
-{% include quickstart-search.md type=type title=title category="http://terminology.hl7.org/CodeSystem/v2-0074\|LAB" code1="http://loinc.org\|24323-8" %}
+{% include quickstart-search.md type=type title=title category="http://loinc.org\|42348-3" code1="http://loinc.org\|84095-9" %}
 
 {% include link-list.md %}

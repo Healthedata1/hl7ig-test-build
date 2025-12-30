@@ -5,12 +5,16 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
+<artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="CapabilityStatement/us-core-client-liquid" key="CapabilityStatement-us-core-client-liquid" name="US Core Client CapabilityStatement Liquid Rendered"/>
-<artifact id="StructureDefinition/us-core-observation-lab" key="StructureDefinition-us-core-observation-lab" name="US Core Laboratory Result Observation Profile"/>
-<artifact id="StructureDefinition/us-core-observation-adi-documentation" key="StructureDefinition-us-core-observation-adi-documentation" name="US Core Observation ADI Documentation Profile"/>
-<artifact id="StructureDefinition/us-core-observation-clinical-result" key="StructureDefinition-us-core-observation-clinical-result" name="US Core Observation Clinical Result Profile"/>
-<artifact id="StructureDefinition/us-core-patient" key="StructureDefinition-us-core-patient" name="US Core Patient Profile"/>
+<artifact id="StructureDefinition/us-core-documentreference" key="StructureDefinition-us-core-documentreference" name="US Core DocumentReference Profile"/>
+<artifact id="StructureDefinition/us-core-heart-rate" key="StructureDefinition-us-core-heart-rate" name="US Core Heart Rate Profile"/>
+<artifact id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" name="US Core MedicationRequest Profile"/>
+<artifact id="StructureDefinition/us-core-observation-pregnancystatus" key="StructureDefinition-us-core-observation-pregnancystatus" name="US Core Observation Pregnancy Status Profile"/>
+<artifact id="StructureDefinition/us-core-organization" key="StructureDefinition-us-core-organization" name="US Core Organization Profile"/>
+<artifact id="StructureDefinition/us-core-practitionerrole" key="StructureDefinition-us-core-practitionerrole" name="US Core PractitionerRole Profile"/>
 <artifact id="CapabilityStatement/us-core-server-liquid" key="CapabilityStatement-us-core-server-liquid" name="US Core Server CapabilityStatement Liquid Rendered"/>
+<artifact id="StructureDefinition/us-core-vital-signs" key="StructureDefinition-us-core-vital-signs" name="US Core Vital Signs Profile"/>
 <artifact id="SearchParameter/us-core-observation-category" key="SearchParameter-us-core-observation-category" name="USCoreObservationCategory"/>
 <artifact id="SearchParameter/us-core-observation-code" key="SearchParameter-us-core-observation-code" name="USCoreObservationCode"/>
 <artifact id="SearchParameter/us-core-observation-date" key="SearchParameter-us-core-observation-date" name="USCoreObservationDate"/>
