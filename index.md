@@ -85,28 +85,40 @@ This IG Contains the following dependencies on other IGs.
 ```
 This publication includes IP covered under the following statements.
 <ul>
-<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a><div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a> and <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a></li>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>: <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a> and <a href="StructureDefinition-us-core-vital-signs.html">USCoreVitalSignsProfile</a></li>
 </ul>
 </div></li>
-<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
 <ul>
-<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a> and <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a></li>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-heart-rate.html">USCoreHeartRateProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-vital-signs.html">USCoreVitalSignsProfile</a></li>
 </ul>
 </div></li>
-<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<ul>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a>, <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-practitionerrole.html">USCorePractitionerRoleProfile</a></li>
+</ul>
+</div></li>
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_4" onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html">DataAbsentReason</a>: <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a>, <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a> and <a href="StructureDefinition-us-core-observation-clinical-result.html">USCoreObservationClinicalResultProfile</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html">ObservationInterpretation</a>: <a href="StructureDefinition-us-core-observation-lab.html">USCoreLaboratoryResultObservationProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-medicationrequest-category.html">MedicationRequest Category Codes</a>: <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html">HL7 Document Format Codes</a>: <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a> and <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html">NullFlavor</a>: <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a> and <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html">ParticipationFunction</a>: <a href="StructureDefinition-us-core-practitionerrole.html">USCorePractitionerRoleProfile</a></li>
 </ul>
 </div></li>
-<li>Used by permission of HL7 International, all rights reserved Creative Commons License<div data-fhir="generated" id="ipp_4" onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
+<li>Used by permission of HL7 International, all rights reserved Creative Commons License<div data-fhir="generated" id="ipp_5" onClick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_5" style="display: none">
 <ul>
-<li><a href="http://tx.fhir.org/r4/ValueSet/us-core-category">US Core Category</a>: <a href="StructureDefinition-us-core-observation-adi-documentation.html">USCoreObservationADIDocumentationProfile</a></li>
+<li><a href="http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a>: <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
+</ul>
+</div></li>
+<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div data-fhir="generated" id="ipp_6" onClick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_6" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>: <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a></li>
 </ul>
 </div></li>
 </ul>
@@ -116,28 +128,40 @@ This publication includes IP covered under the following statements.
 
 This publication includes IP covered under the following statements.
 
+* The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. [https://ucum.org/trac/wiki/TermsOfUse](https://ucum.org/trac/wiki/TermsOfUse)
+
+* [Unified Code for Units of Measure (UCUM)](http://terminology.hl7.org/3.1.0/CodeSystem-v3-ucum.html): [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md) and [USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
+
+
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md) and [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
+* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreHeartRateProfile](StructureDefinition-us-core-heart-rate.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md) and [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [AllergyIntolerance Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
 * [AllergyIntolerance Verification Status](http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html): [AllergyIntolerance/example](AllergyIntolerance-example.md)
-* [DataAbsentReason](http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html): [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
-* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md), [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md) and [USCoreObservationClinicalResultProfile](StructureDefinition-us-core-observation-clinical-result.md)
-* [ObservationInterpretation](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ObservationInterpretation.html): [USCoreLaboratoryResultObservationProfile](StructureDefinition-us-core-observation-lab.md)
+* [MedicationRequest Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-medicationrequest-category.html): [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md)
+* [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)
+* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+* [NullFlavor](http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md) and [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)
+* [ParticipationFunction](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html): [USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)
 
 
 * Used by permission of HL7 International, all rights reserved Creative Commons License
 
-* [US Core Category](http://tx.fhir.org/r4/ValueSet/us-core-category): [USCoreObservationADIDocumentationProfile](StructureDefinition-us-core-observation-adi-documentation.md)
+* [US Core DocumentReferences Category Codes](http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+
+
+* Using RxNorm codes of type SAB=RXNORM as this specification describes does not require a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.
+
+* [RxNorm](http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html): [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md)
 
 
 ### using {{site.data.resources[resource_].description}}
@@ -181,7 +205,7 @@ without markdown filter
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-12-29T21:47:57+00:00",
+  "date" : "2025-12-30T04:35:06+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [
     {
@@ -1172,6 +1196,20 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-adi-documentreference"
+        },
+        "name" : "US Core ADI DocumentReference Profile",
+        "description" : "The US Core Advance Directive Information (ADI) DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html). To represent orders based on an individual's Portable Medical Order (PMO), see the [US Core PMO ServiceRequest Profile](StructureDefinition-us-core-pmo-servicerequest.html). This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "CapabilityStatement"
           }
         ],
@@ -1190,10 +1228,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/us-core-observation-lab"
+          "reference" : "StructureDefinition/us-core-documentreference"
         },
-        "name" : "US Core Laboratory Result Observation Profile",
-        "description" : "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
+        "name" : "US Core DocumentReference Profile",
+        "description" : "The US Core DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for searching and fetching patient documents including Clinical Notes using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile.",
         "exampleBoolean" : false
       },
       {
@@ -1204,10 +1242,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/us-core-observation-adi-documentation"
+          "reference" : "StructureDefinition/us-core-heart-rate"
         },
-        "name" : "US Core Observation ADI Documentation Profile",
-        "description" : "The US Core Observation Advance Directive Information (ADI) Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI DocumentationReference Profile](StructureDefinition-us-core-adi-documentreference.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It is used to communicate whether a person has advance directive information (ADI) and, if one or more documents exist, their location. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the type of advance directive document, the author, the verifier, and other properties, see the US Core ADI DocumentReference Profile. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "name" : "US Core Heart Rate Profile",
+        "description" : "The US Core Heart Rate Profile inherits from the US Core Vital Signs Profile. This profile sets minimum expectations for the Observation resource to record, search,  and fetch heart rate observations with a standard LOINC code and UCUM units of measure. It specifies which *additional*  core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean" : false
       },
       {
@@ -1218,10 +1256,10 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/us-core-observation-clinical-result"
+          "reference" : "StructureDefinition/us-core-medicationrequest"
         },
-        "name" : "US Core Observation Clinical Result Profile",
-        "description" : "The US Core Observation Clinical Result Profile is based upon the core FHIR Observation Resource and, along with the US Core DiagnosticReport Profile, meets the US Core Data for Interoperability (USCDI) requirements for *Diagnostic Imaging* and *Clinical Tests* Data Classes. This profile sets minimum expectations for the Observation resource to record and search non-laboratory clinical test results (e.g., radiology and other clinical observations generated from procedures). An example would be when a gastroenterologist reports the size of a polyp observed during a colonoscopy. This profile is the basis for the US Core Laboratory Result Observation Profile, which defines additional data elements to record and search laboratory test results.\n\nThe US Core Observation Clinical Result Profile sets minimum expectations to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases.",
+        "name" : "US Core MedicationRequest Profile",
+        "description" : "The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean" : false
       },
       {
@@ -1232,10 +1270,38 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "StructureDefinition/us-core-patient"
+          "reference" : "StructureDefinition/us-core-observation-pregnancystatus"
         },
-        "name" : "US Core Patient Profile",
-        "description" : "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "name" : "US Core Observation Pregnancy Status Profile",
+        "description" : "The  US Core Pregnancy Status Observation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Pregnancy Status* Data Element. It sets minimum expectations for the  Observation resource to record, search, and fetch the patient's state or condition of being pregnant. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-organization"
+        },
+        "name" : "US Core Organization Profile",
+        "description" : "The US Core Organization Profile inherits from the FHIR [Organization](https://hl7.org/fhir/R4/organization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Organization resource to record, search, and fetch patient or provider organziation information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-practitionerrole"
+        },
+        "name" : "US Core PractitionerRole Profile",
+        "description" : "The US Core PractitionerRole Profile inherits from the FHIR [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the PractitionerRole Resource to record, search, and fetch the practitioner role information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. The requirements for the US Core Practitioner were drawn from the [Argonaut Provider Directory](http://www.fhir.org/guides/argonaut/pd//release1/index.html),  [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf)  and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents).",
         "exampleBoolean" : false
       },
       {
@@ -1250,6 +1316,20 @@ without markdown filter
         },
         "name" : "US Core Server CapabilityStatement Liquid Rendered",
         "description" : "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-vital-signs"
+        },
+        "name" : "US Core Vital Signs Profile",
+        "description" : "This profile is based on the base [FHIR Vital Signs Profile](http://hl7.org/fhir/R4/observation-vitalsigns.html)  and defines *additional* constraints on the Observation resource to represent vital  signs observations. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.  This US Core profiles that are derived from this profile  are listed below.",
         "exampleBoolean" : false
       },
       {

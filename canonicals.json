@@ -56,32 +56,60 @@
     "name" : "USCoreObservationStatus"
   },
   {
-    "id" : "us-core-observation-adi-documentation",
+    "id" : "us-core-adi-documentreference",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-adi-documentation",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-adi-documentreference",
     "version" : "0.1.0",
-    "name" : "USCoreObservationADIDocumentationProfile"
+    "name" : "USCoreADIDocumentReferenceProfile"
   },
   {
-    "id" : "us-core-observation-clinical-result",
+    "id" : "us-core-documentreference",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
     "version" : "0.1.0",
-    "name" : "USCoreObservationClinicalResultProfile"
+    "name" : "USCoreDocumentReferenceProfile"
   },
   {
-    "id" : "us-core-observation-lab",
+    "id" : "us-core-heart-rate",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-lab",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate",
     "version" : "0.1.0",
-    "name" : "USCoreLaboratoryResultObservationProfile"
+    "name" : "USCoreHeartRateProfile"
   },
   {
-    "id" : "us-core-patient",
+    "id" : "us-core-medicationrequest",
     "type" : "StructureDefinition",
-    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest",
     "version" : "0.1.0",
-    "name" : "USCorePatientProfile"
+    "name" : "USCoreMedicationRequestProfile"
+  },
+  {
+    "id" : "us-core-observation-pregnancystatus",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-pregnancystatus",
+    "version" : "0.1.0",
+    "name" : "USCoreObservationPregnancyStatusProfile"
+  },
+  {
+    "id" : "us-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization",
+    "version" : "0.1.0",
+    "name" : "USCoreOrganizationProfile"
+  },
+  {
+    "id" : "us-core-practitionerrole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
+    "version" : "0.1.0",
+    "name" : "USCorePractitionerRoleProfile"
+  },
+  {
+    "id" : "us-core-vital-signs",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs",
+    "version" : "0.1.0",
+    "name" : "USCoreVitalSignsProfile"
   },
   {
     "id" : "hl7.fhir.us.healthedata1-sandbox",

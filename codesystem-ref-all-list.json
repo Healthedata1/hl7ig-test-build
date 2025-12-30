@@ -1,6 +1,30 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+    },
+    {
       "url" : "http://hl7.org/fhir/address-type",
       "version" : "4.0.1",
       "status" : "active",
@@ -25,16 +49,16 @@
       "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
     },
     {
-      "url" : "http://hl7.org/fhir/administrative-gender",
+      "url" : "http://hl7.org/fhir/composition-status",
       "version" : "4.0.1",
-      "status" : "active",
-      "name" : "AdministrativeGender",
-      "title" : "AdministrativeGender",
-      "description" : "The gender of a person used for administrative purposes.",
-      "oids" : ["2.16.840.1.113883.4.642.4.2"],
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "oids" : ["2.16.840.1.113883.4.642.4.242"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+      "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
     },
     {
       "url" : "http://hl7.org/fhir/contact-point-system",
@@ -61,6 +85,42 @@
       "http://hl7.org/fhir/R4/valueset-contact-point-use.html" : "ContactPointUse"
     },
     {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "oids" : ["2.16.840.1.113883.4.642.4.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "oids" : ["2.16.840.1.113883.4.642.4.245"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+    },
+    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -71,30 +131,6 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
-    },
-    {
-      "url" : "http://hl7.org/fhir/link-type",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "LinkType",
-      "title" : "LinkType",
-      "description" : "The type of link between this patient resource and another patient resource.",
-      "oids" : ["2.16.840.1.113883.4.642.4.424"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
-    },
-    {
-      "url" : "http://hl7.org/fhir/name-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "NameUse",
-      "title" : "NameUse",
-      "description" : "The use of a human name.",
-      "oids" : ["2.16.840.1.113883.4.642.4.66"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
     },
     {
       "url" : "http://hl7.org/fhir/observation-status",
@@ -109,16 +145,51 @@
       "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
-      "version" : "9.0.0-ballot",
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "USCoreCategory",
-      "title" : "US Core Category",
-      "description" : "Category codes used across US Core Profiles and resource types. They are typically used when there is a need for categorization for searching and finding resources or workflow hints.",
-      "oids" : ["2.16.840.1.113883.4.642.40.2.16.3"],
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
       "uses" : {
       },
-      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category"
+      "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "RequestPriority",
+      "description" : "Identifies the level of importance to be assigned to actioning the request.",
+      "oids" : ["2.16.840.1.113883.4.642.4.116"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Icd10CM",
+      "title" : "International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM)",
+      "description" : "The International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM), describes the classification of morbidity and mortality information for statistical purposes and for the indexing of healthcare records by diseases. The ICD-10-CM codes can be used as the value of the Act.cd attribute.",
+      "oids" : ["2.16.840.1.113883.6.90"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "USCoreDocumentReferencesCategoryCodes",
+      "title" : "US Core DocumentReferences Category Codes",
+      "description" : "The US Core DocumentReferences Type Code System is a 'starter set' of categories supported for fetching and storing DocumentReference Resources.",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-documentreference-category.html" : "US Core DocumentReference Category"
     },
     {
       "url" : "http://loinc.org",
@@ -130,8 +201,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "http://tx.fhir.org/r4/ValueSet/us-core-laboratory-test-codes" : "US Core Laboratory Test Codes"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.69.4/expansion" : "Advance Directives Categories",
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.62/expansion" : "Vital Sign Result Type",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-documentreference-type.html" : "US Core DocumentReference Type",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -143,21 +217,29 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
-      "version" : "1.0.1",
-      "status" : "active",
-      "name" : "CommonTags",
-      "title" : "Common Tags",
-      "description" : "Common Tag Codes defined by FHIR project",
-      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ContactEntityType",
+      "title" : "Contact entity type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1129"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+      "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -172,6 +254,54 @@
       "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "MedicationRequestCategoryCodes",
+      "title" : "MedicationRequest Category Codes",
+      "description" : "MedicationRequest Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationRequestCourseOfTherapyCodes",
+      "title" : "MedicationRequest Course of Therapy Codes",
+      "description" : "MedicationRequest Course of Therapy Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "MedicationRequestStatusReasonCodes",
+      "title" : "MedicationRequest Status Reason Codes",
+      "description" : "MedicationRequest Status Reason Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
       "version" : "2.0.0",
       "status" : "active",
@@ -181,9 +311,19 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1125"],
       "uses" : {
       },
-      "http://tx.fhir.org/r4/ValueSet/us-core-clinical-result-observation-category" : "US Core Clinical Result Observation Category",
-      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes",
-      "http://tx.fhir.org/r4/ValueSet/us-core-simple-observation-category" : "US Core Simple Observation Category"
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
@@ -198,18 +338,6 @@
       "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
-      "version" : "3.0.0",
-      "status" : "active",
-      "name" : "ContactRole2",
-      "title" : "contactRole2",
-      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
-      "oids" : ["2.16.840.1.113883.18.58"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
-    },
-    {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
       "version" : "5.0.0",
       "status" : "active",
@@ -222,16 +350,40 @@
       "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "3.0.0",
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "9.0.0",
       "status" : "active",
-      "name" : "MaritalStatus",
-      "title" : "MaritalStatus",
-      "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
-      "oids" : ["2.16.840.1.113883.5.2"],
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
+      "version" : "4.1.0",
+      "status" : "active",
+      "name" : "HL7DocumentFormatCodes",
+      "title" : "HL7 Document Format Codes",
+      "description" : "This codeSystem contains codes which specify the technical format of a document. Each code provides sufficient information to allow any potential document consumer to know if it will be able to process the document. The codes are sufficiently specific to ensure processing/display by identifying a document encoding, structure and template. For example, formatCodes can be used in the FHIR DocumentReference resource to characterize the document being referenced.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1407"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-HL7FormatCodes.html" : "HL7 ValueSet of Format Codes for use with Document Sharing"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -243,7 +395,7 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-documentreference-type.html" : "US Core DocumentReference Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -258,6 +410,31 @@
       "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "SubstanceAdminSubstitution",
+      "title" : "Substance Admin Substitution",
+      "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+      "oids" : ["2.16.840.1.113883.5.1070"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units",
+      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
+    },
+    {
       "url" : "urn:ietf:bcp:47",
       "version" : "2.0.0",
       "status" : "active",
@@ -267,8 +444,7 @@
       "oids" : ["2.16.840.1.113883.6.121"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages",
-      "http://terminology.hl7.org/7.0.1/ValueSet-Languages.html" : "Languages"
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
     }
   ]
 }

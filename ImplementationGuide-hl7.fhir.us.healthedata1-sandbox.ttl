@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-29T21:47:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-30T04:35:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -1791,6 +1791,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-adi-documentreference" ]
+       ] ;
+       fhir:name [ fhir:v "US Core ADI DocumentReference Profile" ] ;
+       fhir:description [ fhir:v "The US Core Advance Directive Information (ADI) DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.html). To represent orders based on an individual's Portable Medical Order (PMO), see the [US Core PMO ServiceRequest Profile](StructureDefinition-us-core-pmo-servicerequest.html). This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1816,11 +1837,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-lab> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-lab" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-documentreference> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-documentreference" ]
        ] ;
-       fhir:name [ fhir:v "US Core Laboratory Result Observation Profile" ] ;
-       fhir:description [ fhir:v "The US Core Laboratory Result Observation Profile is based upon the US Core Observation Clinical Result Profile and, along with the US Core DiagnosticReport Profile for Laboratory Results Reporting, meets the U.S. Core Data for Interoperability (USCDI) Laboratory requirements. Laboratory results are grouped and summarized using the DiagnosticReport resource, which references Observation resources. Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) that references other observations, or rarely a laboratory test with component result values. The US Core Laboratory Result Observation Profile sets minimum expectations for the Observation resource to record, search, and fetch laboratory test results associated with a patient to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets SHALL be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases." ] ;
+       fhir:name [ fhir:v "US Core DocumentReference Profile" ] ;
+       fhir:description [ fhir:v "The US Core DocumentReference Profile inherits from the FHIR [DocumentReference](https://hl7.org/fhir/R4/documentreference.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for searching and fetching patient documents including Clinical Notes using the DocumentReference resource.  It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. Before reviewing this profile, implementers are encouraged to read the Clinical Notes Guidance to understand the overlap of the US Core DiagnosticReport Profile for Report and Note exchange and the US Core DocumentReference Profile." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1837,11 +1858,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-adi-documentation> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-adi-documentation" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-heart-rate> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-heart-rate" ]
        ] ;
-       fhir:name [ fhir:v "US Core Observation ADI Documentation Profile" ] ;
-       fhir:description [ fhir:v "The US Core Observation Advance Directive Information (ADI) Documentation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile and the [US Core Observation ADI DocumentationReference Profile](StructureDefinition-us-core-adi-documentreference.html) meet the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Advance Directive Observation* Data Element requirements. It is used to communicate whether a person has advance directive information (ADI) and, if one or more documents exist, their location. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. To communicate the type of advance directive document, the author, the verifier, and other properties, see the US Core ADI DocumentReference Profile. This profile sets minimum expectations for the Observation resource to record, search, and fetch findings about the presence of a patient's advance directives. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:name [ fhir:v "US Core Heart Rate Profile" ] ;
+       fhir:description [ fhir:v "The US Core Heart Rate Profile inherits from the US Core Vital Signs Profile. This profile sets minimum expectations for the Observation resource to record, search,  and fetch heart rate observations with a standard LOINC code and UCUM units of measure. It specifies which *additional*  core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1858,11 +1879,11 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-clinical-result> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-clinical-result" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-medicationrequest> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-medicationrequest" ]
        ] ;
-       fhir:name [ fhir:v "US Core Observation Clinical Result Profile" ] ;
-       fhir:description [ fhir:v "The US Core Observation Clinical Result Profile is based upon the core FHIR Observation Resource and, along with the US Core DiagnosticReport Profile, meets the US Core Data for Interoperability (USCDI) requirements for *Diagnostic Imaging* and *Clinical Tests* Data Classes. This profile sets minimum expectations for the Observation resource to record and search non-laboratory clinical test results (e.g., radiology and other clinical observations generated from procedures). An example would be when a gastroenterologist reports the size of a polyp observed during a colonoscopy. This profile is the basis for the US Core Laboratory Result Observation Profile, which defines additional data elements to record and search laboratory test results.\n\nThe US Core Observation Clinical Result Profile sets minimum expectations to promote interoperability and adoption through common implementation. It identifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains the way the elements are used when using this profile. It provides the floor for standards development for specific use cases." ] ;
+       fhir:name [ fhir:v "US Core MedicationRequest Profile" ] ;
+       fhir:description [ fhir:v "The US Core MedicationRequest Profile inherits from the FHIR [MedicationRequest](https://hl7.org/fhir/R4/medicationrequest.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi)  *Medications* Data Class. This profile sets minimum expectations for the MedicationRequest resource to record, search, and fetch a patient's medication prescriptions or orders. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1879,11 +1900,53 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/us-core-patient" ]
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-pregnancystatus> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-observation-pregnancystatus" ]
        ] ;
-       fhir:name [ fhir:v "US Core Patient Profile" ] ;
-       fhir:description [ fhir:v "The US Core Patient Profile inherits from the FHIR [Patient](https://hl7.org/fhir/R4/patient.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the [U.S. Core Data for Interoperability (USCDI)](https://www.healthit.gov/isp/united-states-core-data-interoperability-uscdi) *Patient Demographics/Information* Data Class. It sets minimum expectations for the Patient resource to record, search, and fetch basic demographics and other administrative information about an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:name [ fhir:v "US Core Observation Pregnancy Status Profile" ] ;
+       fhir:description [ fhir:v "The  US Core Pregnancy Status Observation Profile inherits from the FHIR [Observation](https://hl7.org/fhir/R4/observation.html) resource; refer to it for scope and usage definitions. This profile meets the requirements of the U.S. Core Data for Interoperability (USCDI)  *Pregnancy Status* Data Element. It sets minimum expectations for the  Observation resource to record, search, and fetch the patient's state or condition of being pregnant. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-organization> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-organization" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Organization Profile" ] ;
+       fhir:description [ fhir:v "The US Core Organization Profile inherits from the FHIR [Organization](https://hl7.org/fhir/R4/organization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Organization resource to record, search, and fetch patient or provider organziation information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-practitionerrole> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-practitionerrole" ]
+       ] ;
+       fhir:name [ fhir:v "US Core PractitionerRole Profile" ] ;
+       fhir:description [ fhir:v "The US Core PractitionerRole Profile inherits from the FHIR [PractitionerRole](https://hl7.org/fhir/R4/practitionerrole.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the PractitionerRole Resource to record, search, and fetch the practitioner role information. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption. The requirements for the US Core Practitioner were drawn from the [Argonaut Provider Directory](http://www.fhir.org/guides/argonaut/pd//release1/index.html),  [IHE Healthcare Provider Directory](http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_HPD.pdf)  and the [ONC Provider Directory Workshop](https://confluence.oncprojectracking.org/display/PDW/Workshop+Documents)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1905,6 +1968,27 @@
        ] ;
        fhir:name [ fhir:v "US Core Server CapabilityStatement Liquid Rendered" ] ;
        fhir:description [ fhir:v "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-vital-signs> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-vital-signs" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Vital Signs Profile" ] ;
+       fhir:description [ fhir:v "This profile is based on the base [FHIR Vital Signs Profile](http://hl7.org/fhir/R4/observation-vitalsigns.html)  and defines *additional* constraints on the Observation resource to represent vital  signs observations. It specifies which core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.  This US Core profiles that are derived from this profile  are listed below." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2286,17 +2370,25 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/AllergyIntolerance/example> a fhir:Us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:Us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-client-liquid> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-lab> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-documentreference> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-adi-documentation> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-heart-rate> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-clinical-result> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-medicationrequest> a fhir:Us .
 
-<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-patient> a fhir:Us .
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-observation-pregnancystatus> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-organization> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-practitionerrole> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-server-liquid> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-vital-signs> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/SearchParameter/us-core-observation-category> a fhir:Us .
 

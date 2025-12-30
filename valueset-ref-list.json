@@ -1,122 +1,259 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.16",
-      "version" : "20241005",
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1010.4",
+      "version" : "20170601",
       "status" : "active",
-      "name" : "AnswerSetWithYesNoAndUnknowns",
-      "title" : "Answer Set with Yes No and Unknowns",
+      "name" : "Medication Clinical Drug",
+      "title" : null,
+      "description" : "",
+      "systems" : ["http://www.nlm.nih.gov/research/umls/rxnorm"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30",
+      "version" : "20190418",
+      "status" : "active",
+      "name" : "Care Team Member Function",
+      "title" : null,
       "description" : "",
       "systems" : [
-        "http://snomed.info/sct",
-        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+        "http://snomed.info/sct"
       ],
-      "oids" : ["2.16.840.1.113762.1.4.1267.16"],
-      "sources" : ["2.16.840.1.113762.1.4.1267.16"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
-      "version" : "4.0.1",
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1115.41",
+      "version" : "20250407",
       "status" : "active",
-      "name" : "ContactPointSystem",
-      "title" : "ContactPointSystem",
-      "description" : "Telecommunications form for contact point.",
-      "systems" : ["http://hl7.org/fhir/contact-point-system"],
-      "oids" : ["2.16.840.1.113883.4.642.3.71"],
-      "sources" : ["2.16.840.1.113883.4.642.3.71"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ContactPointUse",
-      "title" : "ContactPointUse",
-      "description" : "Use of contact point.",
-      "systems" : ["http://hl7.org/fhir/contact-point-use"],
-      "oids" : ["2.16.840.1.113883.4.642.3.73"],
-      "sources" : ["2.16.840.1.113883.4.642.3.73"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
-      "version" : "4.0.1",
-      "status" : "active",
-      "name" : "ObservationInterpretationCodes",
-      "title" : "Observation Interpretation Codes",
-      "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
-      ],
-      "oids" : ["2.16.840.1.113883.4.642.3.399"],
-      "sources" : ["2.16.840.1.113883.4.642.3.399"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-observation-lab.html" : "US Core Laboratory Result Observation Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-clinical-result-observation-category",
-      "version" : "9.0.0-ballot",
-      "status" : "active",
-      "name" : "USCoreClinicalResultObservationCategory",
-      "title" : "US Core Clinical Result Observation Category",
-      "description" : "Used to classify the context of clinical result observations.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
-      "oids" : ["2.16.840.1.113883.4.642.40.2.48.2"],
-      "sources" : ["2.16.840.1.113883.4.642.40.2.48.2"],
-      "uses" : {
-      },
-      "StructureDefinition-us-core-observation-clinical-result.html" : "US Core Observation Clinical Result Profile"
-    },
-    {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-laboratory-test-codes",
-      "version" : "9.0.0-ballot",
-      "status" : "active",
-      "name" : "USCoreLaboratoryTestCodes",
-      "title" : "US Core Laboratory Test Codes",
-      "description" : "Laboratory LOINC codes: From the introduction to August 2022 LOINC Users' guide; \"The current scope of the existing laboratory portion of the LOINC  database includes all observations reported by clinical laboratories, including the specialty areas: chemistry, including therapeutic drug monitoring and toxicology; hematology; serology; blood bank; microbiology; cytology; surgical pathology; and fertility.",
+      "name" : "AdvanceHealthcareDirectiveDocumentTypesGrouper",
+      "title" : "Advance Healthcare Directive Document Types Grouper",
+      "description" : "",
       "systems" : ["http://loinc.org"],
-      "oids" : ["2.16.840.1.113883.4.642.40.2.48.17"],
-      "sources" : ["2.16.840.1.113883.4.642.40.2.48.17"],
+      "oids" : ["2.16.840.1.113762.1.4.1115.41"],
+      "sources" : ["2.16.840.1.113762.1.4.1115.41"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-lab.html" : "US Core Laboratory Result Observation Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
-      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-simple-observation-category",
-      "version" : "9.0.0-ballot",
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.12",
+      "version" : "20240906",
       "status" : "active",
-      "name" : "USCoreSimpleObservationCategory",
-      "title" : "US Core Simple Observation Category",
-      "description" : "This value set is a value set of category codes used in the US Core Simple Observation and Condition Problems and Health Concerns Profiles that any conformant system **SHOULD** support to help identify the type of USCDI Health Status/Assessment data class being reported.",
+      "name" : "PregnancyStatusObservation",
+      "title" : "Pregnancy Status Observation",
+      "description" : "",
       "systems" : [
-        "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
-        "http://terminology.hl7.org/CodeSystem/observation-category"
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://snomed.info/sct"
       ],
-      "oids" : ["2.16.840.1.113883.4.642.40.2.48.13"],
-      "sources" : ["2.16.840.1.113883.4.642.40.2.48.13"],
+      "oids" : ["2.16.840.1.113762.1.4.1240.12"],
+      "sources" : ["2.16.840.1.113762.1.4.1240.12"],
       "uses" : {
       },
-      "StructureDefinition-us-core-observation-adi-documentation.html" : "US Core Observation ADI Documentation Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
     },
     {
-      "url" : "http://terminology.hl7.org/ValueSet/Languages",
-      "version" : "1.0.0",
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.22",
+      "version" : "20241015",
       "status" : "active",
-      "name" : "Languages",
-      "title" : "Languages",
-      "description" : "This value set defines a set of codes for the representation of the names of languages. It uses the list of ISO 639-2 concepts using the ISO 639-1 2-digit code for a concept where possible and the 3-digit terminological code where there is no  2-digit code.",
-      "systems" : ["urn:ietf:bcp:47"],
+      "name" : "RouteOfAdministrationOfTherapeuticAgents",
+      "title" : "Route of Administration of Therapeutic Agents",
+      "description" : "",
+      "systems" : [
+        "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1267.22"],
+      "sources" : ["2.16.840.1.113762.1.4.1267.22"],
       "uses" : {
       },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.69.4",
+      "version" : "20200604",
+      "status" : "active",
+      "name" : "Advance Directives Categories",
+      "title" : null,
+      "description" : "",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.88.12.80.62",
+      "version" : "20210630",
+      "status" : "active",
+      "name" : "Vital Sign Result Type",
+      "title" : null,
+      "description" : "",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066",
+      "version" : "C-CDA R2.1 2020-07-13",
+      "status" : "active",
+      "name" : "HealthcareProviderTaxonomy",
+      "title" : "Healthcare Provider Taxonomy",
+      "description" : "(Clinical Focus: Represent the \"type\" of health care provider individual or organization using the National Uniform Claims Committee (NUCC) code system),(Data Element Scope: The assignedEntity attribute),(Inclusion Criteria: All codes in the NUCC Provider Taxonomy code system),(Exclusion Criteria: None)",
+      "systems" : ["urn:oid:2.16.840.1.113883.6.101"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Category Codes",
+      "title" : "Medication request  category  codes",
+      "description" : "MedicationRequest Category Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1322"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1322"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationRequest Intent",
+      "title" : "Medication request  intent",
+      "description" : "MedicationRequest Intent Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1321"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1321"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "medicationrequest Status",
+      "title" : "Medicationrequest  status",
+      "description" : "MedicationRequest Status Codes",
+      "systems" : ["http://hl7.org/fhir/CodeSystem/medicationrequest-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1320"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1320"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Common UCUM units",
+      "title" : null,
+      "description" : "Commonly encountered UCUM units (for purposes of helping populate look ups.",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "VitalSignsUnits",
+      "title" : "Vital Signs Units",
+      "description" : "Common UCUM units for recording Vital Signs",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.955"],
+      "sources" : ["2.16.840.1.113883.4.642.3.955"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "USCoreConditionCodes",
+      "title" : "US Core Condition Codes",
+      "description" : "This describes the problem. Diagnosis/Problem List is broadly defined as a series of brief statements that catalog a patient's medical, nursing, dental, social, preventative and psychiatric events and issues that are relevant to that patient's healthcare (e.g., signs, symptoms, and defined conditions). ICD-10 is appropriate for Diagnosis information, and ICD-9 for historical information.",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "USCoreDocumentReferenceCategory",
+      "title" : "US Core DocumentReference Category",
+      "description" : "The US Core DocumentReferences Category Value Set is a 'starter set' of categories supported for fetching and storing clinical notes.",
+      "systems" : [
+        "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type",
+      "version" : "5.0.1",
+      "status" : "active",
+      "name" : "USCoreDocumentReferenceType",
+      "title" : "US Core DocumentReference Type",
+      "description" : "The US Core DocumentReference Type Value Set includes all LOINC  values whose SCALE is DOC in the LOINC database and the HL7 v3 Code System NullFlavor concept 'unknown'",
+      "systems" : [
+        "http://loinc.org",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/USPS-State",
@@ -128,7 +265,25 @@
       "systems" : ["https://www.usps.com/"],
       "uses" : {
       },
-      "StructureDefinition-us-core-patient.html" : "US Core Patient Profile"
+      "StructureDefinition-us-core-organization.html" : "US Core Organization Profile"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-HL7FormatCodes",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "HL7FormatCodes",
+      "title" : "HL7 ValueSet of Format Codes for use with Document Sharing",
+      "description" : "The HL7-FormatCodes value set is defined to be the set of FormatCode(s) defined by implementation guides published by HL7 and other SDOs. The use of a formatCode from the FormatCodes value set specifies the technical format that a document conforms to. The formatCode is a further specialization more detailed than the mime-type. The formatCode provides sufficient information to allow any potential document content consumer to know if it can process and/or display the content of the document based on the document encoding, structure and template conformance indicated by the formatCode. The set of formatCodes is intended to be extensible. The Content Logical Description is defined intentionally to permit formatCodes defined by other Standards Development Organizations to be added by inclusion of additional formatCode Code Systems.",
+      "systems" : [
+        "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+        "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes"
+      ],
+      "oids" : ["2.16.840.1.113883.11.19752"],
+      "sources" : ["2.16.840.1.113883.11.19752"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     }
   ]
 }

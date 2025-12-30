@@ -56,6 +56,14 @@ These SearchParameter are used solely to document Server and Client expectations
 
 They **SHALL NOT** be interpreted as search parameters for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameters.
 
+#### DocumentReference
+
+      ⸺
+
+#### MedicationRequest
+
+      ⸺
+
 #### Observation
 
 * [US Core Observation Category]
@@ -65,7 +73,11 @@ They **SHALL NOT** be interpreted as search parameters for search. Servers and C
 * [US Core Observation Patient]
 * [US Core Observation Status]
 
-#### Patient
+#### Organization
+
+      ⸺
+
+#### PractitionerRole
 
       ⸺
 

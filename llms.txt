@@ -14,10 +14,14 @@
 
 ### Resource Profiles
 
-* [US Core Observation ADI Documentation Profile](StructureDefinition-us-core-observation-adi-documentation.md)
-* [US Core Observation Clinical Result Profile](StructureDefinition-us-core-observation-clinical-result.md)
-* [US Core Laboratory Result Observation Profile](StructureDefinition-us-core-observation-lab.md)
-* [US Core Patient Profile](StructureDefinition-us-core-patient.md)
+* [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.md)
+* [US Core DocumentReference Profile](StructureDefinition-us-core-documentreference.md)
+* [US Core Heart Rate Profile](StructureDefinition-us-core-heart-rate.md)
+* [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.md)
+* [US Core Observation Pregnancy Status Profile](StructureDefinition-us-core-observation-pregnancystatus.md)
+* [US Core Organization Profile](StructureDefinition-us-core-organization.md)
+* [US Core PractitionerRole Profile](StructureDefinition-us-core-practitionerrole.md)
+* [US Core Vital Signs Profile](StructureDefinition-us-core-vital-signs.md)
 
 ### CapabilityStatements
 
