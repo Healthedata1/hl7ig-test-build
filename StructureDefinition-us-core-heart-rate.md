@@ -50,52 +50,48 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching for all Observations using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-observation-category.md)search parameters:`GET [base]/Observation?patient={Patient/}[id]&category={system|}[search_code]`Example:
+1. **SHALL**support searching for all Observations using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[category](SearchParameter-us-core-observation-category.md)search parameters`GET [base]/Observation?patient={Patient/}[id]&category={system|}[search_code]`Example:
 > 
 1. GET [base]/Observation?patient=Patient/1137192&category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and a category code = "vital-signs" ([how to search by reference](foo.md)and ([how to search by token]).
-
-1. **SHALL**support searching for all Observations by code using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[code](SearchParameter-us-core-observation-code.md)search parameters:
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and a category code = "vital-signs" ( see[how to search by reference](foo.md)and[how to search by token](#.md)).
+1. **SHALL**support searching for all Observations by code using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[code](SearchParameter-us-core-observation-code.md)search parameters
 * Including optional support **OR** search on `code` (e.g.`code={system|}[code],{system|}[code],...`)
 `GET [base]/Observation?patient={Patient/}[id]&code={system|}[search_code]{,{system|}[code],...}`Examples:
 > 
 1. GET [base]/Observation?patient=Patient/1137192&code=http://loinc.org|8867-4
 1. GET [base]/Observation?patient=Patient/1137192&code=http://loinc.org|8867-4,http://loinc.org|9279-1,http://loinc.org|85354-9
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and observation code(s). SHOULD support search by multiple codes. The US Core Heart Rate Profile "code" parameter searches only`.code`and not`component.code`. ([how to search by reference](foo.md)and ([how to search by token]).
-
-1. **SHALL**support searching for all Observations by date (for example, results after 2018) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-observation-category.md)and[date](SearchParameter-us-core-observation-date.md)search parameters:
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and observation code(s). SHOULD support search by multiple codes. The US Core Heart Rate Profile "code" parameter searches only`.code`and not`component.code`. ( see[how to search by reference](foo.md)and[how to search by token](#.md)).
+1. **SHALL**support searching for all Observations by date (for example, results after 2018) using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[category](SearchParameter-us-core-observation-category.md)and[date](SearchParameter-us-core-observation-date.md)search parameters
 * Including optional support for **AND** search on `date` (e.g.`date=[date]&date=[date]&...`)
 * Including support for these `date` comparators: "gt", "lt", "ge", "le"
 `GET [base]/Observation?patient={Patient/}[id]&category={system|}[search_code]&date={gt|lt|ge|le}[dateTime]{&date={gt|lt|ge|le}[dateTime]&...}`Example:
 > 
 1. GET [base]/Observation?patient=Patient/1137192&category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs&date=ge2018-03-14T00:00:00Z
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and date and a category code = "vital-signs" ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date]).
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and date and a category code = "vital-signs" ( see[how to search by reference](foo.md)and[how to search by token](#.md)and[how to search by date](#.md)).
 
 #### Optional Search Parameters:
 
 The following search parameters and search parameter combinations **SHOULD** be supported
 
-1. **SHOULD**support searching for all Observations for a patient for a given status (for example all observations marked as final) using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-observation-category.md)and[status](SearchParameter-us-core-observation-status.md)search parameters:
+1. **SHOULD**support searching for all Observations for a patient for a given status (for example all observations marked as final) using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[category](SearchParameter-us-core-observation-category.md)and[status](SearchParameter-us-core-observation-status.md)search parameters
 * Including support **OR** search on `status` (e.g.`status={system|}[code],{system|}[code],...`)
 `GET [base]/Observation?patient={Patient/}[id]&category={system|}[search_code]&status={system|}[search_code]{,{system|}[code],...}`Example:
 > 
 1. GET [base]/Observation?patient=Patient/1137192&category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs&status=final
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and category = "vital-signs" and status ([how to search by reference](foo.md)and ([how to search by token]).
-
-1. **SHOULD**support searching using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[category](SearchParameter-us-core-observation-category.md)and[_lastUpdated](SearchParameter-us-core-observation-lastupdated.md)search parameters:
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and category = "vital-signs" and status ( see[how to search by reference](foo.md)and[how to search by token](#.md)).
+1. **SHOULD**support searching using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[category](SearchParameter-us-core-observation-category.md)and[_lastUpdated](SearchParameter-us-core-observation-lastupdated.md)search parameters
 * Including optional support for **AND** search on `_lastUpdated` (e.g.`_lastUpdated=[date]&_lastUpdated=[date]&...`)
 * Including support for these `_lastUpdated` comparators: "gt", "lt", "ge", "le"
 `GET [base]/Observation?patient={Patient/}[id]&category={system|}[search_code]&_lastUpdated=[dateTime]`Example:
 > 
 1. GET [base]/Observation?patient=Patient/1137192&category=http://terminology.hl7.org/CodeSystem/observation-category|vital-signs&_lastUpdated=ge2024-01-01T00:00:00Z
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and category code = "vital-signs" and _lastUpdated. See the US Core General Guidance page for [Searching Using lastUpdated]. ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date]).
-
-1. **SHOULD**support searching Observations by code and date using the combination of[patient](http://hl7.org/fhir/R4/patient.html)and[code](SearchParameter-us-core-observation-code.md)and[date](SearchParameter-us-core-observation-date.md)search parameters:
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and category code = "vital-signs" and _lastUpdated. See the US Core General Guidance page for [Searching Using lastUpdated]. ( see[how to search by reference](foo.md)and[how to search by token](#.md)and[how to search by date](#.md)).
+1. **SHOULD**support searching Observations by code and date using the combination of the[patient](SearchParameter-us-core-observation-patient.md)and[code](SearchParameter-us-core-observation-code.md)and[date](SearchParameter-us-core-observation-date.md)search parameters
 * Including optional support **OR** search on `code` (e.g.`code={system|}[code],{system|}[code],...`)
 * Including optional support for **AND** search on `date` (e.g.`date=[date]&date=[date]&...`)
 * Including support for these `date` comparators: "gt", "lt", "ge", "le"
@@ -103,7 +99,7 @@ The following search parameters and search parameter combinations **SHOULD** be 
 > 
 1. GET [base]/Observation?patient=Patient/1137192&code=http://loinc.org|8867-4&date=ge2019-01-01T00:00:00Z
 
-**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and date and code(s). SHOULD support search by multiple codes. ([how to search by reference](foo.md)and ([how to search by token] and ([how to search by date]).
+**Implementation Notes**: Fetches a bundle of all US Core Heart Rate Profile resources for the specified patient and date and code(s). SHOULD support search by multiple codes. ( see[how to search by reference](foo.md)and[how to search by token](#.md)and[how to search by date](#.md)).
 
 
 

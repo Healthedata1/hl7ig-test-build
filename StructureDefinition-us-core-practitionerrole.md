@@ -50,7 +50,7 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the[practitioner](http://hl7.org/fhir/R4/practitioner.html)search parameter:
+1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the combination of the[practitioner](SearchParameter-us-core-practitionerrole-practitioner.md)search parameter
 * Including support for these chained parameters: `practitioner.identifier,name`
 * Including optional support for these `_include` parameters: `PractitionerRole:endpoint`, `PractitionerRole:practitioner`
 `GET [base]/PractitionerRole?practitioner={Type/}[id]`Examples:
@@ -58,15 +58,14 @@ The following search parameters and search parameter combinations **SHALL** be s
 1. GET [base]/PractitionerRole?practitioner.identifier=http://hl7.org/fhir/sid/us-npi|97860456&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint
 1. GET [base]/PractitionerRole?practitioner.name=Henry&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint
 
-**Implementation Notes**: Fetches a bundle containing US Core PractitionerRole Profile resources matching the chained parameter practitioner.name or practitioner.identifier. SHOULD support the _include parameters ([how to search by reference](foo.md)).
-
-1. **SHALL**support searching practitioner role by specialty using the[specialty](SearchParameter-us-core-practitionerrole-specialty.md)search parameter:
+**Implementation Notes**: Fetches a bundle containing US Core PractitionerRole Profile resources matching the chained parameter practitioner.name or practitioner.identifier. SHOULD support the _include parameters ( see[how to search by reference](foo.md)).
+1. **SHALL**support searching practitioner role by specialty using the combination of the[specialty](SearchParameter-us-core-practitionerrole-specialty.md)search parameter
 * Including optional support for these `_include` parameters: `PractitionerRole:endpoint`, `PractitionerRole:practitioner`
 `GET [base]/PractitionerRole?specialty={system|}[search_code]`Example:
 > 
 1. GET [base]/PractitionerRole?specialty=http://nucc.org/provider-taxonomy|208D0000X
 
-**Implementation Notes**: Fetches a bundle containing US Core PractitionerRole Profile resources matching the specialty ([how to search by token]).
+**Implementation Notes**: Fetches a bundle containing US Core PractitionerRole Profile resources matching the specialty ( see[how to search by token](#.md)).
 
 
 

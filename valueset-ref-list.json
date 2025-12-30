@@ -137,8 +137,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.7"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medicationrequest-category",
@@ -282,8 +282,8 @@
       "sources" : ["2.16.840.1.113883.11.19752"],
       "uses" : {
       },
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     }
   ]
 }

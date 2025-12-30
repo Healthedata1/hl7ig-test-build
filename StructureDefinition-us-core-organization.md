@@ -50,17 +50,16 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching organization based on text address using the[address](SearchParameter-us-core-organization-address.md)search parameter:`GET [base]/Organization?address=[address]`Example:
+1. **SHALL**support searching organization based on text address using the combination of the[address](SearchParameter-us-core-organization-address.md)search parameter`GET [base]/Organization?address=[address]`Example:
 > 
 1. GET [base]/Organization?address=Ann%20Arbor
 
-**Implementation Notes**: Fetches a bundle of all US Core Organization Profile resources that match the address string ([how to search by string]).
-
-1. **SHALL**support searching by organization name using the[name](SearchParameter-us-core-organization-name.md)search parameter:`GET [base]/Organization?name=[name]`Example:
+**Implementation Notes**: Fetches a bundle of all US Core Organization Profile resources that match the address string ( see [how to search by string]).
+1. **SHALL**support searching by organization name using the combination of the[name](SearchParameter-us-core-organization-name.md)search parameter`GET [base]/Organization?name=[name]`Example:
 > 
 1. GET [base]/Organization?name=ACME%20Labs
 
-**Implementation Notes**: Fetches a bundle of all US Core Organization Profile resources that match the name ([how to search by string]).
+**Implementation Notes**: Fetches a bundle of all US Core Organization Profile resources that match the name ( see [how to search by string]).
 
 
 
