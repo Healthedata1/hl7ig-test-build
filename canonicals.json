@@ -63,6 +63,20 @@
     "name" : "USCoreADIDocumentReferenceProfile"
   },
   {
+    "id" : "us-core-allergyintolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-allergyintolerance",
+    "version" : "0.1.0",
+    "name" : "USCoreAllergyIntolerance"
+  },
+  {
+    "id" : "us-core-direct",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
+    "version" : "0.1.0",
+    "name" : "USCoreDirectEmailExtension"
+  },
+  {
     "id" : "us-core-documentreference",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
@@ -70,11 +84,25 @@
     "name" : "USCoreDocumentReferenceProfile"
   },
   {
+    "id" : "us-core-ethnicity",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity",
+    "version" : "0.1.0",
+    "name" : "USCoreEthnicityExtension"
+  },
+  {
     "id" : "us-core-heart-rate",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-heart-rate",
     "version" : "0.1.0",
     "name" : "USCoreHeartRateProfile"
+  },
+  {
+    "id" : "us-core-individual-sex",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-individual-sex",
+    "version" : "0.1.0",
+    "name" : "USCoreIndividualSexExtension"
   },
   {
     "id" : "us-core-medicationrequest",
@@ -105,11 +133,32 @@
     "name" : "USCorePractitionerRoleProfile"
   },
   {
+    "id" : "us-core-race",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
+    "version" : "0.1.0",
+    "name" : "USCoreRaceExtension"
+  },
+  {
+    "id" : "us-core-sex",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
+    "version" : "0.1.0",
+    "name" : "USCoreSexExtension"
+  },
+  {
     "id" : "us-core-vital-signs",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs",
     "version" : "0.1.0",
     "name" : "USCoreVitalSignsProfile"
+  },
+  {
+    "id" : "uscdi-requirement",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement",
+    "version" : "0.1.0",
+    "name" : "USCDIRequirement"
   },
   {
     "id" : "hl7.fhir.us.healthedata1-sandbox",

@@ -56,7 +56,15 @@ These SearchParameter are used solely to document Server and Client expectations
 
 They **SHALL NOT** be interpreted as search parameters for search. Servers and Clients **SHOULD** use the standard FHIR SearchParameters.
 
+#### AllergyIntolerance
+
+      ⸺
+
 #### DocumentReference
+
+      ⸺
+
+#### Extension
 
       ⸺
 

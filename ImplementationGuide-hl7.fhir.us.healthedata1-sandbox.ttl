@@ -40,7 +40,7 @@
   fhir:name [ fhir:v "HealthEData_1Sandbox"] ; # 
   fhir:title [ fhir:v "Health eData 1 Sandbox"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2025-12-30T21:59:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-12-31T07:08:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 International / Cross-Group Projects"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 International / Cross-Group Projects" ] ;
@@ -1812,6 +1812,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-allergyintolerance> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-allergyintolerance" ]
+       ] ;
+       fhir:name [ fhir:v "US Core AllergyIntolerance Profile" ] ;
+       fhir:description [ fhir:v "The US Core AllergyIntolerance Profile inherits from the FHIR [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the AllergyIntolerance resource to record, search, and fetch allergies/adverse reactions associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1821,6 +1842,27 @@
        ] ;
        fhir:name [ fhir:v "US Core Client CapabilityStatement Liquid Rendered" ] ;
        fhir:description [ fhir:v "This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the [Conformance Requirements for Server](CapabilityStatement-us-core-server.html). US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-direct> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-direct" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Direct email Extension" ] ;
+       fhir:description [ fhir:v "This email address is associated with a [\"Direct Secure Messaging\"](https://directtrust.org/what-we-do/direct-secure-messaging) service.  This extension can only be used on contact points where the system = 'email'" ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1854,6 +1896,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-ethnicity> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-ethnicity" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Ethnicity Extension" ] ;
+       fhir:description [ fhir:v "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) code system. Detailed ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:\n\n   - Hispanic or Latino\n   - Not Hispanic or Latino." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1863,6 +1926,27 @@
        ] ;
        fhir:name [ fhir:v "US Core Heart Rate Profile" ] ;
        fhir:description [ fhir:v "The US Core Heart Rate Profile inherits from the US Core Vital Signs Profile. This profile sets minimum expectations for the Observation resource to record, search,  and fetch heart rate observations with a standard LOINC code and UCUM units of measure. It specifies which *additional*  core elements, extensions,  vocabularies, and value sets **SHALL** be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-individual-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-individual-sex" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Individual Sex Extension" ] ;
+       fhir:description [ fhir:v "USCDI includes a data element for Sex, intended to support the exchange of a recorded sex value. This extension aligns with the USCDI definition of Sex: \"Documentation of a specific instance of sex.\" It enables systems to share the sex value as it was documented in a particular context.  Systems choosing to record sources of information should use the [Provenance resource](http://hl7.org/fhir/R4/element-level-provenance.html)." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -1959,6 +2043,27 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-race> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-race" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Race Extension" ] ;
+       fhir:description [ fhir:v "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) code system. Detailed race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "CapabilityStatement"
          ]
        ] ) ;
@@ -1968,6 +2073,48 @@
        ] ;
        fhir:name [ fhir:v "US Core Server CapabilityStatement Liquid Rendered" ] ;
        fhir:description [ fhir:v "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf)." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/us-core-sex" ]
+       ] ;
+       fhir:name [ fhir:v "US Core Sex Extension" ] ;
+       fhir:description [ fhir:v "The Sex Extension is used to reflect the documentation of a person's sex. Systems choosing to record sources of information should use the [Provenance resource](http://hl7.org/fhir/R4/element-level-provenance.html).\n \nUSCDI includes a data element for sex, intended to support the exchange of a sex value that is not characterized as sex assigned at birth or birth sex. This Sex extension supports USCDI. Sex assigned at birth or birth sex can be recorded using the more specific [US Core Birth Sex Extension](StructureDefinition-us-core-birthsex.html).\nFuture versions of this extension may be informed by the content of the HL7 Cross Paradigm IG: Gender Harmony - Sex and Gender Representation, which may include additional guidance on its relationship to administrative gender ([Patient.gender](StructureDefinition-us-core-patient-definitions.html#Patient.gender))." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:extension"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/uscdi-requirement> ;
+         fhir:reference [ fhir:v "StructureDefinition/uscdi-requirement" ]
+       ] ;
+       fhir:name [ fhir:v "US Core USCDI Requirement Extension" ] ;
+       fhir:description [ fhir:v "**This extension is only used in the US Core Implementation Guide''s Profile StructureDefinition elements.**  It flags elements that are *Additional* USCDI Requirements for certified systems. In other words, elements that are not marked as Must Support but are required for ASTP Health IT certification testing. See the [Conformance page](general-requirements.html) for more information." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2221,6 +2368,34 @@
            ] ;
            fhir:value [
              a fhir:Url ;
+             fhir:v "relationship-with-other-igs.html"^^xsd:anyURI ;
+             fhir:l fhir:relationship-with-other-igs.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "relationship-with-other-igs.html"^^xsd:anyURI ;
+           fhir:l fhir:relationship-with-other-igs.html
+         ] ;
+         fhir:title [ fhir:v "IPA-IPS" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+           ] ;
+           fhir:value [
+             a fhir:Code ;
+             fhir:v "informative"
+           ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
              fhir:v "search-parameters.html"^^xsd:anyURI ;
              fhir:l fhir:search-parameters.html
            ]
@@ -2231,6 +2406,34 @@
            fhir:l fhir:search-parameters.html
          ] ;
          fhir:title [ fhir:v "Search Parameters" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+           ] ;
+           fhir:value [
+             a fhir:Code ;
+             fhir:v "informative"
+           ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "profiles-and-extensions.html"^^xsd:anyURI ;
+             fhir:l fhir:profiles-and-extensions.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "profiles-and-extensions.html"^^xsd:anyURI ;
+           fhir:l fhir:profiles-and-extensions.html
+         ] ;
+         fhir:title [ fhir:v "Profile and Extensions" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -2287,6 +2490,34 @@
            fhir:l fhir:ImplementationGuide.html
          ] ;
          fhir:title [ fhir:v "ImplementationGuide Resource" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status>
+           ] ;
+           fhir:value [
+             a fhir:Code ;
+             fhir:v "informative"
+           ]
+         ] [
+           fhir:url [
+             fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/tools/StructureDefinition/ig-page-name>
+           ] ;
+           fhir:value [
+             a fhir:Url ;
+             fhir:v "changes-between-versions.html"^^xsd:anyURI ;
+             fhir:l fhir:changes-between-versions.html
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:Url ;
+           fhir:v "changes-between-versions.html"^^xsd:anyURI ;
+           fhir:l fhir:changes-between-versions.html
+         ] ;
+         fhir:title [ fhir:v "Versions" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
@@ -2372,11 +2603,19 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-adi-documentreference> a fhir:Us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-allergyintolerance> a fhir:Us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-client-liquid> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-direct> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-documentreference> a fhir:Us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-ethnicity> a fhir:Us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-heart-rate> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-individual-sex> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-medicationrequest> a fhir:Us .
 
@@ -2386,7 +2625,13 @@
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-practitionerrole> a fhir:Us .
 
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-race> a fhir:Us .
+
 <http://hl7.org/fhir/us/healthedata1-sandbox/CapabilityStatement/us-core-server-liquid> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-sex> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/uscdi-requirement> a fhir:Us .
 
 <http://hl7.org/fhir/us/healthedata1-sandbox/StructureDefinition/us-core-vital-signs> a fhir:Us .
 

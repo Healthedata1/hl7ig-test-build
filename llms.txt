@@ -6,8 +6,11 @@
 * [Guidance](guidance.md)
 * [ImplementationGuide Resource](ImplementationGuide.md)
 * [Search Parameters](search-parameters.md)
+* [Versions](changes-between-versions.md)
 * [Artifacts Summary](artifacts.md)
+* [Profile and Extensions](profiles-and-extensions.md)
 * [Change Log](changes.md)
+* [IPA-IPS](relationship-with-other-igs.md)
 * [Downloads](downloads.md)
 
 ## Resources
@@ -15,6 +18,7 @@
 ### Resource Profiles
 
 * [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.md)
+* [US Core AllergyIntolerance Profile](StructureDefinition-us-core-allergyintolerance.md)
 * [US Core DocumentReference Profile](StructureDefinition-us-core-documentreference.md)
 * [US Core Heart Rate Profile](StructureDefinition-us-core-heart-rate.md)
 * [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.md)
@@ -22,6 +26,15 @@
 * [US Core Organization Profile](StructureDefinition-us-core-organization.md)
 * [US Core PractitionerRole Profile](StructureDefinition-us-core-practitionerrole.md)
 * [US Core Vital Signs Profile](StructureDefinition-us-core-vital-signs.md)
+
+### Extensions
+
+* [US Core Direct email Extension](StructureDefinition-us-core-direct.md)
+* [US Core Ethnicity Extension](StructureDefinition-us-core-ethnicity.md)
+* [US Core Individual Sex Extension](StructureDefinition-us-core-individual-sex.md)
+* [US Core Race Extension](StructureDefinition-us-core-race.md)
+* [US Core Sex Extension](StructureDefinition-us-core-sex.md)
+* [US Core USCDI Requirement Extension](StructureDefinition-uscdi-requirement.md)
 
 ### CapabilityStatements
 

@@ -13,6 +13,20 @@
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
     },
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1021.121",
+      "version" : "20250228",
+      "status" : "active",
+      "name" : "FederalAdministrativeSex",
+      "title" : "Federal Administrative Sex",
+      "description" : "Name changed to align with federal administrative requirements in 2025",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113762.1.4.1021.121"],
+      "sources" : ["2.16.840.1.113762.1.4.1021.121"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-individual-sex.html" : "US Core Individual Sex Extension"
+    },
+    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1099.30",
       "version" : "20190418",
       "status" : "active",
@@ -42,6 +56,21 @@
       "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
     },
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1186.8",
+      "version" : "20210622",
+      "status" : "active",
+      "name" : "Common substances for allergy and intolerance documentation including refutations",
+      "title" : null,
+      "description" : "",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
+    },
+    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.12",
       "version" : "20240906",
       "status" : "active",
@@ -59,6 +88,23 @@
       "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
     },
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1240.3",
+      "version" : "20230628",
+      "status" : "active",
+      "name" : "Sex",
+      "title" : "Sex",
+      "description" : "Created specifically to support United States USCDI v3 data element \"Sex\"",
+      "systems" : [
+        "http://snomed.info/sct",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1240.3"],
+      "sources" : ["2.16.840.1.113762.1.4.1240.3"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-sex.html" : "US Core Sex Extension"
+    },
+    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.22",
       "version" : "20241015",
       "status" : "active",
@@ -74,6 +120,24 @@
       "uses" : {
       },
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1267.25",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "DetailedRaceIncludingAbsenceReasons",
+      "title" : "Detailed race including absence reasons.",
+      "description" : "This value set is based on the US Core Detailed Race value set defined in US Core version 7.0 and earlier (https://hl7.org/fhir/us/core/STU7/ValueSet-detailed-race.html). A new OID has been assigned due to a slight change in scope: it includes the CDCREC code 2131-1 (Other Race) in place of the HL7 nullFlavor code \"OTH\" (Other). This version is intended to serve as the authoritative source for detailed race data going forward.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/v2-0005",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113762.1.4.1267.25"],
+      "sources" : ["2.16.840.1.113762.1.4.1267.25"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-race.html" : "US Core Race Extension"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.11.20.9.69.4",
@@ -100,6 +164,60 @@
       "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.2.575",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "RaceCategories",
+      "title" : "Race Categories",
+      "description" : "The HL7 OID used in the US Core Implementation Guide value set in US Core version 7.0 and prior (https://hl7.org/fhir/us/core/STU7/ValueSet-omb-race-category.html\n) has been retained, as the value set content remains identical. However, the preferred reference going forward is the version hosted by VSAC, which serves as the authoritative source for both US Core and C-CDA.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.2.575"],
+      "sources" : ["2.16.840.1.113883.4.642.2.575"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-race.html" : "US Core Race Extension"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.40.2.48.1",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "DetailedEthnicityIncludingAbsenceReasons",
+      "title" : "Detailed Ethnicity Including Absence Reasons",
+      "description" : "This value set is replicated from the US Core Detailed Ethnicity value set (http://hl7.org/fhir/us/core/ValueSet/detailed-ethnicity) and retains the same HL7-assigned OID, as its scope and members remain unchanged.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/v2-0005",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.1"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.1"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-ethnicity.html" : "US Core Ethnicity Extension"
+    },
+    {
+      "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.40.2.48.3",
+      "version" : "20250419",
+      "status" : "active",
+      "name" : "EthnicityCategories",
+      "title" : "Ethnicity Categories",
+      "description" : "The OID for this value set, used in the US Core Implementation Guide version 7.0 and earlier (http://hl7.org/fhir/us/core/ValueSet/omb-ethnicity-category), has been retained. However, the VSAC-hosted version is now the preferred reference, as it serves as the authoritative source for both US Core and C-CDA and supports expansion for implementation.",
+      "systems" : [
+        "urn:oid:2.16.840.1.113883.6.238",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.40.2.48.3"],
+      "sources" : ["2.16.840.1.113883.4.642.40.2.48.3"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-ethnicity.html" : "US Core Ethnicity Extension"
+    },
+    {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.1066",
       "version" : "C-CDA R2.1 2020-07-13",
       "status" : "active",
@@ -110,6 +228,38 @@
       "uses" : {
       },
       "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-clinical",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceClinicalStatusCodes",
+      "title" : "AllergyIntolerance Clinical Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Clinical Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1372"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1372"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/allergyintolerance-verification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AllergyIntoleranceVerificationStatusCodes",
+      "title" : "AllergyIntolerance Verification Status Codes",
+      "description" : "Preferred value set for AllergyIntolerance Verification Status.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1370"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -124,6 +274,20 @@
       "uses" : {
       },
       "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTClinicalFindings",
+      "title" : "SNOMED CT Clinical Findings",
+      "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.232"],
+      "sources" : ["2.16.840.1.113883.4.642.3.232"],
+      "uses" : {
+      },
+      "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
