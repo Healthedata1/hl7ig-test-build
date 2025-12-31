@@ -77,14 +77,23 @@ pages:
   guidance.md:
     title: Guidance
 
+  relationship-with-other-igs.md:
+    title: IPA-IPS
+
   search-parameters.md:
     title: Search Parameters
+
+  profiles-and-extensions.md:
+    title: Profile and Extensions
 
   downloads.md:
     title: Downloads
 
   ImplementationGuide.md:
     title: ImplementationGuide Resource
+
+  changes-between-versions.md:
+    title: Versions
 
   changes.md:
     title: Change Log
@@ -136,9 +145,12 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   General Guidance: guidance.html
+  IPA-IPS: relationship-with-other-igs.html
   #Table of Contents: toc.html
+  Profiles and Extensions: profiles-and-extensions.html
   Search Parameters: search-parameters.html
   Artifact Index: artifacts.html
   Downloads: downloads.html
+  Versions: changes-between-versions.html
   Change Log: changes.html
   IG Page: 'ImplementationGuide.html'

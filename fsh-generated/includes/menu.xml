@@ -17,6 +17,12 @@
     <a href="guidance.html">General Guidance</a>
   </li>
   <li>
+    <a href="relationship-with-other-igs.html">IPA-IPS</a>
+  </li>
+  <li>
+    <a href="profiles-and-extensions.html">Profiles and Extensions</a>
+  </li>
+  <li>
     <a href="search-parameters.html">Search Parameters</a>
   </li>
   <li>
@@ -24,6 +30,9 @@
   </li>
   <li>
     <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changes-between-versions.html">Versions</a>
   </li>
   <li>
     <a href="changes.html">Change Log</a>

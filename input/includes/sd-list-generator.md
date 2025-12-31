@@ -26,13 +26,10 @@
           {% endif %}
         {% endfor %}
 
-
-        {%- for new_stuff in site.data.new_stuff -%}
-           {%- if new_stuff == sd1.name -%}
-             {%- assign new = true -%}
-             {%- break -%}
-           {%- endif -%}
-        {%- endfor -%}
+        {%- assign profile_meta_row = site.data.profile_metadata | where:"title", sd1.title | first -%}
+          {%- if profile_meta_row.is_new  == "TRUE" -%}
+                {%- assign new = true -%}
+          {%- endif -%}
 
           {%- unless parent or child -%}
             {%- if new -%}
@@ -53,14 +50,10 @@
                   {%- assign sd3 = sd_hash3[1] -%}
                   {% if sd1.name == sd3.basename %}
                     {%- assign new = false -%}
-                    {% for new_stuff in site.data.new_stuff %}
-                         {%- if new_stuff == sd3.name -%}
+                    {%- assign profile_meta_row = site.data.profile_metadata | where:"title", sd3.title | first -%}
+                     {%- if profile_meta_row.is_new  == "TRUE" -%}
                            {%- assign new = true -%}
-                           {%- break -%}
-                         {%- endif -%}
-                    {%- endfor -%}
-
-
+                      {%- endif -%}
                       {%- if new -%}
                         <li><a href="{{sd3.path}}"><span class="bg-success" markdown="1">{{sd3.title}}</span><!-- new-content --></a></li>
                       {% else %}
