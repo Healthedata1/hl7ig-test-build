@@ -77,6 +77,9 @@ pages:
   guidance.md:
     title: Guidance
 
+  scopes.md:
+    title: Scopes
+
   relationship-with-other-igs.md:
     title: IPA-IPS
 
@@ -145,6 +148,7 @@ releaseLabel: CI Build
 menu:
   IG Home: index.html
   General Guidance: guidance.html
+  Scopes: scopes.html
   IPA-IPS: relationship-with-other-igs.html
   #Table of Contents: toc.html
   Profiles and Extensions: profiles-and-extensions.html

@@ -358,6 +358,9 @@ definition:
     - nameUrl: guidance.html
       title: Guidance
       generation: markdown
+    - nameUrl: scopes.html
+      title: Scopes
+      generation: markdown
     - nameUrl: relationship-with-other-igs.html
       title: IPA-IPS
       generation: markdown

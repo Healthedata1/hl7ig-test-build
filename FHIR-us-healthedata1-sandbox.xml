@@ -38,6 +38,7 @@
 <page key="relationship-with-other-igs" name="IPA-IPS"/>
 <page key="ImplementationGuide" name="ImplementationGuide Resource"/>
 <page key="profiles-and-extensions" name="Profile and Extensions"/>
+<page key="scopes" name="Scopes"/>
 <page key="search-parameters" name="Search Parameters"/>
 <page key="toc" name="Table of Contents"/>
 <page key="changes-between-versions" name="Versions"/>
