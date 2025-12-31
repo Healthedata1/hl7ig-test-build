@@ -17,7 +17,7 @@
   <name value="HealthEData_1Sandbox"/>
   <title value="Health eData 1 Sandbox"/>
   <status value="active"/>
-  <date value="2025-12-31T07:08:43+00:00"/>
+  <date value="2025-12-31T09:21:26+00:00"/>
   <publisher value="HL7 International / Cross-Group Projects"/>
   <contact>
     <name value="HL7 International / Cross-Group Projects"/>
@@ -922,6 +922,17 @@
         </extension>
         <nameUrl value="guidance.html"/>
         <title value="Guidance"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
+          <valueCode value="informative"/>
+        </extension>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="scopes.html"/>
+        </extension>
+        <nameUrl value="scopes.html"/>
+        <title value="Scopes"/>
         <generation value="markdown"/>
       </page>
       <page>

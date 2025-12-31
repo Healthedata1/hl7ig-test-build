@@ -9,6 +9,7 @@
 * [Versions](changes-between-versions.md)
 * [Artifacts Summary](artifacts.md)
 * [Profile and Extensions](profiles-and-extensions.md)
+* [Scopes](scopes.md)
 * [Change Log](changes.md)
 * [IPA-IPS](relationship-with-other-igs.md)
 * [Downloads](downloads.md)

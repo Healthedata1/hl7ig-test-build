@@ -161,8 +161,8 @@
       "systems" : ["http://loinc.org"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
-      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile"
+      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.4.642.2.575",
@@ -386,9 +386,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
@@ -402,8 +402,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
@@ -417,9 +417,9 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile",
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
       "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
@@ -447,8 +447,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.241"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -506,9 +506,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
@@ -536,8 +536,8 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
@@ -551,8 +551,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.7"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
@@ -566,8 +566,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.244"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
@@ -623,15 +623,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
       "StructureDefinition-us-core-medicationrequest.html" : "US Core MedicationRequest Profile",
       "StructureDefinition-us-core-allergyintolerance.html" : "US Core AllergyIntolerance Profile",
-      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-organization.html" : "US Core Organization Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
+      "StructureDefinition-us-core-practitionerrole.html" : "US Core PractitionerRole Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
+      "StructureDefinition-us-core-organization.html" : "US Core Organization Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
@@ -735,8 +735,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1024"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -750,9 +750,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.403"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
@@ -782,9 +782,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.399"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
@@ -798,9 +798,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -814,9 +814,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/organization-type",
@@ -889,9 +889,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
@@ -907,9 +907,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
       "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
-      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile"
+      "StructureDefinition-us-core-observation-pregnancystatus.html" : "US Core Observation Pregnancy Status Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/request-priority",
@@ -957,8 +957,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/substance-code",
@@ -998,8 +998,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.955"],
       "uses" : {
       },
-      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile",
-      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile"
+      "StructureDefinition-us-core-heart-rate.html" : "US Core Heart Rate Profile",
+      "StructureDefinition-us-core-vital-signs.html" : "US Core Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
@@ -1068,8 +1068,8 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActSubstanceAdminSubstitutionCode",
@@ -1102,8 +1102,8 @@
       "sources" : ["2.16.840.1.113883.11.19752"],
       "uses" : {
       },
-      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile",
-      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile"
+      "StructureDefinition-us-core-adi-documentreference.html" : "US Core ADI DocumentReference Profile",
+      "StructureDefinition-us-core-documentreference.html" : "US Core DocumentReference Profile"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-SubstanceAdminSubstitutionReason",

@@ -217,7 +217,7 @@ without markdown filter
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-12-31T07:08:43+00:00",
+  "date" : "2025-12-31T09:21:26+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [
     {
@@ -1570,6 +1570,21 @@ without markdown filter
           ],
           "nameUrl" : "guidance.html",
           "title" : "Guidance",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+              "valueCode" : "informative"
+            },
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "scopes.html"
+            }
+          ],
+          "nameUrl" : "scopes.html",
+          "title" : "Scopes",
           "generation" : "markdown"
         },
         {
