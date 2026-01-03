@@ -7,11 +7,18 @@
     "name" : "UsCoreClientCapabilityStatementLiquid"
   },
   {
-    "id" : "us-core-server-liquid",
+    "id" : "us-core-server",
     "type" : "CapabilityStatement",
-    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server-liquid",
+    "url" : "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",
     "version" : "0.1.0",
-    "name" : "UsCoreServerCapabilityStatementLiquid"
+    "name" : "UsCoreServerCapabilityStatement"
+  },
+  {
+    "id" : "docref",
+    "type" : "OperationDefinition",
+    "url" : "http://hl7.org/fhir/us/core/OperationDefinition/docref",
+    "version" : "0.1.0",
+    "name" : "USCoreFetchDocumentReference"
   },
   {
     "id" : "us-core-observation-category",
@@ -70,6 +77,13 @@
     "name" : "USCoreAllergyIntolerance"
   },
   {
+    "id" : "us-core-birthsex",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+    "version" : "0.1.0",
+    "name" : "USCoreBirthSexExtension"
+  },
+  {
     "id" : "us-core-direct",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
@@ -82,6 +96,13 @@
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference",
     "version" : "0.1.0",
     "name" : "USCoreDocumentReferenceProfile"
+  },
+  {
+    "id" : "us-core-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+    "version" : "0.1.0",
+    "name" : "USCoreEncounterProfile"
   },
   {
     "id" : "us-core-ethnicity",
@@ -98,11 +119,25 @@
     "name" : "USCoreHeartRateProfile"
   },
   {
+    "id" : "us-core-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
+    "version" : "0.1.0",
+    "name" : "USCoreImmunizationProfile"
+  },
+  {
     "id" : "us-core-individual-sex",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-individual-sex",
     "version" : "0.1.0",
     "name" : "USCoreIndividualSexExtension"
+  },
+  {
+    "id" : "us-core-jurisdiction",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
+    "version" : "0.1.0",
+    "name" : "USCoreJurisdictionExtension"
   },
   {
     "id" : "us-core-medicationrequest",
@@ -133,6 +168,13 @@
     "name" : "USCorePractitionerRoleProfile"
   },
   {
+    "id" : "us-core-questionnaireresponse",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
+    "version" : "0.1.0",
+    "name" : "USCoreQuestionnaireResponseProfile"
+  },
+  {
     "id" : "us-core-race",
     "type" : "StructureDefinition",
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race",
@@ -145,6 +187,13 @@
     "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
     "version" : "0.1.0",
     "name" : "USCoreSexExtension"
+  },
+  {
+    "id" : "us-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+    "version" : "0.1.0",
+    "name" : "USCoreSpecimenProfile"
   },
   {
     "id" : "us-core-vital-signs",

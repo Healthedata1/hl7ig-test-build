@@ -60,6 +60,8 @@ For "Backend-Services", System-level scopes (`system`) describe data that a Clie
 
 The following scopes that correspond directly to FHIR resource types **SHALL** be supported
 
+The following scopes that correspond directly to FHIR resource types **SHALL** be supported
+
 | | |
 | :--- | :--- |
 | AllergyIntolerance | `<patient|user|system>/AllergyIntolerance.rs` |
@@ -273,9 +275,6 @@ Content-Type: application/json
     "patient/Specimen.rs",
     "user/Specimen.rs",
     "system/Specimen.rs",
-    "patient/",
-    "user/",
-    "system/",
     "patient/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern",
     "user/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern",
     "system/Condition.rs?category=http://hl7.org/fhir/us/core/CodeSystem/condition-category|health-concern",

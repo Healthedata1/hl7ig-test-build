@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/DocumentReference/discharge-summary> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "discharge-summary"] ; # 
+  fhir:meta [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-name"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-name>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "Discharge Summary Example"
+       ]
+     ] [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/StructureDefinition/instance-description"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/StructureDefinition/instance-description>
+       ] ;
+       fhir:value [
+         a fhir:Markdown ;
+         fhir:v "This is a discharge summary example for the *US Core DocumentReference*. It is used in the [Write Note Example](StructureDefinition-us-core-documentreference.html#mandatory-operation)."
+       ]
+     ] ) ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference discharge-summary</b></p><a name=\"discharge-summary\"> </a><a name=\"hcdischarge-summary\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-documentreference.html\">US Core DocumentReference Profile</a></p></div><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 18842-5}\">Discharge Summary</span></p><p><b>category</b>: <span title=\"Codes:{http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category clinical-note}\">Clinical No</span></p><p><b>subject</b>: <a href=\"http://hl7.org/fhir/us/core/STU5.0.1/Patient-example.html\">Amy V. Baxter  Female, DoB: 1987-02-20 ( Medical Record Number: 1032702 (use: usual, ))</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>text/plain</td><td><code>Tm8gYWN0aXZpdHkgcmVzdHJpY3Rpb24sIHJlZ3VsYXIgZGlldCwgZm9sbG93IHVwIGluIHR3byB0byB0aHJlZSB3ZWVrcyB3aXRoIHByaW1hcnkgY2FyZSBwcm92aWRlci4=</code></td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Encounter</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"http://hl7.org/fhir/us/core/STU5.0.1/Encounter-example-1.html\">Encounter: status = completed; class = ambulatory; type = 99201</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:18842-5 ;
+       fhir:system [
+         fhir:v "http://loinc.org"^^xsd:anyURI ;
+         fhir:l <http://loinc.org>
+       ] ;
+       fhir:code [ fhir:v "18842-5" ] ;
+       fhir:display [ fhir:v "Discharge Summary" ]
+     ] ) ;
+     fhir:text [ fhir:v "Discharge Summary" ]
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category>
+       ] ;
+       fhir:code [ fhir:v "clinical-note" ] ;
+       fhir:display [ fhir:v "Clinical Note" ]
+     ] ) ;
+     fhir:text [ fhir:v "Clinical No" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "text/plain" ] ;
+       fhir:data [ fhir:v "Tm8gYWN0aXZpdHkgcmVzdHJpY3Rpb24sIHJlZ3VsYXIgZGlldCwgZm9sbG93IHVwIGluIHR3byB0byB0aHJlZSB3ZWVrcyB3aXRoIHByaW1hcnkgY2FyZSBwcm92aWRlci4="^^xsd:base64Binary ]
+     ]
+  ] ) ; # 
+  fhir:context [
+     fhir:encounter ( [
+       fhir:l <http://hl7.org/fhir/us/healthedata1-sandbox/Encounter/example-1> ;
+       fhir:reference [ fhir:v "Encounter/example-1" ]
+     ] )
+  ] . # 
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Patient/example> a fhir:Us .
+
+<http://hl7.org/fhir/us/healthedata1-sandbox/Encounter/example-1> a fhir:Us .
+
+# -------------------------------------------------------------------------------------
+

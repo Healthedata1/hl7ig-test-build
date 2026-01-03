@@ -85,44 +85,51 @@ This IG Contains the following dependencies on other IGs.
 ```
 This publication includes IP covered under the following statements.
 <ul>
-<li>Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>.<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<li>Copyright HL7. Licensed under creative commons public domain<div data-fhir="generated" id="ipp_1" onClick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-CVX.html">PH_VaccinesAdministeredCVX_CDC_NIP</a>: <a href="StructureDefinition-us-core-immunization.html">USCoreImmunizationProfile</a></li>
+</ul>
+</div></li>
+<li>Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see <a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a>.<div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-CDCREC.html">CDC Race and Ethnicity</a>: <a href="StructureDefinition-us-core-ethnicity.html">USCoreEthnicityExtension</a> and <a href="StructureDefinition-us-core-race.html">USCoreRaceExtension</a></li>
 </ul>
 </div></li>
-<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a><div data-fhir="generated" id="ipp_2" onClick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a><div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>: <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a> and <a href="StructureDefinition-us-core-vital-signs.html">USCoreVitalSignsProfile</a></li>
 </ul>
 </div></li>
-<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_3" onClick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_3" style="display: none">
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_4" onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
 <ul>
-<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-heart-rate.html">USCoreHeartRateProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-vital-signs.html">USCoreVitalSignsProfile</a></li>
+<li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="Bundle-docref-example-1.html">Bundle/docref-example-1</a>, <a href="Bundle-docref-example-2.html">Bundle/docref-example-2</a><span id="ips_4" onClick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 7 more</span></span><span id="ips2_4" style="display: none">, <a href="DocumentReference-discharge-summary.html">DocumentReference/discharge-summary</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a>, <a href="OperationDefinition-docref.html">USCoreFetchDocumentReference</a>, <a href="StructureDefinition-us-core-heart-rate.html">USCoreHeartRateProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-vital-signs.html">USCoreVitalSignsProfile</a></span></li>
 </ul>
 </div></li>
-<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_4" onClick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_4" style="display: none">
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div data-fhir="generated" id="ipp_5" onClick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_5" style="display: none">
 <ul>
-<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a>, <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a><span id="ips_4" onClick="document.getElementById('ips_4').innerHTML = document.getElementById('ips2_4').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span></span><span id="ips2_4" style="display: none">, <a href="StructureDefinition-us-core-individual-sex.html">USCoreIndividualSexExtension</a>, <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a>, <a href="StructureDefinition-us-core-practitionerrole.html">USCorePractitionerRoleProfile</a> and <a href="StructureDefinition-us-core-sex.html">USCoreSexExtension</a></span></li>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a>, <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a><span id="ips_5" onClick="document.getElementById('ips_5').innerHTML = document.getElementById('ips2_5').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 8 more</span></span><span id="ips2_5" style="display: none">, <a href="StructureDefinition-us-core-encounter.html">USCoreEncounterProfile</a>, <a href="StructureDefinition-us-core-immunization.html">USCoreImmunizationProfile</a>, <a href="StructureDefinition-us-core-individual-sex.html">USCoreIndividualSexExtension</a>, <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a>, <a href="StructureDefinition-us-core-practitionerrole.html">USCorePractitionerRoleProfile</a>, <a href="StructureDefinition-us-core-sex.html">USCoreSexExtension</a> and <a href="StructureDefinition-us-core-specimen.html">USCoreSpecimenProfile</a></span></li>
 </ul>
 </div></li>
-<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_5" onClick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_5" style="display: none">
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_6" onClick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_6" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-clinical.html">AllergyIntolerance Clinical Status Codes</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a> and <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-allergyintolerance-verification.html">AllergyIntolerance Verification Status</a>: <a href="AllergyIntolerance-example.html">AllergyIntolerance/example</a> and <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html">DataAbsentReason</a>: <a href="StructureDefinition-us-core-ethnicity.html">USCoreEthnicityExtension</a>, <a href="StructureDefinition-us-core-race.html">USCoreRaceExtension</a> and <a href="StructureDefinition-us-core-sex.html">USCoreSexExtension</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-medicationrequest-category.html">MedicationRequest Category Codes</a>: <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html">HL7 Document Format Codes</a>: <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a> and <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
-<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html">NullFlavor</a>: <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-ethnicity.html">USCoreEthnicityExtension</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-race.html">USCoreRaceExtension</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActReason.html">ActReason</a>: <a href="StructureDefinition-us-core-immunization.html">USCoreImmunizationProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-AdministrativeGender.html">AdministrativeGender</a>: <a href="StructureDefinition-us-core-birthsex.html">USCoreBirthSexExtension</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html">HL7 Document Format Codes</a>: <a href="Bundle-docref-example-1.html">Bundle/docref-example-1</a>, <a href="StructureDefinition-us-core-adi-documentreference.html">USCoreADIDocumentReferenceProfile</a> and <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
+<li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html">NullFlavor</a>: <a href="StructureDefinition-us-core-birthsex.html">USCoreBirthSexExtension</a>, <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a>, <a href="StructureDefinition-us-core-ethnicity.html">USCoreEthnicityExtension</a>, <a href="StructureDefinition-us-core-observation-pregnancystatus.html">USCoreObservationPregnancyStatusProfile</a> and <a href="StructureDefinition-us-core-race.html">USCoreRaceExtension</a></li>
 <li><a href="http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html">ParticipationFunction</a>: <a href="StructureDefinition-us-core-practitionerrole.html">USCorePractitionerRoleProfile</a></li>
 </ul>
 </div></li>
-<li>Used by permission of HL7 International, all rights reserved Creative Commons License<div data-fhir="generated" id="ipp_6" onClick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_6" style="display: none">
+<li>Used by permission of HL7 International, all rights reserved Creative Commons License<div data-fhir="generated" id="ipp_7" onClick="if (document.getElementById('ipp2_7').innerHTML != '') {document.getElementById('ipp_7').innerHTML = document.getElementById('ipp2_7').innerHTML; document.getElementById('ipp2_7').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_7" style="display: none">
 <ul>
-<li><a href="http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a>: <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
+<li><a href="http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html">US Core DocumentReferences Category Codes</a>: <a href="Bundle-docref-example-1.html">Bundle/docref-example-1</a>, <a href="Bundle-docref-example-2.html">Bundle/docref-example-2</a>, <a href="DocumentReference-discharge-summary.html">DocumentReference/discharge-summary</a> and <a href="StructureDefinition-us-core-documentreference.html">USCoreDocumentReferenceProfile</a></li>
 </ul>
 </div></li>
-<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div data-fhir="generated" id="ipp_7" onClick="if (document.getElementById('ipp2_7').innerHTML != '') {document.getElementById('ipp_7').innerHTML = document.getElementById('ipp2_7').innerHTML; document.getElementById('ipp2_7').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_7" style="display: none">
+<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div data-fhir="generated" id="ipp_8" onClick="if (document.getElementById('ipp2_8').innerHTML != '') {document.getElementById('ipp_8').innerHTML = document.getElementById('ipp2_8').innerHTML; document.getElementById('ipp2_8').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_8" style="display: none">
 <ul>
 <li><a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-rxNorm.html">RxNorm</a>: <a href="StructureDefinition-us-core-allergyintolerance.html">USCoreAllergyIntolerance</a> and <a href="StructureDefinition-us-core-medicationrequest.html">USCoreMedicationRequestProfile</a></li>
 </ul>
@@ -133,6 +140,11 @@ This publication includes IP covered under the following statements.
 ```
 
 This publication includes IP covered under the following statements.
+
+* Copyright HL7. Licensed under creative commons public domain
+
+* [PH_VaccinesAdministeredCVX_CDC_NIP](http://terminology.hl7.org/3.1.0/CodeSystem-CVX.html): [USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md)
+
 
 * Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see [https://www.cdc.gov/other/agencymaterials.html](https://www.cdc.gov/other/agencymaterials.html).
 
@@ -146,12 +158,12 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreHeartRateProfile](StructureDefinition-us-core-heart-rate.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
+* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [Bundle/docref-example-2](Bundle-docref-example-2.md)...Show 7 more,[DocumentReference/discharge-summary](DocumentReference-discharge-summary.md),[USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md),[USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md),[USCoreFetchDocumentReference](OperationDefinition-docref.md),[USCoreHeartRateProfile](StructureDefinition-us-core-heart-rate.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)and[USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)...Show 5 more,[USCoreIndividualSexExtension](StructureDefinition-us-core-individual-sex.md),[USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md),[USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)and[USCoreSexExtension](StructureDefinition-us-core-sex.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)...Show 8 more,[USCoreEncounterProfile](StructureDefinition-us-core-encounter.md),[USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md),[USCoreIndividualSexExtension](StructureDefinition-us-core-individual-sex.md),[USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md),[USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md),[USCoreSexExtension](StructureDefinition-us-core-sex.md)and[USCoreSpecimenProfile](StructureDefinition-us-core-specimen.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -161,14 +173,16 @@ This publication includes IP covered under the following statements.
 * [DataAbsentReason](http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html): [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreRaceExtension](StructureDefinition-us-core-race.md) and [USCoreSexExtension](StructureDefinition-us-core-sex.md)
 * [MedicationRequest Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-medicationrequest-category.html): [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)
-* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
-* [NullFlavor](http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreRaceExtension](StructureDefinition-us-core-race.md)
+* [ActReason](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActReason.html): [USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md)
+* [AdministrativeGender](http://terminology.hl7.org/7.0.1/CodeSystem-v3-AdministrativeGender.html): [USCoreBirthSexExtension](StructureDefinition-us-core-birthsex.md)
+* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+* [NullFlavor](http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html): [USCoreBirthSexExtension](StructureDefinition-us-core-birthsex.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreRaceExtension](StructureDefinition-us-core-race.md)
 * [ParticipationFunction](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html): [USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)
 
 
 * Used by permission of HL7 International, all rights reserved Creative Commons License
 
-* [US Core DocumentReferences Category Codes](http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+* [US Core DocumentReferences Category Codes](http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [Bundle/docref-example-2](Bundle-docref-example-2.md), [DocumentReference/discharge-summary](DocumentReference-discharge-summary.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
 
 
 * Using RxNorm codes of type SAB=RXNORM as this specification describes does not require a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.
@@ -217,7 +231,7 @@ without markdown filter
   "name" : "HealthEData_1Sandbox",
   "title" : "Health eData 1 Sandbox",
   "status" : "active",
-  "date" : "2025-12-31T09:21:26+00:00",
+  "date" : "2026-01-03T11:00:30+00:00",
   "publisher" : "HL7 International / Cross-Group Projects",
   "contact" : [
     {
@@ -400,19 +414,6 @@ without markdown filter
           {
             "url" : "value",
             "valueString" : "input/liquid"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
-            "valueString" : "path-data"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/examples"
           }
         ],
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -847,19 +848,6 @@ without markdown filter
         "extension" : [
           {
             "url" : "code",
-            "valueCode" : "path-data"
-          },
-          {
-            "url" : "value",
-            "valueString" : "input/examples"
-          }
-        ],
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
-      },
-      {
-        "extension" : [
-          {
-            "url" : "code",
             "valueCode" : "excludexml"
           },
           {
@@ -1208,6 +1196,48 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "DocumentReference"
+          }
+        ],
+        "reference" : {
+          "reference" : "DocumentReference/discharge-summary"
+        },
+        "name" : "Discharge Summary Example",
+        "description" : "This is a discharge summary example for the *US Core DocumentReference*. It is used in the [Write Note Example](StructureDefinition-us-core-documentreference.html#mandatory-operation).",
+        "exampleCanonical" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-documentreference"
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/docref-example-1"
+        },
+        "name" : "Docref Example 1",
+        "description" : "This bundle is a the response to a $docref operation and contains an example *US Core DocumentReference*.  It is used in [Example 1: Request the latest CCD](StructureDefinition-us-core-documentreference.html#mandatory-operation).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "Bundle"
+          }
+        ],
+        "reference" : {
+          "reference" : "Bundle/docref-example-2"
+        },
+        "name" : "Docref Example 2",
+        "description" : "This bundle is a the response to a $docref operation and contains an examples of *US Core DocumentReference*.  It is used in [Example 2: Request Procedure Notes and Discharge Summaries for 2019](StructureDefinition-us-core-documentreference.html#mandatory-operation).",
+        "exampleBoolean" : true
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:resource"
           }
         ],
@@ -1230,6 +1260,20 @@ without markdown filter
         },
         "name" : "US Core AllergyIntolerance Profile",
         "description" : "The US Core AllergyIntolerance Profile inherits from the FHIR [AllergyIntolerance](https://hl7.org/fhir/R4/allergyintolerance.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the AllergyIntolerance resource to record, search, and fetch allergies/adverse reactions associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-birthsex"
+        },
+        "name" : "US Core Birth Sex Extension",
+        "description" : "A code classifying the person's sex assigned at birth. This extension aligns with LOINC 76689-9 (Sex assigned at birth).",
         "exampleBoolean" : false
       },
       {
@@ -1278,6 +1322,20 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-encounter"
+        },
+        "name" : "US Core Encounter Profile",
+        "description" : "The US Core Encounter Profile inherits from the FHIR [Encounter](https://hl7.org/fhir/R4/encounter.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1286,6 +1344,20 @@ without markdown filter
         },
         "name" : "US Core Ethnicity Extension",
         "description" : "Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [Race & Ethnicity - CDC (CDCREC)](https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238) code system. Detailed ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:\n\n   - Hispanic or Latino\n   - Not Hispanic or Latino.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "OperationDefinition"
+          }
+        ],
+        "reference" : {
+          "reference" : "OperationDefinition/docref"
+        },
+        "name" : "US Core Fetch DocumentReference",
+        "description" : "This operation is used to return all the references to documents related to a\npatient. It is invoked on a FHIR Server's DocumentReference endpoint (e.g., `[base]/DocumentReference/$docref`) and operates across all DocumentReference instances.\n\nThe operation requires a patient id and takes the optional input parameters:\n- start context date\n- end context date\n- document type\n- on-demand\n- profile\n\nand returns a *searchset* [Bundle](http://hl7.org/fhir/bundle.html) containing [DocumentReference](http://hl7.org/fhir/documentreference.html) resources for the patient. If the server has stored documents or can create documents for the patient and those documents are available for the user, the server returns the DocumentReference resources associated with documents. This operation's intended use is to provide a way for providers or patients to access their available documents. The document itself can be subsequently retrieved using the link provided  in the `DocumentReference.content.attachment.url element`. The link could be a FHIR endpoint to a [Binary](http://hl7.org/fhir/R4/binary.html) Resource or some other document repository.\n\nThis operation is *different* from a FHIR RESTful query on DocumentReference by patient and type and period range because:\n\n1. It is used to request a server to *generate* a document based on the specified parameters.\n\n1. If no parameters are specified, the server SHALL return a DocumentReference to the patient's current C-CDA CCD.\n\n1. If the server cannot *generate* a document based on the specified parameters, the operation will return an empty search bundle.\n\nUnless the client indicates they are only interested in 'on-demand' documents using the *on-demand* parameter, the server SHOULD return DocumentReference instances for *existing* documents that meet the request parameters  In this regard, this operation is *similar* to a FHIR RESTful query.",
         "exampleBoolean" : false
       },
       {
@@ -1306,6 +1378,20 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-immunization"
+        },
+        "name" : "US Core Immunization Profile",
+        "description" : "The US Core Immunization Profile inherits from the FHIR [Immunization](https://hl7.org/fhir/R4/immunization.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1314,6 +1400,20 @@ without markdown filter
         },
         "name" : "US Core Individual Sex Extension",
         "description" : "USCDI includes a data element for Sex, intended to support the exchange of a recorded sex value. This extension aligns with the USCDI definition of Sex: \"Documentation of a specific instance of sex.\" It enables systems to share the sex value as it was documented in a particular context.  Systems choosing to record sources of information should use the [Provenance resource](http://hl7.org/fhir/R4/element-level-provenance.html).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:extension"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-jurisdiction"
+        },
+        "name" : "US Core Jurisdiction Extension",
+        "description" : "An extension to communicate the US state or local jurisdiction for individual and entity identifiers. For example, a practitioner's state or local jurisdiction for a license.",
         "exampleBoolean" : false
       },
       {
@@ -1376,6 +1476,20 @@ without markdown filter
         "extension" : [
           {
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-questionnaireresponse"
+        },
+        "name" : "US Core QuestionnaireResponse Profile",
+        "description" : "The US Core QuestionaireResponse Profile inherits from the [Structured  Data Capture (SDC) Questionnaire Response Profile](http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html).   This profile sets minimum expectations for the QuestionnaireResponse resource to record, search, and fetch retrieve captures the responses to form/survey and assessment tools such as the *Protocol for Responding to and Assessing Patients\\u2019 Assets, Risks, and Experiences (PRAPARE) Survey*.  It specifies which core *additional* elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used.  Before reviewing this profile, implementers are encouraged to read the Screening and Assessments guidance page, which documents the process of recording responses and capturing assertions/determinations resulting from surveys and questionnaires.",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString" : "StructureDefinition:extension"
           }
         ],
@@ -1394,9 +1508,9 @@ without markdown filter
           }
         ],
         "reference" : {
-          "reference" : "CapabilityStatement/us-core-server-liquid"
+          "reference" : "CapabilityStatement/us-core-server"
         },
-        "name" : "US Core Server CapabilityStatement Liquid Rendered",
+        "name" : "US Core Server CapabilityStatement",
         "description" : "This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP [U.S. Core Data for Interoperability (USCDI) Version 6 July 2025](https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf).",
         "exampleBoolean" : false
       },
@@ -1412,6 +1526,20 @@ without markdown filter
         },
         "name" : "US Core Sex Extension",
         "description" : "The Sex Extension is used to reflect the documentation of a person's sex. Systems choosing to record sources of information should use the [Provenance resource](http://hl7.org/fhir/R4/element-level-provenance.html).\n \nUSCDI includes a data element for sex, intended to support the exchange of a sex value that is not characterized as sex assigned at birth or birth sex. This Sex extension supports USCDI. Sex assigned at birth or birth sex can be recorded using the more specific [US Core Birth Sex Extension](StructureDefinition-us-core-birthsex.html).\nFuture versions of this extension may be informed by the content of the HL7 Cross Paradigm IG: Gender Harmony - Sex and Gender Representation, which may include additional guidance on its relationship to administrative gender ([Patient.gender](StructureDefinition-us-core-patient-definitions.html#Patient.gender)).",
+        "exampleBoolean" : false
+      },
+      {
+        "extension" : [
+          {
+            "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString" : "StructureDefinition:resource"
+          }
+        ],
+        "reference" : {
+          "reference" : "StructureDefinition/us-core-specimen"
+        },
+        "name" : "US Core Specimen Profile",
+        "description" : "The US Core Specimen Profile inherits from the FHIR [Specimen](https://hl7.org/fhir/R4/specimen.html) resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Specimen resource to record, search, and fetch information about substances associated with a patient being sampled or tested (such as nasopharyngeal swab, whole blood,  or serum). It specifies which core elements, extensions, vocabularies, and value sets **SHALL** be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.",
         "exampleBoolean" : false
       },
       {
@@ -1630,6 +1758,21 @@ without markdown filter
           ],
           "nameUrl" : "profiles-and-extensions.html",
           "title" : "Profile and Extensions",
+          "generation" : "markdown"
+        },
+        {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+              "valueCode" : "informative"
+            },
+            {
+              "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+              "valueUrl" : "examples.html"
+            }
+          ],
+          "nameUrl" : "examples.html",
+          "title" : "Examples",
           "generation" : "markdown"
         },
         {

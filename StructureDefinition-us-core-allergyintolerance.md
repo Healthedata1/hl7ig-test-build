@@ -18,7 +18,7 @@ The US Core AllergyIntolerance Profile inherits from the FHIR[AllergyIntolerance
 **Usages:**
 
 * Examples for this Profile: [AllergyIntolerance/example](AllergyIntolerance-example.md)
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
+* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-allergyintolerance)
 
@@ -31,6 +31,25 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 Other representations of profile: [CSV](StructureDefinition-us-core-allergyintolerance.csv), [Excel](StructureDefinition-us-core-allergyintolerance.xlsx), [Schematron](StructureDefinition-us-core-allergyintolerance.sch) 
 
 ### Notes:
+
+-------
+
+**Quick Start** 
+
+-------
+
+Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions. See the [US Core Server CapabilityStatement] for a complete list of supported RESTful interactions for this IG.
+
+* See the [Scopes Format](scopes.md#scopes-format) section for a description of the SMART scopes syntax.
+* See the [Search Syntax](general-guidance.md#search-syntax) section for a description of the US Core search syntax.
+* See the [General Requirements] section for additional rules and expectations when a Server requires status parameters.
+* See the [General Guidance] section for additional guidance on searching for multiple patients.
+
+#### US Core Scopes
+
+Servers providing access to allergy and intolerance data **SHALL** support these [US Core SMART Scopes]:
+
+* [resource level scopes]: `<patient|user|system>/AllergyIntolerance.rs`
 
 -------
 
@@ -50,7 +69,7 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching for all allergies for a patient using the combination of the[patient](SearchParameter-us-core-allergyintolerance-patient.md)search parameter`GET [base]/AllergyIntolerance?patient={Patient/}[id]`Example:
+1. **SHALL**support searching for all allergies for a patient using the[patient](SearchParameter-us-core-allergyintolerance-patient.md)search parameter`GET [base]/AllergyIntolerance?patient={Patient/}[id]`Example:
 > 
 1. GET [base]/AllergyIntolerance?patient=Patient/1137192
 

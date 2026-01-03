@@ -37,6 +37,30 @@
       "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-status.html" : "Immunization Status Codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/sid/cvx",
+      "version" : "3.0.0",
+      "status" : "retired",
+      "name" : "PHVaccinesAdministeredCVXCDCNIP",
+      "title" : "PH_VaccinesAdministeredCVX_CDC_NIP",
+      "description" : "Table of codes specifying the administered vaccines.   The values are maintained by the US Centers of Disease Control.  The code system is maintained by the CDC, and may be found at URL;  https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.12.292 \r\nThe value set is maintained by the CDC and may be found at URL: https://phinvads.cdc.gov/vads/ViewValueSet.action?id=ABDEE003-77C3-48E7-B941-EBF92B6B81FC \r\nPlease reference http://build.fhir.org/ig/HL7/UTG/CodeSystem-CVX for the current CVX code system.",
+      "oids" : ["2.16.840.1.113883.12.292"],
+      "uses" : {
+      },
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113762.1.4.1010.6/expansion" : "CVX Vaccines Administered Vaccine Set"
+    },
+    {
       "url" : "http://hl7.org/fhir/sid/icd-10-cm",
       "version" : "2.0.0",
       "status" : "active",
@@ -69,9 +93,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.69.4/expansion" : "Advance Directives Categories",
+      "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
       "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-documentreference-type.html" : "US Core DocumentReference Type",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.62/expansion" : "Vital Sign Result Type",
-      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.11.20.9.69.4/expansion" : "Advance Directives Categories"
+      "https://vsac.nlm.nih.gov/valueset/2.16.840.1.113883.3.88.12.80.62/expansion" : "Vital Sign Result Type"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -83,10 +108,13 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
       "http://hl7.org/fhir/us/core/STU5.0.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes",
+      "http://tx.fhir.org/r4/ValueSet/2.16.840.1.113762.1.4.1021.121" : "Federal Administrative Sex",
       "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
-      "http://tx.fhir.org/r4/ValueSet/2.16.840.1.113762.1.4.1021.121" : "Federal Administrative Sex"
+      "http://tx.fhir.org/r4/ValueSet/2.16.840.1.113762.1.4.1099.54" : "Specimen type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
@@ -125,6 +153,18 @@
       "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-immunization-status-reason.html" : "Immunization Status Reason Codes"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-HL7DocumentFormatCodes",
       "version" : "4.1.0",
       "status" : "active",
@@ -158,8 +198,8 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units",
-      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units"
+      "http://hl7.org/fhir/R4/valueset-ucum-vitals-common.html" : "Vital Signs Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-common.html" : "Common UCUM units"
     }
   ]
 }

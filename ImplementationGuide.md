@@ -41,6 +41,11 @@ This IG Contains the following dependencies on other IGs.
 
 This publication includes IP covered under the following statements.
 
+* Copyright HL7. Licensed under creative commons public domain
+
+* [PH_VaccinesAdministeredCVX_CDC_NIP](http://terminology.hl7.org/3.1.0/CodeSystem-CVX.html): [USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md)
+
+
 * Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission.For information and exceptions regarding use of CDC material please see [https://www.cdc.gov/other/agencymaterials.html](https://www.cdc.gov/other/agencymaterials.html).
 
 * [CDC Race and Ethnicity](http://terminology.hl7.org/3.1.0/CodeSystem-CDCREC.html): [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md) and [USCoreRaceExtension](StructureDefinition-us-core-race.md)
@@ -53,12 +58,12 @@ This publication includes IP covered under the following statements.
 
 * This material contains content from [LOINC](http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the [license](http://loinc.org/license). LOINC® is a registered United States trademark of Regenstrief Institute, Inc.
 
-* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreHeartRateProfile](StructureDefinition-us-core-heart-rate.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
+* [LOINC](http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [Bundle/docref-example-2](Bundle-docref-example-2.md)...Show 7 more,[DocumentReference/discharge-summary](DocumentReference-discharge-summary.md),[USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md),[USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md),[USCoreFetchDocumentReference](OperationDefinition-docref.md),[USCoreHeartRateProfile](StructureDefinition-us-core-heart-rate.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)and[USCoreVitalSignsProfile](StructureDefinition-us-core-vital-signs.md)
 
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)...Show 5 more,[USCoreIndividualSexExtension](StructureDefinition-us-core-individual-sex.md),[USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md),[USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)and[USCoreSexExtension](StructureDefinition-us-core-sex.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [AllergyIntolerance/example](AllergyIntolerance-example.md), [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md)...Show 8 more,[USCoreEncounterProfile](StructureDefinition-us-core-encounter.md),[USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md),[USCoreIndividualSexExtension](StructureDefinition-us-core-individual-sex.md),[USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md),[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md),[USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md),[USCoreSexExtension](StructureDefinition-us-core-sex.md)and[USCoreSpecimenProfile](StructureDefinition-us-core-specimen.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
@@ -68,14 +73,16 @@ This publication includes IP covered under the following statements.
 * [DataAbsentReason](http://terminology.hl7.org/7.0.1/CodeSystem-data-absent-reason.html): [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreRaceExtension](StructureDefinition-us-core-race.md) and [USCoreSexExtension](StructureDefinition-us-core-sex.md)
 * [MedicationRequest Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-medicationrequest-category.html): [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md)
 * [Observation Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-observation-category.html): [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)
-* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
-* [NullFlavor](http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreRaceExtension](StructureDefinition-us-core-race.md)
+* [ActReason](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ActReason.html): [USCoreImmunizationProfile](StructureDefinition-us-core-immunization.md)
+* [AdministrativeGender](http://terminology.hl7.org/7.0.1/CodeSystem-v3-AdministrativeGender.html): [USCoreBirthSexExtension](StructureDefinition-us-core-birthsex.md)
+* [HL7 Document Format Codes](http://terminology.hl7.org/7.0.1/CodeSystem-v3-HL7DocumentFormatCodes.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [USCoreADIDocumentReferenceProfile](StructureDefinition-us-core-adi-documentreference.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+* [NullFlavor](http://terminology.hl7.org/7.0.1/CodeSystem-v3-NullFlavor.html): [USCoreBirthSexExtension](StructureDefinition-us-core-birthsex.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreEthnicityExtension](StructureDefinition-us-core-ethnicity.md), [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md) and [USCoreRaceExtension](StructureDefinition-us-core-race.md)
 * [ParticipationFunction](http://terminology.hl7.org/7.0.1/CodeSystem-v3-ParticipationFunction.html): [USCorePractitionerRoleProfile](StructureDefinition-us-core-practitionerrole.md)
 
 
 * Used by permission of HL7 International, all rights reserved Creative Commons License
 
-* [US Core DocumentReferences Category Codes](http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html): [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
+* [US Core DocumentReferences Category Codes](http://hl7.org/fhir/us/core/STU5.0.1/CodeSystem-us-core-documentreference-category.html): [Bundle/docref-example-1](Bundle-docref-example-1.md), [Bundle/docref-example-2](Bundle-docref-example-2.md), [DocumentReference/discharge-summary](DocumentReference-discharge-summary.md) and [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md)
 
 
 * Using RxNorm codes of type SAB=RXNORM as this specification describes does not require a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.
@@ -107,8 +114,6 @@ value: fsh-generated/resources
 value: input/intro-notes
 * code: path-liquid
 value: input/liquid
-* code: path-data
-value: input/examples
 * code: excludexml
 value: true
 * code: excludejson

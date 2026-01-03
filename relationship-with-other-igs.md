@@ -64,7 +64,7 @@ As part of profile comparison, the requirements, constraints, and standards spec
 | | | |
 | :--- | :--- | :--- |
 | [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.md) | — | — |
-| [US Core AllergyIntolerance Profile] | ✔ | ➕ |
+| [US Core AllergyIntolerance Profile](StructureDefinition-us-core-allergyintolerance.md) | ✔ | ➕ |
 | [US Core Average Blood Pressure Profile] | ➕ | — |
 | [US Core BMI Profile] | ✔ | — |
 | [US Core Blood Pressure Profile] | ✔ | — |
@@ -171,7 +171,7 @@ This version of US Core has no equivalent profile for the following IPA profiles
 
 The following US Core resource are compatible to the IPS profiles, but the IPS profile(s) contain additional requirements which are listed below. Changes may be needed to meet all the IPA profile requirements. Implementers are advised to note that some code changes may be required to support these profiles.
 
-1. [US Core AllergyIntolerance Profile]Additional requirements in[IPS AllergyIntolerance](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips):
+1. [US Core AllergyIntolerance Profile](StructureDefinition-us-core-allergyintolerance.md)Additional requirements in[IPS AllergyIntolerance](http://hl7.org/fhir/uv/ips/StructureDefinition/AllergyIntolerance-uv-ips):
 * `AllergyIntolerance.patient.reference` Element minimum cardinalities differ: '1' vs '0'
 * `AllergyIntolerance.type` Element differ in definition for mustSupport/Obligations: 'true' vs 'false'
 * `AllergyIntolerance.onset[x]` Element differ in definition for mustSupport/Obligations: 'true' vs 'false'

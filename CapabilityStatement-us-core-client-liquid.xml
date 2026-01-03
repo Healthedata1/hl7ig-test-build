@@ -259,8 +259,8 @@
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a><br/>
+                     
                 
               
             </td>
@@ -333,8 +333,8 @@
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a><br/>
+                     
                 
               
             </td>
@@ -407,8 +407,8 @@
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a><br/>
+                     
                 
               
             </td>
@@ -484,10 +484,12 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a><br/>
+                     
                 
               
             </td>
@@ -560,8 +562,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a><br/>
+                     
                 
               
             </td>
@@ -631,8 +633,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-device.html">US Core Device Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-device.html">US Core Device Profile</a><br/>
+                     
                 
               
             </td>
@@ -705,10 +707,12 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a><br/>
+                     
                 
               
             </td>
@@ -781,10 +785,12 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a><br/>
+                     
                 
               
             </td>
@@ -857,8 +863,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a><br/>
+                     
                 
               
             </td>
@@ -997,8 +1003,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-familymemberhistory.html">US Core FamilyMemberHistory Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-familymemberhistory.html">US Core FamilyMemberHistory Profile</a><br/>
+                     
                 
               
             </td>
@@ -1071,8 +1077,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a><br/>
+                     
                 
               
             </td>
@@ -1211,8 +1217,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a><br/>
+                     
                 
               
             </td>
@@ -1285,8 +1291,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a><br/>
+                     
                 
               
             </td>
@@ -1422,8 +1428,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a><br/>
+                     
                 
               
             </td>
@@ -1492,8 +1498,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a><br/>
+                     
                 
               
             </td>
@@ -1566,8 +1572,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a><br/>
+                     
                 
               
             </td>
@@ -1640,58 +1646,108 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a><br/>
+                     
                 
               
             </td>
@@ -1764,8 +1820,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a><br/>
+                     
                 
               
             </td>
@@ -1835,8 +1891,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a><br/>
+                     
                 
               
             </td>
@@ -1909,8 +1965,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a><br/>
+                     
                 
               
             </td>
@@ -1980,8 +2036,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a><br/>
+                     
                 
               
             </td>
@@ -2052,8 +2108,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a><br/>
+                     
                 
               
             </td>
@@ -2126,8 +2182,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a><br/>
+                     
                 
               
             </td>
@@ -2196,8 +2252,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-sdc-questionnaire.html">SDC Base Questionnaire Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-sdc-questionnaire.html">SDC Base Questionnaire Profile</a><br/>
+                     
                 
               
             </td>
@@ -2266,8 +2322,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a><br/>
+                     
                 
               
             </td>
@@ -2340,8 +2396,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a><br/>
+                     
                 
               
             </td>
@@ -2414,10 +2470,12 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a><br/>
+                     
                 
               
             </td>
@@ -2490,8 +2548,8 @@ PractitionerRole:practitioner
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a><br/>
+                     
                 
               
             </td>
@@ -6043,15 +6101,17 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
        
 
         <p>FHIR Operations:</p>
-          <ul>
+
+
+           <ul>
+
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } --><li><strong>SHOULD</strong> support<a href="OperationDefinition-docref.html"><code>docref</code></a></li>
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+
             
-            
-            
-              <li><strong>SHOULD</strong> support <a href="null"><code/></a></li>
-            
-            
-            
-          </ul>
+             </ul>
 
           
             
@@ -14728,15 +14788,17 @@ Profile as documented in Referencing US Core Profiles.</p>
         
 
         <p>FHIR Operations:</p>
-          <ul>
+
+
+           <ul>
+
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } --><li><strong>SHOULD</strong> support<a href="OperationDefinition-ValueSet-expand.html"><code>expand</code></a></li>
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+
             
-            
-            
-              <li><strong>SHOULD</strong> support <a href="null"><code/></a></li>
-            
-            
-            
-          </ul>
+             </ul>
 
           
             

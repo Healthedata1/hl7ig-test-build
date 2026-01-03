@@ -64,7 +64,11 @@ They **SHALL NOT** be interpreted as search parameters for search. Servers and C
 
       ⸺
 
-#### Extension
+#### Encounter
+
+      ⸺
+
+#### Immunization
 
       ⸺
 
@@ -86,6 +90,14 @@ They **SHALL NOT** be interpreted as search parameters for search. Servers and C
       ⸺
 
 #### PractitionerRole
+
+      ⸺
+
+#### QuestionnaireResponse
+
+      ⸺
+
+#### Specimen
 
       ⸺
 

@@ -17,8 +17,8 @@ The US Core PractitionerRole Profile inherits from the FHIR[PractitionerRole](ht
 
 **Usages:**
 
-* Refer to this Profile: [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.md), [US Core DocumentReference Profile](StructureDefinition-us-core-documentreference.md), [US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.md), [US Core FamilyMemberHistory Recorder Extension](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-familymemberhistory-recorder.html)...Show 8 more,[US Core MedicationDispense Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-medicationdispense.html),[US Core CareTeam Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-careteam.html),[US Core DiagnosticReport Profile for Laboratory Results Reporting](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-diagnosticreport-lab.html),[US Core DiagnosticReport Profile for Report and Note Exchange](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-diagnosticreport-note.html),[US Core DocumentReference Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-documentreference.html),[US Core Encounter Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-encounter.html),[US Core MedicationRequest Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-medicationrequest.html)and[US Core Provenance Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-provenance.html)
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
+* Refer to this Profile: [US Core ADI DocumentReference Profile](StructureDefinition-us-core-adi-documentreference.md), [US Core DocumentReference Profile](StructureDefinition-us-core-documentreference.md), [US Core Encounter Profile](StructureDefinition-us-core-encounter.md), [US Core Immunization Profile](StructureDefinition-us-core-immunization.md)...Show 10 more,[US Core MedicationRequest Profile](StructureDefinition-us-core-medicationrequest.md),[US Core FamilyMemberHistory Recorder Extension](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-familymemberhistory-recorder.html),[US Core MedicationDispense Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-medicationdispense.html),[US Core CareTeam Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-careteam.html),[US Core DiagnosticReport Profile for Laboratory Results Reporting](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-diagnosticreport-lab.html),[US Core DiagnosticReport Profile for Report and Note Exchange](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-diagnosticreport-note.html),[US Core DocumentReference Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-documentreference.html),[US Core Encounter Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-encounter.html),[US Core MedicationRequest Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-medicationrequest.html)and[US Core Provenance Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-provenance.html)
+* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-practitionerrole)
 
@@ -31,6 +31,25 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 Other representations of profile: [CSV](StructureDefinition-us-core-practitionerrole.csv), [Excel](StructureDefinition-us-core-practitionerrole.xlsx), [Schematron](StructureDefinition-us-core-practitionerrole.sch) 
 
 ### Notes:
+
+-------
+
+**Quick Start** 
+
+-------
+
+Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions. See the [US Core Server CapabilityStatement] for a complete list of supported RESTful interactions for this IG.
+
+* See the [Scopes Format](scopes.md#scopes-format) section for a description of the SMART scopes syntax.
+* See the [Search Syntax](general-guidance.md#search-syntax) section for a description of the US Core search syntax.
+* See the [General Requirements] section for additional rules and expectations when a Server requires status parameters.
+* See the [General Guidance] section for additional guidance on searching for multiple patients.
+
+#### US Core Scopes
+
+Servers providing access to practitioner role data **SHALL** support these [US Core SMART Scopes]:
+
+* [resource level scopes]: `<patient|user|system>/PractitionerRole.rs`
 
 -------
 
@@ -50,7 +69,7 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the combination of the[practitioner](SearchParameter-us-core-practitionerrole-practitioner.md)search parameter
+1. **SHALL**support searching practitioner role by practitioner name and identifier using chained parameters using the[practitioner](SearchParameter-us-core-practitionerrole-practitioner.md)search parameter
 * Including support for these chained parameters: `practitioner.identifier,name`
 * Including optional support for these `_include` parameters: `PractitionerRole:endpoint`, `PractitionerRole:practitioner`
 `GET [base]/PractitionerRole?practitioner={Type/}[id]`Examples:
@@ -59,7 +78,7 @@ The following search parameters and search parameter combinations **SHALL** be s
 1. GET [base]/PractitionerRole?practitioner.name=Henry&_include=PractitionerRole:practitioner&_include=PractitionerRole:endpoint
 
 **Implementation Notes**: Fetches a bundle containing US Core PractitionerRole Profile resources matching the chained parameter practitioner.name or practitioner.identifier. SHOULD support the _include parameters ( see[how to search by reference](foo.md)).
-1. **SHALL**support searching practitioner role by specialty using the combination of the[specialty](SearchParameter-us-core-practitionerrole-specialty.md)search parameter
+1. **SHALL**support searching practitioner role by specialty using the[specialty](SearchParameter-us-core-practitionerrole-specialty.md)search parameter
 * Including optional support for these `_include` parameters: `PractitionerRole:endpoint`, `PractitionerRole:practitioner`
 `GET [base]/PractitionerRole?specialty={system|}[search_code]`Example:
 > 

@@ -18,7 +18,7 @@ The US Core Advance Directive Information (ADI) DocumentReference Profile inheri
 **Usages:**
 
 * Refer to this Profile: [US Core Observation ADI Documentation Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-adi-documentation.html) and [US Core PMO ServiceRequest Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-pmo-servicerequest.html)
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md) and [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md)
+* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md) and [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-adi-documentreference)
 
@@ -31,6 +31,25 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 Other representations of profile: [CSV](StructureDefinition-us-core-adi-documentreference.csv), [Excel](StructureDefinition-us-core-adi-documentreference.xlsx), [Schematron](StructureDefinition-us-core-adi-documentreference.sch) 
 
 ### Notes:
+
+-------
+
+**Quick Start** 
+
+-------
+
+Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions. See the [US Core Server CapabilityStatement] for a complete list of supported RESTful interactions for this IG.
+
+* See the [Scopes Format](scopes.md#scopes-format) section for a description of the SMART scopes syntax.
+* See the [Search Syntax](general-guidance.md#search-syntax) section for a description of the US Core search syntax.
+* See the [General Requirements] section for additional rules and expectations when a Server requires status parameters.
+* See the [General Guidance] section for additional guidance on searching for multiple patients.
+
+#### US Core Scopes
+
+Servers providing access to adi data **SHALL** support these [US Core SMART Scopes]:
+
+* [resource level scopes]: `<patient|user|system>/DocumentReference.rs`
 
 -------
 
@@ -50,13 +69,13 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support both read DocumentReference by`id`**AND**DocumentReference search using the combination of the[_id](SearchParameter-us-core-documentreference-id.md)search parameter`GET [base]/DocumentReference?_id=[id]' or 'GET [base]/DocumentReference/[id]`Examples:
+1. **SHALL**support both read DocumentReference by`id`**AND**DocumentReference search using the[_id](SearchParameter-us-core-documentreference-id.md)search parameter`GET [base]/DocumentReference?_id=[id]' or 'GET [base]/DocumentReference/[id]`Examples:
 > 
 1. GET [base]/DocumentReference/2169591
 1. GET [base]/DocumentReference?_id=2169591
 
-**Implementation Notes**: Fetches a single US Core ADI DocumentReference Profile or a search Bundle containing a US Core ADI DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a[Binary](http://hl7.org/fhir/R4/binary.html)resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see [Parameters for all resources]).
-1. **SHALL**support searching for all documentreferences for a patient using the combination of the[patient](SearchParameter-us-core-documentreference-patient.md)search parameter`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
+**Implementation Notes**: Fetches a single US Core ADI DocumentReference Profile or a search Bundle containing a US Core ADI DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a[Binary](http://hl7.org/fhir/R4/binary.html)resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see[Parameters for all resources](http://hl7.org/fhir/R4/search.html#all)).
+1. **SHALL**support searching for all documentreferences for a patient using the[patient](SearchParameter-us-core-documentreference-patient.md)search parameter`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
 > 
 1. GET [base]/DocumentReference?patient=Patient/1137192
 

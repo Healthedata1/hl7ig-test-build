@@ -20,7 +20,7 @@
 
 **Usages:**
 
-* Examples for this Extension: [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md) and [USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)
+* Examples for this Extension: [USCoreAllergyIntolerance](StructureDefinition-us-core-allergyintolerance.md), [USCoreDocumentReferenceProfile](StructureDefinition-us-core-documentreference.md), [USCoreEncounterProfile](StructureDefinition-us-core-encounter.md), [USCoreMedicationRequestProfile](StructureDefinition-us-core-medicationrequest.md)...Show 2 more,[USCoreObservationPregnancyStatusProfile](StructureDefinition-us-core-observation-pregnancystatus.md)and[USCoreSpecimenProfile](StructureDefinition-us-core-specimen.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/uscdi-requirement)
 

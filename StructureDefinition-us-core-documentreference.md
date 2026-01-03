@@ -18,7 +18,8 @@ The US Core DocumentReference Profile inherits from the FHIR[DocumentReference](
 **Usages:**
 
 * Refer to this Profile: [US Core Observation Screening Assessment Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-observation-screening-assessment.html), [US Core PMO ServiceRequest Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-pmo-servicerequest.html), [US Core Simple Observation Profile](http://hl7.org/fhir/us/core/2026Jan/StructureDefinition-us-core-simple-observation.html) and [US Core Observation Survey Profile](http://hl7.org/fhir/us/core/STU5.0.1/StructureDefinition-us-core-observation-survey.html)
-* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-server-liquid.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
+* Examples for this Profile: [DocumentReference/discharge-summary](DocumentReference-discharge-summary.md)
+* CapabilityStatements using this Profile: [US Core Client CapabilityStatement Liquid Rendered](CapabilityStatement-us-core-client-liquid.md), [US Core Server CapabilityStatement](CapabilityStatement-us-core-server.md), [US Core Client CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-client.html) and [US Core Server CapabilityStatement](http://hl7.org/fhir/us/core/STU5.0.1/CapabilityStatement-us-core-server.html)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/hl7.fhir.us.healthedata1-sandbox|current/StructureDefinition/us-core-documentreference)
 
@@ -31,6 +32,29 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 Other representations of profile: [CSV](StructureDefinition-us-core-documentreference.csv), [Excel](StructureDefinition-us-core-documentreference.xlsx), [Schematron](StructureDefinition-us-core-documentreference.sch) 
 
 ### Notes:
+
+-------
+
+**Quick Start** 
+
+-------
+
+Below is an overview of the required Server RESTful FHIR interactions for this profile - for example, search and read operations - when supporting the US Core interactions to access this profile's information (Profile Support + Interaction Support). Note that systems that support only US Core Profiles (Profile Only Support) are not required to support these interactions. See the [US Core Server CapabilityStatement] for a complete list of supported RESTful interactions for this IG.
+
+* See the [Scopes Format](scopes.md#scopes-format) section for a description of the SMART scopes syntax.
+* See the [Search Syntax](general-guidance.md#search-syntax) section for a description of the US Core search syntax.
+* See the [General Requirements] section for additional rules and expectations when a Server requires status parameters.
+* See the [General Guidance] section for additional guidance on searching for multiple patients.
+
+#### US Core Scopes
+
+Servers providing access to clniical note data **SHALL** support these [US Core SMART Scopes]:
+
+* [resource level scopes]: `<patient|user|system>/DocumentReference.rs`
+
+Servers providing access to clniical note data **SHOULD** support these [US Core SMART Scopes]:
+
+* [granular scopes]: `<patient|user|system>/DocumentReference.rs?category=http://hl7.org/fhir/us/core/CodeSystem/us-core-documentreference-category|clinical-note`
 
 -------
 
@@ -50,13 +74,13 @@ then run through the csv file for all the data
 
 The following search parameters and search parameter combinations **SHALL** be supported:
 
-1. **SHALL**support both read DocumentReference by`id`**AND**DocumentReference search using the combination of the[_id](SearchParameter-us-core-documentreference-id.md)search parameter`GET [base]/DocumentReference?_id=[id]' or 'GET [base]/DocumentReference/[id]`Examples:
+1. **SHALL**support both read DocumentReference by`id`**AND**DocumentReference search using the[_id](SearchParameter-us-core-documentreference-id.md)search parameter`GET [base]/DocumentReference?_id=[id]' or 'GET [base]/DocumentReference/[id]`Examples:
 > 
 1. GET [base]/DocumentReference/2169591
 1. GET [base]/DocumentReference?_id=2169591
 
-**Implementation Notes**: Fetches a single US Core DocumentReference Profile or a search Bundle containing a US Core DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a[Binary](http://hl7.org/fhir/R4/binary.html)resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see [Parameters for all resources]).
-1. **SHALL**support searching for all documentreferences for a patient using the combination of the[patient](SearchParameter-us-core-documentreference-patient.md)search parameter`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
+**Implementation Notes**: Fetches a single US Core DocumentReference Profile or a search Bundle containing a US Core DocumentReference Profile resource matching the id. The document itself is represented as a base64 encoded binary data element or retrieved using the link provided by the resource. If the document is a relative link to a[Binary](http://hl7.org/fhir/R4/binary.html)resource like a resource reference, it can be subsequently retrieved using:`GET [base]/Binary/[id]`. (see[Parameters for all resources](http://hl7.org/fhir/R4/search.html#all)).
+1. **SHALL**support searching for all documentreferences for a patient using the[patient](SearchParameter-us-core-documentreference-patient.md)search parameter`GET [base]/DocumentReference?patient={Patient/}[id]`Example:
 > 
 1. GET [base]/DocumentReference?patient=Patient/1137192
 
@@ -99,6 +123,135 @@ The following search parameters and search parameter combinations **SHOULD** be 
 1. GET [base]/DocumentReference?patient=Patient/1137192&type=http://loinc.org|18842-5&period=ge2020-01-01T00:00:00Z
 
 **Implementation Notes**: Fetches a bundle of all US Core DocumentReference Profile resources for the specified patient and type and period. See the implementation notes above for how to access the actual document. ( see[how to search by reference](foo.md)and[how to search by token](#.md)and[how to search by date](#.md)).
+
+#### Mandatory Write Capability:
+
+1. **SHALL**support writing a new note to a Patient's Chart:`POST [base]/DocumentReference`
+
+ Click Here To See Example 
+
+An example to demonstrate writing a note to the Server.
+
+**Clinical Note**
+
+**Note Content**
+
+The content is Base64 encoded and states: "No activity restriction, regular diet, follow up in two to three weeks with primary care provider."
+
+#### Mandatory Operation:
+
+1. **SHALL**support fetching documents using the $docref operation.This [$docref operation] is used to request a Server**generate**a document based on the specified parameters. This operation is invoked on a FHIR Server's DocumentReference endpoint (e.g.,`[base]/DocumentReference/$docref`) and operates across all DocumentReference instances returning a Bundle of DocumentReference resources. See the [$docref operation] definition for detailed documentation.
+* The operation can be invoked using the GET Syntax if the complex type parameter is omitted:
+
+
+  `GET [base]/DocumentReference/$docref?{parameters}`
+* Otherwise the POST transaction with used as follows:
+
+
+  `POST [base]/DocumentReference/$docref`
+
+
+  The body of the POST contains the [Parameters] resource with the [$docref operation] input parameters.
+
+**Example 1: Request the latest CCD**
+
+ Click Here To See Example 
+
+**Request the latest CCD for a patient using`GET`syntax**
+
+`GET [base]/DocumentReference/$docref?patient=123`
+
+**Request the latest CCD for a patient using`POST`syntax**
+
+`POST [base]/DocumentReference/$docref}`
+
+**POST request body:**
+
+```
+    {
+      "resourceType": "Parameters",
+      "id": "get-ccd123",
+      "parameter": [
+        {
+          "name": "patient",
+          "valueId" : "123"
+        }
+      ]
+    }
+
+```
+
+**Response**
+
+```
+HTTP/1.1 200 OK
+[other headers]
+
+```
+
+**Response body**
+
+**Example 2: Request Procedure Notes and Discharge Summaries for 2019**
+
+ Click Here To See Example 
+
+**Request Procedure Notes and Discharge Summaries for 2019 using`POST`syntax**
+
+`POST [base]/DocumentReference/$docref}`
+
+**POST request body:**
+
+```
+{
+    "resourceType": "Parameters",
+    "id": "get-docs",
+    "parameter": [
+        {
+            "name": "patient",
+            "valueId": "123"
+        },
+        {
+            "name": "start",
+            "valueDateTime": "2019-01-01"
+        },
+        {
+            "name": "end",
+            "valueDateTime": "2019-12-31"
+        },
+        {
+            "name": "type",
+            "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/c80-doc-typecodes",
+                "code": "18842-5",
+                "display": "Discharge summary"
+            }
+        },
+        {
+            "name": "type",
+            "valueCoding": {
+                "system": "http://terminology.hl7.org/CodeSystem/c80-doc-typecodes",
+                "code": "28570-0",
+                "display": "Procedures Note"
+            }
+        },
+        {
+            "name": "on-demand",
+            "valueBoolean": true
+        }
+    ]
+}
+
+```
+
+**Response**
+
+```
+HTTP/1.1 200 OK
+[other headers]
+
+```
+
+**Response body**
 
 
 

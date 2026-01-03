@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"11.1"}
-    h3,h4,h5,h6{--heading-prefix:"11.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"12.1"}
+    h3,h4,h5,h6{--heading-prefix:"12.1"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -114,6 +114,9 @@
   </li>
   <li>
     <a href="search-parameters.html">Search Parameters</a>
+  </li>
+  <li>
+    <a href="examples.html">Examples</a>
   </li>
   <li>
     <a href="artifacts.html">Artifact Index</a>
@@ -242,7 +245,7 @@
 
 
 <p>
-<p><a name="l385">​</a>This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the <a href="CapabilityStatement-us-core-server.html">Conformance Requirements for Server</a>. US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+<p>This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the <a href="CapabilityStatement-us-core-server.html">Conformance Requirements for Server</a>. US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
 
 </p>
 
@@ -375,7 +378,7 @@
       <div><div><p>The US Core Client <strong>SHALL</strong>:</p>
 <ol>
 <li>Support fetching and querying of one or more US Core profile(s), using the supported RESTful interactions and search parameters declared in the US Core Server CapabilityStatement.</li>
-<li><a name="l468">​</a>Follow the requirements documented in the <a href="general-requirements.html">General Requirements</a> and <a href="must-support.html">Must Support</a> pages</li>
+<li><a name="l474">​</a>Follow the requirements documented in the <a href="general-requirements.html">General Requirements</a> and <a href="must-support.html">Must Support</a> pages</li>
 </ol>
 <p><strong>NOTE</strong>: US Core SearchParameters referenced in this CapabilityStatement that are derived from standard FHIR SearchParameters are only defined to document Server and Client expectations. They specify additional expectations for the following SearchParameter elements:</p>
 <ul>
@@ -395,7 +398,7 @@
       <p id="security"><strong>Security:</strong></p>
       
         <div><div><ol>
-<li><a name="l528">​</a>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li>
+<li><a name="l534">​</a>See the <a href="security.html">General Security Considerations</a> section for requirements and recommendations.</li>
 </ol>
 </div></div>
       
@@ -519,8 +522,8 @@
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-allergyintolerance.html">US Core AllergyIntolerance Profile</a><br/>
+                     
                 
               
             </td>
@@ -589,12 +592,12 @@
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l720">​</a>
+            <td><a name="l726">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a><br/>
+                     
                 
               
             </td>
@@ -663,12 +666,12 @@
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l772">​</a>
+            <td><a name="l778">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a><br/>
+                     
                 
               
             </td>
@@ -740,14 +743,16 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l821">​</a>
+            <td><a name="l827">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a><br/>
+                     
                 
               
             </td>
@@ -816,12 +821,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l880">​</a>
+            <td><a name="l886">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a><br/>
+                     
                 
               
             </td>
@@ -887,12 +892,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l930">​</a>
+            <td><a name="l936">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-device.html">US Core Device Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-device.html">US Core Device Profile</a><br/>
+                     
                 
               
             </td>
@@ -961,14 +966,16 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l982">​</a>
+            <td><a name="l988">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a><br/>
+                     
                 
               
             </td>
@@ -1041,10 +1048,12 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-documentreference.html">US Core DocumentReference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-adi-documentreference.html">US Core ADI DocumentReference Profile</a><br/>
+                     
                 
               
             </td>
@@ -1113,12 +1122,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1097">​</a>
+            <td>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a><br/>
+                     
                 
               
             </td>
@@ -1253,12 +1262,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1201">​</a>
+            <td><a name="l1207">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-familymemberhistory.html">US Core FamilyMemberHistory Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-familymemberhistory.html">US Core FamilyMemberHistory Profile</a><br/>
+                     
                 
               
             </td>
@@ -1327,12 +1336,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1253">​</a>
+            <td><a name="l1259">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a><br/>
+                     
                 
               
             </td>
@@ -1467,12 +1476,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1357">​</a>
+            <td>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a><br/>
+                     
                 
               
             </td>
@@ -1541,12 +1550,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1409">​</a>
+            <td><a name="l1415">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a><br/>
+                     
                 
               
             </td>
@@ -1678,12 +1687,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1514">​</a>
+            <td><a name="l1520">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a><br/>
+                     
                 
               
             </td>
@@ -1748,12 +1757,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1570">​</a>
+            <td><a name="l1576">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a><br/>
+                     
                 
               
             </td>
@@ -1826,8 +1835,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-medicationrequest.html">US Core MedicationRequest Profile</a><br/>
+                     
                 
               
             </td>
@@ -1896,62 +1905,112 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1668">​</a>
+            <td><a name="l1674">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-vital-signs.html">US Core Vital Signs Profile</a><br/>
+                     
                 
               
             </td>
@@ -2024,8 +2083,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-organization.html">US Core Organization Profile</a><br/>
+                     
                 
               
             </td>
@@ -2091,12 +2150,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l1948">​</a>
+            <td><a name="l1954">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a><br/>
+                     
                 
               
             </td>
@@ -2165,12 +2224,12 @@ CareTeam:participant:RelatedPerson
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2000">​</a>
+            <td><a name="l2006">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a><br/>
+                     
                 
               
             </td>
@@ -2240,8 +2299,8 @@ CareTeam:participant:RelatedPerson
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-practitionerrole.html">US Core PractitionerRole Profile</a><br/>
+                     
                 
               
             </td>
@@ -2308,12 +2367,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2103">​</a>
+            <td><a name="l2109">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a><br/>
+                     
                 
               
             </td>
@@ -2382,12 +2441,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2155">​</a>
+            <td><a name="l2161">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a><br/>
+                     
                 
               
             </td>
@@ -2452,12 +2511,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2211">​</a>
+            <td><a name="l2217">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-sdc-questionnaire.html">SDC Base Questionnaire Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-sdc-questionnaire.html">SDC Base Questionnaire Profile</a><br/>
+                     
                 
               
             </td>
@@ -2522,12 +2581,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2267">​</a>
+            <td>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a><br/>
+                     
                 
               
             </td>
@@ -2596,12 +2655,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2319">​</a>
+            <td><a name="l2325">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a><br/>
+                     
                 
               
             </td>
@@ -2670,14 +2729,16 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2371">​</a>
+            <td><a name="l2377">​</a>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a><br/>
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a><br/>
+                     
+                
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a><br/>
+                     
                 
               
             </td>
@@ -2746,12 +2807,12 @@ PractitionerRole:practitioner
             </td> -->
 
                 <!-- Supported Profiles -->
-            <td><a name="l2430">​</a>
+            <td>
               
                 
                   
-                    <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a><br/>
-                  
+                      <span style="color: grey;">•</span> <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a><br/>
+                     
                 
               
             </td>
@@ -3133,7 +3194,7 @@ PractitionerRole:practitioner
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l2752">​</a>
+                <td><a name="l2758">​</a>
                   <a href="SearchParameter-us-core-allergyintolerance-patient.html">patient</a>
                 </td>
                 <td>
@@ -3153,7 +3214,7 @@ PractitionerRole:practitioner
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l2776">​</a>
+                  <td><a name="l2782">​</a>
                     <a href="SearchParameter-us-core-allergyintolerance-patient.html">patient</a>+<a href="SearchParameter-us-core-allergyintolerance-clinical-status.html">clinical-status</a>
                   </td>
                   <td>
@@ -3174,11 +3235,11 @@ PractitionerRole:practitioner
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l2803">​</a><a href="SearchParameter-us-core-allergyintolerance-clinical-status.html">clinical-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l2809">​</a><a href="SearchParameter-us-core-allergyintolerance-clinical-status.html">clinical-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l2824">​</a><a href="SearchParameter-us-core-allergyintolerance-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l2830">​</a><a href="SearchParameter-us-core-allergyintolerance-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -3224,7 +3285,7 @@ text</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l2917">​</a><strong>SHALL</strong> support 
+                <li><a name="l2923">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-careplan.html">US Core CarePlan Profile</a>
                 </li>
               
@@ -3506,7 +3567,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l3124">​</a>
+                  <td><a name="l3130">​</a>
                     <a href="SearchParameter-us-core-careplan-patient.html">patient</a>+<a href="SearchParameter-us-core-careplan-category.html">category</a>+<a href="SearchParameter-us-core-careplan-status.html">status</a>
                   </td>
                   <td>
@@ -3522,7 +3583,7 @@ text</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l3154">​</a>
+                  <td><a name="l3160">​</a>
                     <a href="SearchParameter-us-core-careplan-patient.html">patient</a>+<a href="SearchParameter-us-core-careplan-category.html">category</a>
                   </td>
                   <td>
@@ -3538,7 +3599,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l3181">​</a>
+                  <td><a name="l3187">​</a>
                     <a href="SearchParameter-us-core-careplan-patient.html">patient</a>+<a href="SearchParameter-us-core-careplan-category.html">category</a>+<a href="SearchParameter-us-core-careplan-date.html">date</a>
                   </td>
                   <td>
@@ -3554,7 +3615,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l3211">​</a>
+                  <td><a name="l3217">​</a>
                     <a href="SearchParameter-us-core-careplan-patient.html">patient</a>+<a href="SearchParameter-us-core-careplan-category.html">category</a>+<a href="SearchParameter-us-core-careplan-status.html">status</a>+<a href="SearchParameter-us-core-careplan-date.html">date</a>
                   </td>
                   <td>
@@ -3575,19 +3636,19 @@ text</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l3244">​</a><a href="SearchParameter-us-core-careplan-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l3250">​</a><a href="SearchParameter-us-core-careplan-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l3265">​</a><a href="SearchParameter-us-core-careplan-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l3271">​</a><a href="SearchParameter-us-core-careplan-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l3289">​</a><a href="SearchParameter-us-core-careplan-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l3295">​</a><a href="SearchParameter-us-core-careplan-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l3310">​</a><a href="SearchParameter-us-core-careplan-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l3316">​</a><a href="SearchParameter-us-core-careplan-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -3646,7 +3707,7 @@ text</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l3445">​</a><strong>SHALL</strong> support 
+                <li><a name="l3451">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-careteam.html">US Core CareTeam Profile</a>
                 </li>
               
@@ -3953,7 +4014,7 @@ text</p>
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l3681">​</a>
+                <td><a name="l3687">​</a>
                   <a href="SearchParameter-us-core-careteam-role.html">role</a>
                 </td>
                 <td>
@@ -3973,7 +4034,7 @@ text</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l3705">​</a>
+                  <td><a name="l3711">​</a>
                     <a href="SearchParameter-us-core-careteam-patient.html">patient</a>+<a href="SearchParameter-us-core-careteam-status.html">status</a>
                   </td>
                   <td>
@@ -3989,7 +4050,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l3732">​</a>
+                  <td><a name="l3738">​</a>
                     <a href="SearchParameter-us-core-careteam-patient.html">patient</a>+<a href="SearchParameter-us-core-careteam-role.html">role</a>
                   </td>
                   <td>
@@ -4010,15 +4071,15 @@ text</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l3759">​</a><a href="SearchParameter-us-core-careteam-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l3765">​</a><a href="SearchParameter-us-core-careteam-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l3780">​</a><a href="SearchParameter-us-core-careteam-role.html">role</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l3786">​</a><a href="SearchParameter-us-core-careteam-role.html">role</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l3801">​</a><a href="SearchParameter-us-core-careteam-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l3807">​</a><a href="SearchParameter-us-core-careteam-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -4058,7 +4119,7 @@ text</p>
 </li>
 </ul>
 </li>
-<li><a name="l3925">​</a>See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. Updates to <code>Condition.meta.lastUpdated</code> <strong>SHOULD</strong> reflect:
+<li><a name="l3931">​</a>See the US Core General Guidance page for <a href="general-guidance.html#searching-using-lastupdated">Searching Using lastUpdated</a>. Updates to <code>Condition.meta.lastUpdated</code> <strong>SHOULD</strong> reflect:
 <ul>
 <li>New problems and health concerns</li>
 <li>Changes in the clinical status or verifications status of problems or health concern</li>
@@ -4075,11 +4136,11 @@ text</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l3957">​</a><strong>SHALL</strong> support 
+                <li><a name="l3963">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-condition-encounter-diagnosis.html">US Core Condition Encounter Diagnosis Profile</a>
                 </li>
               
-                <li><a name="l3965">​</a><strong>SHALL</strong> support 
+                <li><a name="l3971">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-condition-problems-health-concerns.html">US Core Condition Problems and Health Concerns Profile</a>
                 </li>
               
@@ -4358,7 +4419,7 @@ text</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l4172">​</a>
+                <td><a name="l4178">​</a>
                   <a href="SearchParameter-us-core-condition-patient.html">patient</a>
                 </td>
                 <td>
@@ -4378,7 +4439,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4196">​</a>
+                  <td><a name="l4202">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-clinical-status.html">clinical-status</a>
                   </td>
                   <td>
@@ -4394,7 +4455,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4223">​</a>
+                  <td><a name="l4229">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-code.html">code</a>
                   </td>
                   <td>
@@ -4410,7 +4471,7 @@ text</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l4250">​</a>
+                  <td><a name="l4256">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-category.html">category</a>
                   </td>
                   <td>
@@ -4426,7 +4487,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4277">​</a>
+                  <td><a name="l4283">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-abatement-date.html">abatement-date</a>
                   </td>
                   <td>
@@ -4442,7 +4503,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4304">​</a>
+                  <td><a name="l4310">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-recorded-date.html">recorded-date</a>
                   </td>
                   <td>
@@ -4458,7 +4519,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4331">​</a>
+                  <td><a name="l4337">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-lastupdated.html">_lastUpdated</a>
                   </td>
                   <td>
@@ -4474,7 +4535,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4358">​</a>
+                  <td><a name="l4364">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-asserted-date.html">asserted-date</a>
                   </td>
                   <td>
@@ -4490,7 +4551,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4385">​</a>
+                  <td><a name="l4391">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-category.html">category</a>+<a href="SearchParameter-us-core-condition-clinical-status.html">clinical-status</a>
                   </td>
                   <td>
@@ -4506,7 +4567,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4415">​</a>
+                  <td><a name="l4421">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-onset-date.html">onset-date</a>
                   </td>
                   <td>
@@ -4522,7 +4583,7 @@ text</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l4442">​</a>
+                  <td><a name="l4448">​</a>
                     <a href="SearchParameter-us-core-condition-patient.html">patient</a>+<a href="SearchParameter-us-core-condition-category.html">category</a>+<a href="SearchParameter-us-core-condition-encounter.html">encounter</a>
                   </td>
                   <td>
@@ -4543,43 +4604,43 @@ text</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l4472">​</a><a href="SearchParameter-us-core-condition-abatement-date.html">abatement-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l4478">​</a><a href="SearchParameter-us-core-condition-abatement-date.html">abatement-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l4496">​</a><a href="SearchParameter-us-core-condition-asserted-date.html">asserted-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l4502">​</a><a href="SearchParameter-us-core-condition-asserted-date.html">asserted-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l4520">​</a><a href="SearchParameter-us-core-condition-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l4526">​</a><a href="SearchParameter-us-core-condition-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l4541">​</a><a href="SearchParameter-us-core-condition-clinical-status.html">clinical-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l4547">​</a><a href="SearchParameter-us-core-condition-clinical-status.html">clinical-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l4562">​</a><a href="SearchParameter-us-core-condition-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l4568">​</a><a href="SearchParameter-us-core-condition-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l4583">​</a><a href="SearchParameter-us-core-condition-encounter.html">encounter</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l4589">​</a><a href="SearchParameter-us-core-condition-encounter.html">encounter</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l4604">​</a><a href="SearchParameter-us-core-condition-onset-date.html">onset-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l4610">​</a><a href="SearchParameter-us-core-condition-onset-date.html">onset-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l4628">​</a><a href="SearchParameter-us-core-condition-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l4634">​</a><a href="SearchParameter-us-core-condition-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l4649">​</a><a href="SearchParameter-us-core-condition-recorded-date.html">recorded-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l4655">​</a><a href="SearchParameter-us-core-condition-recorded-date.html">recorded-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l4673">​</a><a href="SearchParameter-us-core-condition-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+                <li><a name="l4679">​</a><a href="SearchParameter-us-core-condition-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
 <p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
@@ -4607,7 +4668,7 @@ text</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l4727">​</a><strong>SHALL</strong> support 
+                <li><a name="l4733">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-coverage.html">US Core Coverage Profile</a>
                 </li>
               
@@ -4886,7 +4947,7 @@ text</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l4934">​</a>
+                <td><a name="l4940">​</a>
                   <a href="SearchParameter-us-core-coverage-patient.html">patient</a>
                 </td>
                 <td>
@@ -4909,7 +4970,7 @@ text</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l4958">​</a><a href="SearchParameter-us-core-coverage-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l4964">​</a><a href="SearchParameter-us-core-coverage-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -4949,7 +5010,7 @@ historical medical devices, patient-reported implant information, payer-reported
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l5054">​</a><strong>SHALL</strong> support 
+                <li><a name="l5060">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-device.html">US Core Device Profile</a>
                 </li>
               
@@ -5228,7 +5289,7 @@ historical medical devices, patient-reported implant information, payer-reported
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l5261">​</a>
+                <td><a name="l5267">​</a>
                   <a href="SearchParameter-us-core-device-patient.html">patient</a>
                 </td>
                 <td>
@@ -5248,7 +5309,7 @@ historical medical devices, patient-reported implant information, payer-reported
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l5285">​</a>
+                  <td><a name="l5291">​</a>
                     <a href="SearchParameter-us-core-device-patient.html">patient</a>+<a href="SearchParameter-us-core-device-type.html">type</a>
                   </td>
                   <td>
@@ -5264,7 +5325,7 @@ historical medical devices, patient-reported implant information, payer-reported
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l5312">​</a>
+                  <td><a name="l5318">​</a>
                     <a href="SearchParameter-us-core-device-patient.html">patient</a>+<a href="SearchParameter-us-core-device-status.html">status</a>
                   </td>
                   <td>
@@ -5285,15 +5346,15 @@ historical medical devices, patient-reported implant information, payer-reported
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l5339">​</a><a href="SearchParameter-us-core-device-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l5345">​</a><a href="SearchParameter-us-core-device-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l5360">​</a><a href="SearchParameter-us-core-device-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l5366">​</a><a href="SearchParameter-us-core-device-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l5381">​</a><a href="SearchParameter-us-core-device-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l5387">​</a><a href="SearchParameter-us-core-device-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -5366,11 +5427,11 @@ such as accession numbers in the <code>identifier</code> element to access the s
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l5540">​</a><strong>SHALL</strong> support 
+                <li><a name="l5546">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-diagnosticreport-note.html">US Core DiagnosticReport Profile for Report and Note exchange</a>
                 </li>
               
-                <li><a name="l5548">​</a><strong>SHALL</strong> support 
+                <li><a name="l5554">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-diagnosticreport-lab.html">US Core DiagnosticReport Profile for Laboratory Results Reporting</a>
                 </li>
               
@@ -5654,7 +5715,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l5777">​</a>
+                <td><a name="l5783">​</a>
                   <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>
                 </td>
                 <td>
@@ -5674,7 +5735,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l5801">​</a>
+                  <td><a name="l5807">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-code.html">code</a>+<a href="SearchParameter-us-core-diagnosticreport-date.html">date</a>
                   </td>
                   <td>
@@ -5690,7 +5751,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l5831">​</a>
+                  <td><a name="l5837">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-category.html">category</a>+<a href="SearchParameter-us-core-diagnosticreport-lastupdated.html">_lastUpdated</a>
                   </td>
                   <td>
@@ -5706,7 +5767,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l5861">​</a>
+                  <td><a name="l5867">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-category.html">category</a>+<a href="SearchParameter-us-core-diagnosticreport-date.html">date</a>
                   </td>
                   <td>
@@ -5722,7 +5783,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l5891">​</a>
+                  <td><a name="l5897">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-category.html">category</a>
                   </td>
                   <td>
@@ -5738,7 +5799,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l5918">​</a>
+                  <td><a name="l5924">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-status.html">status</a>
                   </td>
                   <td>
@@ -5754,7 +5815,7 @@ such as accession numbers in the <code>identifier</code> element to access the s
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l5945">​</a>
+                  <td><a name="l5951">​</a>
                     <a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a>+<a href="SearchParameter-us-core-diagnosticreport-code.html">code</a>
                   </td>
                   <td>
@@ -5775,28 +5836,28 @@ such as accession numbers in the <code>identifier</code> element to access the s
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l5972">​</a><a href="SearchParameter-us-core-diagnosticreport-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l5978">​</a><a href="SearchParameter-us-core-diagnosticreport-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l5993">​</a><a href="SearchParameter-us-core-diagnosticreport-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l5999">​</a><a href="SearchParameter-us-core-diagnosticreport-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l6014">​</a><a href="SearchParameter-us-core-diagnosticreport-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l6020">​</a><a href="SearchParameter-us-core-diagnosticreport-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l6038">​</a><a href="SearchParameter-us-core-diagnosticreport-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+                <li><a name="l6044">​</a><a href="SearchParameter-us-core-diagnosticreport-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
 <p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l6068">​</a><a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l6074">​</a><a href="SearchParameter-us-core-diagnosticreport-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l6089">​</a><a href="SearchParameter-us-core-diagnosticreport-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l6095">​</a><a href="SearchParameter-us-core-diagnosticreport-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -5824,11 +5885,11 @@ such as accession numbers in the <code>identifier</code> element to access the s
 <p>For other clinical documents use the <em>US Core DiagnosticReport Profile for Report and Note Exchange</em>.</p>
 <ul>
 <li>
-<p><a name="l6155">​</a>See the <a href="clinical-notes.html">Clinical Notes</a> page for
+<p><a name="l6161">​</a>See the <a href="clinical-notes.html">Clinical Notes</a> page for
 important definitions, requirements, and guidance on creating, using, and sharing Clinical Notes.</p>
 </li>
 <li>
-<p><a name="l6164">​</a>The <code>DocumentReference.type</code> binding Must Support at
+<p><a name="l6170">​</a>The <code>DocumentReference.type</code> binding Must Support at
 a minimum the <a href="ValueSet-us-core-clinical-note-type.html">10 Common Clinical Notes</a> and may extend to the full US Core DocumentReference Type Value Set</p>
 </li>
 </ul>
@@ -6149,7 +6210,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l6477">​</a>
+                <td><a name="l6483">​</a>
                   <a href="SearchParameter-us-core-documentreference-id.html">_id</a>
                 </td>
                 <td>
@@ -6166,7 +6227,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l6501">​</a>
+                <td><a name="l6507">​</a>
                   <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>
                 </td>
                 <td>
@@ -6186,7 +6247,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l6525">​</a>
+                  <td><a name="l6531">​</a>
                     <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-us-core-documentreference-type.html">type</a>
                   </td>
                   <td>
@@ -6202,7 +6263,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l6552">​</a>
+                  <td><a name="l6558">​</a>
                     <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-us-core-documentreference-category.html">category</a>+<a href="SearchParameter-us-core-documentreference-date.html">date</a>
                   </td>
                   <td>
@@ -6218,7 +6279,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l6582">​</a>
+                  <td><a name="l6588">​</a>
                     <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-us-core-documentreference-category.html">category</a>
                   </td>
                   <td>
@@ -6234,7 +6295,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l6609">​</a>
+                  <td><a name="l6615">​</a>
                     <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-us-core-documentreference-type.html">type</a>+<a href="SearchParameter-us-core-documentreference-period.html">period</a>
                   </td>
                   <td>
@@ -6250,7 +6311,7 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l6639">​</a>
+                  <td><a name="l6645">​</a>
                     <a href="SearchParameter-us-core-documentreference-patient.html">patient</a>+<a href="SearchParameter-us-core-documentreference-status.html">status</a>
                   </td>
                   <td>
@@ -6271,27 +6332,27 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l6666">​</a><a href="SearchParameter-us-core-documentreference-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l6672">​</a><a href="SearchParameter-us-core-documentreference-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l6687">​</a><a href="SearchParameter-us-core-documentreference-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l6693">​</a><a href="SearchParameter-us-core-documentreference-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l6711">​</a><a href="SearchParameter-us-core-documentreference-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l6717">​</a><a href="SearchParameter-us-core-documentreference-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l6732">​</a><a href="SearchParameter-us-core-documentreference-period.html">period</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l6738">​</a><a href="SearchParameter-us-core-documentreference-period.html">period</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l6756">​</a><a href="SearchParameter-us-core-documentreference-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l6762">​</a><a href="SearchParameter-us-core-documentreference-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l6777">​</a><a href="SearchParameter-us-core-documentreference-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l6783">​</a><a href="SearchParameter-us-core-documentreference-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -6303,15 +6364,17 @@ element repetitions, these <strong>SHALL</strong> all represent the same documen
        
 
         <p>FHIR Operations:</p>
-          <ul>
+
+
+           <ul>
+
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } --><li><strong>SHOULD</strong> support<a href="OperationDefinition-docref.html"><code>docref</code></a></li>
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+
             
-            
-            
-              <li><a name="l6808">​</a><strong>SHOULD</strong> support <a href="null"><code></code></a></li>
-            
-            
-            
-          </ul>
+             </ul>
 
           
             
@@ -6391,7 +6454,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l7025">​</a><strong>SHALL</strong> support 
+                <li><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-encounter.html">US Core Encounter Profile</a>
                 </li>
               
@@ -6670,7 +6733,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l7232">​</a>
+                <td><a name="l7246">​</a>
                   <a href="SearchParameter-us-core-encounter-id.html">_id</a>
                 </td>
                 <td>
@@ -6687,7 +6750,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l7256">​</a>
+                <td><a name="l7270">​</a>
                   <a href="SearchParameter-us-core-encounter-identifier.html">identifier</a>
                 </td>
                 <td>
@@ -6704,7 +6767,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l7280">​</a>
+                <td><a name="l7294">​</a>
                   <a href="SearchParameter-us-core-encounter-patient.html">patient</a>
                 </td>
                 <td>
@@ -6724,7 +6787,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7304">​</a>
+                  <td><a name="l7318">​</a>
                     <a href="SearchParameter-us-core-encounter-patient.html">patient</a>+<a href="SearchParameter-us-core-encounter-type.html">type</a>
                   </td>
                   <td>
@@ -6740,7 +6803,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7331">​</a>
+                  <td><a name="l7345">​</a>
                     <a href="SearchParameter-us-core-encounter-class.html">class</a>+<a href="SearchParameter-us-core-encounter-patient.html">patient</a>
                   </td>
                   <td>
@@ -6756,7 +6819,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7358">​</a>
+                  <td><a name="l7372">​</a>
                     <a href="SearchParameter-us-core-encounter-patient.html">patient</a>+<a href="SearchParameter-us-core-encounter-status.html">status</a>
                   </td>
                   <td>
@@ -6772,7 +6835,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7385">​</a>
+                  <td><a name="l7399">​</a>
                     <a href="SearchParameter-us-core-encounter-patient.html">patient</a>+<a href="SearchParameter-us-core-encounter-lastupdated.html">_lastUpdated</a>
                   </td>
                   <td>
@@ -6788,7 +6851,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7412">​</a>
+                  <td><a name="l7426">​</a>
                     <a href="SearchParameter-us-core-encounter-patient.html">patient</a>+<a href="SearchParameter-us-core-encounter-location.html">location</a>
                   </td>
                   <td>
@@ -6804,7 +6867,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l7439">​</a>
+                  <td><a name="l7453">​</a>
                     <a href="SearchParameter-us-core-encounter-date.html">date</a>+<a href="SearchParameter-us-core-encounter-patient.html">patient</a>
                   </td>
                   <td>
@@ -6820,7 +6883,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l7466">​</a>
+                  <td><a name="l7480">​</a>
                     <a href="SearchParameter-us-core-encounter-patient.html">patient</a>+<a href="SearchParameter-us-core-encounter-discharge-disposition.html">discharge-disposition</a>
                   </td>
                   <td>
@@ -6841,40 +6904,40 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l7493">​</a><a href="SearchParameter-us-core-encounter-class.html">class</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l7507">​</a><a href="SearchParameter-us-core-encounter-class.html">class</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7514">​</a><a href="SearchParameter-us-core-encounter-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l7528">​</a><a href="SearchParameter-us-core-encounter-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l7538">​</a><a href="SearchParameter-us-core-encounter-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
+                <li><a name="l7552">​</a><a href="SearchParameter-us-core-encounter-lastupdated.html">_lastUpdated</a> (Date/DateTime):<div><p>A server <strong>SHALL</strong> document the types of changes that can be detected using this parameter.</p>
 <p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l7568">​</a><a href="SearchParameter-us-core-encounter-discharge-disposition.html">discharge-disposition</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l7582">​</a><a href="SearchParameter-us-core-encounter-discharge-disposition.html">discharge-disposition</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7589">​</a><a href="SearchParameter-us-core-encounter-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l7603">​</a><a href="SearchParameter-us-core-encounter-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7610">​</a><a href="SearchParameter-us-core-encounter-location.html">location</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l7624">​</a><a href="SearchParameter-us-core-encounter-location.html">location</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7631">​</a><a href="SearchParameter-us-core-encounter-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l7645">​</a><a href="SearchParameter-us-core-encounter-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7652">​</a><a href="SearchParameter-us-core-encounter-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l7666">​</a><a href="SearchParameter-us-core-encounter-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l7673">​</a><a href="SearchParameter-us-core-encounter-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l7687">​</a><a href="SearchParameter-us-core-encounter-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -7158,7 +7221,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l7886">​</a><strong>SHALL</strong> support 
+                <li><a name="l7900">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-familymemberhistory.html">US Core FamilyMemberHistory Profile</a>
                 </li>
               
@@ -7437,7 +7500,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l8093">​</a>
+                <td><a name="l8107">​</a>
                   <a href="SearchParameter-us-core-familymemberhistory-patient.html">patient</a>
                 </td>
                 <td>
@@ -7457,7 +7520,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l8117">​</a>
+                  <td><a name="l8131">​</a>
                     <a href="SearchParameter-us-core-familymemberhistory-patient.html">patient</a>+<a href="SearchParameter-us-core-familymemberhistory-code.html">code</a>
                   </td>
                   <td>
@@ -7478,11 +7541,11 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l8144">​</a><a href="SearchParameter-us-core-familymemberhistory-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l8158">​</a><a href="SearchParameter-us-core-familymemberhistory-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l8165">​</a><a href="SearchParameter-us-core-familymemberhistory-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l8179">​</a><a href="SearchParameter-us-core-familymemberhistory-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -7513,7 +7576,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l8234">​</a><strong>SHALL</strong> support 
+                <li><a name="l8248">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-goal.html">US Core Goal Profile</a>
                 </li>
               
@@ -7792,7 +7855,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l8441">​</a>
+                <td><a name="l8455">​</a>
                   <a href="SearchParameter-us-core-goal-patient.html">patient</a>
                 </td>
                 <td>
@@ -7812,7 +7875,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l8465">​</a>
+                  <td><a name="l8479">​</a>
                     <a href="SearchParameter-us-core-goal-patient.html">patient</a>+<a href="SearchParameter-us-core-goal-description.html">description</a>
                   </td>
                   <td>
@@ -7828,7 +7891,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l8492">​</a>
+                  <td><a name="l8506">​</a>
                     <a href="SearchParameter-us-core-goal-patient.html">patient</a>+<a href="SearchParameter-us-core-goal-target-date.html">target-date</a>
                   </td>
                   <td>
@@ -7844,7 +7907,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l8519">​</a>
+                  <td><a name="l8533">​</a>
                     <a href="SearchParameter-us-core-goal-patient.html">patient</a>+<a href="SearchParameter-us-core-goal-lifecycle-status.html">lifecycle-status</a>
                   </td>
                   <td>
@@ -7865,15 +7928,15 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l8546">​</a><a href="SearchParameter-us-core-goal-lifecycle-status.html">lifecycle-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l8560">​</a><a href="SearchParameter-us-core-goal-lifecycle-status.html">lifecycle-status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l8567">​</a><a href="SearchParameter-us-core-goal-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l8581">​</a><a href="SearchParameter-us-core-goal-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l8588">​</a><a href="SearchParameter-us-core-goal-target-date.html">target-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+                <li><a name="l8602">​</a><a href="SearchParameter-us-core-goal-target-date.html">target-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
 <p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
 </div></li>
               
@@ -8161,7 +8224,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l8819">​</a><strong>SHALL</strong> support 
+                <li><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-immunization.html">US Core Immunization Profile</a>
                 </li>
               
@@ -8440,7 +8503,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l9026">​</a>
+                <td><a name="l9040">​</a>
                   <a href="SearchParameter-us-core-immunization-patient.html">patient</a>
                 </td>
                 <td>
@@ -8460,7 +8523,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l9050">​</a>
+                  <td><a name="l9064">​</a>
                     <a href="SearchParameter-us-core-immunization-patient.html">patient</a>+<a href="SearchParameter-us-core-immunization-date.html">date</a>
                   </td>
                   <td>
@@ -8476,7 +8539,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l9077">​</a>
+                  <td><a name="l9091">​</a>
                     <a href="SearchParameter-us-core-immunization-patient.html">patient</a>+<a href="SearchParameter-us-core-immunization-status.html">status</a>
                   </td>
                   <td>
@@ -8497,15 +8560,15 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l9104">​</a><a href="SearchParameter-us-core-immunization-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l9118">​</a><a href="SearchParameter-us-core-immunization-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l9128">​</a><a href="SearchParameter-us-core-immunization-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l9142">​</a><a href="SearchParameter-us-core-immunization-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l9149">​</a><a href="SearchParameter-us-core-immunization-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l9163">​</a><a href="SearchParameter-us-core-immunization-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -8536,7 +8599,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l9215">​</a><strong>SHALL</strong> support 
+                <li><a name="l9229">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-location.html">US Core Location Profile</a>
                 </li>
               
@@ -8799,7 +8862,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l9408">​</a>
+                <td><a name="l9422">​</a>
                   <a href="SearchParameter-us-core-location-address.html">address</a>
                 </td>
                 <td>
@@ -8816,7 +8879,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l9432">​</a>
+                <td><a name="l9446">​</a>
                   <a href="SearchParameter-us-core-location-address-city.html">address-city</a>
                 </td>
                 <td>
@@ -8833,7 +8896,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l9456">​</a>
+                <td><a name="l9470">​</a>
                   <a href="SearchParameter-us-core-location-address-postalcode.html">address-postalcode</a>
                 </td>
                 <td>
@@ -8850,7 +8913,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l9480">​</a>
+                <td><a name="l9494">​</a>
                   <a href="SearchParameter-us-core-location-address-state.html">address-state</a>
                 </td>
                 <td>
@@ -8867,7 +8930,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l9504">​</a>
+                <td><a name="l9518">​</a>
                   <a href="SearchParameter-us-core-location-name.html">name</a>
                 </td>
                 <td>
@@ -9167,7 +9230,7 @@ that trigger the same status (e.g., in-progress → in-progress). These status c
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l9727">​</a><strong>SHALL</strong> support 
+                <li><a name="l9741">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-medication.html">US Core Medication Profile</a>
                 </li>
               
@@ -9455,7 +9518,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l9962">​</a><strong>SHALL</strong> support 
+                <li><a name="l9976">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-medicationdispense.html">US Core MedicationDispense Profile</a>
                 </li>
               
@@ -9750,7 +9813,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l10183">​</a>
+                <td><a name="l10197">​</a>
                   <a href="SearchParameter-us-core-medicationdispense-patient.html">patient</a>
                 </td>
                 <td>
@@ -9770,7 +9833,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l10207">​</a>
+                  <td><a name="l10221">​</a>
                     <a href="SearchParameter-us-core-medicationdispense-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationdispense-status.html">status</a>+<a href="SearchParameter-us-core-medicationdispense-type.html">type</a>
                   </td>
                   <td>
@@ -9786,7 +9849,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l10237">​</a>
+                  <td><a name="l10251">​</a>
                     <a href="SearchParameter-us-core-medicationdispense-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationdispense-status.html">status</a>
                   </td>
                   <td>
@@ -9807,15 +9870,15 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l10264">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l10278">​</a><a href="SearchParameter-us-core-medicationdispense-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l10285">​</a><a href="SearchParameter-us-core-medicationdispense-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l10299">​</a><a href="SearchParameter-us-core-medicationdispense-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l10306">​</a><a href="SearchParameter-us-core-medicationdispense-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l10320">​</a><a href="SearchParameter-us-core-medicationdispense-type.html">type</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -10174,7 +10237,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l10701">​</a>
+                  <td><a name="l10715">​</a>
                     <a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-us-core-medicationrequest-authoredon.html">authoredon</a>
                   </td>
                   <td>
@@ -10190,7 +10253,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l10731">​</a>
+                  <td><a name="l10745">​</a>
                     <a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-us-core-medicationrequest-encounter.html">encounter</a>
                   </td>
                   <td>
@@ -10206,7 +10269,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l10761">​</a>
+                  <td><a name="l10775">​</a>
                     <a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a>
                   </td>
                   <td>
@@ -10222,7 +10285,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l10788">​</a>
+                  <td><a name="l10802">​</a>
                     <a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a>+<a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a>+<a href="SearchParameter-us-core-medicationrequest-status.html">status</a>
                   </td>
                   <td>
@@ -10243,23 +10306,23 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l10818">​</a><a href="SearchParameter-us-core-medicationrequest-authoredon.html">authoredon</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l10832">​</a><a href="SearchParameter-us-core-medicationrequest-authoredon.html">authoredon</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l10842">​</a><a href="SearchParameter-us-core-medicationrequest-encounter.html">encounter</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l10856">​</a><a href="SearchParameter-us-core-medicationrequest-encounter.html">encounter</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l10863">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l10877">​</a><a href="SearchParameter-us-core-medicationrequest-intent.html">intent</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l10884">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l10898">​</a><a href="SearchParameter-us-core-medicationrequest-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l10905">​</a><a href="SearchParameter-us-core-medicationrequest-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l10919">​</a><a href="SearchParameter-us-core-medicationrequest-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -10301,11 +10364,11 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l11003">​</a><strong>SHALL</strong> support 
+                <li><a name="l11017">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a>
                 </li>
               
-                <li><a name="l11011">​</a><strong>SHALL</strong> support 
+                <li><a name="l11025">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-lab.html">US Core Laboratory Result Observation Profile</a>
                 </li>
               
@@ -10313,27 +10376,27 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <a href="StructureDefinition-us-core-observation-pregnancystatus.html">US Core Observation Pregnancy Status Profile</a>
                 </li>
               
-                <li><a name="l11027">​</a><strong>SHALL</strong> support 
+                <li><a name="l11041">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-pregnancyintent.html">US Core Observation Pregnancy Intent Profile</a>
                 </li>
               
-                <li><a name="l11035">​</a><strong>SHALL</strong> support 
+                <li><a name="l11049">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-occupation.html">US Core Observation Occupation Profile</a>
                 </li>
               
-                <li><a name="l11043">​</a><strong>SHALL</strong> support 
+                <li><a name="l11057">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-respiratory-rate.html">US Core Respiratory Rate Profile</a>
                 </li>
               
-                <li><a name="l11051">​</a><strong>SHALL</strong> support 
+                <li><a name="l11065">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-simple-observation.html">US Core Simple Observation Profile</a>
                 </li>
               
-                <li><a name="l11059">​</a><strong>SHALL</strong> support 
+                <li><a name="l11073">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-treatment-intervention-preference.html">US Core Treatment Intervention Preference Profile</a>
                 </li>
               
-                <li><a name="l11067">​</a><strong>SHALL</strong> support 
+                <li><a name="l11081">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-care-experience-preference.html">US Core Care Experience Preference Profile</a>
                 </li>
               
@@ -10341,63 +10404,63 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <a href="StructureDefinition-us-core-heart-rate.html">US Core Heart Rate Profile</a>
                 </li>
               
-                <li><a name="l11083">​</a><strong>SHALL</strong> support 
+                <li><a name="l11097">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-body-temperature.html">US Core Body Temperature Profile</a>
                 </li>
               
-                <li><a name="l11091">​</a><strong>SHALL</strong> support 
+                <li><a name="l11105">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-pediatric-weight-for-height.html">US Core Pediatric Weight for Height Observation Profile</a>
                 </li>
               
-                <li><a name="l11099">​</a><strong>SHALL</strong> support 
+                <li><a name="l11113">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-pulse-oximetry.html">US Core Pulse Oximetry Profile</a>
                 </li>
               
-                <li><a name="l11107">​</a><strong>SHALL</strong> support 
+                <li><a name="l11121">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-smokingstatus.html">US Core Smoking Status Observation Profile</a>
                 </li>
               
-                <li><a name="l11115">​</a><strong>MAY</strong> support 
+                <li><a name="l11129">​</a><strong>MAY</strong> support 
                 <a href="StructureDefinition-us-core-observation-sexual-orientation.html">US Core Observation Sexual Orientation Profile</a>
                 </li>
               
-                <li><a name="l11123">​</a><strong>SHALL</strong> support 
+                <li><a name="l11137">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-head-circumference.html">US Core Head Circumference Profile</a>
                 </li>
               
-                <li><a name="l11131">​</a><strong>SHALL</strong> support 
+                <li><a name="l11145">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-body-height.html">US Core Body Height Profile</a>
                 </li>
               
-                <li><a name="l11139">​</a><strong>SHALL</strong> support 
+                <li><a name="l11153">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-bmi.html">US Core BMI Profile</a>
                 </li>
               
-                <li><a name="l11147">​</a><strong>SHALL</strong> support 
+                <li><a name="l11161">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-screening-assessment.html">US Core Observation Screening Assessment Profile</a>
                 </li>
               
-                <li><a name="l11155">​</a><strong>SHALL</strong> support 
+                <li><a name="l11169">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-average-blood-pressure.html">US Core Average Blood Pressure Profile</a>
                 </li>
               
-                <li><a name="l11163">​</a><strong>SHALL</strong> support 
+                <li><a name="l11177">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-blood-pressure.html">US Core Blood Pressure Profile</a>
                 </li>
               
-                <li><a name="l11171">​</a><strong>SHALL</strong> support 
+                <li><a name="l11185">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-observation-clinical-result.html">US Core Observation Clinical Result Profile</a>
                 </li>
               
-                <li><a name="l11179">​</a><strong>SHALL</strong> support 
+                <li><a name="l11193">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-pediatric-bmi-for-age.html">US Core Pediatric BMI for Age Observation Profile</a>
                 </li>
               
-                <li><a name="l11187">​</a><strong>SHALL</strong> support 
+                <li><a name="l11201">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-head-occipital-frontal-circumference-percentile.html">US Core Pediatric Head Occipital Frontal Circumference Percentile Profile</a>
                 </li>
               
-                <li><a name="l11195">​</a><strong>SHALL</strong> support 
+                <li><a name="l11209">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-body-weight.html">US Core Body Weight Profile</a>
                 </li>
               
@@ -11100,7 +11163,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l11972">​</a>
+                <td><a name="l11986">​</a>
                   <a href="SearchParameter-us-core-organization-address.html">address</a>
                 </td>
                 <td>
@@ -11117,7 +11180,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l11996">​</a>
+                <td><a name="l12010">​</a>
                   <a href="SearchParameter-us-core-organization-name.html">name</a>
                 </td>
                 <td>
@@ -11173,7 +11236,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l12118">​</a><strong>SHALL</strong> support 
+                <li><a name="l12132">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-patient.html">US Core Patient Profile</a>
                 </li>
               
@@ -11452,7 +11515,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l12325">​</a>
+                <td><a name="l12339">​</a>
                   <a href="SearchParameter-us-core-patient-id.html">_id</a>
                 </td>
                 <td>
@@ -11469,7 +11532,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l12349">​</a>
+                <td><a name="l12363">​</a>
                   <a href="SearchParameter-us-core-patient-identifier.html">identifier</a>
                 </td>
                 <td>
@@ -11486,7 +11549,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l12373">​</a>
+                <td><a name="l12387">​</a>
                   <a href="SearchParameter-us-core-patient-name.html">name</a>
                 </td>
                 <td>
@@ -11506,7 +11569,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l12397">​</a>
+                  <td><a name="l12411">​</a>
                     <a href="SearchParameter-us-core-patient-birthdate.html">birthdate</a>+<a href="SearchParameter-us-core-patient-name.html">name</a>
                   </td>
                   <td>
@@ -11522,7 +11585,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l12424">​</a>
+                  <td><a name="l12438">​</a>
                     <a href="SearchParameter-us-core-patient-birthdate.html">birthdate</a>+<a href="SearchParameter-us-core-patient-family.html">family</a>
                   </td>
                   <td>
@@ -11538,7 +11601,7 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l12451">​</a>
+                  <td><a name="l12465">​</a>
                     <a href="SearchParameter-us-core-patient-death-date.html">death-date</a>+<a href="SearchParameter-us-core-patient-family.html">family</a>
                   </td>
                   <td>
@@ -11559,15 +11622,15 @@ RxNorm to represent medications can use the National Library of Medicine's (NLM)
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l12478">​</a><a href="SearchParameter-us-core-patient-birthdate.html">birthdate</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+                <li><a name="l12492">​</a><a href="SearchParameter-us-core-patient-birthdate.html">birthdate</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
 <p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
 </div></li>
               
-                <li><a name="l12502">​</a><a href="SearchParameter-us-core-patient-death-date.html">death-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
+                <li><a name="l12516">​</a><a href="SearchParameter-us-core-patient-death-date.html">death-date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>day</em>.</p>
 <p>A server <strong>SHALL</strong> support a value a value precise to the <em>day</em>.</p>
 </div></li>
               
-                <li><a name="l12526">​</a><a href="SearchParameter-us-core-patient-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l12540">​</a><a href="SearchParameter-us-core-patient-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -11610,7 +11673,7 @@ the server system is not required to support it if they support the US Core Prac
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l12625">​</a><strong>SHALL</strong> support 
+                <li><a name="l12639">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-practitioner.html">US Core Practitioner Profile</a>
                 </li>
               
@@ -11873,7 +11936,7 @@ the server system is not required to support it if they support the US Core Prac
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l12818">​</a>
+                <td><a name="l12832">​</a>
                   <a href="SearchParameter-us-core-practitioner-id.html">_id</a>
                 </td>
                 <td>
@@ -11890,7 +11953,7 @@ the server system is not required to support it if they support the US Core Prac
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l12842">​</a>
+                <td><a name="l12856">​</a>
                   <a href="SearchParameter-us-core-practitioner-identifier.html">identifier</a>
                 </td>
                 <td>
@@ -11907,7 +11970,7 @@ the server system is not required to support it if they support the US Core Prac
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l12866">​</a>
+                <td><a name="l12880">​</a>
                   <a href="SearchParameter-us-core-practitioner-name.html">name</a>
                 </td>
                 <td>
@@ -11930,7 +11993,7 @@ the server system is not required to support it if they support the US Core Prac
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l12890">​</a><a href="SearchParameter-us-core-practitioner-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l12904">​</a><a href="SearchParameter-us-core-practitioner-identifier.html">identifier</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -12244,7 +12307,7 @@ the server system is not required to support it if they support the US Core Prac
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l13162">​</a>
+                <td><a name="l13176">​</a>
                   <a href="SearchParameter-us-core-practitionerrole-practitioner.html">practitioner</a>
                 </td>
                 <td>
@@ -12261,7 +12324,7 @@ the server system is not required to support it if they support the US Core Prac
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l13186">​</a>
+                <td><a name="l13200">​</a>
                   <a href="SearchParameter-us-core-practitionerrole-specialty.html">specialty</a>
                 </td>
                 <td>
@@ -12284,11 +12347,11 @@ the server system is not required to support it if they support the US Core Prac
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l13210">​</a><a href="SearchParameter-us-core-practitionerrole-practitioner.html">practitioner</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l13224">​</a><a href="SearchParameter-us-core-practitionerrole-practitioner.html">practitioner</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l13231">​</a><a href="SearchParameter-us-core-practitionerrole-specialty.html">specialty</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l13245">​</a><a href="SearchParameter-us-core-practitionerrole-specialty.html">specialty</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -12352,7 +12415,7 @@ Profile.</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l13402">​</a><strong>SHALL</strong> support 
+                <li><a name="l13416">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-procedure.html">US Core Procedure Profile</a>
                 </li>
               
@@ -12631,7 +12694,7 @@ Profile.</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l13609">​</a>
+                <td><a name="l13623">​</a>
                   <a href="SearchParameter-us-core-procedure-patient.html">patient</a>
                 </td>
                 <td>
@@ -12651,7 +12714,7 @@ Profile.</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l13633">​</a>
+                  <td><a name="l13647">​</a>
                     <a href="SearchParameter-us-core-procedure-patient.html">patient</a>+<a href="SearchParameter-us-core-procedure-code.html">code</a>+<a href="SearchParameter-us-core-procedure-date.html">date</a>
                   </td>
                   <td>
@@ -12667,7 +12730,7 @@ Profile.</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l13663">​</a>
+                  <td><a name="l13677">​</a>
                     <a href="SearchParameter-us-core-procedure-patient.html">patient</a>+<a href="SearchParameter-us-core-procedure-date.html">date</a>
                   </td>
                   <td>
@@ -12683,7 +12746,7 @@ Profile.</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l13690">​</a>
+                  <td><a name="l13704">​</a>
                     <a href="SearchParameter-us-core-procedure-patient.html">patient</a>+<a href="SearchParameter-us-core-procedure-status.html">status</a>
                   </td>
                   <td>
@@ -12704,19 +12767,19 @@ Profile.</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l13717">​</a><a href="SearchParameter-us-core-procedure-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l13731">​</a><a href="SearchParameter-us-core-procedure-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l13738">​</a><a href="SearchParameter-us-core-procedure-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l13752">​</a><a href="SearchParameter-us-core-procedure-date.html">date</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l13762">​</a><a href="SearchParameter-us-core-procedure-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l13776">​</a><a href="SearchParameter-us-core-procedure-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l13783">​</a><a href="SearchParameter-us-core-procedure-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l13797">​</a><a href="SearchParameter-us-core-procedure-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -12814,7 +12877,7 @@ Profile.</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l13987">​</a><strong>SHALL</strong> support 
+                <li><a name="l14001">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-provenance.html">US Core Provenance Profile</a>
                 </li>
               
@@ -13098,7 +13161,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l14207">​</a><strong>SHALL</strong> support 
+                <li><a name="l14221">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-sdc-questionnaire.html">SDC Base Questionnaire Profile</a>
                 </li>
               
@@ -13380,7 +13443,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l14422">​</a><strong>SHALL</strong> support 
+                <li><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-questionnaireresponse.html">US Core QuestionnaireResponse Profile</a>
                 </li>
               
@@ -13657,7 +13720,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l14624">​</a>
+                <td><a name="l14638">​</a>
                   <a href="SearchParameter-us-core-questionnaireresponse-id.html">_id</a>
                 </td>
                 <td>
@@ -13674,7 +13737,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l14648">​</a>
+                <td><a name="l14662">​</a>
                   <a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a>
                 </td>
                 <td>
@@ -13694,7 +13757,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l14672">​</a>
+                  <td><a name="l14686">​</a>
                     <a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-us-core-questionnaireresponse-questionnaire.html">questionnaire</a>
                   </td>
                   <td>
@@ -13710,7 +13773,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l14699">​</a>
+                  <td><a name="l14713">​</a>
                     <a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-us-core-questionnaireresponse-authored.html">authored</a>
                   </td>
                   <td>
@@ -13726,7 +13789,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l14726">​</a>
+                  <td><a name="l14740">​</a>
                     <a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a>+<a href="SearchParameter-us-core-questionnaireresponse-status.html">status</a>
                   </td>
                   <td>
@@ -13747,19 +13810,19 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l14753">​</a><a href="SearchParameter-us-core-questionnaireresponse-authored.html">authored</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l14767">​</a><a href="SearchParameter-us-core-questionnaireresponse-authored.html">authored</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l14777">​</a><a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l14791">​</a><a href="SearchParameter-us-core-questionnaireresponse-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l14798">​</a><a href="SearchParameter-us-core-questionnaireresponse-questionnaire.html">questionnaire</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l14812">​</a><a href="SearchParameter-us-core-questionnaireresponse-questionnaire.html">questionnaire</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l14819">​</a><a href="SearchParameter-us-core-questionnaireresponse-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l14833">​</a><a href="SearchParameter-us-core-questionnaireresponse-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -13790,7 +13853,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l14885">​</a><strong>SHALL</strong> support 
+                <li><a name="l14899">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-relatedperson.html">US Core RelatedPerson Profile</a>
                 </li>
               
@@ -14069,7 +14132,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l15092">​</a>
+                <td><a name="l15106">​</a>
                   <a href="SearchParameter-us-core-relatedperson-id.html">_id</a>
                 </td>
                 <td>
@@ -14086,7 +14149,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l15116">​</a>
+                <td><a name="l15130">​</a>
                   <a href="SearchParameter-us-core-relatedperson-name.html">name</a>
                 </td>
                 <td>
@@ -14103,7 +14166,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l15140">​</a>
+                <td><a name="l15154">​</a>
                   <a href="SearchParameter-us-core-relatedperson-patient.html">patient</a>
                 </td>
                 <td>
@@ -14123,7 +14186,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l15164">​</a>
+                  <td><a name="l15178">​</a>
                     <a href="SearchParameter-us-core-relatedperson-patient.html">patient</a>+<a href="SearchParameter-us-core-relatedperson-name.html">name</a>
                   </td>
                   <td>
@@ -14144,7 +14207,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l15191">​</a><a href="SearchParameter-us-core-relatedperson-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l15205">​</a><a href="SearchParameter-us-core-relatedperson-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -14166,7 +14229,7 @@ Questionnaire/US Core QuestionnaireResponse Profile</p>
           <p>Resource Specific Documentation:</p>
             <blockquote><div><ul>
 <li>
-<p><a name="l15238">​</a>The Must Support <code>ServiceRequest.category</code> is bound, <em>at a minimum</em>, to the <a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a>, and other category codes can be used. API consumers can query by category when accessing patient information. For the USCDI <em>Laboratory Order</em>, <em>Imaging Order</em>, <em>Clinical Test Order</em>, and <em>Procedure Order</em> Data Elements, implementers <strong>SHOULD</strong> use the corresponding category codes listed in the table on the US Core ServiceRequest Profile page. For example, laboratory orders would have the category code "108252007" (Laboratory procedure).</p>
+<p><a name="l15252">​</a>The Must Support <code>ServiceRequest.category</code> is bound, <em>at a minimum</em>, to the <a href="ValueSet-us-core-servicerequest-category.html">US Core ServiceRequest Category Codes</a>, and other category codes can be used. API consumers can query by category when accessing patient information. For the USCDI <em>Laboratory Order</em>, <em>Imaging Order</em>, <em>Clinical Test Order</em>, and <em>Procedure Order</em> Data Elements, implementers <strong>SHOULD</strong> use the corresponding category codes listed in the table on the US Core ServiceRequest Profile page. For example, laboratory orders would have the category code "108252007" (Laboratory procedure).</p>
 </li>
 <li>
 <p>The <code>ServiceRequest.code</code> value set is broad to accommodate a wide variety of use cases and <strong>SHOULD</strong> be constrained to a subset for a particular use case or domain.  These value sets contain concepts that span many use cases and are not bound to any USCDI Data Element. However, the table on the US Core ServiceRequest Profile page identifies <em>additional</em> value set bindings for the USCDI <em>Laboratory Order, Imaging Order and Clinical Test Order</em> Data Elements. Implementers <strong>SHOULD</strong> conform to the binding strengths for each USCDI Order context listed in the table. For example, laboratory orders are extensibly bound to the LOINC Common Laboratory Orders Value Set. Note that the USCDI Class <em>Procedure Order</em> Data Element has no additional binding.</p>
@@ -14204,11 +14267,11 @@ Profile as documented in Referencing US Core Profiles.</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l15386">​</a><strong>SHALL</strong> support 
+                <li><a name="l15400">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a>
                 </li>
               
-                <li><a name="l15394">​</a><strong>SHALL</strong> support 
+                <li><a name="l15408">​</a><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-servicerequest.html">US Core ServiceRequest Profile</a>
                 </li>
               
@@ -14487,7 +14550,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l15601">​</a>
+                <td><a name="l15615">​</a>
                   <a href="SearchParameter-us-core-servicerequest-id.html">_id</a>
                 </td>
                 <td>
@@ -14504,7 +14567,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l15625">​</a>
+                <td><a name="l15639">​</a>
                   <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>
                 </td>
                 <td>
@@ -14524,7 +14587,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l15649">​</a>
+                  <td><a name="l15663">​</a>
                     <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-us-core-servicerequest-code.html">code</a>+<a href="SearchParameter-us-core-servicerequest-authored.html">authored</a>
                   </td>
                   <td>
@@ -14540,7 +14603,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l15679">​</a>
+                  <td><a name="l15693">​</a>
                     <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-us-core-servicerequest-category.html">category</a>+<a href="SearchParameter-us-core-servicerequest-authored.html">authored</a>
                   </td>
                   <td>
@@ -14556,7 +14619,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l15709">​</a>
+                  <td><a name="l15723">​</a>
                     <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-us-core-servicerequest-category.html">category</a>
                   </td>
                   <td>
@@ -14572,7 +14635,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                   <td>
                     <strong>SHOULD</strong>
                   </td>
-                  <td><a name="l15736">​</a>
+                  <td><a name="l15750">​</a>
                     <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-us-core-servicerequest-status.html">status</a>
                   </td>
                   <td>
@@ -14588,7 +14651,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                   <td>
                     <strong>SHALL</strong>
                   </td>
-                  <td><a name="l15763">​</a>
+                  <td><a name="l15777">​</a>
                     <a href="SearchParameter-us-core-servicerequest-patient.html">patient</a>+<a href="SearchParameter-us-core-servicerequest-code.html">code</a>
                   </td>
                   <td>
@@ -14609,23 +14672,23 @@ Profile as documented in Referencing US Core Profiles.</p>
                 <!-- <p>Search Parameter Requirements (When Used Alone or in Combination):</p> -->
             <ul>
               
-                <li><a name="l15790">​</a><a href="SearchParameter-us-core-servicerequest-authored.html">authored</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
+                <li><a name="l15804">​</a><a href="SearchParameter-us-core-servicerequest-authored.html">authored</a> (Date/DateTime):<div><p>A client <strong>SHALL</strong> provide a value precise to the <em>second + time offset</em>.</p>
 <p>A server <strong>SHALL</strong> support a value precise to the <em>second + time offset</em>.</p>
 </div></li>
               
-                <li><a name="l15814">​</a><a href="SearchParameter-us-core-servicerequest-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l15828">​</a><a href="SearchParameter-us-core-servicerequest-category.html">category</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l15835">​</a><a href="SearchParameter-us-core-servicerequest-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l15849">​</a><a href="SearchParameter-us-core-servicerequest-code.html">code</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l15856">​</a><a href="SearchParameter-us-core-servicerequest-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
+                <li><a name="l15870">​</a><a href="SearchParameter-us-core-servicerequest-patient.html">patient</a> (Reference):<div><p>The client <strong>SHALL</strong> provide at least a id value and <strong>MAY</strong> provide both the Type and id values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
-                <li><a name="l15877">​</a><a href="SearchParameter-us-core-servicerequest-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
+                <li><a name="l15891">​</a><a href="SearchParameter-us-core-servicerequest-status.html">status</a> (Token):<div><p>The client <strong>SHALL</strong> provide at least a code value and <strong>MAY</strong> provide both the system and code values.</p>
 <p>The server <strong>SHALL</strong> support both.</p>
 </div></li>
               
@@ -14656,7 +14719,7 @@ Profile as documented in Referencing US Core Profiles.</p>
           <p>Supported Profiles:</p>
             <ul>
               
-                <li><a name="l15946">​</a><strong>SHALL</strong> support 
+                <li><strong>SHALL</strong> support 
                 <a href="StructureDefinition-us-core-specimen.html">US Core Specimen Profile</a>
                 </li>
               
@@ -14919,7 +14982,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                 <td>
                   <strong>SHALL</strong>
                 </td>
-                <td><a name="l16139">​</a>
+                <td><a name="l16153">​</a>
                   <a href="SearchParameter-us-core-specimen-id.html">_id</a>
                 </td>
                 <td>
@@ -14936,7 +14999,7 @@ Profile as documented in Referencing US Core Profiles.</p>
                 <td>
                   <strong>SHOULD</strong>
                 </td>
-                <td><a name="l16163">​</a>
+                <td><a name="l16177">​</a>
                   <a href="SearchParameter-us-core-specimen-patient.html">patient</a>
                 </td>
                 <td>
@@ -14988,15 +15051,17 @@ Profile as documented in Referencing US Core Profiles.</p>
         
 
         <p>FHIR Operations:</p>
-          <ul>
+
+
+           <ul>
+
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } --><li><a name="l16227">​</a><strong>SHOULD</strong> support<a href="OperationDefinition-ValueSet-expand.html"><code>expand</code></a></li>
+                <!-- usage  { % include opdef_url_handler operations=resource.operation conf=conf % } -->
+
             
-            
-            
-              <li><a name="l16208">​</a><strong>SHOULD</strong> support <a href="null"><code></code></a></li>
-            
-            
-            
-          </ul>
+             </ul>
 
           
             
@@ -15044,7 +15109,7 @@ Profile as documented in Referencing US Core Profiles.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 31, 2025 09:21+0000">2025-12-31</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jan 3, 2026 11:00+0000">2026-01-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

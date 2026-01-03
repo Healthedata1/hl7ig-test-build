@@ -5,6 +5,13 @@
   "jurisdiction": "US",
   "extensions": [
     {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "title": "US Core Birth Sex Extension",
+      "types": [
+        "code"
+      ]
+    },
+    {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-direct",
       "title": "US Core Direct email Extension",
       "types": [
@@ -75,6 +82,13 @@
       "title": "US Core Individual Sex Extension",
       "types": [
         "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
+      "title": "US Core Jurisdiction Extension",
+      "types": [
+        "CodeableConcept"
       ]
     },
     {
@@ -164,10 +178,22 @@
         "title": "US Core AllergyIntolerance Profile"
       }
     ],
+    "Encounter": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter",
+        "title": "US Core Encounter Profile"
+      }
+    ],
     "Observation": [
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-vital-signs",
         "title": "US Core Vital Signs Profile"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-immunization",
+        "title": "US Core Immunization Profile"
       }
     ],
     "MedicationRequest": [
@@ -186,6 +212,18 @@
       {
         "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole",
         "title": "US Core PractitionerRole Profile"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse",
+        "title": "US Core QuestionnaireResponse Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-specimen",
+        "title": "US Core Specimen Profile"
       }
     ]
   },
@@ -220,7 +258,11 @@
     "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination": [
       "CapabilityStatement.rest.resource"
     ],
+    "http://hl7.org/fhir/StructureDefinition/display": [
+      "QuestionnaireResponse.questionnaire"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.differential.element.constraint",
       "StructureDefinition.snapshot.element.constraint"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
@@ -247,10 +289,27 @@
       "StructureDefinition.snapshot.element.type.targetProfile"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-description": [
-      "AllergyIntolerance.meta"
+      "AllergyIntolerance.meta",
+      "Bundle.meta",
+      "DocumentReference.meta"
     ],
     "http://hl7.org/fhir/StructureDefinition/instance-name": [
-      "AllergyIntolerance.meta"
+      "AllergyIntolerance.meta",
+      "Bundle.meta",
+      "DocumentReference.meta"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/ordinalValue": [
+      "QuestionnaireResponse.item.answer"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode": [
+      "QuestionnaireResponse"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature": [
+      "QuestionnaireResponse",
+      "QuestionnaireResponse.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
@@ -261,6 +320,7 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
       "CapabilityStatement",
       "ImplementationGuide",
+      "OperationDefinition",
       "SearchParameter",
       "StructureDefinition"
     ],
@@ -272,6 +332,8 @@
       "ImplementationGuide",
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page",
+      "OperationDefinition",
+      "SearchParameter",
       "StructureDefinition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/additional-binding": [
@@ -300,12 +362,24 @@
     "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
       "StructureDefinition.snapshot"
     ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-extension-questionnaire-uri": [
+      "QuestionnaireResponse.questionnaire"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-interpreter-needed": [
+      "Encounter"
+    ],
     "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medication-adherence": [
       "MedicationRequest"
     ],
     "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
       "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia": [
+      "QuestionnaireResponse.item.answer"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia": [
+      "QuestionnaireResponse.item"
     ]
   }
 }

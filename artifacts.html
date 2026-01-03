@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"11"}
-    h3,h4,h5,h6{--heading-prefix:"11.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"12"}
+    h3,h4,h5,h6{--heading-prefix:"12.0"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -116,6 +116,9 @@
     <a href="search-parameters.html">Search Parameters</a>
   </li>
   <li>
+    <a href="examples.html">Examples</a>
+  </li>
+  <li>
     <a href="artifacts.html">Artifact Index</a>
   </li>
   <li>
@@ -174,16 +177,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#1">Behavior: Capability Statements</a>
       </li>
       <li>
-         <a href="#2">Behavior: Search Parameters</a>
+         <a href="#2">Behavior: Operation Definitions</a>
       </li>
       <li>
-         <a href="#3">Structures: Resource Profiles</a>
+         <a href="#3">Behavior: Search Parameters</a>
       </li>
       <li>
-         <a href="#4">Structures: Extension Definitions</a>
+         <a href="#4">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#5">Example: Example Instances</a>
+         <a href="#5">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -200,12 +206,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="CapabilityStatement-us-core-client-liquid.html" title="CapabilityStatement/us-core-client-liquid">US Core Client CapabilityStatement Liquid Rendered</a>
             </td>
             <td>
-<p><a name="l375">​</a>This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the <a href="CapabilityStatement-us-core-server.html">Conformance Requirements for Server</a>. US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
+<p>This Section describes the expected capabilities of the US Core Client which is responsible for creating and initiating the queries for information about an individual patient. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined in the <a href="CapabilityStatement-us-core-server.html">Conformance Requirements for Server</a>. US Core Clients have the option of choosing from this list to access necessary data based on their local use cases and other contextual requirements.</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CapabilityStatement-us-core-server-liquid.html" title="CapabilityStatement/us-core-server-liquid">US Core Server CapabilityStatement Liquid Rendered</a>
+               <a href="CapabilityStatement-us-core-server.html" title="CapabilityStatement/us-core-server">US Core Server CapabilityStatement</a>
             </td>
             <td>
 <p>This Section describes the expected capabilities of the US Core Server actor which is responsible for providing responses to the queries submitted by the US Core Requestors. The complete list of FHIR profiles, RESTful operations, and search parameters supported by US Core Servers are defined. Systems implementing this capability statement should meet the ASTP 2015 Common Clinical Data Set (CCDS) access requirement for Patient Selection 170.315(g)(7) and Application Access - Data Category Request 170.315(g)(8) and the ASTP <a href="https://www.healthit.gov/isp/sites/isp/files/2025-07/USCDI-Version-6-July-2025.pdf">U.S. Core Data for Interoperability (USCDI) Version 6 July 2025</a>.</p>
@@ -214,6 +220,50 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="2"> </a>
+   <h3>Behavior: Operation Definitions </h3>
+    <p>These are custom operations that can be supported by and/or invoked by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="OperationDefinition-docref.html" title="OperationDefinition/docref">US Core Fetch DocumentReference</a>
+            </td>
+            <td>
+<p>This operation is used to return all the references to documents related to a
+patient. It is invoked on a FHIR Server's DocumentReference endpoint (e.g., <code class="language-plaintext highlighter-rouge">[base]/DocumentReference/$docref</code>) and operates across all DocumentReference instances.</p>
+
+<p>The operation requires a patient id and takes the optional input parameters:</p>
+<ul>
+  <li>start context date</li>
+  <li>end context date</li>
+  <li>document type</li>
+  <li>on-demand</li>
+  <li>profile</li>
+</ul>
+
+<p>and returns a <em>searchset</em> <a href="http://hl7.org/fhir/bundle.html">Bundle</a> containing <a href="http://hl7.org/fhir/documentreference.html">DocumentReference</a> resources for the patient. If the server has stored documents or can create documents for the patient and those documents are available for the user, the server returns the DocumentReference resources associated with documents. This operation's intended use is to provide a way for providers or patients to access their available documents. The document itself can be subsequently retrieved using the link provided  in the <code class="language-plaintext highlighter-rouge">DocumentReference.content.attachment.url element</code>. The link could be a FHIR endpoint to a <a href="http://hl7.org/fhir/R4/binary.html">Binary</a> Resource or some other document repository.</p>
+
+<p>This operation is <em>different</em> from a FHIR RESTful query on DocumentReference by patient and type and period range because:</p>
+
+<ol>
+  <li>
+    <p>It is used to request a server to <em>generate</em> a document based on the specified parameters.</p>
+  </li>
+  <li>
+    <p>If no parameters are specified, the server SHALL return a DocumentReference to the patient's current C-CDA CCD.</p>
+  </li>
+  <li>
+    <p>If the server cannot <em>generate</em> a document based on the specified parameters, the operation will return an empty search bundle.</p>
+  </li>
+</ol>
+
+<p>Unless the client indicates they are only interested in 'on-demand' documents using the <em>on-demand</em> parameter, the server SHOULD return DocumentReference instances for <em>existing</em> documents that meet the request parameters  In this regard, this operation is <em>similar</em> to a FHIR RESTful query.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
    <h3>Behavior: Search Parameters </h3>
     <p>These define the properties by which a RESTful server can be searched.  They can also be used for sorting and including related resources.</p>
 <table class="grid">
@@ -329,7 +379,7 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
       </tbody>
    </table>
-   <a name="3"> </a>
+   <a name="4"> </a>
    <h3>Structures: Resource Profiles </h3>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
 <table class="grid">
@@ -340,7 +390,7 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
                <a href="StructureDefinition-us-core-adi-documentreference.html" title="StructureDefinition/us-core-adi-documentreference">US Core ADI DocumentReference Profile</a>
             </td>
             <td>
-<p><a name="l763">​</a>The US Core Advance Directive Information (ADI) DocumentReference Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> resource; refer to it for scope and usage definitions. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a>. To represent orders based on an individual's Portable Medical Order (PMO), see the <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a>. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+<p><a name="l894">​</a>The US Core Advance Directive Information (ADI) DocumentReference Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/documentreference.html">DocumentReference</a> resource; refer to it for scope and usage definitions. It sets minimum expectations for searching and fetching patient Advance Directive Information (ADI) documents using the DocumentReference resource. Examples of advance healthcare directive documents include physician order for life sustaining treatment (POLST), do not resuscitate order (DNR), and medical power of attorney. In addition to the document contents, it communicates the type of advance directive document, the author, the verifier, and other properties. To represent whether advance directive documents exist for a patient, see the <a href="StructureDefinition-us-core-observation-adi-documentation.html">US Core Observation ADI Documentation Profile</a>. To represent orders based on an individual's Portable Medical Order (PMO), see the <a href="StructureDefinition-us-core-pmo-servicerequest.html">US Core PMO ServiceRequest Profile</a>. This profile sets minimum expectations for searching and fetching patient ADI documents using the DocumentReference resource. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
 </td>
          </tr>
          <tr>
@@ -361,10 +411,26 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-encounter.html" title="StructureDefinition/us-core-encounter">US Core Encounter Profile</a>
+            </td>
+            <td>
+<p>The US Core Encounter Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/encounter.html">Encounter</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Encounter resource to record, search, and fetch basic encounter information for an individual patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-us-core-heart-rate.html" title="StructureDefinition/us-core-heart-rate">US Core Heart Rate Profile</a>
             </td>
             <td>
 <p>The US Core Heart Rate Profile inherits from the US Core Vital Signs Profile. This profile sets minimum expectations for the Observation resource to record, search,  and fetch heart rate observations with a standard LOINC code and UCUM units of measure. It specifies which <em>additional</em>  core elements, extensions,  vocabularies, and value sets <strong>SHALL</strong> be present in the resource and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-immunization.html" title="StructureDefinition/us-core-immunization">US Core Immunization Profile</a>
+            </td>
+            <td>
+<p>The US Core Immunization Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/immunization.html">Immunization</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Immunization resource to record, search, and fetch immunization history associated with a patient. It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
 </td>
          </tr>
          <tr>
@@ -401,6 +467,22 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-questionnaireresponse.html" title="StructureDefinition/us-core-questionnaireresponse">US Core QuestionnaireResponse Profile</a>
+            </td>
+            <td>
+<p>The US Core QuestionaireResponse Profile inherits from the <a href="http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaireresponse.html">Structured  Data Capture (SDC) Questionnaire Response Profile</a>.   This profile sets minimum expectations for the QuestionnaireResponse resource to record, search, and fetch retrieve captures the responses to form/survey and assessment tools such as the <em>Protocol for Responding to and Assessing Patients\u2019 Assets, Risks, and Experiences (PRAPARE) Survey</em>.  It specifies which core <em>additional</em> elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used.  Before reviewing this profile, implementers are encouraged to read the Screening and Assessments guidance page, which documents the process of recording responses and capturing assertions/determinations resulting from surveys and questionnaires.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-specimen.html" title="StructureDefinition/us-core-specimen">US Core Specimen Profile</a>
+            </td>
+            <td>
+<p>The US Core Specimen Profile inherits from the FHIR <a href="https://hl7.org/fhir/R4/specimen.html">Specimen</a> resource; refer to it for scope and usage definitions. This profile sets minimum expectations for the Specimen resource to record, search, and fetch information about substances associated with a patient being sampled or tested (such as nasopharyngeal swab, whole blood,  or serum). It specifies which core elements, extensions, vocabularies, and value sets <strong>SHALL</strong> be present and constrains how the elements are used. Providing the floor for standards development for specific use cases promotes interoperability and adoption.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-us-core-vital-signs.html" title="StructureDefinition/us-core-vital-signs">US Core Vital Signs Profile</a>
             </td>
             <td>
@@ -409,12 +491,20 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
          </tr>
       </tbody>
    </table>
-   <a name="4"> </a>
+   <a name="5"> </a>
    <h3>Structures: Extension Definitions </h3>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-birthsex.html" title="StructureDefinition/us-core-birthsex">US Core Birth Sex Extension</a>
+            </td>
+            <td>
+<p>A code classifying the person's sex assigned at birth. This extension aligns with LOINC 76689-9 (Sex assigned at birth).</p>
+</td>
+         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="StructureDefinition-us-core-direct.html" title="StructureDefinition/us-core-direct">US Core Direct email Extension</a>
@@ -441,7 +531,15 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
                <a href="StructureDefinition-us-core-individual-sex.html" title="StructureDefinition/us-core-individual-sex">US Core Individual Sex Extension</a>
             </td>
             <td>
-<p><a name="l1041">​</a>USCDI includes a data element for Sex, intended to support the exchange of a recorded sex value. This extension aligns with the USCDI definition of Sex: "Documentation of a specific instance of sex." It enables systems to share the sex value as it was documented in a particular context.  Systems choosing to record sources of information should use the <a href="http://hl7.org/fhir/R4/element-level-provenance.html">Provenance resource</a>.</p>
+<p><a name="l1277">​</a>USCDI includes a data element for Sex, intended to support the exchange of a recorded sex value. This extension aligns with the USCDI definition of Sex: "Documentation of a specific instance of sex." It enables systems to share the sex value as it was documented in a particular context.  Systems choosing to record sources of information should use the <a href="http://hl7.org/fhir/R4/element-level-provenance.html">Provenance resource</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-us-core-jurisdiction.html" title="StructureDefinition/us-core-jurisdiction">US Core Jurisdiction Extension</a>
+            </td>
+            <td>
+<p>An extension to communicate the US state or local jurisdiction for individual and entity identifiers. For example, a practitioner's state or local jurisdiction for a license.</p>
 </td>
          </tr>
          <tr>
@@ -465,9 +563,9 @@ NOTE: This SearchParameter is defined only to document Server and Client expecta
                <a href="StructureDefinition-us-core-sex.html" title="StructureDefinition/us-core-sex">US Core Sex Extension</a>
             </td>
             <td>
-<p><a name="l1095">​</a>The Sex Extension is used to reflect the documentation of a person's sex. Systems choosing to record sources of information should use the <a href="http://hl7.org/fhir/R4/element-level-provenance.html">Provenance resource</a>.</p>
+<p><a name="l1346">​</a>The Sex Extension is used to reflect the documentation of a person's sex. Systems choosing to record sources of information should use the <a href="http://hl7.org/fhir/R4/element-level-provenance.html">Provenance resource</a>.</p>
 
-<p><a name="l1101">​</a>USCDI includes a data element for sex, intended to support the exchange of a sex value that is not characterized as sex assigned at birth or birth sex. This Sex extension supports USCDI. Sex assigned at birth or birth sex can be recorded using the more specific <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a>.
+<p><a name="l1352">​</a>USCDI includes a data element for sex, intended to support the exchange of a sex value that is not characterized as sex assigned at birth or birth sex. This Sex extension supports USCDI. Sex assigned at birth or birth sex can be recorded using the more specific <a href="StructureDefinition-us-core-birthsex.html">US Core Birth Sex Extension</a>.
 Future versions of this extension may be informed by the content of the HL7 Cross Paradigm IG: Gender Harmony - Sex and Gender Representation, which may include additional guidance on its relationship to administrative gender (<a href="StructureDefinition-us-core-patient-definitions.html#Patient.gender">Patient.gender</a>).</p>
 </td>
          </tr>
@@ -476,12 +574,12 @@ Future versions of this extension may be informed by the content of the HL7 Cros
                <a href="StructureDefinition-uscdi-requirement.html" title="StructureDefinition/uscdi-requirement">US Core USCDI Requirement Extension</a>
             </td>
             <td>
-<p><a name="l1122">​</a><strong>This extension is only used in the US Core Implementation Guide''s Profile StructureDefinition elements.</strong>  It flags elements that are <em>Additional</em> USCDI Requirements for certified systems. In other words, elements that are not marked as Must Support but are required for ASTP Health IT certification testing. See the <a href="general-requirements.html">Conformance page</a> for more information.</p>
+<p><a name="l1373">​</a><strong>This extension is only used in the US Core Implementation Guide''s Profile StructureDefinition elements.</strong>  It flags elements that are <em>Additional</em> USCDI Requirements for certified systems. In other words, elements that are not marked as Must Support but are required for ASTP Health IT certification testing. See the <a href="general-requirements.html">Conformance page</a> for more information.</p>
 </td>
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -493,6 +591,30 @@ Future versions of this extension may be informed by the content of the HL7 Cros
             </td>
             <td>
 <p>This is a allergyintolerance example for the <em>US Core AllergyIntolerance Profile</em>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-discharge-summary.html" title="DocumentReference/discharge-summary">Discharge Summary Example</a>
+            </td>
+            <td>
+<p>This is a discharge summary example for the <em>US Core DocumentReference</em>. It is used in the <a href="StructureDefinition-us-core-documentreference.html#mandatory-operation">Write Note Example</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-docref-example-1.html" title="Bundle/docref-example-1">Docref Example 1</a>
+            </td>
+            <td>
+<p>This bundle is a the response to a $docref operation and contains an example <em>US Core DocumentReference</em>.  It is used in <a href="StructureDefinition-us-core-documentreference.html#mandatory-operation">Example 1: Request the latest CCD</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-docref-example-2.html" title="Bundle/docref-example-2">Docref Example 2</a>
+            </td>
+            <td>
+<p>This bundle is a the response to a $docref operation and contains an examples of <em>US Core DocumentReference</em>.  It is used in <a href="StructureDefinition-us-core-documentreference.html#mandatory-operation">Example 2: Request Procedure Notes and Discharge Summaries for 2019</a>.</p>
 </td>
          </tr>
       </tbody>
@@ -515,7 +637,7 @@ Future versions of this extension may be informed by the content of the HL7 Cros
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Dec 31, 2025 09:21+0000">2025-12-31</span>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="http://www.hl7.org/Special/committees/cgp">HL7 International / Cross-Group Projects</a>.  Package hl7.fhir.us.healthedata1-sandbox#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jan 3, 2026 11:00+0000">2026-01-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
