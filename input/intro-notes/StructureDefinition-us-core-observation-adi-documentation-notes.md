@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title category="advance-directive-observation" code1="http://loinc.org\|42348-3" single_example=true %}
 

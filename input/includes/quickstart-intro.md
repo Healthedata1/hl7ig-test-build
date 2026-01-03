@@ -23,6 +23,8 @@ Servers providing access to {{ scope.data_element }} data **{{conf}}** support t
   {% endif %}
 {% endfor %}
 
+<!--  ======================== end liquid ================================ -->
+
 ---
 
 **Quick Start**{:#search style="font-size: 20px;"}
@@ -36,10 +38,6 @@ Below is an overview of the required Server RESTful FHIR interactions for this p
 - See the [Search Syntax](general-guidance.html#search-syntax) section for a description of the US Core search syntax.
 - See the [General Requirements] section for additional rules and expectations when a Server requires status parameters.
 - See the [General Guidance] section for additional guidance on searching for multiple patients.
-
-
-
-
 
 {% if smart_scope -%}
 #### US Core Scopes

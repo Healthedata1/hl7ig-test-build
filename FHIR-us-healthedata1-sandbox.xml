@@ -5,21 +5,31 @@
 <artifactPageExtension value="-examples"/>
 <artifactPageExtension value="-mappings"/>
 <artifact id="AllergyIntolerance/example" key="AllergyIntolerance-example" name="AllergyIntolerance Example"/>
+<artifact id="DocumentReference/discharge-summary" key="DocumentReference-discharge-summary" name="Discharge Summary Example"/>
+<artifact id="Bundle/docref-example-1" key="Bundle-docref-example-1" name="Docref Example 1"/>
+<artifact id="Bundle/docref-example-2" key="Bundle-docref-example-2" name="Docref Example 2"/>
 <artifact id="StructureDefinition/us-core-adi-documentreference" key="StructureDefinition-us-core-adi-documentreference" name="US Core ADI DocumentReference Profile"/>
 <artifact id="StructureDefinition/us-core-allergyintolerance" key="StructureDefinition-us-core-allergyintolerance" name="US Core AllergyIntolerance Profile"/>
+<artifact id="StructureDefinition/us-core-birthsex" key="StructureDefinition-us-core-birthsex" name="US Core Birth Sex Extension"/>
 <artifact id="CapabilityStatement/us-core-client-liquid" key="CapabilityStatement-us-core-client-liquid" name="US Core Client CapabilityStatement Liquid Rendered"/>
 <artifact id="StructureDefinition/us-core-direct" key="StructureDefinition-us-core-direct" name="US Core Direct email Extension"/>
 <artifact id="StructureDefinition/us-core-documentreference" key="StructureDefinition-us-core-documentreference" name="US Core DocumentReference Profile"/>
+<artifact id="StructureDefinition/us-core-encounter" key="StructureDefinition-us-core-encounter" name="US Core Encounter Profile"/>
 <artifact id="StructureDefinition/us-core-ethnicity" key="StructureDefinition-us-core-ethnicity" name="US Core Ethnicity Extension"/>
+<artifact id="OperationDefinition/docref" key="OperationDefinition-docref" name="US Core Fetch DocumentReference"/>
 <artifact id="StructureDefinition/us-core-heart-rate" key="StructureDefinition-us-core-heart-rate" name="US Core Heart Rate Profile"/>
+<artifact id="StructureDefinition/us-core-immunization" key="StructureDefinition-us-core-immunization" name="US Core Immunization Profile"/>
 <artifact id="StructureDefinition/us-core-individual-sex" key="StructureDefinition-us-core-individual-sex" name="US Core Individual Sex Extension"/>
+<artifact id="StructureDefinition/us-core-jurisdiction" key="StructureDefinition-us-core-jurisdiction" name="US Core Jurisdiction Extension"/>
 <artifact id="StructureDefinition/us-core-medicationrequest" key="StructureDefinition-us-core-medicationrequest" name="US Core MedicationRequest Profile"/>
 <artifact id="StructureDefinition/us-core-observation-pregnancystatus" key="StructureDefinition-us-core-observation-pregnancystatus" name="US Core Observation Pregnancy Status Profile"/>
 <artifact id="StructureDefinition/us-core-organization" key="StructureDefinition-us-core-organization" name="US Core Organization Profile"/>
 <artifact id="StructureDefinition/us-core-practitionerrole" key="StructureDefinition-us-core-practitionerrole" name="US Core PractitionerRole Profile"/>
+<artifact id="StructureDefinition/us-core-questionnaireresponse" key="StructureDefinition-us-core-questionnaireresponse" name="US Core QuestionnaireResponse Profile"/>
 <artifact id="StructureDefinition/us-core-race" key="StructureDefinition-us-core-race" name="US Core Race Extension"/>
-<artifact id="CapabilityStatement/us-core-server-liquid" key="CapabilityStatement-us-core-server-liquid" name="US Core Server CapabilityStatement Liquid Rendered"/>
+<artifact id="CapabilityStatement/us-core-server" key="CapabilityStatement-us-core-server" name="US Core Server CapabilityStatement"/>
 <artifact id="StructureDefinition/us-core-sex" key="StructureDefinition-us-core-sex" name="US Core Sex Extension"/>
+<artifact id="StructureDefinition/us-core-specimen" key="StructureDefinition-us-core-specimen" name="US Core Specimen Profile"/>
 <artifact id="StructureDefinition/uscdi-requirement" key="StructureDefinition-uscdi-requirement" name="US Core USCDI Requirement Extension"/>
 <artifact id="StructureDefinition/us-core-vital-signs" key="StructureDefinition-us-core-vital-signs" name="US Core Vital Signs Profile"/>
 <artifact id="SearchParameter/us-core-observation-category" key="SearchParameter-us-core-observation-category" name="USCoreObservationCategory"/>
@@ -33,6 +43,7 @@
 <page key="artifacts" name="Artifacts Summary"/>
 <page key="changes" name="Change Log"/>
 <page key="downloads" name="Downloads"/>
+<page key="examples" name="Examples"/>
 <page key="guidance" name="Guidance"/>
 <page key="index" name="Home"/>
 <page key="relationship-with-other-igs" name="IPA-IPS"/>

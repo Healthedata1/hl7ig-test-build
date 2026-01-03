@@ -1,10 +1,10 @@
 {
     "resourceType": "CapabilityStatement",
-    "id": "us-core-server-liquid",
-    "url": "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server-liquid",
+    "id": "us-core-server",
+    "url": "http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server",
     "version": "9.0.0-ballot",
-    "name": "UsCoreServerCapabilityStatementLiquid",
-    "title": "US Core Server CapabilityStatement Liquid Rendered",
+    "name": "UsCoreServerCapabilityStatement",
+    "title": "US Core Server CapabilityStatement",
     "status": "active",
     "experimental": false,
     "date": "2025-12-19T19:15:48.367775-08:00",
@@ -133,7 +133,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-allergyintolerance.html",
                                         "display": "US Core AllergyIntolerance Profile"
                                     }
                                 }
@@ -368,7 +367,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-careplan.html",
                                         "display": "US Core CarePlan Profile"
                                     }
                                 }
@@ -578,7 +576,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-careteam.html",
                                         "display": "US Core CareTeam Profile"
                                     }
                                 }
@@ -961,7 +958,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-condition-encounter-diagnosis.html",
                                         "display": "US Core Condition Encounter Diagnosis Profile"
                                     }
                                 }
@@ -976,7 +972,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-condition-problems-health-concerns.html",
                                         "display": "US Core Condition Problems and Health Concerns Profile"
                                     }
                                 }
@@ -1224,7 +1219,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-coverage.html",
                                         "display": "US Core Coverage Profile"
                                     }
                                 }
@@ -1397,7 +1391,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-device.html",
                                         "display": "US Core Device Profile"
                                     }
                                 }
@@ -1676,7 +1669,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-diagnosticreport-note.html",
                                         "display": "US Core DiagnosticReport Profile for Report and Note exchange"
                                     }
                                 }
@@ -1691,7 +1683,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-diagnosticreport-lab.html",
                                         "display": "US Core DiagnosticReport Profile for Laboratory Results Reporting"
                                     }
                                 }
@@ -1986,7 +1977,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-documentreference.html",
                                         "display": "US Core DocumentReference Profile"
                                     }
                                 }
@@ -2001,7 +1991,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-adi-documentreference.html",
                                         "display": "US Core ADI DocumentReference Profile"
                                     }
                                 }
@@ -2195,12 +2184,31 @@
                             "extension": [
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
+                                    "valueCode": "SHALL-NOT"
+                                },
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
+                                    "valueReference": {
+                                        "display": "$FOOOO"
+                                    }
+                                }
+                            ],
+                            "name": "foo",
+                            "definition": "http://hl7.org/fhir/us/core/OperationDefinition/foo"
+                        },
+                        {
+                            "name": "foobar",
+                            "definition": "http://hl7.org/fhir/us/core/OperationDefinition/foobar"
+                        },
+                        {
+                            "extension": [
+                                {
+                                    "url": "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",
                                     "valueCode": "SHALL"
                                 },
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "OperationDefinition-docref.html",
                                         "display": "$docref"
                                     }
                                 }
@@ -2351,7 +2359,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-encounter.html",
                                         "display": "US Core Encounter Profile"
                                     }
                                 }
@@ -2708,7 +2715,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-familymemberhistory.html",
                                         "display": "US Core FamilyMemberHistory Profile"
                                     }
                                 }
@@ -2910,7 +2916,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-goal.html",
                                         "display": "US Core Goal Profile"
                                     }
                                 }
@@ -3212,7 +3217,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-immunization.html",
                                         "display": "US Core Immunization Profile"
                                     }
                                 }
@@ -3376,7 +3380,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-location.html",
                                         "display": "US Core Location Profile"
                                     }
                                 }
@@ -3639,7 +3642,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-medication.html",
                                         "display": "US Core Medication Profile"
                                     }
                                 }
@@ -3790,7 +3792,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-medicationdispense.html",
                                         "display": "US Core MedicationDispense Profile"
                                     }
                                 }
@@ -4047,7 +4048,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-medicationrequest.html",
                                         "display": "US Core MedicationRequest Profile"
                                     }
                                 }
@@ -4391,7 +4391,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-adi-documentation.html",
                                         "display": "US Core Observation ADI Documentation Profile"
                                     }
                                 }
@@ -4406,7 +4405,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-lab.html",
                                         "display": "US Core Laboratory Result Observation Profile"
                                     }
                                 }
@@ -4421,7 +4419,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-pregnancystatus.html",
                                         "display": "US Core Observation Pregnancy Status Profile"
                                     }
                                 }
@@ -4436,7 +4433,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-pregnancyintent.html",
                                         "display": "US Core Observation Pregnancy Intent Profile"
                                     }
                                 }
@@ -4451,7 +4447,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-occupation.html",
                                         "display": "US Core Observation Occupation Profile"
                                     }
                                 }
@@ -4466,7 +4461,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-respiratory-rate.html",
                                         "display": "US Core Respiratory Rate Profile"
                                     }
                                 }
@@ -4481,7 +4475,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-simple-observation.html",
                                         "display": "US Core Simple Observation Profile"
                                     }
                                 }
@@ -4496,7 +4489,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-treatment-intervention-preference.html",
                                         "display": "US Core Treatment Intervention Preference Profile"
                                     }
                                 }
@@ -4511,7 +4503,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-care-experience-preference.html",
                                         "display": "US Core Care Experience Preference Profile"
                                     }
                                 }
@@ -4526,7 +4517,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-heart-rate.html",
                                         "display": "US Core Heart Rate Profile"
                                     }
                                 }
@@ -4541,7 +4531,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-body-temperature.html",
                                         "display": "US Core Body Temperature Profile"
                                     }
                                 }
@@ -4571,7 +4560,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-pulse-oximetry.html",
                                         "display": "US Core Pulse Oximetry Profile"
                                     }
                                 }
@@ -4586,7 +4574,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-smokingstatus.html",
                                         "display": "US Core Smoking Status Observation Profile"
                                     }
                                 }
@@ -4601,7 +4588,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-sexual-orientation.html",
                                         "display": "US Core Observation Sexual Orientation Profile"
                                     }
                                 }
@@ -4616,7 +4602,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-head-circumference.html",
                                         "display": "US Core Head Circumference Profile"
                                     }
                                 }
@@ -4631,7 +4616,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-body-height.html",
                                         "display": "US Core Body Height Profile"
                                     }
                                 }
@@ -4646,7 +4630,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-bmi.html",
                                         "display": "US Core BMI Profile"
                                     }
                                 }
@@ -4661,7 +4644,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-screening-assessment.html",
                                         "display": "US Core Observation Screening Assessment Profile"
                                     }
                                 }
@@ -4676,7 +4658,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-average-blood-pressure.html",
                                         "display": "US Core Average Blood Pressure Profile"
                                     }
                                 }
@@ -4691,7 +4672,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-blood-pressure.html",
                                         "display": "US Core Blood Pressure Profile"
                                     }
                                 }
@@ -4706,7 +4686,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-observation-clinical-result.html",
                                         "display": "US Core Observation Clinical Result Profile"
                                     }
                                 }
@@ -4751,7 +4730,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-body-weight.html",
                                         "display": "US Core Body Weight Profile"
                                     }
                                 }
@@ -4766,7 +4744,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-vital-signs.html",
                                         "display": "US Core Vital Signs Profile"
                                     }
                                 }
@@ -4966,7 +4943,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-organization.html",
                                         "display": "US Core Organization Profile"
                                     }
                                 }
@@ -5154,7 +5130,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-patient.html",
                                         "display": "US Core Patient Profile"
                                     }
                                 }
@@ -5362,7 +5337,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-practitioner.html",
                                         "display": "US Core Practitioner Profile"
                                     }
                                 }
@@ -5511,7 +5485,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-practitionerrole.html",
                                         "display": "US Core PractitionerRole Profile"
                                     }
                                 }
@@ -5727,7 +5700,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-procedure.html",
                                         "display": "US Core Procedure Profile"
                                     }
                                 }
@@ -5903,7 +5875,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-provenance.html",
                                         "display": "US Core Provenance Profile"
                                     }
                                 }
@@ -6016,7 +5987,7 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-sdc-questionnaire.html",
+                                        "reference": "https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html",
                                         "display": "SDC Base Questionnaire Profile"
                                     }
                                 }
@@ -6180,7 +6151,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-questionnaireresponse.html",
                                         "display": "US Core QuestionnaireResponse Profile"
                                     }
                                 }
@@ -6384,7 +6354,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-relatedperson.html",
                                         "display": "US Core RelatedPerson Profile"
                                     }
                                 }
@@ -6640,7 +6609,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-pmo-servicerequest.html",
                                         "display": "US Core PMO ServiceRequest Profile"
                                     }
                                 }
@@ -6655,7 +6623,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-servicerequest.html",
                                         "display": "US Core ServiceRequest Profile"
                                     }
                                 }
@@ -6854,7 +6821,6 @@
                                 {
                                     "url": "http://hl7.org/fhir/StructureDefinition/artifact-reference",
                                     "valueReference": {
-                                        "reference": "StructureDefinition-us-core-specimen.html",
                                         "display": "US Core Specimen Profile"
                                     }
                                 }

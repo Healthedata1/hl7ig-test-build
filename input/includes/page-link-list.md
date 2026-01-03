@@ -10,9 +10,14 @@ To update links, modify the source data in the pages and sushi-config.yaml file 
 [Table of Contents]: toc.html
 [Home]: index.html
 [Guidance]: guidance.html
+[Scopes]: scopes.html
+[IPA-IPS]: relationship-with-other-igs.html
 [Search Parameters]: search-parameters.html
+[Profile and Extensions]: profiles-and-extensions.html
+[Examples]: examples.html
 [Downloads]: downloads.html
 [ImplementationGuide Resource]: ImplementationGuide.html
+[Versions]: changes-between-versions.html
 [Change Log]: changes.html
 [Artifacts Summary]: artifacts.html
 [US Core Client CapabilityStatement Liquid Rendered]: CapabilityStatement-us-core-client-liquid.html
@@ -62,10 +67,19 @@ To update links, modify the source data in the pages and sushi-config.yaml file 
 [US Core ADI DocumentReference Profile - XML Representation]: StructureDefinition-us-core-adi-documentreference.profile.xml.html
 [US Core ADI DocumentReference Profile - JSON Representation]: StructureDefinition-us-core-adi-documentreference.profile.json.html
 [US Core ADI DocumentReference Profile - TTL Representation]: StructureDefinition-us-core-adi-documentreference.profile.ttl.html
+[US Core AllergyIntolerance Profile]: StructureDefinition-us-core-allergyintolerance.html
+[US Core AllergyIntolerance Profile - Definitions]: StructureDefinition-us-core-allergyintolerance-definitions.html
+[US Core AllergyIntolerance Profile - Mappings]: StructureDefinition-us-core-allergyintolerance-mappings.html
+[US Core AllergyIntolerance Profile - Testing]: StructureDefinition-us-core-allergyintolerance-testing.html
+[US Core AllergyIntolerance Profile - Examples]: StructureDefinition-us-core-allergyintolerance-examples.html
+[US Core AllergyIntolerance Profile - XML Representation]: StructureDefinition-us-core-allergyintolerance.profile.xml.html
+[US Core AllergyIntolerance Profile - JSON Representation]: StructureDefinition-us-core-allergyintolerance.profile.json.html
+[US Core AllergyIntolerance Profile - TTL Representation]: StructureDefinition-us-core-allergyintolerance.profile.ttl.html
 [US Core DocumentReference Profile]: StructureDefinition-us-core-documentreference.html
 [US Core DocumentReference Profile - Definitions]: StructureDefinition-us-core-documentreference-definitions.html
 [US Core DocumentReference Profile - Mappings]: StructureDefinition-us-core-documentreference-mappings.html
 [US Core DocumentReference Profile - Testing]: StructureDefinition-us-core-documentreference-testing.html
+[US Core DocumentReference Profile - Examples]: StructureDefinition-us-core-documentreference-examples.html
 [US Core DocumentReference Profile - XML Representation]: StructureDefinition-us-core-documentreference.profile.xml.html
 [US Core DocumentReference Profile - JSON Representation]: StructureDefinition-us-core-documentreference.profile.json.html
 [US Core DocumentReference Profile - TTL Representation]: StructureDefinition-us-core-documentreference.profile.ttl.html
@@ -111,7 +125,61 @@ To update links, modify the source data in the pages and sushi-config.yaml file 
 [US Core Vital Signs Profile - XML Representation]: StructureDefinition-us-core-vital-signs.profile.xml.html
 [US Core Vital Signs Profile - JSON Representation]: StructureDefinition-us-core-vital-signs.profile.json.html
 [US Core Vital Signs Profile - TTL Representation]: StructureDefinition-us-core-vital-signs.profile.ttl.html
+[US Core Direct email Extension]: StructureDefinition-us-core-direct.html
+[US Core Direct email Extension - Definitions]: StructureDefinition-us-core-direct-definitions.html
+[US Core Direct email Extension - Mappings]: StructureDefinition-us-core-direct-mappings.html
+[US Core Direct email Extension - Testing]: StructureDefinition-us-core-direct-testing.html
+[US Core Direct email Extension - XML Representation]: StructureDefinition-us-core-direct.profile.xml.html
+[US Core Direct email Extension - JSON Representation]: StructureDefinition-us-core-direct.profile.json.html
+[US Core Direct email Extension - TTL Representation]: StructureDefinition-us-core-direct.profile.ttl.html
+[US Core Ethnicity Extension]: StructureDefinition-us-core-ethnicity.html
+[US Core Ethnicity Extension - Definitions]: StructureDefinition-us-core-ethnicity-definitions.html
+[US Core Ethnicity Extension - Mappings]: StructureDefinition-us-core-ethnicity-mappings.html
+[US Core Ethnicity Extension - Testing]: StructureDefinition-us-core-ethnicity-testing.html
+[US Core Ethnicity Extension - XML Representation]: StructureDefinition-us-core-ethnicity.profile.xml.html
+[US Core Ethnicity Extension - JSON Representation]: StructureDefinition-us-core-ethnicity.profile.json.html
+[US Core Ethnicity Extension - TTL Representation]: StructureDefinition-us-core-ethnicity.profile.ttl.html
+[US Core Individual Sex Extension]: StructureDefinition-us-core-individual-sex.html
+[US Core Individual Sex Extension - Definitions]: StructureDefinition-us-core-individual-sex-definitions.html
+[US Core Individual Sex Extension - Mappings]: StructureDefinition-us-core-individual-sex-mappings.html
+[US Core Individual Sex Extension - Testing]: StructureDefinition-us-core-individual-sex-testing.html
+[US Core Individual Sex Extension - XML Representation]: StructureDefinition-us-core-individual-sex.profile.xml.html
+[US Core Individual Sex Extension - JSON Representation]: StructureDefinition-us-core-individual-sex.profile.json.html
+[US Core Individual Sex Extension - TTL Representation]: StructureDefinition-us-core-individual-sex.profile.ttl.html
+[US Core Race Extension]: StructureDefinition-us-core-race.html
+[US Core Race Extension - Definitions]: StructureDefinition-us-core-race-definitions.html
+[US Core Race Extension - Mappings]: StructureDefinition-us-core-race-mappings.html
+[US Core Race Extension - Testing]: StructureDefinition-us-core-race-testing.html
+[US Core Race Extension - XML Representation]: StructureDefinition-us-core-race.profile.xml.html
+[US Core Race Extension - JSON Representation]: StructureDefinition-us-core-race.profile.json.html
+[US Core Race Extension - TTL Representation]: StructureDefinition-us-core-race.profile.ttl.html
+[US Core Sex Extension]: StructureDefinition-us-core-sex.html
+[US Core Sex Extension - Definitions]: StructureDefinition-us-core-sex-definitions.html
+[US Core Sex Extension - Mappings]: StructureDefinition-us-core-sex-mappings.html
+[US Core Sex Extension - Testing]: StructureDefinition-us-core-sex-testing.html
+[US Core Sex Extension - XML Representation]: StructureDefinition-us-core-sex.profile.xml.html
+[US Core Sex Extension - JSON Representation]: StructureDefinition-us-core-sex.profile.json.html
+[US Core Sex Extension - TTL Representation]: StructureDefinition-us-core-sex.profile.ttl.html
+[US Core USCDI Requirement Extension]: StructureDefinition-uscdi-requirement.html
+[US Core USCDI Requirement Extension - Definitions]: StructureDefinition-uscdi-requirement-definitions.html
+[US Core USCDI Requirement Extension - Mappings]: StructureDefinition-uscdi-requirement-mappings.html
+[US Core USCDI Requirement Extension - Testing]: StructureDefinition-uscdi-requirement-testing.html
+[US Core USCDI Requirement Extension - XML Representation]: StructureDefinition-uscdi-requirement.profile.xml.html
+[US Core USCDI Requirement Extension - JSON Representation]: StructureDefinition-uscdi-requirement.profile.json.html
+[US Core USCDI Requirement Extension - TTL Representation]: StructureDefinition-uscdi-requirement.profile.ttl.html
 [AllergyIntolerance Example]: AllergyIntolerance-example.html
 [AllergyIntolerance Example - XML Representation]: AllergyIntolerance-example.xml.html
 [AllergyIntolerance Example - JSON Representation]: AllergyIntolerance-example.json.html
 [AllergyIntolerance Example - TTL Representation]: AllergyIntolerance-example.ttl.html
+[Discharge Summary Example]: DocumentReference-discharge-summary.html
+[Discharge Summary Example - XML Representation]: DocumentReference-discharge-summary.xml.html
+[Discharge Summary Example - JSON Representation]: DocumentReference-discharge-summary.json.html
+[Discharge Summary Example - TTL Representation]: DocumentReference-discharge-summary.ttl.html
+[Docref Example 1]: Bundle-docref-example-1.html
+[Docref Example 1 - XML Representation]: Bundle-docref-example-1.xml.html
+[Docref Example 1 - JSON Representation]: Bundle-docref-example-1.json.html
+[Docref Example 1 - TTL Representation]: Bundle-docref-example-1.ttl.html
+[Docref Example 2]: Bundle-docref-example-2.html
+[Docref Example 2 - XML Representation]: Bundle-docref-example-2.xml.html
+[Docref Example 2 - JSON Representation]: Bundle-docref-example-2.json.html
+[Docref Example 2 - TTL Representation]: Bundle-docref-example-2.ttl.html

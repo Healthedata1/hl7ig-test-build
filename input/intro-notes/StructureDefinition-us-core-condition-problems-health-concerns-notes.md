@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title category="problem-list-item" code1="http://snomed.info/sct\|51868009" %}
 

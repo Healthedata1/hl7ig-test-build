@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title  category="care-experience-preference" code1="http://loinc.org\|95541-9" single_example=true %}
 

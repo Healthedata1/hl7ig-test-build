@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title category="http://terminology.hl7.org/CodeSystem/v2-0074\|LAB" code1="http://loinc.org\|24323-8" %}
 

@@ -5,10 +5,8 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title %}
-
-{% include write-and-docref.md %}
 
 {% include link-list.md %}

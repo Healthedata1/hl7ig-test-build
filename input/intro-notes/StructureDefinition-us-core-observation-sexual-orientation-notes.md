@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign title = sd.title %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title  category="http://terminology.hl7.org/CodeSystem/observation-category\|social-history" code1="http://loinc.org\|76690-7" single_example=true %}
 

@@ -11,3 +11,4 @@
 [how to search by reference]: foo.html
 [how to search by token]: #.html
 [how to search by date]: #.html
+[Parameters for all resources]: {{site.data.fhir.path}}search.html#all

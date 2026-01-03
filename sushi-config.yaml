@@ -89,6 +89,9 @@ pages:
   profiles-and-extensions.md:
     title: Profile and Extensions
 
+  examples.md:
+    title: Examples
+
   downloads.md:
     title: Downloads
 
@@ -114,10 +117,10 @@ parameters:
   #path-pages:
     #- input/pagecontent
     #- fsh-generated/includes
-#- code: path-liquid #yes
+  #- code: path-liquid #yes
   #  value: #path #A relative path that contains liquid templates for generating narrative
   path-liquid: input/liquid
-  path-data: input/examples # A relative path in which data files can be found (will go in _data for Jekyll).
+  # path-data: input/examples # A relative path in which data files can be found (will go in _data for Jekyll).
   excludexml: true
   excludejson: false
   excludettl: true
@@ -135,8 +138,17 @@ parameters:
   #   - 3.1.1
   #   - 2.0.0
   #   - 1.0.1
+  # =========== ipa-comparison causes the liquid parameter to not work ============
   # ipa-comparison:
   #   - '{current}'
+  # ==========================================================================
+  # logging:
+  #   - tx #tx: Messages describing the use of the terminology server (for debugging)
+  #   - html #html: Log when validating an html page (troubleshooting only - leave off)
+  #   - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
+  #   - init #init: Messages describing the start up process (for debugging)
+  #   - progress #progress: Overall progress messages
+  # auto-oid-root: 2.16.840.1.113883.4.642.40.2
   propagate-status: true
 copyrightYear: 2020+
 releaseLabel: CI Build
@@ -151,8 +163,10 @@ menu:
   Scopes: scopes.html
   IPA-IPS: relationship-with-other-igs.html
   #Table of Contents: toc.html
+
   Profiles and Extensions: profiles-and-extensions.html
   Search Parameters: search-parameters.html
+  Examples: examples.html
   Artifact Index: artifacts.html
   Downloads: downloads.html
   Versions: changes-between-versions.html

@@ -1,9 +1,9 @@
 resourceType: CapabilityStatement
-id: us-core-server-liquid
-url: 'http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server-liquid'
+id: us-core-server
+url: 'http://hl7.org/fhir/us/core/CapabilityStatement/us-core-server'
 version: 9.0.0-ballot
-name: UsCoreServerCapabilityStatementLiquid
-title: US Core Server CapabilityStatement Liquid Rendered
+name: UsCoreServerCapabilityStatement
+title: US Core Server CapabilityStatement
 status: active
 experimental: false
 date: '2025-12-19T19:15:48.367775-08:00'
@@ -101,7 +101,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-allergyintolerance.html
+                                    # reference: StructureDefinition-us-core-allergyintolerance.html
                                     display: US Core AllergyIntolerance Profile
                 interaction:
                     -
@@ -274,7 +274,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-careplan.html
+                                    # reference: StructureDefinition-us-core-careplan.html
                                     display: US Core CarePlan Profile
                 documentation: >-
                     * Additional considerations for systems aligning with [HL7
@@ -455,7 +455,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-careteam.html
+                                    # reference: StructureDefinition-us-core-careteam.html
                                     display: US Core CareTeam Profile
                 documentation: >-
                     * In order to access care team member's names, identifiers,
@@ -769,7 +769,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-condition-encounter-diagnosis.html
+                                    # reference: StructureDefinition-us-core-condition-encounter-diagnosis.html
                                     display: US Core Condition Encounter Diagnosis Profile
                     -
                         extension:
@@ -779,7 +779,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-condition-problems-health-concerns.html
+                                    # reference: StructureDefinition-us-core-condition-problems-health-concerns.html
                                     display: US Core Condition Problems and Health Concerns Profile
                 documentation: >-
                     * For Encounter Diagnosis use the *US Core Condition
@@ -1044,7 +1044,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-coverage.html
+                                    # reference: StructureDefinition-us-core-coverage.html
                                     display: US Core Coverage Profile
                 interaction:
                     -
@@ -1166,7 +1166,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-device.html
+                                    # reference: StructureDefinition-us-core-device.html
                                     display: US Core Device Profile
                 documentation: >-
                     * Medical devices with UDI information **SHALL** represent
@@ -1397,7 +1397,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-diagnosticreport-note.html
+                                    # reference: StructureDefinition-us-core-diagnosticreport-note.html
                                     display: US Core DiagnosticReport Profile for Report and Note exchange
                     -
                         extension:
@@ -1407,7 +1407,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-diagnosticreport-lab.html
+                                    # reference: StructureDefinition-us-core-diagnosticreport-lab.html
                                     display: US Core DiagnosticReport Profile for Laboratory Results Reporting
                 documentation: >-
                     * For laboratory result reports use the *US Core
@@ -1698,7 +1698,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-documentreference.html
+                                    # reference: StructureDefinition-us-core-documentreference.html
                                     display: US Core DocumentReference Profile
                     -
                         extension:
@@ -1708,7 +1708,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-adi-documentreference.html
+                                    # reference: StructureDefinition-us-core-adi-documentreference.html
                                     display: US Core ADI DocumentReference Profile
                 documentation: >-
                     * For Advance Directive Information (ADI) documents use the
@@ -1922,6 +1922,26 @@ rest:
 
                             The server **SHALL** support both.
                 operation:
+
+
+                    # -
+                    #     extension:
+                    #         -
+                    #             url: 'http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation'
+                    #             valueCode: SHALL-NOT
+                    #         -
+                    #             url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
+                    #             valueReference:
+                    #                 # reference: OperationDefinition-docref.html
+                    #                 display: '$FOOOO'
+                    #     name: foo
+                    #     definition: 'http://hl7.org/fhir/us/core/OperationDefinition/foo'
+
+                    # -
+
+                    #     name: foobar
+                    #     definition: 'http://hl7.org/fhir/us/core/OperationDefinition/foobar'
+
                     -
                         extension:
                             -
@@ -1930,7 +1950,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: OperationDefinition-docref.html
+                                    # reference: OperationDefinition-docref.html
                                     display: '$docref'
                         name: docref
                         definition: 'http://hl7.org/fhir/us/core/OperationDefinition/docref'
@@ -2053,7 +2073,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-encounter.html
+                                    # reference: StructureDefinition-us-core-encounter.html
                                     display: US Core Encounter Profile
                 documentation: >-
                     * The Encounter resource can represent a reason using either
@@ -2418,7 +2438,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-familymemberhistory.html
+                                    # reference: StructureDefinition-us-core-familymemberhistory.html
                                     display: US Core FamilyMemberHistory Profile
                 interaction:
                     -
@@ -2567,7 +2587,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-goal.html
+                                    # reference: StructureDefinition-us-core-goal.html
                                     display: US Core Goal Profile
                 documentation: '* Although both `Goal.startDate` and `Goal.target.dueDate` are marked as must support, the server system is not required to support both, but **SHALL** support at least one of these elements. The client application **SHALL** support both elements.'
                 interaction:
@@ -2791,7 +2811,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-immunization.html
+                                    # reference: StructureDefinition-us-core-immunization.html
                                     display: US Core Immunization Profile
                 documentation: '* Based upon the ASTP U.S. Core Data for Interoperability (USCDI) requirements, CVX vaccine codes are required and the NDC vaccine codes **SHOULD** be supported as an additional code.'
                 interaction:
@@ -2921,7 +2941,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-location.html
+                                    # reference: StructureDefinition-us-core-location.html
                                     display: US Core Location Profile
                 documentation: '* Systems **SHOULD** enable the user who enters the address to follow the Project US@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for `Location.address.line` and  `Location.address.city`.'
                 interaction:
@@ -3099,7 +3119,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-medication.html
+                                    # reference: StructureDefinition-us-core-medication.html
                                     display: US Core Medication Profile
                 documentation: '* The  MedicationRequest resource can represent a medication, using an external reference to a Medication resource. If an external Medication Resource is used in a MedicationRequest, then the READ  **SHALL**  be supported.'
                 interaction:
@@ -3201,7 +3221,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-medicationdispense.html
+                                    # reference: StructureDefinition-us-core-medicationdispense.html
                                     display: US Core MedicationDispense Profile
                 documentation: >-
                     * This Profile can represent a medication using a code or
@@ -3414,7 +3434,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-medicationrequest.html
+                                    # reference: StructureDefinition-us-core-medicationrequest.html
                                     display: US Core MedicationRequest Profile
                 documentation: "* This Profile can represent a medication using a code or reference a Medication resource.\n  * The Server systems are not required to support both a code and a reference, but **SHALL** support at least one of these methods.\n  * The Client application **SHALL** support all methods.\n  * Systems that primarily rely on NDC codes instead of RxNorm to represent medications can use the National Library of Medicine's (NLM) NDC to RxNorm mappings to aid in additional codings.\n  * When referencing a Medication resource in `.medicationReference`, the resource may be contained or an external resource. If an external reference to a Medication resource is used, the Server **SHALL** support the `_include` parameter for searching this element. \n\n* The MedicationRequest resource can represent that information is from a secondary source using either a boolean flag or reference in `MedicationRequest.reportedBoolean`, or a reference using `MedicationRequest.reportedReference` to Practitioner or other resource.\n   *  Although both are marked as must support, the server systems are not required to support both a boolean and a reference, but **SHALL** choose to support at least one of these elements.\n   *  The client application **SHALL** support both elements.\n\n* When recording “self-prescribed” medication, requester **SHOULD** be used to indicate the Patient or RelatedPerson as the prescriber. (See the Medication List section for guidance on accessing a patient medications including over the counter (OTC) medication and other substances taken for medical and recreational use.)\n\n* The MedicationRequest resource can communicate the reason or indication for treatment using either a code in MedicationRequest.reasonCode or a reference using MedicationRequest.reasonReference.\n  * Although both `MedicationRequest.reasonCode` and `MedicationRequest.reasonReference` are marked as Additional USCDI Requirements. The certifying server system is not required to support both but **SHALL** support at least one of these elements. The certifying client application **SHALL** support both elements.\n  * when using MedicationRequest.reasonReference:\n      * Servers **SHALL** support at least one target resource in `MedicationRequest.reasonReference`. Clients **SHALL** support all target resources.\n      * The referenced resources **SHOULD** be a US Core Profile as documented in Referencing US Core Profiles."
                 interaction:
@@ -3691,7 +3711,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-adi-documentation.html
+                                    # reference: StructureDefinition-us-core-observation-adi-documentation.html
                                     display: US Core Observation ADI Documentation Profile
                     -
                         extension:
@@ -3701,7 +3721,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-lab.html
+                                    # reference: StructureDefinition-us-core-observation-lab.html
                                     display: US Core Laboratory Result Observation Profile
                     -
                         extension:
@@ -3711,7 +3731,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-pregnancystatus.html
+                                    # reference: StructureDefinition-us-core-observation-pregnancystatus.html
                                     display: US Core Observation Pregnancy Status Profile
                     -
                         extension:
@@ -3721,7 +3741,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-pregnancyintent.html
+                                    # reference: StructureDefinition-us-core-observation-pregnancyintent.html
                                     display: US Core Observation Pregnancy Intent Profile
                     -
                         extension:
@@ -3731,7 +3751,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-occupation.html
+                                    # reference: StructureDefinition-us-core-observation-occupation.html
                                     display: US Core Observation Occupation Profile
                     -
                         extension:
@@ -3741,7 +3761,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-respiratory-rate.html
+                                    # reference: StructureDefinition-us-core-respiratory-rate.html
                                     display: US Core Respiratory Rate Profile
                     -
                         extension:
@@ -3751,7 +3771,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-simple-observation.html
+                                    # reference: StructureDefinition-us-core-simple-observation.html
                                     display: US Core Simple Observation Profile
                     -
                         extension:
@@ -3761,7 +3781,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-treatment-intervention-preference.html
+                                    # reference: StructureDefinition-us-core-treatment-intervention-preference.html
                                     display: US Core Treatment Intervention Preference Profile
                     -
                         extension:
@@ -3771,7 +3791,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-care-experience-preference.html
+                                    # reference: StructureDefinition-us-core-care-experience-preference.html
                                     display: US Core Care Experience Preference Profile
                     -
                         extension:
@@ -3781,7 +3801,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-heart-rate.html
+                                    # reference: StructureDefinition-us-core-heart-rate.html
                                     display: US Core Heart Rate Profile
                     -
                         extension:
@@ -3791,7 +3811,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-body-temperature.html
+                                    # reference: StructureDefinition-us-core-body-temperature.html
                                     display: US Core Body Temperature Profile
                     -
                         extension:
@@ -3811,7 +3831,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-pulse-oximetry.html
+                                    # reference: StructureDefinition-us-core-pulse-oximetry.html
                                     display: US Core Pulse Oximetry Profile
                     -
                         extension:
@@ -3821,7 +3841,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-smokingstatus.html
+                                    # reference: StructureDefinition-us-core-smokingstatus.html
                                     display: US Core Smoking Status Observation Profile
                     -
                         extension:
@@ -3831,7 +3851,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-sexual-orientation.html
+                                    # reference: StructureDefinition-us-core-observation-sexual-orientation.html
                                     display: US Core Observation Sexual Orientation Profile
                     -
                         extension:
@@ -3841,7 +3861,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-head-circumference.html
+                                    # reference: StructureDefinition-us-core-head-circumference.html
                                     display: US Core Head Circumference Profile
                     -
                         extension:
@@ -3851,7 +3871,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-body-height.html
+                                    # reference: StructureDefinition-us-core-body-height.html
                                     display: US Core Body Height Profile
                     -
                         extension:
@@ -3861,7 +3881,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-bmi.html
+                                    # reference: StructureDefinition-us-core-bmi.html
                                     display: US Core BMI Profile
                     -
                         extension:
@@ -3871,7 +3891,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-screening-assessment.html
+                                    # reference: StructureDefinition-us-core-observation-screening-assessment.html
                                     display: US Core Observation Screening Assessment Profile
                     -
                         extension:
@@ -3881,7 +3901,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-average-blood-pressure.html
+                                    # reference: StructureDefinition-us-core-average-blood-pressure.html
                                     display: US Core Average Blood Pressure Profile
                     -
                         extension:
@@ -3891,7 +3911,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-blood-pressure.html
+                                    # reference: StructureDefinition-us-core-blood-pressure.html
                                     display: US Core Blood Pressure Profile
                     -
                         extension:
@@ -3901,7 +3921,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-observation-clinical-result.html
+                                    # reference: StructureDefinition-us-core-observation-clinical-result.html
                                     display: US Core Observation Clinical Result Profile
                     -
                         extension:
@@ -3931,7 +3951,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-body-weight.html
+                                    # reference: StructureDefinition-us-core-body-weight.html
                                     display: US Core Body Weight Profile
                     -
                         extension:
@@ -3941,7 +3961,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-vital-signs.html
+                                    # reference: StructureDefinition-us-core-vital-signs.html
                                     display: US Core Vital Signs Profile
                 documentation: "* Systems **SHOULD** support `Observation.effectivePeriod` to accurately represent tests that are collected over a period of time (for example, a 24-Hour Urine Collection test).\n* An Observation without a value, **SHALL** include a reason why the data is absent unless there are component observations, or references to other Observations that are grouped within it\n    * Systems that never provide an observation without a value are not required to support `Observation.dataAbsentReason`\n*  An `Observation.component` without a value, **SHALL** include a reason why the data is absent.\n    * Systems that never provide an component observation without a component value are not required to support `Observation.component.dataAbsentReason`.\n * There are multiple Observation profiles.  Refer to the specific profile page for profile specific conformance rules and guidance "
                 interaction:
@@ -4122,7 +4142,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-organization.html
+                                    # reference: StructureDefinition-us-core-organization.html
                                     display: US Core Organization Profile
                 documentation: >-
                     * Systems **SHALL** support National Provider Identifier
@@ -4262,7 +4282,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-patient.html
+                                    # reference: StructureDefinition-us-core-patient.html
                                     display: US Core Patient Profile
                 documentation: "* The Patient's Social Security Numbers **SHOULD NOT** be used as a patient identifier in `Patient.identifier.value`.\n*  The Complex Extensions for Race and Ethnicity allow for one or more codes of which: Must Support at least one category code from the OMB Race and Ethnicity Category Value Sets that draw from the Race & Ethnicity - CDC (CDCREC] code system.\n    - **MAY** include additional codes from the detailed ethnicity and detailed race value sets drawn from the Race & Ethnicity - CDC (CDCREC) code system\n    - **SHALL** include a text description\n* Although Patient.deceased[x] is marked as \uD835\uDDD4\uD835\uDDD7\uD835\uDDD7\uD835\uDDDC\uD835\uDDE7\uD835\uDDDC\uD835\uDDE2\uD835\uDDE1\uD835\uDDD4\uD835\uDDDF \uD835\uDDE8\uD835\uDDE6\uD835\uDDD6\uD835\uDDD7\uD835\uDDDC, certifying systems are not required to support both choices, but **SHALL** support at least `Patient.deceasedDateTime`.\n*  Servers can use the US Core Interpreter Needed Extension on this profile or the US Core Encounter Profile to communicate whether a patient needs an interpreter. Although the extension is marked as an *Additional USCDI Requirement* on both US Core Patient and US Core Encounter Profiles, the certifying Server system is not required to support the extension on both profiles but **SHALL** support the extension on at least one. The certifying Client application **SHALL** support the extension on both profiles.\n     - Systems **SHOULD** designate the patient's preferred language in the `Patient.communication.preferred` element.\n* Certifying systems **SHALL** and non-certifying systems **SHOULD** enable the user who enters the address to follow the Project US@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for `Patient.address.line` and  `Patient.address.city` for new and updated records."
                 interaction:
@@ -4425,7 +4445,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-practitioner.html
+                                    # reference: StructureDefinition-us-core-practitioner.html
                                     display: US Core Practitioner Profile
                 documentation: >-
                     * Servers that support only US Core Practitioner Profile and
@@ -4556,7 +4576,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-practitionerrole.html
+                                    # reference: StructureDefinition-us-core-practitionerrole.html
                                     display: US Core PractitionerRole Profile
                 documentation: '* Due to implementer feedback, some US Core Profiles reference the PractitionerRole resource instead of the US Core PractitionerRole Profile. However the US Core PractitionerRole Profile **SHOULD** be used as the default profile if referenced by another US Core profile.'
                 interaction:
@@ -4715,7 +4735,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-procedure.html
+                                    # reference: StructureDefinition-us-core-procedure.html
                                     display: US Core Procedure Profile
                 documentation: >-
                     * Procedure codes can be taken from SNOMED-CT, CPT, HCPCS II,
@@ -4900,7 +4920,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-provenance.html
+                                    # reference: StructureDefinition-us-core-provenance.html
                                     display: US Core Provenance Profile
                 documentation: >-
                     * The US Core Provenance resource **SHALL** be supported for
@@ -5026,7 +5046,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-sdc-questionnaire.html
+                                    reference: https://hl7.org/fhir/uv/sdc/StructureDefinition-sdc-questionnaire.html
                                     display: SDC Base Questionnaire Profile
                 documentation: >-
                     * US Core defines two ways to represent the questions and
@@ -5154,7 +5174,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-questionnaireresponse.html
+                                    # reference: StructureDefinition-us-core-questionnaireresponse.html
                                     display: US Core QuestionnaireResponse Profile
                 documentation: >-
                     * US Core defines two ways to represent the questions and
@@ -5336,7 +5356,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-relatedperson.html
+                                    # reference: StructureDefinition-us-core-relatedperson.html
                                     display: US Core RelatedPerson Profile
                 documentation: '* Systems **SHOULD** enable the user who enters the address to follow the Project US@ Technical Specification for Patient Addresses Final Version 1.0 as the standard style guide for `RelatedPerson.address.line` and  `RelatedPerson.address.city`.'
                 interaction:
@@ -5518,7 +5538,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-pmo-servicerequest.html
+                                    # reference: StructureDefinition-us-core-pmo-servicerequest.html
                                     display: US Core PMO ServiceRequest Profile
                     -
                         extension:
@@ -5528,7 +5548,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-servicerequest.html
+                                    # reference: StructureDefinition-us-core-servicerequest.html
                                     display: US Core ServiceRequest Profile
                 documentation: >-
                     * The Must Support `ServiceRequest.category` is bound, *at
@@ -5756,7 +5776,7 @@ rest:
                             -
                                 url: 'http://hl7.org/fhir/StructureDefinition/artifact-reference'
                                 valueReference:
-                                    reference: StructureDefinition-us-core-specimen.html
+                                    # reference: StructureDefinition-us-core-specimen.html
                                     display: US Core Specimen Profile
                 documentation: '* Although both `Specimen.identifier` and `Specimen.accessionIdentifier` are marked as Must Support, the server system is not required to support both, but **SHALL** support at least one of these elements. The client application **SHALL** support both.'
                 interaction:

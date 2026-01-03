@@ -5,7 +5,7 @@
 {% assign type = sd.type %}
 {% assign url = sd.url %}
 
-<!-- {% raw %} {% include quickstart-intro.md %} {% endraw %} -->
+{% include quickstart-intro.md %}
 
 {% include quickstart-search.md type=type title=title %}
 
